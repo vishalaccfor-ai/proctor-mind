@@ -1,4 +1,4 @@
-import { LayoutDashboard, BookOpen, PenTool, BarChart3, Settings, LogOut, GraduationCap } from "lucide-react";
+import { LayoutDashboard, BookOpen, PenTool, BarChart3, LogOut, GraduationCap } from "lucide-react";
 import { NavLink } from "@/components/NavLink";
 import { useLocation } from "react-router-dom";
 import { useAuth } from "@/contexts/AuthContext";
@@ -64,7 +64,7 @@ export function AppSidebar() {
             <p className="text-xs text-muted-foreground capitalize">{user.role}</p>
           </div>
         )}
-        <Button variant="ghost" size="sm" className="w-full justify-start gap-2" onClick={logout}>
+        <Button variant="ghost" size="sm" className="w-full justify-start gap-2" onClick={() => logout()}>
           <LogOut className="h-4 w-4" />
           {!collapsed && "Sign Out"}
         </Button>

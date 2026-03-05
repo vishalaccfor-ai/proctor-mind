@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { useExams } from "@/contexts/ExamContext";
 import { useAuth } from "@/contexts/AuthContext";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
@@ -7,16 +8,18 @@ import { Clock, HelpCircle, BookOpen } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 
 export default function ExamList() {
-  const { exams } = useExams();
+  const { exams, loading, fetchExams } = useExams();
   const { user } = useAuth();
   const navigate = useNavigate();
+
+  useEffect(() => { fetchExams(); }, [fetchExams]);
 
   return (
     <div className="space-y-6">
       <div className="flex items-center justify-between">
         <div>
           <h1 className="text-2xl font-bold">Available Exams</h1>
-          <p className="text-muted-foreground">{exams.length} exams available</p>
+          <p className="text-muted-foreground">{loading ? "Loading..." : `${exams.length} exams available`}</p>
         </div>
         {user?.role === "admin" && (
           <Button onClick={() => navigate("/admin/exam-builder")}>Create Exam</Button>

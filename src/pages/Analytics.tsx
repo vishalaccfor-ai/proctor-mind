@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { useAuth } from "@/contexts/AuthContext";
 import { useExams } from "@/contexts/ExamContext";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
@@ -5,8 +6,9 @@ import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContaine
 
 export default function Analytics() {
   const { user } = useAuth();
-  const { getResultsForUser } = useExams();
-  const results = user ? getResultsForUser(user.id) : [];
+  const { results, fetchResults } = useExams();
+
+  useEffect(() => { fetchResults(); }, [fetchResults]);
 
   if (results.length === 0) {
     return (
@@ -17,7 +19,6 @@ export default function Analytics() {
     );
   }
 
-  // Aggregate subject data across all results
   const subjectMap = new Map<string, { name: string; correct: number; total: number; time: number }>();
   results.forEach((r) => {
     r.subjectResults.forEach((sr) => {
@@ -30,29 +31,20 @@ export default function Analytics() {
   });
 
   const subjectData = Array.from(subjectMap.values()).map((s) => ({
-    name: s.name,
-    accuracy: s.total > 0 ? Math.round((s.correct / s.total) * 100) : 0,
+    name: s.name, accuracy: s.total > 0 ? Math.round((s.correct / s.total) * 100) : 0,
     avgTime: s.total > 0 ? Math.round(s.time / s.total) : 0,
   }));
 
   const radarData = subjectData.map((s) => ({ subject: s.name, score: s.accuracy, fullMark: 100 }));
+  const trendData = [...results].reverse().map((r, i) => ({ attempt: `Attempt ${i + 1}`, score: Math.round(r.percentage), name: r.examTitle }));
 
-  const trendData = results.map((r, i) => ({
-    attempt: `Attempt ${i + 1}`,
-    score: Math.round(r.percentage),
-    name: r.examTitle,
-  }));
-
-  // Mock AI Study Plan
   const weakSubjects = subjectData.filter((s) => s.accuracy < 50).map((s) => s.name);
   const strongSubjects = subjectData.filter((s) => s.accuracy >= 70).map((s) => s.name);
 
   return (
     <div className="space-y-6">
       <h1 className="text-2xl font-bold">Performance Analytics</h1>
-
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
-        {/* Subject Accuracy */}
         <Card>
           <CardHeader><CardTitle className="text-lg">Subject-wise Accuracy</CardTitle></CardHeader>
           <CardContent>
@@ -68,7 +60,6 @@ export default function Analytics() {
           </CardContent>
         </Card>
 
-        {/* Radar */}
         <Card>
           <CardHeader><CardTitle className="text-lg">Strength Profile</CardTitle></CardHeader>
           <CardContent>
@@ -83,7 +74,6 @@ export default function Analytics() {
           </CardContent>
         </Card>
 
-        {/* Trend */}
         {results.length > 1 && (
           <Card className="lg:col-span-2">
             <CardHeader><CardTitle className="text-lg">Performance Trend</CardTitle></CardHeader>
@@ -101,7 +91,6 @@ export default function Analytics() {
           </Card>
         )}
 
-        {/* Time Efficiency */}
         <Card>
           <CardHeader><CardTitle className="text-lg">Avg Time per Question (by Subject)</CardTitle></CardHeader>
           <CardContent>
@@ -117,7 +106,6 @@ export default function Analytics() {
           </CardContent>
         </Card>
 
-        {/* Mock AI Study Plan */}
         <Card>
           <CardHeader><CardTitle className="text-lg">📋 AI Study Plan (Mock)</CardTitle></CardHeader>
           <CardContent className="space-y-4 text-sm">

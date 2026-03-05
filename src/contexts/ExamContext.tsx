@@ -1,76 +1,89 @@
 import React, { createContext, useContext, useState, useCallback } from "react";
-import { Exam, ExamAttempt, ExamResult, Question, Subject, Topic, MarkingScheme } from "@/types/exam";
-import { sampleExams } from "@/data/sampleExams";
+import { supabase } from "@/integrations/supabase/client";
+import { useAuth } from "@/contexts/AuthContext";
+import type { Json } from "@/integrations/supabase/types";
+
+// Types matching our DB schema
+export interface Subject { id: string; name: string; }
+export interface Topic { id: string; name: string; subjectId: string; }
+export interface QuestionOption { id: string; text: string; }
+export interface Question {
+  id: string; text: string; options: QuestionOption[];
+  correctOptionId: string; difficulty: string;
+  subjectId: string; topicId: string; imageUrl?: string;
+}
+export interface Exam {
+  id: string; title: string; description: string; duration: number;
+  subjects: Subject[]; topics: Topic[]; questions: Question[];
+  markingScheme: { correct: number; incorrect: number; unattempted: number };
+  shuffleQuestions: boolean; shuffleOptions: boolean;
+  createdBy: string; createdAt: string; isPublished: boolean;
+}
+export interface Answer {
+  questionId: string; selectedOptionId: string | null;
+  markedForReview: boolean; timeSpent: number;
+}
+export interface SubjectResult {
+  subjectId: string; subjectName: string; totalQuestions: number;
+  attempted: number; correct: number; incorrect: number;
+  score: number; maxScore: number; accuracy: number; avgTimePerQuestion: number;
+}
+export interface QuestionResult {
+  questionId: string; isCorrect: boolean; isAttempted: boolean;
+  marksAwarded: number; timeSpent: number; subjectId: string; topicId: string;
+}
+export interface ExamResult {
+  attemptId: string; examId: string; examTitle: string;
+  totalScore: number; maxScore: number; percentage: number;
+  totalQuestions: number; attempted: number; correct: number;
+  incorrect: number; unattempted: number;
+  subjectResults: SubjectResult[]; questionResults: QuestionResult[];
+  timeTaken: number; submittedAt: string;
+}
 
 interface ExamContextType {
   exams: Exam[];
-  attempts: ExamAttempt[];
   results: ExamResult[];
-  addExam: (exam: Exam) => void;
-  startAttempt: (examId: string, userId: string) => ExamAttempt;
-  updateAttempt: (attempt: ExamAttempt) => void;
-  submitAttempt: (attemptId: string) => ExamResult;
+  loading: boolean;
+  fetchExams: () => Promise<void>;
+  fetchResults: () => Promise<void>;
+  createExam: (exam: Omit<Exam, "id" | "createdAt">) => Promise<string>;
+  startAttempt: (examId: string) => Promise<string>;
+  saveAnswers: (attemptId: string, answers: Record<string, Answer>, tabSwitchCount: number) => Promise<void>;
+  submitAttempt: (attemptId: string, exam: Exam, answers: Record<string, Answer>, startedAt: string) => Promise<ExamResult>;
   getExam: (id: string) => Exam | undefined;
-  getAttempt: (id: string) => ExamAttempt | undefined;
-  getResultsForUser: (userId: string) => ExamResult[];
+  getResultsForUser: () => ExamResult[];
 }
 
 const ExamContext = createContext<ExamContextType | null>(null);
 
-function shuffleArray<T>(arr: T[]): T[] {
-  const a = [...arr];
-  for (let i = a.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1));
-    [a[i], a[j]] = [a[j], a[i]];
-  }
-  return a;
-}
-
-function calculateResult(exam: Exam, attempt: ExamAttempt): ExamResult {
-  const questionResults = exam.questions.map((q) => {
-    const answer = attempt.answers[q.id];
+function calculateResult(exam: Exam, answers: Record<string, Answer>, attemptId: string, startedAt: string): ExamResult {
+  const questionResults: QuestionResult[] = exam.questions.map((q) => {
+    const answer = answers[q.id];
     const isAttempted = !!answer?.selectedOptionId;
     const isCorrect = isAttempted && answer.selectedOptionId === q.correctOptionId;
     const marksAwarded = !isAttempted
       ? exam.markingScheme.unattempted
-      : isCorrect
-      ? exam.markingScheme.correct
-      : exam.markingScheme.incorrect;
-
-    return {
-      questionId: q.id,
-      isCorrect,
-      isAttempted,
-      marksAwarded,
-      timeSpent: answer?.timeSpent || 0,
-      subjectId: q.subjectId,
-      topicId: q.topicId,
-    };
+      : isCorrect ? exam.markingScheme.correct : exam.markingScheme.incorrect;
+    return { questionId: q.id, isCorrect, isAttempted, marksAwarded, timeSpent: answer?.timeSpent || 0, subjectId: q.subjectId, topicId: q.topicId };
   });
 
-  const subjectMap = new Map<string, typeof questionResults>();
+  const subjectMap = new Map<string, QuestionResult[]>();
   questionResults.forEach((qr) => {
     const list = subjectMap.get(qr.subjectId) || [];
     list.push(qr);
     subjectMap.set(qr.subjectId, list);
   });
 
-  const subjectResults = Array.from(subjectMap.entries()).map(([subjectId, qrs]) => {
+  const subjectResults: SubjectResult[] = Array.from(subjectMap.entries()).map(([subjectId, qrs]) => {
     const subject = exam.subjects.find((s) => s.id === subjectId);
     const attempted = qrs.filter((q) => q.isAttempted).length;
     const correct = qrs.filter((q) => q.isCorrect).length;
-    const incorrect = attempted - correct;
-    const score = qrs.reduce((sum, q) => sum + q.marksAwarded, 0);
-    const maxScore = qrs.length * exam.markingScheme.correct;
     return {
-      subjectId,
-      subjectName: subject?.name || "Unknown",
-      totalQuestions: qrs.length,
-      attempted,
-      correct,
-      incorrect,
-      score,
-      maxScore,
+      subjectId, subjectName: subject?.name || "Unknown", totalQuestions: qrs.length,
+      attempted, correct, incorrect: attempted - correct,
+      score: qrs.reduce((s, q) => s + q.marksAwarded, 0),
+      maxScore: qrs.length * exam.markingScheme.correct,
       accuracy: attempted > 0 ? (correct / attempted) * 100 : 0,
       avgTimePerQuestion: qrs.length > 0 ? qrs.reduce((s, q) => s + q.timeSpent, 0) / qrs.length : 0,
     };
@@ -80,90 +93,169 @@ function calculateResult(exam: Exam, attempt: ExamAttempt): ExamResult {
   const maxScore = exam.questions.length * exam.markingScheme.correct;
   const attempted = questionResults.filter((q) => q.isAttempted).length;
   const correct = questionResults.filter((q) => q.isCorrect).length;
-
-  const startTime = new Date(attempt.startedAt).getTime();
-  const endTime = attempt.submittedAt ? new Date(attempt.submittedAt).getTime() : Date.now();
+  const now = new Date().toISOString();
+  const timeTaken = Math.floor((new Date(now).getTime() - new Date(startedAt).getTime()) / 1000);
 
   return {
-    attemptId: attempt.id,
-    examId: exam.id,
-    examTitle: exam.title,
-    totalScore,
-    maxScore,
+    attemptId, examId: exam.id, examTitle: exam.title, totalScore, maxScore,
     percentage: maxScore > 0 ? (totalScore / maxScore) * 100 : 0,
-    totalQuestions: exam.questions.length,
-    attempted,
-    correct,
-    incorrect: attempted - correct,
-    unattempted: exam.questions.length - attempted,
-    subjectResults,
-    questionResults,
-    timeTaken: Math.floor((endTime - startTime) / 1000),
-    submittedAt: attempt.submittedAt || new Date().toISOString(),
+    totalQuestions: exam.questions.length, attempted, correct, incorrect: attempted - correct,
+    unattempted: exam.questions.length - attempted, subjectResults, questionResults, timeTaken, submittedAt: now,
   };
 }
 
 export function ExamProvider({ children }: { children: React.ReactNode }) {
-  const [exams, setExams] = useState<Exam[]>(sampleExams);
-  const [attempts, setAttempts] = useState<ExamAttempt[]>([]);
+  const { user } = useAuth();
+  const [exams, setExams] = useState<Exam[]>([]);
   const [results, setResults] = useState<ExamResult[]>([]);
+  const [loading, setLoading] = useState(false);
 
-  const addExam = useCallback((exam: Exam) => {
-    setExams((prev) => [...prev, exam]);
+  const fetchExams = useCallback(async () => {
+    setLoading(true);
+    try {
+      const { data: examRows, error } = await supabase.from("exams").select("*");
+      if (error) throw error;
+      if (!examRows) { setExams([]); return; }
+
+      const examIds = examRows.map((e) => e.id);
+      const { data: questionRows } = await supabase.from("questions").select("*").in("exam_id", examIds);
+      const { data: subjectRows } = await supabase.from("subjects").select("*");
+      const { data: topicRows } = await supabase.from("topics").select("*");
+
+      const subjectsMap = new Map((subjectRows || []).map((s) => [s.id, s]));
+      const topicsMap = new Map((topicRows || []).map((t) => [t.id, t]));
+
+      const fullExams: Exam[] = examRows.map((e) => {
+        const qs = (questionRows || []).filter((q) => q.exam_id === e.id);
+        const subjectIds = [...new Set(qs.map((q) => q.subject_id))];
+        const topicIds = [...new Set(qs.map((q) => q.topic_id))];
+
+        return {
+          id: e.id, title: e.title, description: e.description, duration: e.duration,
+          subjects: subjectIds.map((sid) => ({ id: sid, name: subjectsMap.get(sid)?.name || "Unknown" })),
+          topics: topicIds.map((tid) => ({ id: tid, name: topicsMap.get(tid)?.name || "Unknown", subjectId: topicsMap.get(tid)?.subject_id || "" })),
+          questions: qs.map((q) => ({
+            id: q.id, text: q.text,
+            options: (q.options as any[]) || [],
+            correctOptionId: q.correct_option_id, difficulty: q.difficulty,
+            subjectId: q.subject_id, topicId: q.topic_id, imageUrl: q.image_url || undefined,
+          })),
+          markingScheme: { correct: Number(e.marking_correct), incorrect: Number(e.marking_incorrect), unattempted: Number(e.marking_unattempted) },
+          shuffleQuestions: e.shuffle_questions, shuffleOptions: e.shuffle_options,
+          createdBy: e.created_by, createdAt: e.created_at, isPublished: e.is_published,
+        };
+      });
+      setExams(fullExams);
+    } finally {
+      setLoading(false);
+    }
   }, []);
+
+  const fetchResults = useCallback(async () => {
+    if (!user) return;
+    const { data, error } = await supabase.from("exam_results").select("*").eq("user_id", user.id).order("submitted_at", { ascending: false });
+    if (error || !data) return;
+    setResults(data.map((r) => ({
+      attemptId: r.attempt_id, examId: r.exam_id, examTitle: r.exam_title,
+      totalScore: Number(r.total_score), maxScore: Number(r.max_score), percentage: Number(r.percentage),
+      totalQuestions: r.total_questions, attempted: r.attempted, correct: r.correct,
+      incorrect: r.incorrect, unattempted: r.unattempted,
+      subjectResults: (r.subject_results as any[]) || [],
+      questionResults: (r.question_results as any[]) || [],
+      timeTaken: r.time_taken, submittedAt: r.submitted_at,
+    })));
+  }, [user]);
+
+  const createExam = useCallback(async (exam: Omit<Exam, "id" | "createdAt">): Promise<string> => {
+    if (!user) throw new Error("Not authenticated");
+
+    // Insert subjects/topics first (upsert)
+    for (const s of exam.subjects) {
+      await supabase.from("subjects").upsert({ id: s.id, name: s.name }, { onConflict: "name" });
+    }
+    for (const t of exam.topics) {
+      await supabase.from("topics").upsert({ id: t.id, name: t.name, subject_id: t.subjectId });
+    }
+
+    const { data: examData, error: examError } = await supabase.from("exams").insert({
+      title: exam.title, description: exam.description, duration: exam.duration,
+      marking_correct: exam.markingScheme.correct, marking_incorrect: exam.markingScheme.incorrect,
+      marking_unattempted: exam.markingScheme.unattempted,
+      shuffle_questions: exam.shuffleQuestions, shuffle_options: exam.shuffleOptions,
+      is_published: exam.isPublished, created_by: user.id,
+    }).select("id").single();
+    if (examError || !examData) throw examError || new Error("Failed to create exam");
+
+    // Insert questions
+    const questionInserts = exam.questions.map((q, i) => ({
+      exam_id: examData.id, text: q.text,
+      options: q.options as unknown as Json,
+      correct_option_id: q.correctOptionId, difficulty: q.difficulty,
+      subject_id: q.subjectId, topic_id: q.topicId,
+      image_url: q.imageUrl || null, sort_order: i,
+    }));
+    const { error: qError } = await supabase.from("questions").insert(questionInserts);
+    if (qError) throw qError;
+
+    await fetchExams();
+    return examData.id;
+  }, [user, fetchExams]);
+
+  const startAttempt = useCallback(async (examId: string): Promise<string> => {
+    if (!user) throw new Error("Not authenticated");
+    const { data, error } = await supabase.from("exam_attempts").insert({
+      exam_id: examId, user_id: user.id, status: "in-progress",
+    }).select("id").single();
+    if (error || !data) throw error || new Error("Failed to start attempt");
+    return data.id;
+  }, [user]);
+
+  const saveAnswers = useCallback(async (attemptId: string, answers: Record<string, Answer>, tabSwitchCount: number) => {
+    await supabase.from("exam_attempts").update({
+      answers: answers as unknown as Json,
+      tab_switch_count: tabSwitchCount,
+    }).eq("id", attemptId);
+  }, []);
+
+  const submitAttempt = useCallback(async (
+    attemptId: string, exam: Exam, answers: Record<string, Answer>, startedAt: string
+  ): Promise<ExamResult> => {
+    if (!user) throw new Error("Not authenticated");
+    const now = new Date().toISOString();
+
+    // Update attempt
+    await supabase.from("exam_attempts").update({
+      answers: answers as unknown as Json,
+      submitted_at: now, status: "submitted",
+    }).eq("id", attemptId);
+
+    // Calculate result
+    const result = calculateResult(exam, answers, attemptId, startedAt);
+
+    // Save result
+    await supabase.from("exam_results").insert({
+      attempt_id: attemptId, exam_id: exam.id, user_id: user.id,
+      exam_title: exam.title, total_score: result.totalScore, max_score: result.maxScore,
+      percentage: result.percentage, total_questions: result.totalQuestions,
+      attempted: result.attempted, correct: result.correct, incorrect: result.incorrect,
+      unattempted: result.unattempted,
+      subject_results: result.subjectResults as unknown as Json,
+      question_results: result.questionResults as unknown as Json,
+      time_taken: result.timeTaken, submitted_at: now,
+    });
+
+    setResults((prev) => [result, ...prev]);
+    return result;
+  }, [user]);
 
   const getExam = useCallback((id: string) => exams.find((e) => e.id === id), [exams]);
-
-  const startAttempt = useCallback((examId: string, userId: string): ExamAttempt => {
-    const attempt: ExamAttempt = {
-      id: `attempt-${Date.now()}`,
-      examId,
-      userId,
-      answers: {},
-      startedAt: new Date().toISOString(),
-      submittedAt: null,
-      tabSwitchCount: 0,
-      status: "in-progress",
-    };
-    setAttempts((prev) => [...prev, attempt]);
-    return attempt;
-  }, []);
-
-  const updateAttempt = useCallback((updated: ExamAttempt) => {
-    setAttempts((prev) => prev.map((a) => (a.id === updated.id ? updated : a)));
-  }, []);
-
-  const submitAttempt = useCallback(
-    (attemptId: string): ExamResult => {
-      const attempt = attempts.find((a) => a.id === attemptId);
-      if (!attempt) throw new Error("Attempt not found");
-      const exam = exams.find((e) => e.id === attempt.examId);
-      if (!exam) throw new Error("Exam not found");
-
-      const submitted = { ...attempt, submittedAt: new Date().toISOString(), status: "submitted" as const };
-      setAttempts((prev) => prev.map((a) => (a.id === attemptId ? submitted : a)));
-
-      const result = calculateResult(exam, submitted);
-      setResults((prev) => [...prev, result]);
-      return result;
-    },
-    [attempts, exams]
-  );
-
-  const getAttempt = useCallback((id: string) => attempts.find((a) => a.id === id), [attempts]);
-
-  const getResultsForUser = useCallback(
-    (userId: string) => {
-      const userAttemptIds = new Set(attempts.filter((a) => a.userId === userId).map((a) => a.id));
-      return results.filter((r) => userAttemptIds.has(r.attemptId));
-    },
-    [attempts, results]
-  );
+  const getResultsForUser = useCallback(() => results, [results]);
 
   return (
-    <ExamContext.Provider
-      value={{ exams, attempts, results, addExam, startAttempt, updateAttempt, submitAttempt, getExam, getAttempt, getResultsForUser }}
-    >
+    <ExamContext.Provider value={{
+      exams, results, loading, fetchExams, fetchResults, createExam,
+      startAttempt, saveAnswers, submitAttempt, getExam, getResultsForUser,
+    }}>
       {children}
     </ExamContext.Provider>
   );
