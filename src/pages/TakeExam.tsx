@@ -1,8 +1,7 @@
 import { useState, useEffect, useCallback, useRef } from "react";
 import { useParams, useNavigate } from "react-router-dom";
-import { useExams } from "@/contexts/ExamContext";
+import { useExams, Answer, Question } from "@/contexts/ExamContext";
 import { useAuth } from "@/contexts/AuthContext";
-import { Answer, Question } from "@/types/exam";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -23,11 +22,12 @@ function shuffleArray<T>(arr: T[]): T[] {
 export default function TakeExam() {
   const { examId } = useParams<{ examId: string }>();
   const navigate = useNavigate();
-  const { getExam, startAttempt, updateAttempt, submitAttempt } = useExams();
+  const { getExam, exams, fetchExams, startAttempt, saveAnswers, submitAttempt } = useExams();
   const { user } = useAuth();
 
-  const exam = getExam(examId || "");
+  const [exam, setExam] = useState(getExam(examId || ""));
   const [attemptId, setAttemptId] = useState<string | null>(null);
+  const [startedAt, setStartedAt] = useState<string>("");
   const [questions, setQuestions] = useState<Question[]>([]);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [answers, setAnswers] = useState<Record<string, Answer>>({});
@@ -38,22 +38,43 @@ export default function TakeExam() {
   const [activeSection, setActiveSection] = useState<string | null>(null);
   const questionStartTime = useRef<number>(Date.now());
 
-  // Initialize exam
-  const handleStart = useCallback(() => {
-    if (!exam || !user) return;
-    const attempt = startAttempt(exam.id, user.id);
-    setAttemptId(attempt.id);
-
-    let qs = [...exam.questions];
-    if (exam.shuffleQuestions) qs = shuffleArray(qs);
-    if (exam.shuffleOptions) {
-      qs = qs.map((q) => ({ ...q, options: shuffleArray(q.options) }));
+  // Load exam if not in context yet
+  useEffect(() => {
+    if (!exam && examId) {
+      fetchExams().then(() => {
+        const found = exams.find((e) => e.id === examId);
+        if (found) setExam(found);
+      });
     }
-    setQuestions(qs);
-    setTimeLeft(exam.duration * 60);
-    setActiveSection(exam.subjects[0]?.id || null);
-    setStarted(true);
-    questionStartTime.current = Date.now();
+  }, [exam, examId, exams, fetchExams]);
+
+  // Update exam ref when exams load
+  useEffect(() => {
+    if (!exam && examId) {
+      const found = exams.find((e) => e.id === examId);
+      if (found) setExam(found);
+    }
+  }, [exams, examId, exam]);
+
+  const handleStart = useCallback(async () => {
+    if (!exam || !user) return;
+    try {
+      const id = await startAttempt(exam.id);
+      setAttemptId(id);
+      const now = new Date().toISOString();
+      setStartedAt(now);
+
+      let qs = [...exam.questions];
+      if (exam.shuffleQuestions) qs = shuffleArray(qs);
+      if (exam.shuffleOptions) qs = qs.map((q) => ({ ...q, options: shuffleArray(q.options) }));
+      setQuestions(qs);
+      setTimeLeft(exam.duration * 60);
+      setActiveSection(exam.subjects[0]?.id || null);
+      setStarted(true);
+      questionStartTime.current = Date.now();
+    } catch (err: any) {
+      toast.error(err.message || "Failed to start exam");
+    }
   }, [exam, user, startAttempt]);
 
   // Timer
@@ -61,10 +82,7 @@ export default function TakeExam() {
     if (!started || timeLeft <= 0) return;
     const interval = setInterval(() => {
       setTimeLeft((t) => {
-        if (t <= 1) {
-          handleSubmit();
-          return 0;
-        }
+        if (t <= 1) { handleSubmit(); return 0; }
         return t - 1;
       });
     }, 1000);
@@ -75,10 +93,10 @@ export default function TakeExam() {
   useEffect(() => {
     if (!attemptId || !started) return;
     const interval = setInterval(() => {
-      updateAttempt({ id: attemptId, examId: exam!.id, userId: user!.id, answers, startedAt: new Date().toISOString(), submittedAt: null, tabSwitchCount, status: "in-progress" });
+      saveAnswers(attemptId, answers, tabSwitchCount);
     }, 10000);
     return () => clearInterval(interval);
-  }, [answers, attemptId, started, tabSwitchCount]);
+  }, [answers, attemptId, started, tabSwitchCount, saveAnswers]);
 
   // Tab switch detection
   useEffect(() => {
@@ -99,9 +117,9 @@ export default function TakeExam() {
   // Prevent right-click & copy
   useEffect(() => {
     if (!started) return;
-    const preventContext = (e: MouseEvent) => { e.preventDefault(); };
-    const preventCopy = (e: ClipboardEvent) => { e.preventDefault(); };
-    const preventRefresh = (e: BeforeUnloadEvent) => { e.preventDefault(); };
+    const preventContext = (e: MouseEvent) => e.preventDefault();
+    const preventCopy = (e: ClipboardEvent) => e.preventDefault();
+    const preventRefresh = (e: BeforeUnloadEvent) => e.preventDefault();
     document.addEventListener("contextmenu", preventContext);
     document.addEventListener("copy", preventCopy);
     window.addEventListener("beforeunload", preventRefresh);
@@ -119,8 +137,7 @@ export default function TakeExam() {
     setAnswers((prev) => ({
       ...prev,
       [current.id]: {
-        ...prev[current.id],
-        questionId: current.id,
+        ...prev[current.id], questionId: current.id,
         selectedOptionId: prev[current.id]?.selectedOptionId || null,
         markedForReview: prev[current.id]?.markedForReview || false,
         timeSpent: (prev[current.id]?.timeSpent || 0) + elapsed,
@@ -133,8 +150,7 @@ export default function TakeExam() {
     setAnswers((prev) => ({
       ...prev,
       [questionId]: {
-        questionId,
-        selectedOptionId: optionId,
+        questionId, selectedOptionId: optionId,
         markedForReview: prev[questionId]?.markedForReview || false,
         timeSpent: prev[questionId]?.timeSpent || 0,
       },
@@ -145,8 +161,7 @@ export default function TakeExam() {
     setAnswers((prev) => ({
       ...prev,
       [questionId]: {
-        ...prev[questionId],
-        questionId,
+        ...prev[questionId], questionId,
         selectedOptionId: prev[questionId]?.selectedOptionId || null,
         markedForReview: !prev[questionId]?.markedForReview,
         timeSpent: prev[questionId]?.timeSpent || 0,
@@ -158,9 +173,7 @@ export default function TakeExam() {
     setAnswers((prev) => ({
       ...prev,
       [questionId]: {
-        ...prev[questionId],
-        questionId,
-        selectedOptionId: null,
+        ...prev[questionId], questionId, selectedOptionId: null,
         markedForReview: prev[questionId]?.markedForReview || false,
         timeSpent: prev[questionId]?.timeSpent || 0,
       },
@@ -173,15 +186,19 @@ export default function TakeExam() {
     questionStartTime.current = Date.now();
   };
 
-  const handleSubmit = useCallback(() => {
-    if (!attemptId) return;
+  const handleSubmit = useCallback(async () => {
+    if (!attemptId || !exam) return;
     updateTimeSpent();
-    const result = submitAttempt(attemptId);
-    navigate(`/results/${result.attemptId}`, { replace: true });
-  }, [attemptId, submitAttempt, navigate, answers]);
+    try {
+      const result = await submitAttempt(attemptId, exam, answers, startedAt);
+      navigate(`/results/${result.attemptId}`, { replace: true });
+    } catch (err: any) {
+      toast.error(err.message || "Failed to submit exam");
+    }
+  }, [attemptId, exam, submitAttempt, navigate, answers, startedAt]);
 
   if (!exam) {
-    return <div className="p-6 text-center text-muted-foreground">Exam not found</div>;
+    return <div className="p-6 text-center text-muted-foreground">Loading exam...</div>;
   }
 
   if (!started) {
@@ -220,19 +237,14 @@ export default function TakeExam() {
   }
 
   const currentQ = questions[currentIndex];
-  const sectionQuestions = activeSection ? questions.filter((q) => q.subjectId === activeSection) : questions;
-  const filteredIndices = questions.map((q, i) => (!activeSection || q.subjectId === activeSection) ? i : -1).filter((i) => i !== -1);
-
   const mins = Math.floor(timeLeft / 60);
   const secs = timeLeft % 60;
   const isLowTime = timeLeft < 300;
-
   const answered = Object.values(answers).filter((a) => a.selectedOptionId).length;
   const reviewed = Object.values(answers).filter((a) => a.markedForReview).length;
 
   return (
     <div className="fixed inset-0 bg-background z-50 flex flex-col select-none">
-      {/* Header */}
       <div className="border-b px-4 py-2 flex items-center justify-between bg-card">
         <h2 className="font-semibold truncate">{exam.title}</h2>
         <div className="flex items-center gap-4">
@@ -251,9 +263,7 @@ export default function TakeExam() {
       </div>
 
       <div className="flex flex-1 overflow-hidden">
-        {/* Question Area */}
         <div className="flex-1 flex flex-col overflow-auto p-6">
-          {/* Section tabs */}
           <div className="flex gap-2 mb-4 flex-wrap">
             <Button size="sm" variant={!activeSection ? "default" : "outline"} onClick={() => setActiveSection(null)}>All</Button>
             {exam.subjects.map((s) => (
@@ -270,27 +280,18 @@ export default function TakeExam() {
                 <Badge variant="secondary" className="capitalize">{currentQ.difficulty}</Badge>
                 <Badge variant="outline">{exam.subjects.find((s) => s.id === currentQ.subjectId)?.name}</Badge>
               </div>
-
               <p className="text-lg mb-6">{currentQ.text}</p>
-
               <div className="space-y-3 max-w-xl">
                 {currentQ.options.map((opt, i) => (
-                  <button
-                    key={opt.id}
-                    className={cn(
-                      "w-full text-left p-4 rounded-lg border-2 transition-colors",
-                      answers[currentQ.id]?.selectedOptionId === opt.id
-                        ? "border-primary bg-primary/5"
-                        : "border-border hover:border-primary/50"
-                    )}
-                    onClick={() => selectOption(currentQ.id, opt.id)}
-                  >
+                  <button key={opt.id} className={cn(
+                    "w-full text-left p-4 rounded-lg border-2 transition-colors",
+                    answers[currentQ.id]?.selectedOptionId === opt.id ? "border-primary bg-primary/5" : "border-border hover:border-primary/50"
+                  )} onClick={() => selectOption(currentQ.id, opt.id)}>
                     <span className="font-medium mr-3 text-muted-foreground">{String.fromCharCode(65 + i)}.</span>
                     {opt.text}
                   </button>
                 ))}
               </div>
-
               <div className="flex items-center gap-3 mt-6">
                 <Button variant="outline" size="sm" onClick={() => toggleReview(currentQ.id)}>
                   <Flag className={cn("h-4 w-4 mr-1", answers[currentQ.id]?.markedForReview && "text-orange-500 fill-orange-500")} />
@@ -298,7 +299,6 @@ export default function TakeExam() {
                 </Button>
                 <Button variant="ghost" size="sm" onClick={() => clearAnswer(currentQ.id)}>Clear</Button>
               </div>
-
               <div className="flex justify-between mt-8">
                 <Button variant="outline" disabled={currentIndex === 0} onClick={() => goToQuestion(currentIndex - 1)}>
                   <ChevronLeft className="h-4 w-4 mr-1" /> Previous
@@ -311,7 +311,6 @@ export default function TakeExam() {
           )}
         </div>
 
-        {/* Navigation Panel */}
         <div className="w-64 border-l bg-card p-4 overflow-auto hidden md:block">
           <h3 className="font-semibold mb-3 text-sm">Question Navigation</h3>
           <div className="flex gap-2 text-xs mb-4 flex-wrap">
@@ -326,20 +325,12 @@ export default function TakeExam() {
               const isReview = !!a?.markedForReview;
               const isCurrent = i === currentIndex;
               const isInSection = !activeSection || q.subjectId === activeSection;
-
               return (
-                <button
-                  key={q.id}
-                  className={cn(
-                    "w-full aspect-square rounded-md text-xs font-medium flex items-center justify-center transition-colors",
-                    !isInSection && "opacity-30",
-                    isCurrent && "ring-2 ring-primary",
-                    isReview ? "bg-orange-400 text-white" : isAnswered ? "bg-primary text-primary-foreground" : "bg-muted border",
-                  )}
-                  onClick={() => goToQuestion(i)}
-                >
-                  {i + 1}
-                </button>
+                <button key={q.id} className={cn(
+                  "w-full aspect-square rounded-md text-xs font-medium flex items-center justify-center transition-colors",
+                  !isInSection && "opacity-30", isCurrent && "ring-2 ring-primary",
+                  isReview ? "bg-orange-400 text-white" : isAnswered ? "bg-primary text-primary-foreground" : "bg-muted border",
+                )} onClick={() => goToQuestion(i)}>{i + 1}</button>
               );
             })}
           </div>

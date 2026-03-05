@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import { useExams } from "@/contexts/ExamContext";
 import { useAuth } from "@/contexts/AuthContext";
@@ -10,20 +11,20 @@ import { CheckCircle, XCircle, MinusCircle, Clock, ArrowLeft, BarChart3 } from "
 export default function Results() {
   const { attemptId } = useParams<{ attemptId: string }>();
   const navigate = useNavigate();
-  const { results, getResultsForUser } = useExams();
+  const { results, fetchResults } = useExams();
   const { user } = useAuth();
 
-  // If no attemptId, show all results for user
+  useEffect(() => { fetchResults(); }, [fetchResults]);
+
   if (!attemptId) {
-    const userResults = user ? getResultsForUser(user.id) : [];
     return (
       <div className="space-y-6">
         <h1 className="text-2xl font-bold">My Results</h1>
-        {userResults.length === 0 ? (
+        {results.length === 0 ? (
           <Card><CardContent className="p-6 text-center text-muted-foreground">No exam results yet. Take an exam to see your results here.</CardContent></Card>
         ) : (
           <div className="space-y-4">
-            {userResults.map((r) => (
+            {results.map((r) => (
               <Card key={r.attemptId} className="cursor-pointer hover:shadow-md transition-shadow" onClick={() => navigate(`/results/${r.attemptId}`)}>
                 <CardContent className="flex items-center justify-between p-6">
                   <div>
@@ -58,7 +59,6 @@ export default function Results() {
         </div>
       </div>
 
-      {/* Score Overview */}
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
         <Card className="md:col-span-1">
           <CardContent className="p-6 flex flex-col items-center">
@@ -100,7 +100,6 @@ export default function Results() {
         </Card>
       </div>
 
-      {/* Section-wise */}
       <Card>
         <CardHeader><CardTitle className="text-lg">Section-wise Breakdown</CardTitle></CardHeader>
         <CardContent className="space-y-4">
@@ -118,7 +117,6 @@ export default function Results() {
         </CardContent>
       </Card>
 
-      {/* Strength / Weakness */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
         <Card>
           <CardHeader><CardTitle className="text-lg text-green-600">Strong Areas</CardTitle></CardHeader>

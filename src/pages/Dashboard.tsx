@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { useAuth } from "@/contexts/AuthContext";
 import { useExams } from "@/contexts/ExamContext";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
@@ -7,10 +8,14 @@ import { Button } from "@/components/ui/button";
 
 export default function Dashboard() {
   const { user } = useAuth();
-  const { exams, getResultsForUser } = useExams();
+  const { exams, results, fetchExams, fetchResults } = useExams();
   const navigate = useNavigate();
 
-  const results = user ? getResultsForUser(user.id) : [];
+  useEffect(() => {
+    fetchExams();
+    fetchResults();
+  }, [fetchExams, fetchResults]);
+
   const avgScore = results.length > 0 ? results.reduce((s, r) => s + r.percentage, 0) / results.length : 0;
 
   const stats = [
@@ -60,8 +65,8 @@ export default function Dashboard() {
           <CardHeader><CardTitle className="text-lg">Recent Results</CardTitle></CardHeader>
           <CardContent>
             <div className="space-y-3">
-              {results.slice(-3).reverse().map((r) => (
-                <div key={r.attemptId} className="flex items-center justify-between p-3 bg-muted/50 rounded-lg">
+              {results.slice(0, 3).map((r) => (
+                <div key={r.attemptId} className="flex items-center justify-between p-3 bg-muted/50 rounded-lg cursor-pointer hover:bg-muted" onClick={() => navigate(`/results/${r.attemptId}`)}>
                   <div>
                     <p className="font-medium">{r.examTitle}</p>
                     <p className="text-sm text-muted-foreground">{new Date(r.submittedAt).toLocaleDateString()}</p>
