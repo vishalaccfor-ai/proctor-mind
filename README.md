@@ -1,73 +1,105 @@
-# Welcome to your Lovable project
+# Proctor Mind
 
-## Project info
+**MHT-CET AI Exam Preparation Platform**
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+> The only MHT-CET platform that learns with you — from your first chapter to your last mock.
 
-## How can I edit this code?
+## Tech Stack
 
-There are several ways of editing your application.
+- **Frontend:** React + TypeScript + Vite + Tailwind CSS + shadcn/ui
+- **Database & Auth:** Supabase (PostgreSQL + RLS + Triggers)
+- **AI Features:** Supabase Edge Functions → OpenAI GPT-4o-mini
+- **Charts:** Recharts
+- **Hosting:** Vercel
+- **Payments:** Razorpay
 
-**Use Lovable**
+## Getting Started
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
+### Prerequisites
+- Node.js 18+ and npm
 
-Changes made via Lovable will be committed automatically to this repo.
-
-**Use your preferred IDE**
-
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
+### Installation
 
 ```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+# Clone the repository
+git clone https://github.com/vishalaccfor-ai/proctor-mind.git
+cd proctor-mind
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+# Install dependencies
+npm install
 
-# Step 3: Install the necessary dependencies.
-npm i
+# Set up environment variables
+cp .env.example .env
+# Fill in your Supabase credentials in .env
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+# Start development server
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+App runs at `http://localhost:8080`
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+## Environment Variables
 
-**Use GitHub Codespaces**
+Create a `.env` file in the root:
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+```env
+VITE_SUPABASE_URL=your_supabase_project_url
+VITE_SUPABASE_PUBLISHABLE_KEY=your_supabase_anon_key
+```
 
-## What technologies are used for this project?
+## Database Setup
 
-This project is built with:
+1. Create a project at [supabase.com](https://supabase.com)
+2. Open **SQL Editor** and run the file:
+   `supabase/migrations/20260305064532_*.sql`
+3. Tables, RLS policies, and triggers are created automatically
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+## Project Structure
 
-## How can I deploy this project?
+```
+src/
+├── components/        # Reusable UI components
+│   └── ui/            # shadcn/ui base components
+├── contexts/          # React context (Auth, Exam)
+├── hooks/             # Custom React hooks
+├── integrations/      # Supabase client + generated types
+├── lib/               # cn() utility
+├── pages/             # Page components
+└── types/             # TypeScript types
+```
 
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
+## Available Scripts
 
-## Can I connect a custom domain to my Lovable project?
+```sh
+npm run dev       # Start dev server (port 8080)
+npm run build     # Production build
+npm run preview   # Preview production build
+npm run lint      # ESLint
+npm run test      # Vitest
+```
 
-Yes, you can!
+## Features (Roadmap)
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+- ✅ Student auth + admin roles
+- ✅ Exam engine (timer, palette, tab-switch detection, auto-save)
+- ✅ Results + subject-wise analytics
+- ✅ Admin exam builder
+- 🔜 AI feedback after every exam (GPT-4o-mini)
+- 🔜 Wrong answer deep diagnosis
+- 🔜 CET Readiness Score
+- 🔜 Score prediction + college predictor
+- 🔜 Daily streak + Question of the Day
+- 🔜 Parent dashboard
+- 🔜 Coaching institute B2B portal
+- 🔜 Battle mode (multiplayer)
+- 🔜 Marathi language interface
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+## Deployment
+
+1. Connect GitHub repo to [Vercel](https://vercel.com)
+2. Add environment variables in Vercel project settings
+3. Every push to `main` auto-deploys
+
+## License
+
+Private — All rights reserved.

@@ -1,4 +1,4 @@
-import { LayoutDashboard, BookOpen, PenTool, BarChart3, LogOut, GraduationCap } from "lucide-react";
+import { LayoutDashboard, BookOpen, PenTool, BarChart3, LogOut, Brain } from "lucide-react";
 import { NavLink } from "@/components/NavLink";
 import { useLocation } from "react-router-dom";
 import { useAuth } from "@/contexts/AuthContext";
@@ -34,8 +34,13 @@ export function AppSidebar() {
     <Sidebar collapsible="icon">
       <SidebarHeader className="border-b border-sidebar-border p-4">
         <div className="flex items-center gap-2">
-          <GraduationCap className="h-6 w-6 text-primary shrink-0" />
-          {!collapsed && <span className="font-bold text-lg tracking-tight">ExamPro</span>}
+          <Brain className="h-6 w-6 text-primary shrink-0" />
+          {!collapsed && (
+            <div className="flex flex-col">
+              <span className="font-bold text-base tracking-tight leading-tight">Proctor Mind</span>
+              <span className="text-xs text-muted-foreground leading-tight">MHT-CET AI Prep</span>
+            </div>
+          )}
         </div>
       </SidebarHeader>
       <SidebarContent>
@@ -46,7 +51,12 @@ export function AppSidebar() {
               {items.map((item) => (
                 <SidebarMenuItem key={item.title}>
                   <SidebarMenuButton asChild isActive={location.pathname === item.url}>
-                    <NavLink to={item.url} end className="hover:bg-muted/50" activeClassName="bg-muted text-primary font-medium">
+                    <NavLink
+                      to={item.url}
+                      end
+                      className="hover:bg-muted/50"
+                      activeClassName="bg-muted text-primary font-medium"
+                    >
                       <item.icon className="h-4 w-4 shrink-0" />
                       {!collapsed && <span>{item.title}</span>}
                     </NavLink>
