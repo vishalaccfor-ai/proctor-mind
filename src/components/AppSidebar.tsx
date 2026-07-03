@@ -1,83 +1,182 @@
-import { LayoutDashboard, BookOpen, PenTool, BarChart3, LogOut, Brain } from "lucide-react";
-import { NavLink } from "@/components/NavLink";
-import { useLocation } from "react-router-dom";
-import { useAuth } from "@/contexts/AuthContext";
+import { NavLink, useNavigate } from "react-router-dom";
 import {
-  Sidebar, SidebarContent, SidebarGroup, SidebarGroupContent, SidebarGroupLabel,
-  SidebarMenu, SidebarMenuButton, SidebarMenuItem, SidebarHeader, SidebarFooter, useSidebar,
+  LayoutDashboard, BookOpen, ClipboardList, BarChart2,
+  Zap, Map, GraduationCap, Settings, LogOut,
+  FlameIcon, CreditCard, Shield,
+} from "lucide-react";
+import {
+  Sidebar, SidebarContent, SidebarFooter,
+  SidebarGroup, SidebarGroupContent, SidebarGroupLabel,
+  SidebarHeader, SidebarMenu, SidebarMenuButton, SidebarMenuItem,
 } from "@/components/ui/sidebar";
-import { Button } from "@/components/ui/button";
+import { useAuth } from "@/contexts/AuthContext";
+import { StreakBadge } from "@/components/StreakBadge";
+import { cn } from "@/lib/utils";
 
-const studentItems = [
-  { title: "Dashboard", url: "/dashboard", icon: LayoutDashboard },
-  { title: "Available Exams", url: "/exams", icon: BookOpen },
-  { title: "My Results", url: "/results", icon: BarChart3 },
-  { title: "Analytics", url: "/analytics", icon: BarChart3 },
+// ── MHT-CET exam date (update annually) ──────────────────────
+const EXAM_DATE = new Date("2026-05-05");
+function getDaysLeft() {
+  const diff = Math.ceil((EXAM_DATE.getTime() - Date.now()) / 86400000);
+  return diff > 0 ? diff : 0;
+}
+
+// ── Nav items ─────────────────────────────────────────────────
+const studentNav = [
+  { label: "Dashboard",        path: "/dashboard",         icon: LayoutDashboard },
+  { label: "Practice Exams",   path: "/exams",             icon: BookOpen },
+  { label: "Results",          path: "/results",           icon: ClipboardList },
+  { label: "Analytics",        path: "/analytics",         icon: BarChart2 },
+  { label: "College Predictor",path: "/college-predictor", icon: GraduationCap },
 ];
 
-const adminItems = [
-  { title: "Dashboard", url: "/dashboard", icon: LayoutDashboard },
-  { title: "Exam Builder", url: "/admin/exam-builder", icon: PenTool },
-  { title: "All Exams", url: "/exams", icon: BookOpen },
-  { title: "Analytics", url: "/analytics", icon: BarChart3 },
+const adminNav = [
+  { label: "Exam Builder",     path: "/admin/exam-builder", icon: Settings },
 ];
 
+// ── Component ─────────────────────────────────────────────────
 export function AppSidebar() {
-  const { state } = useSidebar();
-  const collapsed = state === "collapsed";
-  const location = useLocation();
   const { user, logout } = useAuth();
-
-  const items = user?.role === "admin" ? adminItems : studentItems;
+  const navigate = useNavigate();
+  const daysLeft = getDaysLeft();
+  const isPro = user?.subscription === "pro" || user?.subscription === "max";
 
   return (
-    <Sidebar collapsible="icon">
-      <SidebarHeader className="border-b border-sidebar-border p-4">
-        <div className="flex items-center gap-2">
-          <Brain className="h-6 w-6 text-primary shrink-0" />
-          {!collapsed && (
-            <div className="flex flex-col">
-              <span className="font-bold text-base tracking-tight leading-tight">Proctor Mind</span>
-              <span className="text-xs text-muted-foreground leading-tight">MHT-CET AI Prep</span>
-            </div>
+    <Sidebar className="border-r border-border">
+      {/* ── Header ── */}
+      <SidebarHeader className="px-4 py-4 border-b border-border">
+        <div
+          className="flex items-center gap-2 cursor-pointer"
+          onClick={() => navigate("/dashboard")}
+        >
+          <div className="w-7 h-7 bg-[#1c1917] flex items-center justify-center text-[#e8c547] font-black text-sm flex-shrink-0">
+            ⚡
+          </div>
+          <span className="font-black text-base text-foreground tracking-tight">
+            Proctor Mind
+          </span>
+        </div>
+
+        {/* Streak */}
+        <div className="mt-3 flex items-center justify-between">
+          <StreakBadge count={user?.streak_count ?? 0} size="sm" />
+          {!isPro && (
+            <NavLink to="/pricing">
+              <span className="text-[10px] font-bold text-[#e8341c] hover:underline cursor-pointer">
+                Upgrade →
+              </span>
+            </NavLink>
           )}
         </div>
+
+        {/* Exam countdown */}
+        <div className="mt-2 px-3 py-2 bg-muted/60 rounded-sm text-center">
+          <div className="text-lg font-black text-foreground leading-none">{daysLeft}</div>
+          <div className="text-[10px] uppercase tracking-wider text-muted-foreground">days to MHT-CET</div>
+        </div>
       </SidebarHeader>
-      <SidebarContent>
+
+      {/* ── Content ── */}
+      <SidebarContent className="py-2">
+        {/* Student nav */}
         <SidebarGroup>
-          <SidebarGroupLabel>Navigation</SidebarGroupLabel>
+          <SidebarGroupLabel className="text-[10px] uppercase tracking-widest text-muted-foreground px-4 py-2">
+            Prepare
+          </SidebarGroupLabel>
           <SidebarGroupContent>
             <SidebarMenu>
-              {items.map((item) => (
-                <SidebarMenuItem key={item.title}>
-                  <SidebarMenuButton asChild isActive={location.pathname === item.url}>
-                    <NavLink
-                      to={item.url}
-                      end
-                      className="hover:bg-muted/50"
-                      activeClassName="bg-muted text-primary font-medium"
-                    >
-                      <item.icon className="h-4 w-4 shrink-0" />
-                      {!collapsed && <span>{item.title}</span>}
-                    </NavLink>
-                  </SidebarMenuButton>
-                </SidebarMenuItem>
-              ))}
+              {studentNav.map((item) => {
+                const isLocked = item.path === "/college-predictor" && !isPro;
+                return (
+                  <SidebarMenuItem key={item.path}>
+                    <SidebarMenuButton asChild>
+                      <NavLink
+                        to={isLocked ? "/pricing" : item.path}
+                        className={({ isActive }) =>
+                          cn(
+                            "flex items-center gap-3 px-4 py-2.5 text-sm font-medium transition-colors w-full rounded-none",
+                            isActive
+                              ? "bg-[#1c1917] text-[#e8c547]"
+                              : "text-foreground hover:bg-muted",
+                            isLocked && "opacity-60"
+                          )
+                        }
+                      >
+                        <item.icon className="w-4 h-4 flex-shrink-0" />
+                        <span className="flex-1">{item.label}</span>
+                        {isLocked && (
+                          <span className="text-[9px] font-bold text-[#e8341c] bg-red-50 px-1.5 py-0.5 rounded">PRO</span>
+                        )}
+                        {item.path === "/flash" && (
+                          <span className="text-[9px] font-bold text-green-700 bg-green-50 px-1.5 py-0.5 rounded">NEW</span>
+                        )}
+                      </NavLink>
+                    </SidebarMenuButton>
+                  </SidebarMenuItem>
+                );
+              })}
             </SidebarMenu>
           </SidebarGroupContent>
         </SidebarGroup>
-      </SidebarContent>
-      <SidebarFooter className="border-t border-sidebar-border p-2">
-        {!collapsed && user && (
-          <div className="px-2 py-1 mb-1">
-            <p className="text-sm font-medium">{user.name}</p>
-            <p className="text-xs text-muted-foreground capitalize">{user.role}</p>
-          </div>
+
+        {/* Admin nav */}
+        {user?.role === "admin" && (
+          <SidebarGroup>
+            <SidebarGroupLabel className="text-[10px] uppercase tracking-widest text-muted-foreground px-4 py-2">
+              Admin
+            </SidebarGroupLabel>
+            <SidebarGroupContent>
+              <SidebarMenu>
+                {adminNav.map((item) => (
+                  <SidebarMenuItem key={item.path}>
+                    <SidebarMenuButton asChild>
+                      <NavLink
+                        to={item.path}
+                        className={({ isActive }) =>
+                          cn(
+                            "flex items-center gap-3 px-4 py-2.5 text-sm font-medium transition-colors w-full rounded-none",
+                            isActive ? "bg-[#1c1917] text-[#e8c547]" : "text-foreground hover:bg-muted"
+                          )
+                        }
+                      >
+                        <item.icon className="w-4 h-4 flex-shrink-0" />
+                        {item.label}
+                      </NavLink>
+                    </SidebarMenuButton>
+                  </SidebarMenuItem>
+                ))}
+              </SidebarMenu>
+            </SidebarGroupContent>
+          </SidebarGroup>
         )}
-        <Button variant="ghost" size="sm" className="w-full justify-start gap-2" onClick={() => logout()}>
-          <LogOut className="h-4 w-4" />
-          {!collapsed && "Sign Out"}
-        </Button>
+      </SidebarContent>
+
+      {/* ── Footer ── */}
+      <SidebarFooter className="border-t border-border p-4 space-y-1">
+        {/* User info */}
+        <div className="flex items-center gap-3 mb-2 px-1">
+          <div className="w-7 h-7 rounded-full bg-[#e8c547]/20 flex items-center justify-center text-sm font-black text-[#1c1917]">
+            {user?.name?.[0]?.toUpperCase() ?? "S"}
+          </div>
+          <div className="min-w-0 flex-1">
+            <p className="text-xs font-bold text-foreground truncate">{user?.name}</p>
+            <p className="text-[10px] text-muted-foreground capitalize">{user?.subscription ?? "free"} plan</p>
+          </div>
+        </div>
+
+        <NavLink to="/pricing">
+          <button className="w-full flex items-center gap-3 px-3 py-2 text-sm text-foreground hover:bg-muted rounded-sm transition-colors">
+            <CreditCard className="w-4 h-4" />
+            <span>Plans & Billing</span>
+          </button>
+        </NavLink>
+
+        <button
+          onClick={logout}
+          className="w-full flex items-center gap-3 px-3 py-2 text-sm text-red-600 hover:bg-red-50 rounded-sm transition-colors"
+        >
+          <LogOut className="w-4 h-4" />
+          <span>Sign Out</span>
+        </button>
       </SidebarFooter>
     </Sidebar>
   );

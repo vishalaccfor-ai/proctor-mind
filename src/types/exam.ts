@@ -72,11 +72,14 @@ export interface QuestionResult {
   timeSpent: number;
   subjectId: string;
   topicId: string;
+  selectedOptionId: string | null;
+  correctOptionId: string;
 }
 
 export interface SubjectResult {
   subjectId: string;
   subjectName: string;
+  subject?: string;
   totalQuestions: number;
   attempted: number;
   correct: number;
@@ -85,6 +88,7 @@ export interface SubjectResult {
   maxScore: number;
   accuracy: number;
   avgTimePerQuestion: number;
+  percentage?: number;
 }
 
 export interface ExamResult {

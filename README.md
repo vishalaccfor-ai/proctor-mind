@@ -1,105 +1,112 @@
-# Proctor Mind
+# Proctor Mind — B2P Code Changes
+## How to apply these files to your repo
 
-**MHT-CET AI Exam Preparation Platform**
+---
 
-> The only MHT-CET platform that learns with you — from your first chapter to your last mock.
+## STEP 1 — Run DB Migration
+Open Supabase → SQL Editor → paste and run:
+`supabase/migrations/002_b2p_parent_strategy.sql`
 
-## Tech Stack
+This adds: parent_links, user_subscriptions, whatsapp_logs, college_predictor_data tables
++ alters profiles table with 9 new columns (streak_count, onboarding_complete, etc.)
 
-- **Frontend:** React + TypeScript + Vite + Tailwind CSS + shadcn/ui
-- **Database & Auth:** Supabase (PostgreSQL + RLS + Triggers)
-- **AI Features:** Supabase Edge Functions → OpenAI GPT-4o-mini
-- **Charts:** Recharts
-- **Hosting:** Vercel
-- **Payments:** Razorpay
+---
 
-## Getting Started
+## STEP 2 — Replace these files entirely (MODIFY)
 
-### Prerequisites
-- Node.js 18+ and npm
+| File in this zip | Replace in your repo |
+|---|---|
+| src/contexts/AuthContext.tsx | src/contexts/AuthContext.tsx |
+| src/App.tsx | src/App.tsx |
+| src/components/AppSidebar.tsx | src/components/AppSidebar.tsx |
+| src/pages/Dashboard.tsx | src/pages/Dashboard.tsx |
+| src/pages/Results.tsx | src/pages/Results.tsx |
+| supabase/functions/generate-feedback/index.ts | supabase/functions/generate-feedback/index.ts |
 
-### Installation
+---
 
-```sh
-# Clone the repository
-git clone https://github.com/vishalaccfor-ai/proctor-mind.git
-cd proctor-mind
+## STEP 3 — Add these NEW files to your repo
 
-# Install dependencies
-npm install
+| File in this zip | Where in your repo |
+|---|---|
+| src/pages/Onboarding.tsx | src/pages/Onboarding.tsx |
+| src/pages/ParentDashboard.tsx | src/pages/ParentDashboard.tsx |
+| src/pages/ParentOnboarding.tsx | src/pages/ParentOnboarding.tsx |
+| src/pages/Pricing.tsx | src/pages/Pricing.tsx |
+| src/pages/CollegePredictor.tsx | src/pages/CollegePredictor.tsx |
+| src/components/StreakBadge.tsx | src/components/StreakBadge.tsx |
+| src/components/ParentCTA.tsx | src/components/ParentCTA.tsx |
+| src/components/ShareCard.tsx | src/components/ShareCard.tsx |
+| src/components/CollegePredictorWidget.tsx | src/components/CollegePredictorWidget.tsx |
+| supabase/functions/college-predictor/index.ts | supabase/functions/college-predictor/index.ts |
+| supabase/functions/whatsapp-digest/index.ts | supabase/functions/whatsapp-digest/index.ts |
+| supabase/functions/parent-nudge/index.ts | supabase/functions/parent-nudge/index.ts |
 
-# Set up environment variables
-cp .env.example .env
-# Fill in your Supabase credentials in .env
+---
 
-# Start development server
-npm run dev
+## STEP 4 — Add environment variables
+
+### Frontend (.env)
+```
+VITE_RAZORPAY_KEY_ID=rzp_test_YOUR_KEY
 ```
 
-App runs at `http://localhost:8080`
-
-## Environment Variables
-
-Create a `.env` file in the root:
-
-```env
-VITE_SUPABASE_URL=your_supabase_project_url
-VITE_SUPABASE_PUBLISHABLE_KEY=your_supabase_anon_key
+### Supabase Edge Functions (via Supabase Dashboard → Settings → Edge Functions → Secrets)
+```
+OPENAI_API_KEY=sk-...
+WATI_API_URL=https://live-server-XXXXX.wati.io
+WATI_API_TOKEN=your_wati_token
+APP_URL=https://proctormind.in
 ```
 
-## Database Setup
+---
 
-1. Create a project at [supabase.com](https://supabase.com)
-2. Open **SQL Editor** and run the file:
-   `supabase/migrations/20260305064532_*.sql`
-3. Tables, RLS policies, and triggers are created automatically
-
-## Project Structure
-
-```
-src/
-├── components/        # Reusable UI components
-│   └── ui/            # shadcn/ui base components
-├── contexts/          # React context (Auth, Exam)
-├── hooks/             # Custom React hooks
-├── integrations/      # Supabase client + generated types
-├── lib/               # cn() utility
-├── pages/             # Page components
-└── types/             # TypeScript types
+## STEP 5 — Deploy edge functions
+```bash
+npx supabase functions deploy college-predictor
+npx supabase functions deploy whatsapp-digest
+npx supabase functions deploy parent-nudge
+npx supabase functions deploy generate-feedback
 ```
 
-## Available Scripts
+---
 
-```sh
-npm run dev       # Start dev server (port 8080)
-npm run build     # Production build
-npm run preview   # Preview production build
-npm run lint      # ESLint
-npm run test      # Vitest
+## STEP 6 — Add Razorpay script to index.html
+Add this inside <head> tag of your index.html:
+```html
+<script src="https://checkout.razorpay.com/v1/checkout.js"></script>
 ```
 
-## Features (Roadmap)
+---
 
-- ✅ Student auth + admin roles
-- ✅ Exam engine (timer, palette, tab-switch detection, auto-save)
-- ✅ Results + subject-wise analytics
-- ✅ Admin exam builder
-- 🔜 AI feedback after every exam (GPT-4o-mini)
-- 🔜 Wrong answer deep diagnosis
-- 🔜 CET Readiness Score
-- 🔜 Score prediction + college predictor
-- 🔜 Daily streak + Question of the Day
-- 🔜 Parent dashboard
-- 🔜 Coaching institute B2B portal
-- 🔜 Battle mode (multiplayer)
-- 🔜 Marathi language interface
+## DO NOT TOUCH (these files are unchanged)
+- src/pages/TakeExam.tsx
+- src/pages/ExamList.tsx
+- src/pages/ExamBuilder.tsx
+- src/contexts/ExamContext.tsx
+- src/components/ui/* (all shadcn components)
 
-## Deployment
+---
 
-1. Connect GitHub repo to [Vercel](https://vercel.com)
-2. Add environment variables in Vercel project settings
-3. Every push to `main` auto-deploys
+## WATI WhatsApp Setup (needed for parent digests)
+1. Sign up at wati.io
+2. Connect a WhatsApp Business number
+3. Create 3 templates:
+   - proctor_mind_daily_digest
+   - proctor_mind_inactivity_nudge
+   - proctor_mind_college_alert
+4. Get API token from Wati dashboard → add to Supabase secrets
 
-## License
+---
 
-Private — All rights reserved.
+## Recommended build order
+1. DB migration (Step 1) — everything depends on this
+2. Replace AuthContext.tsx — subscription + onboarding flags
+3. Replace App.tsx + AppSidebar.tsx — new routes
+4. Add Onboarding.tsx — new signups must hit this
+5. Replace Dashboard.tsx — streak, parent CTA, college widget
+6. Add ParentOnboarding.tsx + ParentDashboard.tsx
+7. Deploy whatsapp-digest edge function
+8. Replace Results.tsx — ShareCard + AI debrief
+9. Add Pricing.tsx + Razorpay setup
+10. Add CollegePredictor.tsx

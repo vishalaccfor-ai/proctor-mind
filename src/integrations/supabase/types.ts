@@ -184,30 +184,60 @@ export type Database = {
       profiles: {
         Row: {
           avatar_url: string | null
+          city: string | null
           created_at: string
+          dismiss_parent_cta_at: string | null
           email: string | null
           id: string
+          last_active_date: string | null
           name: string
+          onboarding_complete: boolean
+          parent_invite_token: string | null
+          parent_linked: boolean
+          streak_count: number
+          study_hours_per_day: number | null
+          target_college: string | null
           updated_at: string
           user_id: string
+          weak_subjects: string[] | null
         }
         Insert: {
           avatar_url?: string | null
+          city?: string | null
           created_at?: string
+          dismiss_parent_cta_at?: string | null
           email?: string | null
           id?: string
+          last_active_date?: string | null
           name?: string
+          onboarding_complete?: boolean
+          parent_invite_token?: string | null
+          parent_linked?: boolean
+          streak_count?: number
+          study_hours_per_day?: number | null
+          target_college?: string | null
           updated_at?: string
           user_id: string
+          weak_subjects?: string[] | null
         }
         Update: {
           avatar_url?: string | null
+          city?: string | null
           created_at?: string
+          dismiss_parent_cta_at?: string | null
           email?: string | null
           id?: string
+          last_active_date?: string | null
           name?: string
+          onboarding_complete?: boolean
+          parent_invite_token?: string | null
+          parent_linked?: boolean
+          streak_count?: number
+          study_hours_per_day?: number | null
+          target_college?: string | null
           updated_at?: string
           user_id?: string
+          weak_subjects?: string[] | null
         }
         Relationships: []
       }
@@ -340,6 +370,81 @@ export type Database = {
         }
         Relationships: []
       }
+      parent_links: {
+        Row: {
+          id: string
+          parent_id: string
+          student_id: string
+          relationship: string | null
+          linked_at: string
+          is_active: boolean
+          whatsapp_number: string | null
+          digest_opt_in: boolean
+          nudge_opt_in: boolean
+        }
+        Insert: {
+          id?: string
+          parent_id: string
+          student_id: string
+          relationship?: string | null
+          linked_at?: string
+          is_active?: boolean
+          whatsapp_number?: string | null
+          digest_opt_in?: boolean
+          nudge_opt_in?: boolean
+        }
+        Update: {
+          id?: string
+          parent_id?: string
+          student_id?: string
+          relationship?: string | null
+          linked_at?: string
+          is_active?: boolean
+          whatsapp_number?: string | null
+          digest_opt_in?: boolean
+          nudge_opt_in?: boolean
+        }
+        Relationships: []
+      }
+      user_subscriptions: {
+        Row: {
+          id: string
+          user_id: string
+          plan: string
+          price_paid: number | null
+          started_at: string
+          expires_at: string | null
+          razorpay_order_id: string | null
+          razorpay_payment_id: string | null
+          status: string
+          created_at: string
+        }
+        Insert: {
+          id?: string
+          user_id: string
+          plan?: string
+          price_paid?: number | null
+          started_at?: string
+          expires_at?: string | null
+          razorpay_order_id?: string | null
+          razorpay_payment_id?: string | null
+          status?: string
+          created_at?: string
+        }
+        Update: {
+          id?: string
+          user_id?: string
+          plan?: string
+          price_paid?: number | null
+          started_at?: string
+          expires_at?: string | null
+          razorpay_order_id?: string | null
+          razorpay_payment_id?: string | null
+          status?: string
+          created_at?: string
+        }
+        Relationships: []
+      }
     }
     Views: {
       [_ in never]: never
@@ -354,7 +459,7 @@ export type Database = {
       }
     }
     Enums: {
-      app_role: "student" | "admin"
+      app_role: "student" | "admin" | "parent"
     }
     CompositeTypes: {
       [_ in never]: never

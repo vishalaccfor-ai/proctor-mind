@@ -2,6 +2,7 @@ import React, { createContext, useContext, useState, useCallback } from "react";
 import { supabase } from "@/integrations/supabase/client";
 import { useAuth } from "@/contexts/AuthContext";
 import type { Json } from "@/integrations/supabase/types";
+import { sampleExams } from "@/data/sampleExams";
 
 // Types matching our DB schema
 export interface Subject { id: string; name: string; }
@@ -24,13 +25,15 @@ export interface Answer {
   markedForReview: boolean; timeSpent: number;
 }
 export interface SubjectResult {
-  subjectId: string; subjectName: string; totalQuestions: number;
+  subjectId: string; subjectName: string; subject?: string; totalQuestions: number;
   attempted: number; correct: number; incorrect: number;
   score: number; maxScore: number; accuracy: number; avgTimePerQuestion: number;
+  percentage?: number;
 }
 export interface QuestionResult {
   questionId: string; isCorrect: boolean; isAttempted: boolean;
   marksAwarded: number; timeSpent: number; subjectId: string; topicId: string;
+  selectedOptionId: string | null; correctOptionId: string;
 }
 export interface ExamResult {
   attemptId: string; examId: string; examTitle: string;
@@ -65,7 +68,17 @@ function calculateResult(exam: Exam, answers: Record<string, Answer>, attemptId:
     const marksAwarded = !isAttempted
       ? exam.markingScheme.unattempted
       : isCorrect ? exam.markingScheme.correct : exam.markingScheme.incorrect;
-    return { questionId: q.id, isCorrect, isAttempted, marksAwarded, timeSpent: answer?.timeSpent || 0, subjectId: q.subjectId, topicId: q.topicId };
+    return {
+      questionId: q.id,
+      isCorrect,
+      isAttempted,
+      marksAwarded,
+      timeSpent: answer?.timeSpent || 0,
+      subjectId: q.subjectId,
+      topicId: q.topicId,
+      selectedOptionId: answer?.selectedOptionId ?? null,
+      correctOptionId: q.correctOptionId,
+    };
   });
 
   const subjectMap = new Map<string, QuestionResult[]>();
@@ -79,12 +92,19 @@ function calculateResult(exam: Exam, answers: Record<string, Answer>, attemptId:
     const subject = exam.subjects.find((s) => s.id === subjectId);
     const attempted = qrs.filter((q) => q.isAttempted).length;
     const correct = qrs.filter((q) => q.isCorrect).length;
+    const accuracy = attempted > 0 ? (correct / attempted) * 100 : 0;
     return {
-      subjectId, subjectName: subject?.name || "Unknown", totalQuestions: qrs.length,
-      attempted, correct, incorrect: attempted - correct,
+      subjectId,
+      subjectName: subject?.name || "Unknown",
+      subject: subject?.name || "Unknown",
+      totalQuestions: qrs.length,
+      attempted,
+      correct,
+      incorrect: attempted - correct,
       score: qrs.reduce((s, q) => s + q.marksAwarded, 0),
       maxScore: qrs.length * exam.markingScheme.correct,
-      accuracy: attempted > 0 ? (correct / attempted) * 100 : 0,
+      accuracy,
+      percentage: accuracy,
       avgTimePerQuestion: qrs.length > 0 ? qrs.reduce((s, q) => s + q.timeSpent, 0) / qrs.length : 0,
     };
   });
@@ -114,8 +134,10 @@ export function ExamProvider({ children }: { children: React.ReactNode }) {
     setLoading(true);
     try {
       const { data: examRows, error } = await supabase.from("exams").select("*");
-      if (error) throw error;
-      if (!examRows) { setExams([]); return; }
+      if (error || !examRows || examRows.length === 0) {
+        setExams(sampleExams);
+        return;
+      }
 
       const examIds = examRows.map((e) => e.id);
       const { data: questionRows } = await supabase.from("questions").select("*").in("exam_id", examIds);
@@ -146,6 +168,9 @@ export function ExamProvider({ children }: { children: React.ReactNode }) {
         };
       });
       setExams(fullExams);
+    } catch (err) {
+      console.warn("Could not fetch exams from backend. Using sample exams.", err);
+      setExams(sampleExams);
     } finally {
       setLoading(false);
     }
@@ -155,15 +180,39 @@ export function ExamProvider({ children }: { children: React.ReactNode }) {
     if (!user) return;
     const { data, error } = await supabase.from("exam_results").select("*").eq("user_id", user.id).order("submitted_at", { ascending: false });
     if (error || !data) return;
-    setResults(data.map((r) => ({
-      attemptId: r.attempt_id, examId: r.exam_id, examTitle: r.exam_title,
-      totalScore: Number(r.total_score), maxScore: Number(r.max_score), percentage: Number(r.percentage),
-      totalQuestions: r.total_questions, attempted: r.attempted, correct: r.correct,
-      incorrect: r.incorrect, unattempted: r.unattempted,
-      subjectResults: (r.subject_results as any[]) || [],
-      questionResults: (r.question_results as any[]) || [],
-      timeTaken: r.time_taken, submittedAt: r.submitted_at,
-    })));
+    setResults(data.map((r) => {
+      const subjectResults = (r.subject_results as any[]) || [];
+      const normalizedSubjectResults = subjectResults.map((sr) => {
+        const attempted = sr.attempted ?? sr.attempted_count ?? 0;
+        const correct = sr.correct ?? 0;
+        const totalQuestions = sr.totalQuestions ?? sr.total_questions ?? sr.total_questions_count ?? 0;
+        const accuracy = sr.accuracy ?? (attempted > 0 ? (correct / attempted) * 100 : 0);
+        return {
+          subjectId: sr.subjectId ?? sr.subject_id ?? "",
+          subjectName: sr.subjectName ?? sr.subject_name ?? sr.subject ?? "Unknown",
+          subject: sr.subject ?? sr.subjectName ?? sr.subject_name ?? "Unknown",
+          totalQuestions,
+          attempted,
+          correct,
+          incorrect: sr.incorrect ?? (attempted - correct),
+          score: sr.score ?? 0,
+          maxScore: sr.maxScore ?? sr.max_score ?? 0,
+          accuracy,
+          percentage: sr.percentage ?? accuracy,
+          avgTimePerQuestion: sr.avgTimePerQuestion ?? sr.avg_time_per_question ?? 0,
+        };
+      });
+
+      return {
+        attemptId: r.attempt_id, examId: r.exam_id, examTitle: r.exam_title,
+        totalScore: Number(r.total_score), maxScore: Number(r.max_score), percentage: Number(r.percentage),
+        totalQuestions: r.total_questions, attempted: r.attempted, correct: r.correct,
+        incorrect: r.incorrect, unattempted: r.unattempted,
+        subjectResults: normalizedSubjectResults,
+        questionResults: (r.question_results as any[]) || [],
+        timeTaken: r.time_taken, submittedAt: r.submitted_at,
+      };
+    }));
   }, [user]);
 
   const createExam = useCallback(async (exam: Omit<Exam, "id" | "createdAt">): Promise<string> => {
@@ -203,18 +252,27 @@ export function ExamProvider({ children }: { children: React.ReactNode }) {
 
   const startAttempt = useCallback(async (examId: string): Promise<string> => {
     if (!user) throw new Error("Not authenticated");
-    const { data, error } = await supabase.from("exam_attempts").insert({
-      exam_id: examId, user_id: user.id, status: "in-progress",
-    }).select("id").single();
-    if (error || !data) throw error || new Error("Failed to start attempt");
-    return data.id;
+    try {
+      const { data, error } = await supabase.from("exam_attempts").insert({
+        exam_id: examId, user_id: user.id, status: "in-progress",
+      }).select("id").single();
+      if (error || !data) throw error || new Error("Failed to start attempt");
+      return data.id;
+    } catch (err) {
+      console.warn("Could not start attempt on backend. Falling back to local attempt.", err);
+      return `local-attempt-${examId}-${Date.now()}`;
+    }
   }, [user]);
 
   const saveAnswers = useCallback(async (attemptId: string, answers: Record<string, Answer>, tabSwitchCount: number) => {
-    await supabase.from("exam_attempts").update({
-      answers: answers as unknown as Json,
-      tab_switch_count: tabSwitchCount,
-    }).eq("id", attemptId);
+    try {
+      await supabase.from("exam_attempts").update({
+        answers: answers as unknown as Json,
+        tab_switch_count: tabSwitchCount,
+      }).eq("id", attemptId);
+    } catch (err) {
+      console.warn("Could not save answers to backend. Progress will remain local.", err);
+    }
   }, []);
 
   const submitAttempt = useCallback(async (
@@ -224,25 +282,33 @@ export function ExamProvider({ children }: { children: React.ReactNode }) {
     const now = new Date().toISOString();
 
     // Update attempt
-    await supabase.from("exam_attempts").update({
-      answers: answers as unknown as Json,
-      submitted_at: now, status: "submitted",
-    }).eq("id", attemptId);
+    try {
+      await supabase.from("exam_attempts").update({
+        answers: answers as unknown as Json,
+        submitted_at: now, status: "submitted",
+      }).eq("id", attemptId);
+    } catch (err) {
+      console.warn("Could not update attempt status on backend.", err);
+    }
 
     // Calculate result
     const result = calculateResult(exam, answers, attemptId, startedAt);
 
     // Save result
-    await supabase.from("exam_results").insert({
-      attempt_id: attemptId, exam_id: exam.id, user_id: user.id,
-      exam_title: exam.title, total_score: result.totalScore, max_score: result.maxScore,
-      percentage: result.percentage, total_questions: result.totalQuestions,
-      attempted: result.attempted, correct: result.correct, incorrect: result.incorrect,
-      unattempted: result.unattempted,
-      subject_results: result.subjectResults as unknown as Json,
-      question_results: result.questionResults as unknown as Json,
-      time_taken: result.timeTaken, submitted_at: now,
-    });
+    try {
+      await supabase.from("exam_results").insert({
+        attempt_id: attemptId, exam_id: exam.id, user_id: user.id,
+        exam_title: exam.title, total_score: result.totalScore, max_score: result.maxScore,
+        percentage: result.percentage, total_questions: result.totalQuestions,
+        attempted: result.attempted, correct: result.correct, incorrect: result.incorrect,
+        unattempted: result.unattempted,
+        subject_results: result.subjectResults as unknown as Json,
+        question_results: result.questionResults as unknown as Json,
+        time_taken: result.timeTaken, submitted_at: now,
+      });
+    } catch (err) {
+      console.warn("Could not save exam result to backend. Result will remain local.", err);
+    }
 
     setResults((prev) => [result, ...prev]);
     return result;
