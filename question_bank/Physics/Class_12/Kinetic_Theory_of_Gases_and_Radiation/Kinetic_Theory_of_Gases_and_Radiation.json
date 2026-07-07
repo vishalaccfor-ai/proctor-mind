@@ -1,0 +1,2401 @@
+{
+  "exam": "MHT-CET",
+  "subject": "Physics",
+  "grade": "12th",
+  "chapter": "Kinetic Theory of Gases and Radiation",
+  "total_questions": 92,
+  "questions": [
+    {
+      "id": 1,
+      "question": "According to the kinetic theory of gases, the molecules of an ideal gas possess",
+      "options": {
+        "A": "Only kinetic energy",
+        "B": "Both kinetic energy and potential energy",
+        "C": "Only potential energy",
+        "D": "Neither kinetic energy nor potential energy"
+      },
+      "correct_option": "A",
+      "correct_answer": "Only kinetic energy",
+      "explanation": "In an ideal gas, the intermolecular forces are assumed to be zero. Since potential energy arises due to intermolecular forces, ideal gas molecules possess only kinetic energy. The total internal energy of an ideal gas is purely kinetic in nature.",
+      "incorrect_option_explanations": {
+        "A": "",
+        "B": "Potential energy exists only when intermolecular forces are present. For an ideal gas, these forces are zero, so there is no potential energy.",
+        "C": "Potential energy requires intermolecular forces, which are absent in an ideal gas. Molecules are in constant motion, so they must have kinetic energy.",
+        "D": "Molecules of a gas are always in random motion, so they necessarily possess kinetic energy. This option contradicts the basic postulate of kinetic theory."
+      },
+      "concept": "Ideal gas - molecular energy",
+      "difficulty": "Easy",
+      "estimated_time_seconds": 30,
+      "marks": 1,
+      "chapter": "Kinetic Theory of Gases and Radiation",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Conceptual"
+    },
+    {
+      "id": 2,
+      "question": "The mean free path λ of gas molecules is given by the expression",
+      "options": {
+        "A": "λ = 1/(√2 π n d)",
+        "B": "λ = 1/(√2 π n d²)",
+        "C": "λ = 1/(π n d²)",
+        "D": "λ = √2/(π n d²)"
+      },
+      "correct_option": "B",
+      "correct_answer": "λ = 1/(√2 π n d²)",
+      "explanation": "The mean free path is the average distance travelled by a gas molecule between two successive collisions. The correct formula is λ = 1/(√2 π n d²), where n is the number density of molecules and d is the molecular diameter. The factor √2 accounts for the relative motion of molecules.",
+      "incorrect_option_explanations": {
+        "A": "This formula has d (diameter) instead of d² in the denominator. The collision cross-section depends on d², not d.",
+        "B": "",
+        "C": "This formula misses the √2 factor which arises due to the relative motion of molecules. The correct formula includes √2 in the denominator.",
+        "D": "This formula has √2 in the numerator instead of the denominator. The √2 factor should be in the denominator to account for relative motion."
+      },
+      "concept": "Mean free path formula",
+      "difficulty": "Easy",
+      "estimated_time_seconds": 35,
+      "marks": 1,
+      "chapter": "Kinetic Theory of Gases and Radiation",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Formula Based"
+    },
+    {
+      "id": 9,
+      "question": "Wien's displacement law states that the wavelength corresponding to maximum emission (λₘ) is",
+      "options": {
+        "A": "Directly proportional to absolute temperature",
+        "B": "Inversely proportional to absolute temperature",
+        "C": "Independent of absolute temperature",
+        "D": "Directly proportional to the square of absolute temperature"
+      },
+      "correct_option": "B",
+      "correct_answer": "Inversely proportional to absolute temperature",
+      "explanation": "Wien's displacement law states that λₘT = b (constant), where b is Wien's constant (2.897 × 10⁻³ m·K). Therefore, λₘ ∝ 1/T, meaning the peak wavelength is inversely proportional to the absolute temperature. As temperature increases, the peak shifts to shorter wavelengths.",
+      "incorrect_option_explanations": {
+        "A": "This is the opposite of Wien's law. Higher temperature means shorter peak wavelength, not longer.",
+        "B": "",
+        "C": "Wien's law explicitly shows that λₘ depends on temperature. The product λₘT is constant, so they are related.",
+        "D": "Wien's law involves a simple inverse proportionality (1/T), not an inverse square relationship (1/T²)."
+      },
+      "concept": "Wien's displacement law",
+      "difficulty": "Easy",
+      "estimated_time_seconds": 35,
+      "marks": 1,
+      "chapter": "Kinetic Theory of Gases and Radiation",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Conceptual"
+    },
+    {
+      "id": 10,
+      "question": "The dimensional formula of Stefan's constant σ is",
+      "options": {
+        "A": "[M¹ L⁰ T⁻³ K⁻⁴]",
+        "B": "[M¹ L⁰ T⁻² K⁻⁴]",
+        "C": "[M¹ L² T⁻³ K⁻⁴]",
+        "D": "[M⁰ L⁰ T⁻¹ K⁻⁴]"
+      },
+      "correct_option": "A",
+      "correct_answer": "[M¹ L⁰ T⁻³ K⁻⁴]",
+      "explanation": "From Stefan-Boltzmann law: E = σT⁴, where E is energy radiated per unit area per unit time (power per unit area). [E] = [ML²T⁻³]/[L²] = [MT⁻³]. Therefore, [σ] = [E]/[T⁴] = [MT⁻³]/[K⁴] = [M¹ L⁰ T⁻³ K⁻⁴].",
+      "incorrect_option_explanations": {
+        "A": "",
+        "B": "This has T⁻² instead of T⁻³. Power has dimensions [ML²T⁻³], so power per area is [MT⁻³], not [MT⁻²].",
+        "C": "This incorrectly includes L². Energy per unit area per unit time has no length dimension in the numerator after dividing by L².",
+        "D": "This misses the mass dimension entirely. Stefan's constant has mass dimension [M¹] because energy involves mass."
+      },
+      "concept": "Dimensional analysis of Stefan's constant",
+      "difficulty": "Medium",
+      "estimated_time_seconds": 70,
+      "marks": 1,
+      "chapter": "Kinetic Theory of Gases and Radiation",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Dimensional Analysis"
+    },
+    {
+      "id": 11,
+      "question": "The average kinetic energy per molecule of an ideal gas depends on",
+      "options": {
+        "A": "Pressure of the gas",
+        "B": "Volume of the gas",
+        "C": "Absolute temperature of the gas",
+        "D": "Nature of the gas molecules"
+      },
+      "correct_option": "C",
+      "correct_answer": "Absolute temperature of the gas",
+      "explanation": "The average kinetic energy per molecule of an ideal gas is given by (3/2)kT, where k is Boltzmann's constant and T is absolute temperature. It depends only on temperature and is independent of pressure, volume, or the nature of the gas.",
+      "incorrect_option_explanations": {
+        "A": "Pressure affects the number of collisions but not the average kinetic energy per molecule. At constant temperature, pressure can change without changing molecular kinetic energy.",
+        "B": "Volume changes at constant temperature do not affect the average kinetic energy per molecule. The energy depends only on temperature.",
+        "C": "",
+        "D": "The average kinetic energy per molecule is (3/2)kT for all ideal gases, regardless of their molecular mass or nature. This is a fundamental result of kinetic theory."
+      },
+      "concept": "Interpretation of temperature in kinetic theory",
+      "difficulty": "Easy",
+      "estimated_time_seconds": 35,
+      "marks": 1,
+      "chapter": "Kinetic Theory of Gases and Radiation",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Conceptual"
+    },
+    {
+      "id": 12,
+      "question": "The pressure exerted by a gas on the walls of the container is given by P = (1/3)mnv²_rms. In this expression, n represents",
+      "options": {
+        "A": "Total number of molecules",
+        "B": "Number of molecules per unit volume",
+        "C": "Number of moles of gas",
+        "D": "Avogadro's number"
+      },
+      "correct_option": "B",
+      "correct_answer": "Number of molecules per unit volume",
+      "explanation": "In the kinetic theory expression for pressure P = (1/3)mnv²_rms, n represents the number density, i.e., the number of molecules per unit volume. Here m is the mass of one molecule and v_rms is the root mean square speed.",
+      "incorrect_option_explanations": {
+        "A": "Total number of molecules is N, not n. The formula uses number density (molecules per unit volume) to give pressure in N/m².",
+        "B": "",
+        "C": "Number of moles would be represented by n in the ideal gas equation PV = nRT, but in the kinetic theory pressure formula, n is number density.",
+        "D": "Avogadro's number (Nₐ) is a constant (6.022 × 10²³ mol⁻¹) and is not the variable n in this formula."
+      },
+      "concept": "Pressure exerted by a gas - kinetic theory",
+      "difficulty": "Easy",
+      "estimated_time_seconds": 35,
+      "marks": 1,
+      "chapter": "Kinetic Theory of Gases and Radiation",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Conceptual"
+    },
+    {
+      "id": 13,
+      "question": "At what temperature will the RMS speed of oxygen molecules be the same as the RMS speed of helium molecules at -173°C? (Molecular mass of O₂ = 32, He = 4)",
+      "options": {
+        "A": "600 K",
+        "B": "800 K",
+        "C": "1000 K",
+        "D": "1200 K"
+      },
+      "correct_option": "B",
+      "correct_answer": "800 K",
+      "explanation": "For equal RMS speeds: v_rms(O₂) = v_rms(He). Using v_rms = √(3RT/M), we get T_O₂/M_O₂ = T_He/M_He. T_He = -173 + 273 = 100 K. So T_O₂ = T_He × (M_O₂/M_He) = 100 × (32/4) = 100 × 8 = 800 K.",
+      "incorrect_option_explanations": {
+        "A": "This might result from using T_He = 100 K and M_O₂/M_He = 6 instead of 8, giving 100 × 6 = 600 K.",
+        "B": "",
+        "C": "This might result from using T_He = 100 K but incorrectly using M_O₂/M_He = 10, or from using Celsius temperature -173 directly: (-173) × (32/4) is not valid.",
+        "D": "This might result from using T_He = 300 K (room temperature) or from incorrect algebra in the formula."
+      },
+      "concept": "RMS speed - temperature and molecular mass relation",
+      "difficulty": "Medium",
+      "estimated_time_seconds": 70,
+      "marks": 1,
+      "chapter": "Kinetic Theory of Gases and Radiation",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Numerical"
+    },
+    {
+      "id": 14,
+      "question": "A diathermanous substance is one that",
+      "options": {
+        "A": "Absorbs heat radiation completely",
+        "B": "Allows heat radiation to pass through it",
+        "C": "Reflects heat radiation completely",
+        "D": "Does not allow heat radiation to pass through it"
+      },
+      "correct_option": "B",
+      "correct_answer": "Allows heat radiation to pass through it",
+      "explanation": "A diathermanous substance is a material that allows heat radiation to pass through it without significant absorption. Examples include glass and certain gases. The opposite is an athermanous substance, which does not allow heat radiation to pass through.",
+      "incorrect_option_explanations": {
+        "A": "A body that absorbs all radiation is a perfect blackbody, not a diathermanous substance.",
+        "B": "",
+        "C": "A body that reflects all radiation is a perfect reflector, not a diathermanous substance.",
+        "D": "This describes an athermanous substance, which is the opposite of a diathermanous substance."
+      },
+      "concept": "Diathermanous substance",
+      "difficulty": "Easy",
+      "estimated_time_seconds": 30,
+      "marks": 1,
+      "chapter": "Kinetic Theory of Gases and Radiation",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Conceptual"
+    },
+    {
+      "id": 15,
+      "question": "The ratio of specific heats (γ = Cp/Cv) for a diatomic gas at moderate temperature is",
+      "options": {
+        "A": "1.4",
+        "B": "1.67",
+        "C": "1.33",
+        "D": "2.0"
+      },
+      "correct_option": "A",
+      "correct_answer": "1.4",
+      "explanation": "For a diatomic gas at moderate temperature, f = 5 degrees of freedom (3 translational + 2 rotational). Cv = (f/2)R = (5/2)R, Cp = Cv + R = (7/2)R. Therefore, γ = Cp/Cv = (7/2)R / (5/2)R = 7/5 = 1.4.",
+      "incorrect_option_explanations": {
+        "A": "",
+        "B": "This is the γ value for a monoatomic gas (5/3 ≈ 1.67). A diatomic gas has more degrees of freedom, giving a lower γ.",
+        "C": "This is the γ value for a polyatomic gas (4/3 ≈ 1.33). A diatomic gas at moderate temperature has f = 5.",
+        "D": "This would require Cv = Cp/2, which is impossible since Cp = Cv + R. The ratio cannot be 2 for any ideal gas."
+      },
+      "concept": "Ratio of specific heats for diatomic gas",
+      "difficulty": "Medium",
+      "estimated_time_seconds": 55,
+      "marks": 1,
+      "chapter": "Kinetic Theory of Gases and Radiation",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Formula Based"
+    },
+    {
+      "id": 16,
+      "question": "The energy radiated per unit area per unit time by a blackbody at temperature T is E. If the temperature is doubled, the new energy radiated will be",
+      "options": {
+        "A": "2E",
+        "B": "4E",
+        "C": "8E",
+        "D": "16E"
+      },
+      "correct_option": "D",
+      "correct_answer": "16E",
+      "explanation": "According to Stefan-Boltzmann law, E = σT⁴. If temperature is doubled (T' = 2T), then E' = σ(2T)⁴ = σ × 16T⁴ = 16σT⁴ = 16E. The energy radiated increases by a factor of 16.",
+      "incorrect_option_explanations": {
+        "A": "This assumes E ∝ T, which is incorrect. Stefan's law involves T⁴.",
+        "B": "This assumes E ∝ T², which is incorrect. The correct relationship is T⁴.",
+        "C": "This assumes E ∝ T³, which is incorrect. The exponent must be 4, not 3.",
+        "D": ""
+      },
+      "concept": "Stefan-Boltzmann law - temperature dependence",
+      "difficulty": "Easy",
+      "estimated_time_seconds": 40,
+      "marks": 1,
+      "chapter": "Kinetic Theory of Gases and Radiation",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Numerical"
+    },
+    {
+      "id": 17,
+      "question": "Mayer's relation for an ideal gas is",
+      "options": {
+        "A": "Cp - Cv = R",
+        "B": "Cp + Cv = R",
+        "C": "Cp/Cv = R",
+        "D": "Cp × Cv = R"
+      },
+      "correct_option": "A",
+      "correct_answer": "Cp - Cv = R",
+      "explanation": "Mayer's relation states that the difference between molar specific heat at constant pressure (Cp) and molar specific heat at constant volume (Cv) is equal to the universal gas constant R. This is derived from the first law of thermodynamics applied to an ideal gas.",
+      "incorrect_option_explanations": {
+        "A": "",
+        "B": "This is incorrect. The correct relation involves subtraction, not addition. Cp is always greater than Cv by an amount R.",
+        "C": "This incorrectly uses division. The ratio Cp/Cv = γ, which is dimensionless and not equal to R.",
+        "D": "This incorrectly uses multiplication. There is no physical basis for the product of specific heats equaling R."
+      },
+      "concept": "Mayer's relation",
+      "difficulty": "Easy",
+      "estimated_time_seconds": 30,
+      "marks": 1,
+      "chapter": "Kinetic Theory of Gases and Radiation",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Formula Based"
+    },
+    {
+      "id": 18,
+      "question": "The mean free path of gas molecules increases when",
+      "options": {
+        "A": "The number density increases",
+        "B": "The molecular diameter increases",
+        "C": "The temperature increases at constant pressure",
+        "D": "The pressure increases at constant temperature"
+      },
+      "correct_option": "C",
+      "correct_answer": "The temperature increases at constant pressure",
+      "explanation": "Mean free path λ = 1/(√2 π n d²) = kT/(√2 π d² P). At constant pressure, λ ∝ T. So when temperature increases at constant pressure, the mean free path increases. Alternatively, from λ = kT/(√2 π d² P), increasing T at constant P increases λ.",
+      "incorrect_option_explanations": {
+        "A": "Mean free path is inversely proportional to number density (λ ∝ 1/n). Increasing number density decreases the mean free path.",
+        "B": "Mean free path is inversely proportional to d² (λ ∝ 1/d²). Increasing molecular diameter decreases the mean free path.",
+        "C": "",
+        "D": "At constant temperature, λ ∝ 1/P. Increasing pressure decreases the mean free path as molecules are packed closer together."
+      },
+      "concept": "Mean free path - factors affecting it",
+      "difficulty": "Medium",
+      "estimated_time_seconds": 55,
+      "marks": 1,
+      "chapter": "Kinetic Theory of Gases and Radiation",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Conceptual"
+    },
+    {
+      "id": 19,
+      "question": "Kirchhoff's law of heat radiation states that",
+      "options": {
+        "A": "Good absorbers are poor emitters",
+        "B": "The ratio of emissive power to absorptive power is constant for all bodies at a given temperature and wavelength",
+        "C": "The emissive power is directly proportional to the fourth power of temperature",
+        "D": "The peak wavelength is inversely proportional to temperature"
+      },
+      "correct_option": "B",
+      "correct_answer": "The ratio of emissive power to absorptive power is constant for all bodies at a given temperature and wavelength",
+      "explanation": "Kirchhoff's law states that for any body in thermal equilibrium, the ratio of its emissive power (e) to its absorptive power (a) at a given temperature and wavelength is equal to the emissive power of a perfect blackbody at that temperature and wavelength. This ratio is constant for all bodies.",
+      "incorrect_option_explanations": {
+        "A": "This is the opposite of Kirchhoff's law. Good absorbers are actually good emitters at the same wavelength and temperature.",
+        "B": "",
+        "C": "This describes Stefan-Boltzmann law, not Kirchhoff's law. Stefan's law relates emissive power to temperature.",
+        "D": "This describes Wien's displacement law, not Kirchhoff's law. Wien's law relates peak wavelength to temperature."
+      },
+      "concept": "Kirchhoff's law of heat radiation",
+      "difficulty": "Medium",
+      "estimated_time_seconds": 45,
+      "marks": 1,
+      "chapter": "Kinetic Theory of Gases and Radiation",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Conceptual"
+    },
+    {
+      "id": 20,
+      "question": "The RMS speed of gas molecules at temperature T is v. If the temperature is increased to 4T, the new RMS speed will be",
+      "options": {
+        "A": "2v",
+        "B": "4v",
+        "C": "v/2",
+        "D": "v/4"
+      },
+      "correct_option": "A",
+      "correct_answer": "2v",
+      "explanation": "RMS speed v_rms = √(3RT/M). Therefore, v_rms ∝ √T. If temperature becomes 4T, the new RMS speed = √(4T/T) × v = √4 × v = 2v.",
+      "incorrect_option_explanations": {
+        "A": "",
+        "B": "This incorrectly assumes v_rms ∝ T. The correct relationship is v_rms ∝ √T, so the factor should be √4 = 2, not 4.",
+        "C": "This incorrectly assumes v_rms ∝ 1/√T. Higher temperature gives higher RMS speed, not lower.",
+        "D": "This incorrectly assumes v_rms ∝ 1/T. Temperature and RMS speed are directly related, not inversely."
+      },
+      "concept": "RMS speed - temperature dependence",
+      "difficulty": "Easy",
+      "estimated_time_seconds": 40,
+      "marks": 1,
+      "chapter": "Kinetic Theory of Gases and Radiation",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Numerical"
+    },
+    {
+      "id": 21,
+      "question": "A gas in a cylinder is at pressure P. If the mass of each molecule is reduced to one-third and their speeds are doubled, the new pressure will be",
+      "options": {
+        "A": "(2/3)P",
+        "B": "(4/3)P",
+        "C": "2P",
+        "D": "6P"
+      },
+      "correct_option": "B",
+      "correct_answer": "(4/3)P",
+      "explanation": "From kinetic theory, P = (1/3)mnv²_rms. New mass m' = m/3, new speed v'_rms = 2v_rms. New pressure P' = (1/3) × (m/3) × n × (2v_rms)² = (1/3) × (m/3) × n × 4v²_rms = (4/3) × (1/3)mnv²_rms = (4/3)P.",
+      "incorrect_option_explanations": {
+        "A": "This might result from calculating (m/3) × (2v) = (2/3)mv instead of (m/3) × (2v)² = (4/3)mv². The speed is squared in the pressure formula.",
+        "B": "",
+        "C": "This might result from ignoring the mass reduction and only considering the speed doubling: (2v)² = 4v², but without the 1/3 mass factor giving 4/3 instead of 4.",
+        "D": "This might result from multiplying all factors: (1/3) × 2 × 2 = 4/3, but incorrectly computing as 6 somehow, or confusing the formula."
+      },
+      "concept": "Pressure from kinetic theory - variable change",
+      "difficulty": "Medium",
+      "estimated_time_seconds": 65,
+      "marks": 1,
+      "chapter": "Kinetic Theory of Gases and Radiation",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Numerical"
+    },
+    {
+      "id": 22,
+      "question": "The peak wavelength in the spectrum of a blackbody at 5800 K is approximately 500 nm. If the temperature is raised to 11600 K, the new peak wavelength will be approximately",
+      "options": {
+        "A": "1000 nm",
+        "B": "250 nm",
+        "C": "500 nm",
+        "D": "125 nm"
+      },
+      "correct_option": "B",
+      "correct_answer": "250 nm",
+      "explanation": "Using Wien's displacement law: λₘT = constant. So λₘ₂/λₘ₁ = T₁/T₂. λₘ₂ = λₘ₁ × (T₁/T₂) = 500 × (5800/11600) = 500 × (1/2) = 250 nm.",
+      "incorrect_option_explanations": {
+        "A": "This incorrectly assumes λₘ ∝ T. Wien's law states λₘ ∝ 1/T, so higher temperature gives shorter wavelength, not longer.",
+        "B": "",
+        "C": "This assumes λₘ is independent of temperature, which contradicts Wien's displacement law.",
+        "D": "This might result from using λₘ₂ = λₘ₁ × (T₁/T₂)² = 500 × (1/4) = 125 nm. Wien's law involves inverse proportionality, not inverse square."
+      },
+      "concept": "Wien's displacement law - numerical application",
+      "difficulty": "Medium",
+      "estimated_time_seconds": 55,
+      "marks": 1,
+      "chapter": "Kinetic Theory of Gases and Radiation",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Numerical"
+    },
+    {
+      "id": 23,
+      "question": "For a real gas to behave like an ideal gas, the necessary conditions are",
+      "options": {
+        "A": "High pressure and low temperature",
+        "B": "Low pressure and high temperature",
+        "C": "High pressure and high temperature",
+        "D": "Low pressure and low temperature"
+      },
+      "correct_option": "B",
+      "correct_answer": "Low pressure and high temperature",
+      "explanation": "A real gas behaves like an ideal gas at low pressure and high temperature. At low pressure, molecules are far apart, so intermolecular forces become negligible. At high temperature, molecular kinetic energy is much larger than intermolecular potential energy, making the gas behave ideally.",
+      "incorrect_option_explanations": {
+        "A": "High pressure brings molecules closer, increasing intermolecular forces. Low temperature reduces kinetic energy, making potential energy significant. Both effects deviate from ideal behavior.",
+        "B": "",
+        "C": "High pressure brings molecules close together, making intermolecular forces significant. This causes deviation from ideal gas behavior.",
+        "D": "Low temperature means molecular kinetic energy is comparable to potential energy, causing deviation from ideal behavior."
+      },
+      "concept": "Real gas vs Ideal gas conditions",
+      "difficulty": "Easy",
+      "estimated_time_seconds": 40,
+      "marks": 1,
+      "chapter": "Kinetic Theory of Gases and Radiation",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Conceptual"
+    },
+    {
+      "id": 24,
+      "question": "The degrees of freedom for a rigid diatomic molecule at moderate temperature are",
+      "options": {
+        "A": "3",
+        "B": "5",
+        "C": "6",
+        "D": "7"
+      },
+      "correct_option": "B",
+      "correct_answer": "5",
+      "explanation": "A rigid diatomic molecule at moderate temperature has 3 translational degrees of freedom (motion along x, y, z axes) and 2 rotational degrees of freedom (rotation about two axes perpendicular to the molecular axis). Total = 3 + 2 = 5 degrees of freedom.",
+      "incorrect_option_explanations": {
+        "A": "This is the degrees of freedom for a monoatomic gas (only translational). A diatomic molecule has additional rotational degrees of freedom.",
+        "B": "",
+        "C": "This includes vibrational degrees of freedom, which are excited only at high temperatures. At moderate temperature, a diatomic molecule is treated as rigid with 5 degrees of freedom.",
+        "D": "This includes vibrational degrees of freedom (2 additional: kinetic and potential of vibration) at very high temperatures. Not applicable at moderate temperatures."
+      },
+      "concept": "Degrees of freedom - diatomic molecule",
+      "difficulty": "Easy",
+      "estimated_time_seconds": 35,
+      "marks": 1,
+      "chapter": "Kinetic Theory of Gases and Radiation",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Conceptual"
+    },
+    {
+      "id": 25,
+      "question": "The internal energy of 2 moles of a monoatomic ideal gas at temperature 300 K is (R = 8.31 J mol⁻¹ K⁻¹)",
+      "options": {
+        "A": "3740 J",
+        "B": "6232.5 J",
+        "C": "7479 J",
+        "D": "11218.5 J"
+      },
+      "correct_option": "C",
+      "correct_answer": "7479 J",
+      "explanation": "For a monoatomic gas, internal energy U = (3/2)nRT. Given n = 2 mol, T = 300 K, R = 8.31 J mol⁻¹ K⁻¹. U = (3/2) × 2 × 8.31 × 300 = 3 × 8.31 × 300 = 9 × 831 = 7479 J.",
+      "incorrect_option_explanations": {
+        "A": "This might result from using U = (1/2)nRT or from using n = 1 instead of n = 2.",
+        "B": "This might result from using U = (5/2)nRT (diatomic formula) or from a calculation error.",
+        "C": "",
+        "D": "This might result from using U = (5/2)nRT (diatomic gas formula) = (5/2) × 2 × 8.31 × 300 = 12465 J, or from using 3 moles instead of 2."
+      },
+      "concept": "Internal energy of monoatomic gas",
+      "difficulty": "Medium",
+      "estimated_time_seconds": 60,
+      "marks": 1,
+      "chapter": "Kinetic Theory of Gases and Radiation",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Numerical"
+    },
+    {
+      "id": 26,
+      "question": "The spectral distribution curve of blackbody radiation shows that as temperature increases",
+      "options": {
+        "A": "The peak shifts towards longer wavelengths and the height of the peak decreases",
+        "B": "The peak shifts towards shorter wavelengths and the height of the peak increases",
+        "C": "The peak shifts towards shorter wavelengths and the height of the peak decreases",
+        "D": "The peak remains at the same wavelength but the height increases"
+      },
+      "correct_option": "B",
+      "correct_answer": "The peak shifts towards shorter wavelengths and the height of the peak increases",
+      "explanation": "As temperature increases: (1) The peak wavelength shifts to shorter wavelengths (Wien's law: λₘ ∝ 1/T), and (2) the total energy radiated increases (Stefan's law: E ∝ T⁴), so the height of the peak increases. The curve becomes taller and shifts left.",
+      "incorrect_option_explanations": {
+        "A": "This has both effects reversed. Higher temperature shifts peak to shorter wavelengths (not longer) and increases height (not decreases).",
+        "B": "",
+        "C": "While the peak does shift to shorter wavelengths, the height increases with temperature due to Stefan's law, not decreases.",
+        "D": "The peak wavelength definitely shifts with temperature according to Wien's law. It does not remain constant."
+      },
+      "concept": "Spectral distribution of blackbody radiation",
+      "difficulty": "Medium",
+      "estimated_time_seconds": 50,
+      "marks": 1,
+      "chapter": "Kinetic Theory of Gases and Radiation",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Conceptual"
+    },
+    {
+      "id": 27,
+      "question": "The ratio of RMS speed to average speed of gas molecules is",
+      "options": {
+        "A": "√(3π/8)",
+        "B": "√(8/3π)",
+        "C": "√(2π/3)",
+        "D": "√(3/2π)"
+      },
+      "correct_option": "A",
+      "correct_answer": "√(3π/8)",
+      "explanation": "v_rms = √(3RT/M) and v_avg = √(8RT/πM). Therefore, v_rms/v_avg = √(3RT/M) / √(8RT/πM) = √(3π/8).",
+      "incorrect_option_explanations": {
+        "A": "",
+        "B": "This is the ratio of average speed to RMS speed (v_avg/v_rms), which is the reciprocal of the correct answer.",
+        "C": "This is an incorrect combination. The correct ratio involves 3π in the numerator and 8 in the denominator inside the square root.",
+        "D": "This is also incorrect. The correct ratio is √(3π/8) ≈ 1.085, meaning RMS speed is slightly greater than average speed."
+      },
+      "concept": "RMS speed vs Average speed ratio",
+      "difficulty": "Hard",
+      "estimated_time_seconds": 75,
+      "marks": 1,
+      "chapter": "Kinetic Theory of Gases and Radiation",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Formula Based"
+    },
+    {
+      "id": 28,
+      "question": "A blackbody of surface area 0.05 m² is maintained at 500 K. The power radiated by it is (σ = 5.67 × 10⁻⁸ W m⁻² K⁻⁴)",
+      "options": {
+        "A": "177.2 W",
+        "B": "354.4 W",
+        "C": "708.8 W",
+        "D": "1417.5 W"
+      },
+      "correct_option": "A",
+      "correct_answer": "177.2 W",
+      "explanation": "Using Stefan-Boltzmann law: P = σAT⁴ = 5.67 × 10⁻⁸ × 0.05 × (500)⁴ = 5.67 × 10⁻⁸ × 0.05 × 6.25 × 10¹⁰ = 5.67 × 0.05 × 625 = 5.67 × 31.25 = 177.1875 W ≈ 177.2 W.",
+      "incorrect_option_explanations": {
+        "A": "",
+        "B": "This might result from using A = 0.1 m² instead of 0.05 m², or from a calculation error doubling the correct answer.",
+        "C": "This might result from using A = 0.2 m² or from doubling the correct answer due to a calculation error.",
+        "D": "This might result from using A = 0.4 m² or from a significant error in the power calculation."
+      },
+      "concept": "Stefan-Boltzmann law - power radiated",
+      "difficulty": "Medium",
+      "estimated_time_seconds": 65,
+      "marks": 1,
+      "chapter": "Kinetic Theory of Gases and Radiation",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Numerical"
+    },
+    {
+      "id": 29,
+      "question": "An athermanous substance is one that",
+      "options": {
+        "A": "Allows heat radiation to pass through it",
+        "B": "Absorbs heat radiation and does not allow it to pass through",
+        "C": "Reflects all heat radiation",
+        "D": "Transmits all heat radiation"
+      },
+      "correct_option": "B",
+      "correct_answer": "Absorbs heat radiation and does not allow it to pass through",
+      "explanation": "An athermanous substance is a material that does not allow heat radiation to pass through it. It absorbs the radiation. Examples include wood, brick, and most opaque materials. The opposite is a diathermanous substance.",
+      "incorrect_option_explanations": {
+        "A": "This describes a diathermanous substance, which is the opposite of an athermanous substance.",
+        "B": "",
+        "C": "While an athermanous substance does not transmit radiation, it is characterized by absorption, not reflection. A perfect reflector is different.",
+        "D": "This describes a perfectly transparent or diathermanous substance, which is the opposite of an athermanous substance."
+      },
+      "concept": "Athermanous substance",
+      "difficulty": "Easy",
+      "estimated_time_seconds": 30,
+      "marks": 1,
+      "chapter": "Kinetic Theory of Gases and Radiation",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Conceptual"
+    },
+    {
+      "id": 30,
+      "question": "The pressure of an ideal gas is increased by 20% at constant temperature. The percentage decrease in volume is",
+      "options": {
+        "A": "20%",
+        "B": "16.67%",
+        "C": "50%",
+        "D": "75%"
+      },
+      "correct_option": "B",
+      "correct_answer": "16.67%",
+      "explanation": "For isothermal process, PV = constant. If P increases by 20%, new P' = 1.2P. Then V' = PV/P' = PV/(1.2P) = V/1.2 = 0.8333V. Decrease = V - 0.8333V = 0.1667V = 16.67% of V.",
+      "incorrect_option_explanations": {
+        "A": "This assumes volume changes by the same percentage as pressure. For inverse proportionality, the percentage changes are not equal.",
+        "B": "",
+        "C": "This might result from using V' = 0.5V or from an incorrect calculation of the percentage decrease.",
+        "D": "This might result from using V' = 0.25V or from a significant calculation error."
+      },
+      "concept": "Boyle's law - percentage volume decrease",
+      "difficulty": "Medium",
+      "estimated_time_seconds": 60,
+      "marks": 1,
+      "chapter": "Kinetic Theory of Gases and Radiation",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Numerical"
+    },
+    {
+      "id": 31,
+      "question": "The RMS speed of a gas at 27°C is 600 m/s. At 127°C the RMS speed will be approximately",
+      "options": {
+        "A": "600 m/s",
+        "B": "693 m/s",
+        "C": "750 m/s",
+        "D": "800 m/s"
+      },
+      "correct_option": "B",
+      "correct_answer": "693 m/s",
+      "explanation": "v_rms ∝ √T. T₁ = 27 + 273 = 300 K, T₂ = 127 + 273 = 400 K. v₂/v₁ = √(T₂/T₁) = √(400/300) = √(4/3) ≈ 1.155. v₂ = 600 × 1.155 ≈ 693 m/s.",
+      "incorrect_option_explanations": {
+        "A": "This assumes v_rms is independent of temperature, which is incorrect.",
+        "B": "",
+        "C": "This might result from using v_rms ∝ T directly: 600 × (400/300) = 800, then selecting a nearby value. Or from incorrect calculation.",
+        "D": "This results from using v_rms ∝ T instead of √T: 600 × (400/300) = 800. The correct relationship involves square root of temperature."
+      },
+      "concept": "RMS speed - temperature change",
+      "difficulty": "Medium",
+      "estimated_time_seconds": 60,
+      "marks": 1,
+      "chapter": "Kinetic Theory of Gases and Radiation",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Numerical"
+    },
+    {
+      "id": 32,
+      "question": "According to kinetic theory, the pressure of a gas is directly proportional to",
+      "options": {
+        "A": "The average speed of molecules",
+        "B": "The mean square speed of molecules",
+        "C": "The most probable speed of molecules",
+        "D": "The square root of mean square speed"
+      },
+      "correct_option": "B",
+      "correct_answer": "The mean square speed of molecules",
+      "explanation": "From kinetic theory, P = (1/3)mnv²_rms = (1/3)ρv²_rms, where v²_rms is the mean square speed. Therefore, pressure is directly proportional to the mean square speed of the molecules (P ∝ v²_rms).",
+      "incorrect_option_explanations": {
+        "A": "Pressure is proportional to v²_rms, not to average speed. The relationship involves the square of speed, not speed itself.",
+        "B": "",
+        "C": "Pressure depends on mean square speed, not most probable speed. These are different statistical measures of molecular speed.",
+        "D": "Pressure is proportional to v²_rms, not √v²_rms = v_rms. The square root relationship is incorrect."
+      },
+      "concept": "Pressure and molecular speed relationship",
+      "difficulty": "Easy",
+      "estimated_time_seconds": 35,
+      "marks": 1,
+      "chapter": "Kinetic Theory of Gases and Radiation",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Conceptual"
+    },
+    {
+      "id": 33,
+      "question": "The molar specific heat at constant pressure for a diatomic gas at moderate temperature is",
+      "options": {
+        "A": "(3/2)R",
+        "B": "(5/2)R",
+        "C": "(7/2)R",
+        "D": "4R"
+      },
+      "correct_option": "C",
+      "correct_answer": "(7/2)R",
+      "explanation": "For a diatomic gas at moderate temperature, f = 5 degrees of freedom. Cv = (f/2)R = (5/2)R. Using Mayer's relation, Cp = Cv + R = (5/2)R + R = (7/2)R.",
+      "incorrect_option_explanations": {
+        "A": "This is Cv for a monoatomic gas. A diatomic gas has more degrees of freedom and higher specific heats.",
+        "B": "This is Cv for a diatomic gas, not Cp. Cp is always greater than Cv by R.",
+        "C": "",
+        "D": "This would require Cv = 3R, meaning 6 degrees of freedom, which applies to polyatomic gases, not diatomic gases at moderate temperature."
+      },
+      "concept": "Specific heat at constant pressure - diatomic gas",
+      "difficulty": "Easy",
+      "estimated_time_seconds": 40,
+      "marks": 1,
+      "chapter": "Kinetic Theory of Gases and Radiation",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Formula Based"
+    },
+    {
+      "id": 34,
+      "question": "The temperature of a blackbody is such that λ_max = 2.9 μm. The temperature of the blackbody is (Wien's constant b = 2.897 × 10⁻³ m·K)",
+      "options": {
+        "A": "500 K",
+        "B": "1000 K",
+        "C": "1500 K",
+        "D": "2000 K"
+      },
+      "correct_option": "B",
+      "correct_answer": "1000 K",
+      "explanation": "Using Wien's displacement law: λ_max × T = b. T = b/λ_max = (2.897 × 10⁻³ m·K)/(2.9 × 10⁻⁶ m) = (2.897/2.9) × 10³ ≈ 0.999 × 1000 ≈ 1000 K.",
+      "incorrect_option_explanations": {
+        "A": "This might result from using λ_max = 2.9 × 10⁻³ m instead of 2.9 μm = 2.9 × 10⁻⁶ m, giving T = 2.897 × 10⁻³/2.9 × 10⁻³ ≈ 1 K, or from a unit conversion error.",
+        "B": "",
+        "C": "This might result from using an incorrect value of Wien's constant or from a calculation error.",
+        "D": "This might result from using λ_max = 1.45 μm or from halving the correct temperature."
+      },
+      "concept": "Wien's displacement law - temperature calculation",
+      "difficulty": "Medium",
+      "estimated_time_seconds": 55,
+      "marks": 1,
+      "chapter": "Kinetic Theory of Gases and Radiation",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Numerical"
+    },
+    {
+      "id": 35,
+      "question": "The average translational kinetic energy of a gas molecule at temperature T is",
+      "options": {
+        "A": "(1/2)kT",
+        "B": "kT",
+        "C": "(3/2)kT",
+        "D": "(5/2)kT"
+      },
+      "correct_option": "C",
+      "correct_answer": "(3/2)kT",
+      "explanation": "A gas molecule has 3 translational degrees of freedom. By equipartition theorem, energy per degree of freedom = (1/2)kT. Therefore, average translational kinetic energy = 3 × (1/2)kT = (3/2)kT.",
+      "incorrect_option_explanations": {
+        "A": "This is the energy per degree of freedom, not the total translational kinetic energy which has 3 degrees of freedom.",
+        "B": "This would be the energy for 2 degrees of freedom. Translational motion has 3 degrees of freedom.",
+        "C": "",
+        "D": "This includes 2 additional degrees of freedom (rotational), which applies to diatomic molecules' total energy, not just translational kinetic energy."
+      },
+      "concept": "Average kinetic energy per molecule",
+      "difficulty": "Easy",
+      "estimated_time_seconds": 35,
+      "marks": 1,
+      "chapter": "Kinetic Theory of Gases and Radiation",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Formula Based"
+    },
+    {
+      "id": 36,
+      "question": "Two vessels A and B contain the same gas. The volume of A is twice that of B, the temperature of A is twice that of B, and the pressure of A is twice that of B. The ratio of number of molecules in A to that in B is",
+      "options": {
+        "A": "1:1",
+        "B": "2:1",
+        "C": "4:1",
+        "D": "1:2"
+      },
+      "correct_option": "B",
+      "correct_answer": "2:1",
+      "explanation": "From ideal gas equation: PV = nRT, so N = nNₐ = (PV/RT)Nₐ. N_A/N_B = (P_A V_A T_B)/(P_B V_B T_A) = (2P_B × 2V_B × T_B)/(P_B × V_B × 2T_B) = (4/2) = 2. So the ratio is 2:1.",
+      "incorrect_option_explanations": {
+        "A": "This would be true only if all conditions were identical, but they are not. The doubled parameters don't cancel out completely.",
+        "B": "",
+        "C": "This results from multiplying all ratios (2 × 2 = 4) without considering that temperature is in the denominator: N ∝ PV/T, not PV×T.",
+        "D": "This inverts the correct ratio. More molecules are in vessel A due to larger volume and pressure, even though temperature is also higher."
+      },
+      "concept": "Ideal gas equation - number of molecules",
+      "difficulty": "Medium",
+      "estimated_time_seconds": 70,
+      "marks": 1,
+      "chapter": "Kinetic Theory of Gases and Radiation",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Numerical"
+    },
+    {
+      "id": 37,
+      "question": "The emissive power of a body is defined as",
+      "options": {
+        "A": "Total energy radiated by the body per unit area",
+        "B": "Total energy radiated by the body per unit time",
+        "C": "Total energy radiated by the body per unit area per unit time",
+        "D": "Total energy radiated by the body per unit volume"
+      },
+      "correct_option": "C",
+      "correct_answer": "Total energy radiated by the body per unit area per unit time",
+      "explanation": "Emissive power (or emissive power/ radiant emittance) is defined as the total energy radiated per unit area per unit time by a body. Its SI unit is W/m².",
+      "incorrect_option_explanations": {
+        "A": "This misses the 'per unit time' factor. Emissive power includes both area and time in the denominator.",
+        "B": "This misses the 'per unit area' factor. Emissive power is defined per unit area as well as per unit time.",
+        "C": "",
+        "D": "Emissive power is not defined per unit volume. It is defined per unit surface area per unit time."
+      },
+      "concept": "Emissive power definition",
+      "difficulty": "Easy",
+      "estimated_time_seconds": 30,
+      "marks": 1,
+      "chapter": "Kinetic Theory of Gases and Radiation",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Conceptual"
+    },
+    {
+      "id": 38,
+      "question": "The ratio of the RMS speed of hydrogen molecules to that of oxygen molecules at the same temperature is (Molecular mass of H₂ = 2, O₂ = 32)",
+      "options": {
+        "A": "1:4",
+        "B": "4:1",
+        "C": "2:1",
+        "D": "1:2"
+      },
+      "correct_option": "B",
+      "correct_answer": "4:1",
+      "explanation": "v_rms = √(3RT/M). At same temperature, v_rms ∝ 1/√M. v_rms(H₂)/v_rms(O₂) = √(M_O₂/M_H₂) = √(32/2) = √16 = 4. So the ratio is 4:1.",
+      "incorrect_option_explanations": {
+        "A": "This inverts the ratio and might result from using v_rms ∝ √M instead of 1/√M. Lighter molecules move faster, not slower.",
+        "B": "",
+        "C": "This might result from using v_rms ∝ 1/M instead of 1/√M, giving 32/2 = 16, then taking square root incorrectly as 2. Or from √(32/2) = √16 = 4 but mistakenly writing 2.",
+        "D": "This might result from using v_rms ∝ √M, giving √(2/32) = √(1/16) = 1/4, then inverting to 4:1 but writing 1:2 as a distractor. Or from taking square root of 2/32 = 1/4 as 1/2."
+      },
+      "concept": "RMS speed - molecular mass ratio",
+      "difficulty": "Easy",
+      "estimated_time_seconds": 45,
+      "marks": 1,
+      "chapter": "Kinetic Theory of Gases and Radiation",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Numerical"
+    },
+    {
+      "id": 39,
+      "question": "The absorptive power of a perfect blackbody is",
+      "options": {
+        "A": "0",
+        "B": "0.5",
+        "C": "1",
+        "D": "Infinity"
+      },
+      "correct_option": "C",
+      "correct_answer": "1",
+      "explanation": "A perfect blackbody absorbs all incident radiation completely. Therefore, its absorptive power (a) is 1. By Kirchhoff's law, it is also the best emitter at any given temperature and wavelength.",
+      "incorrect_option_explanations": {
+        "A": "This would mean the body reflects all radiation (perfect reflector), which is the opposite of a blackbody.",
+        "B": "This would mean the body absorbs only half the incident radiation. A perfect blackbody absorbs all radiation, not half.",
+        "C": "",
+        "D": "Absorptive power is a dimensionless quantity between 0 and 1. It cannot be infinity."
+      },
+      "concept": "Absorptive power of blackbody",
+      "difficulty": "Easy",
+      "estimated_time_seconds": 25,
+      "marks": 1,
+      "chapter": "Kinetic Theory of Gases and Radiation",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Conceptual"
+    },
+    {
+      "id": 40,
+      "question": "The internal energy of 1 mole of a diatomic gas at temperature T is",
+      "options": {
+        "A": "(3/2)RT",
+        "B": "(5/2)RT",
+        "C": "3RT",
+        "D": "(7/2)RT"
+      },
+      "correct_option": "B",
+      "correct_answer": "(5/2)RT",
+      "explanation": "For a diatomic gas at moderate temperature, f = 5 degrees of freedom (3 translational + 2 rotational). Internal energy U = (f/2)nRT = (5/2)RT for 1 mole.",
+      "incorrect_option_explanations": {
+        "A": "This is the internal energy of a monoatomic gas (f = 3). A diatomic gas has more degrees of freedom.",
+        "B": "",
+        "C": "This would require f = 6 degrees of freedom, which applies to polyatomic gases, not diatomic gases at moderate temperature.",
+        "D": "This would require f = 7 degrees of freedom, which includes vibrational modes at very high temperatures. Not applicable to diatomic gases at moderate temperature."
+      },
+      "concept": "Internal energy of diatomic gas",
+      "difficulty": "Easy",
+      "estimated_time_seconds": 40,
+      "marks": 1,
+      "chapter": "Kinetic Theory of Gases and Radiation",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Formula Based"
+    },
+    {
+      "id": 41,
+      "question": "The kinetic energy of 5 litres of a gas at STP is (Standard pressure = 1.013 × 10⁵ N/m²)",
+      "options": {
+        "A": "253.25 J",
+        "B": "506.5 J",
+        "C": "759.75 J",
+        "D": "1013 J"
+      },
+      "correct_option": "C",
+      "correct_answer": "759.75 J",
+      "explanation": "Kinetic energy of gas = (3/2)PV. At STP, P = 1.013 × 10⁵ N/m², V = 5 litres = 5 × 10⁻³ m³. KE = (3/2) × 1.013 × 10⁵ × 5 × 10⁻³ = (3/2) × 1.013 × 500 = (3/2) × 506.5 = 759.75 J.",
+      "incorrect_option_explanations": {
+        "A": "This might result from using KE = (1/2)PV instead of (3/2)PV, or from dividing the correct answer by 3.",
+        "B": "This is the value of PV (pressure × volume), not the kinetic energy. Kinetic energy is (3/2) times this value.",
+        "C": "",
+        "D": "This might result from using KE = 2PV or from incorrectly calculating with V = 10 litres instead of 5 litres."
+      },
+      "concept": "Kinetic energy of gas at STP",
+      "difficulty": "Medium",
+      "estimated_time_seconds": 65,
+      "marks": 1,
+      "chapter": "Kinetic Theory of Gases and Radiation",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Numerical"
+    },
+    {
+      "id": 42,
+      "question": "The rate of cooling of a body is directly proportional to the difference between its temperature and the surrounding temperature. This is known as",
+      "options": {
+        "A": "Stefan's law",
+        "B": "Wien's law",
+        "C": "Newton's law of cooling",
+        "D": "Kirchhoff's law"
+      },
+      "correct_option": "C",
+      "correct_answer": "Newton's law of cooling",
+      "explanation": "Newton's law of cooling states that the rate of cooling of a body is directly proportional to the temperature difference between the body and its surroundings, provided the temperature difference is small. This is different from Stefan's law which applies to radiation.",
+      "incorrect_option_explanations": {
+        "A": "Stefan's law states that the total energy radiated per unit area per unit time is proportional to T⁴. It does not involve temperature difference with surroundings.",
+        "B": "Wien's law relates the peak wavelength of blackbody radiation to temperature. It is not about cooling rates.",
+        "C": "",
+        "D": "Kirchhoff's law relates emissive power to absorptive power. It is not about the rate of cooling."
+      },
+      "concept": "Newton's law of cooling",
+      "difficulty": "Easy",
+      "estimated_time_seconds": 30,
+      "marks": 1,
+      "chapter": "Kinetic Theory of Gases and Radiation",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Conceptual"
+    },
+    {
+      "id": 43,
+      "question": "The most probable speed (v_mp), average speed (v_avg), and RMS speed (v_rms) of gas molecules are related as",
+      "options": {
+        "A": "v_mp < v_avg < v_rms",
+        "B": "v_rms < v_avg < v_mp",
+        "C": "v_avg < v_mp < v_rms",
+        "D": "v_mp = v_avg = v_rms"
+      },
+      "correct_option": "A",
+      "correct_answer": "v_mp < v_avg < v_rms",
+      "explanation": "For Maxwell-Boltzmann distribution: v_mp = √(2RT/M), v_avg = √(8RT/πM), v_rms = √(3RT/M). Numerically: √2 ≈ 1.414, √(8/π) ≈ 1.596, √3 ≈ 1.732. Therefore, v_mp < v_avg < v_rms.",
+      "incorrect_option_explanations": {
+        "A": "",
+        "B": "This reverses the order. The RMS speed is always the largest because it gives more weight to higher speeds through the square.",
+        "C": "This places average speed below most probable speed, which is incorrect. The average is pulled above the most probable by the tail of the distribution.",
+        "D": "These speeds are equal only in a hypothetical case, not for real gases following Maxwell-Boltzmann distribution."
+      },
+      "concept": "Comparison of molecular speeds",
+      "difficulty": "Medium",
+      "estimated_time_seconds": 50,
+      "marks": 1,
+      "chapter": "Kinetic Theory of Gases and Radiation",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Conceptual"
+    },
+    {
+      "id": 44,
+      "question": "The RMS speed of oxygen molecules at 0°C is 461 m/s. At what temperature will the RMS speed be 922 m/s?",
+      "options": {
+        "A": "273 K",
+        "B": "546 K",
+        "C": "819°C",
+        "D": "1092 K"
+      },
+      "correct_option": "D",
+      "correct_answer": "1092 K",
+      "explanation": "v_rms ∝ √T. Given v₂/v₁ = 922/461 = 2. Therefore, T₂/T₁ = (v₂/v₁)² = 4. T₁ = 0°C = 273 K. T₂ = 4 × 273 = 1092 K.",
+      "incorrect_option_explanations": {
+        "A": "This is the initial temperature. The temperature must increase for the RMS speed to double.",
+        "B": "This might result from using T₂ = 2T₁ instead of T₂ = 4T₁, confusing the square root relationship.",
+        "C": "This is 1092 K converted to Celsius (1092 - 273 = 819°C), but the question asks for temperature in Kelvin. Also, the option mixes units.",
+        "D": ""
+      },
+      "concept": "RMS speed - temperature for doubled speed",
+      "difficulty": "Medium",
+      "estimated_time_seconds": 65,
+      "marks": 1,
+      "chapter": "Kinetic Theory of Gases and Radiation",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Numerical"
+    },
+    {
+      "id": 45,
+      "question": "The SI unit of mean free path is",
+      "options": {
+        "A": "m²",
+        "B": "m⁻³",
+        "C": "m",
+        "D": "m/s"
+      },
+      "correct_option": "C",
+      "correct_answer": "m",
+      "explanation": "Mean free path is the average distance travelled by a molecule between two successive collisions. It is a distance, so its SI unit is metre (m).",
+      "incorrect_option_explanations": {
+        "A": "m² is the unit of area. Mean free path is a length, not an area.",
+        "B": "m⁻³ is the unit of number density (n). Mean free path is inversely related to number density but has units of length.",
+        "C": "",
+        "D": "m/s is the unit of speed. Mean free path is a distance, not a speed."
+      },
+      "concept": "Unit of mean free path",
+      "difficulty": "Easy",
+      "estimated_time_seconds": 25,
+      "marks": 1,
+      "chapter": "Kinetic Theory of Gases and Radiation",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Unit Conversion"
+    },
+    {
+      "id": 46,
+      "question": "The pressure of a gas in a container is P. If the number of molecules is doubled and the volume is halved, the new pressure at the same temperature will be",
+      "options": {
+        "A": "P",
+        "B": "2P",
+        "C": "4P",
+        "D": "P/2"
+      },
+      "correct_option": "C",
+      "correct_answer": "4P",
+      "explanation": "From ideal gas equation: P ∝ n/V at constant T. If n is doubled (2n) and V is halved (V/2), then P' ∝ 2n/(V/2) = 4n/V = 4P.",
+      "incorrect_option_explanations": {
+        "A": "This would be true if both n and V remained unchanged, but both have changed.",
+        "B": "This only considers the doubling of molecules but ignores the halving of volume. Both effects multiply the pressure.",
+        "C": "",
+        "D": "This inverts the relationship. Doubling molecules and halving volume both increase pressure, not decrease it."
+      },
+      "concept": "Ideal gas equation - combined change",
+      "difficulty": "Medium",
+      "estimated_time_seconds": 55,
+      "marks": 1,
+      "chapter": "Kinetic Theory of Gases and Radiation",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Numerical"
+    },
+    {
+      "id": 47,
+      "question": "The emissive power of a perfect blackbody depends on",
+      "options": {
+        "A": "The material of the body",
+        "B": "The nature of the surface",
+        "C": "Only the temperature of the body",
+        "D": "Both the material and the temperature"
+      },
+      "correct_option": "C",
+      "correct_answer": "Only the temperature of the body",
+      "explanation": "For a perfect blackbody, the emissive power is given by E = σT⁴ (Stefan-Boltzmann law). It depends only on the absolute temperature T and is independent of the material or nature of the surface. This is a defining characteristic of a perfect blackbody.",
+      "incorrect_option_explanations": {
+        "A": "For a perfect blackbody, emissive power is independent of material. All perfect blackbodies at the same temperature have the same emissive power.",
+        "B": "For a perfect blackbody, emissive power is independent of surface nature. This is what makes it 'perfect' - it is a universal function of temperature only.",
+        "C": "",
+        "D": "For real bodies, emissive power depends on both material and temperature. But for a perfect blackbody, it depends only on temperature."
+      },
+      "concept": "Emissive power of blackbody",
+      "difficulty": "Medium",
+      "estimated_time_seconds": 45,
+      "marks": 1,
+      "chapter": "Kinetic Theory of Gases and Radiation",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Conceptual"
+    },
+    {
+      "id": 48,
+      "question": "The ratio of Cp to Cv for a monoatomic gas is",
+      "options": {
+        "A": "1.4",
+        "B": "1.67",
+        "C": "1.33",
+        "D": "2.0"
+      },
+      "correct_option": "B",
+      "correct_answer": "1.67",
+      "explanation": "For a monoatomic gas, f = 3. Cv = (3/2)R, Cp = (5/2)R. γ = Cp/Cv = (5/2)R / (3/2)R = 5/3 ≈ 1.67.",
+      "incorrect_option_explanations": {
+        "A": "This is the γ value for a diatomic gas (7/5 = 1.4). A monoatomic gas has fewer degrees of freedom, giving a higher γ.",
+        "B": "",
+        "C": "This is the γ value for a polyatomic gas (4/3 ≈ 1.33). A monoatomic gas has γ = 5/3.",
+        "D": "This would require Cv = Cp/2, which is impossible since Cp = Cv + R. The ratio cannot be 2 for any ideal gas."
+      },
+      "concept": "Ratio of specific heats - monoatomic gas",
+      "difficulty": "Easy",
+      "estimated_time_seconds": 35,
+      "marks": 1,
+      "chapter": "Kinetic Theory of Gases and Radiation",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Formula Based"
+    },
+    {
+      "id": 49,
+      "question": "The number of molecules per unit volume of an ideal gas at STP is approximately",
+      "options": {
+        "A": "2.7 × 10²⁵ m⁻³",
+        "B": "2.7 × 10²⁶ m⁻³",
+        "C": "6.02 × 10²³ m⁻³",
+        "D": "22.4 × 10²⁶ m⁻³"
+      },
+      "correct_option": "A",
+      "correct_answer": "2.7 × 10²⁵ m⁻³",
+      "explanation": "At STP, 1 mole occupies 22.4 litres = 22.4 × 10⁻³ m³. Number density n = Nₐ/V = 6.022 × 10²³ / (22.4 × 10⁻³) = 6.022 × 10²³ / 0.0224 = 2.686 × 10²⁵ m⁻³ ≈ 2.7 × 10²⁵ m⁻³.",
+      "incorrect_option_explanations": {
+        "A": "",
+        "B": "This is approximately 10 times the correct value. It might result from using V = 2.24 litres instead of 22.4 litres.",
+        "C": "This is Avogadro's number per mole, not per unit volume. The unit m⁻³ is incorrect for this value - it should be mol⁻¹.",
+        "D": "This incorrectly combines 22.4 with 10²⁶ without proper calculation. The correct value is about 2.7 × 10²⁵ m⁻³."
+      },
+      "concept": "Loschmidt number - number density at STP",
+      "difficulty": "Medium",
+      "estimated_time_seconds": 65,
+      "marks": 1,
+      "chapter": "Kinetic Theory of Gases and Radiation",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Numerical"
+    },
+    {
+      "id": 50,
+      "question": "The average kinetic energy of a gas molecule at 27°C is",
+      "options": {
+        "A": "3.77 × 10⁻²¹ J",
+        "B": "6.21 × 10⁻²¹ J",
+        "C": "1.38 × 10⁻²³ J",
+        "D": "4.14 × 10⁻²¹ J"
+      },
+      "correct_option": "B",
+      "correct_answer": "6.21 × 10⁻²¹ J",
+      "explanation": "Average kinetic energy per molecule = (3/2)kT. T = 27 + 273 = 300 K, k = 1.38 × 10⁻²³ J/K. KE = (3/2) × 1.38 × 10⁻²³ × 300 = 1.5 × 1.38 × 300 × 10⁻²³ = 1.5 × 414 × 10⁻²³ = 621 × 10⁻²³ = 6.21 × 10⁻²¹ J.",
+      "incorrect_option_explanations": {
+        "A": "This might result from using T = 27°C = 27 K instead of 300 K, or from a calculation error.",
+        "B": "",
+        "C": "This is the value of Boltzmann's constant k itself, not the kinetic energy. The kinetic energy is (3/2)kT, not just k.",
+        "D": "This might result from using KE = kT (one degree of freedom) instead of (3/2)kT: 1.38 × 10⁻²³ × 300 = 4.14 × 10⁻²¹ J."
+      },
+      "concept": "Average kinetic energy calculation",
+      "difficulty": "Medium",
+      "estimated_time_seconds": 60,
+      "marks": 1,
+      "chapter": "Kinetic Theory of Gases and Radiation",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Numerical"
+    },
+    {
+      "id": 51,
+      "question": "The RMS speed of a gas molecule is proportional to",
+      "options": {
+        "A": "T",
+        "B": "√T",
+        "C": "T²",
+        "D": "1/T"
+      },
+      "correct_option": "B",
+      "correct_answer": "√T",
+      "explanation": "From v_rms = √(3RT/M), we see that v_rms ∝ √T. The RMS speed is directly proportional to the square root of the absolute temperature.",
+      "incorrect_option_explanations": {
+        "A": "This would be true if v_rms = constant × T, but the formula shows v_rms = √(3RT/M), which involves √T, not T.",
+        "B": "",
+        "C": "This would require v_rms ∝ T², which is incorrect. The exponent of T in the formula is 1/2, not 2.",
+        "D": "This would mean v_rms decreases as temperature increases, which is opposite to the actual behavior. Higher temperature means higher molecular speeds."
+      },
+      "concept": "RMS speed - temperature proportionality",
+      "difficulty": "Easy",
+      "estimated_time_seconds": 30,
+      "marks": 1,
+      "chapter": "Kinetic Theory of Gases and Radiation",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Conceptual"
+    },
+    {
+      "id": 52,
+      "question": "The energy radiated per second by a blackbody of area 0.02 m² at 1000 K is (σ = 5.67 × 10⁻⁸ W m⁻² K⁻⁴)",
+      "options": {
+        "A": "567 W",
+        "B": "1134 W",
+        "C": "2268 W",
+        "D": "7088 W"
+      },
+      "correct_option": "B",
+      "correct_answer": "1134 W",
+      "explanation": "P = σAT⁴ = 5.67 × 10⁻⁸ × 0.02 × (1000)⁴ = 5.67 × 10⁻⁸ × 0.02 × 10¹² = 5.67 × 0.02 × 10⁴ = 5.67 × 200 = 1134 W.",
+      "incorrect_option_explanations": {
+        "A": "This might result from using A = 0.01 m² instead of 0.02 m², or from a calculation error dividing by 2.",
+        "B": "",
+        "C": "This might result from using A = 0.04 m² or from doubling the correct answer.",
+        "D": "This might result from using A = 0.125 m² or from a significant error in the power calculation."
+      },
+      "concept": "Stefan-Boltzmann law - power radiated",
+      "difficulty": "Medium",
+      "estimated_time_seconds": 65,
+      "marks": 1,
+      "chapter": "Kinetic Theory of Gases and Radiation",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Numerical"
+    },
+    {
+      "id": 53,
+      "question": "The mean free path of air molecules at STP is approximately 0.1 μm. If the pressure is reduced to 0.1 atm at the same temperature, the mean free path becomes",
+      "options": {
+        "A": "0.01 μm",
+        "B": "0.1 μm",
+        "C": "1 μm",
+        "D": "10 μm"
+      },
+      "correct_option": "C",
+      "correct_answer": "1 μm",
+      "explanation": "At constant temperature, λ ∝ 1/P. If P is reduced to 0.1 atm (1/10 of original), λ increases by factor of 10. New λ = 10 × 0.1 μm = 1 μm.",
+      "incorrect_option_explanations": {
+        "A": "This assumes λ ∝ P, which is incorrect. Lower pressure means larger mean free path, not smaller.",
+        "B": "This assumes λ is independent of pressure, which is incorrect. Mean free path depends on number density, which depends on pressure.",
+        "C": "",
+        "D": "This might result from using λ ∝ 1/P² or from quadrupling instead of doubling."
+      },
+      "concept": "Mean free path - pressure dependence",
+      "difficulty": "Medium",
+      "estimated_time_seconds": 55,
+      "marks": 1,
+      "chapter": "Kinetic Theory of Gases and Radiation",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Numerical"
+    },
+    {
+      "id": 54,
+      "question": "The temperature of a gas is increased from 27°C to 927°C. The ratio of the RMS speed at the higher temperature to that at the lower temperature is",
+      "options": {
+        "A": "1:2",
+        "B": "2:1",
+        "C": "3:1",
+        "D": "4:1"
+      },
+      "correct_option": "B",
+      "correct_answer": "2:1",
+      "explanation": "T₁ = 27 + 273 = 300 K, T₂ = 927 + 273 = 1200 K. v_rms ∝ √T. v₂/v₁ = √(T₂/T₁) = √(1200/300) = √4 = 2. So the ratio is 2:1.",
+      "incorrect_option_explanations": {
+        "A": "This inverts the ratio. The RMS speed increases with temperature, so the higher temperature must have the larger speed.",
+        "B": "",
+        "C": "This might result from using v_rms ∝ T instead of √T: 1200/300 = 4, then taking square root incorrectly as 3, or from √(1200/300) = √4 = 2 but mistakenly writing 3.",
+        "D": "This results from using v_rms ∝ T instead of √T: T₂/T₁ = 1200/300 = 4. The correct relationship involves square root of temperature ratio."
+      },
+      "concept": "RMS speed ratio - temperature change",
+      "difficulty": "Easy",
+      "estimated_time_seconds": 50,
+      "marks": 1,
+      "chapter": "Kinetic Theory of Gases and Radiation",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Numerical"
+    },
+    {
+      "id": 55,
+      "question": "The specific heat at constant volume for a gas consisting of rigid triatomic molecules is",
+      "options": {
+        "A": "(3/2)R",
+        "B": "(5/2)R",
+        "C": "3R",
+        "D": "(7/2)R"
+      },
+      "correct_option": "C",
+      "correct_answer": "3R",
+      "explanation": "A rigid triatomic molecule has 6 degrees of freedom (3 translational + 3 rotational). Cv = (f/2)R = (6/2)R = 3R.",
+      "incorrect_option_explanations": {
+        "A": "This is Cv for a monoatomic gas (f = 3). A triatomic molecule has more degrees of freedom.",
+        "B": "This is Cv for a diatomic gas (f = 5). A triatomic molecule has 6 degrees of freedom.",
+        "C": "",
+        "D": "This would require f = 7 degrees of freedom, which includes vibrational modes. A rigid triatomic molecule has 6 degrees of freedom."
+      },
+      "concept": "Specific heat - triatomic molecule",
+      "difficulty": "Medium",
+      "estimated_time_seconds": 50,
+      "marks": 1,
+      "chapter": "Kinetic Theory of Gases and Radiation",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Formula Based"
+    },
+    {
+      "id": 56,
+      "question": "The peak wavelength in the spectrum of radiation from the Sun (surface temperature ≈ 5800 K) is approximately (b = 2.898 × 10⁻³ m·K)",
+      "options": {
+        "A": "500 nm",
+        "B": "1000 nm",
+        "C": "250 nm",
+        "D": "2000 nm"
+      },
+      "correct_option": "A",
+      "correct_answer": "500 nm",
+      "explanation": "Using Wien's law: λ_max = b/T = (2.898 × 10⁻³)/(5800) = 4.996 × 10⁻⁷ m ≈ 500 × 10⁻⁹ m = 500 nm.",
+      "incorrect_option_explanations": {
+        "A": "",
+        "B": "This might result from using T = 2900 K instead of 5800 K, or from doubling the correct wavelength.",
+        "C": "This might result from using T = 11600 K or from halving the correct wavelength.",
+        "D": "This might result from using T = 1450 K or from a significant calculation error."
+      },
+      "concept": "Wien's law - Sun's peak wavelength",
+      "difficulty": "Medium",
+      "estimated_time_seconds": 55,
+      "marks": 1,
+      "chapter": "Kinetic Theory of Gases and Radiation",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Numerical"
+    },
+    {
+      "id": 57,
+      "question": "According to kinetic theory, the pressure of a gas is directly proportional to",
+      "options": {
+        "A": "The average speed of molecules",
+        "B": "The mean square speed of molecules",
+        "C": "The most probable speed of molecules",
+        "D": "The square root of mean square speed"
+      },
+      "correct_option": "B",
+      "correct_answer": "The mean square speed of molecules",
+      "explanation": "From kinetic theory, P = (1/3)mnv²_rms = (1/3)ρv²_rms, where v²_rms is the mean square speed. Therefore, pressure is directly proportional to the mean square speed of the molecules (P ∝ v²_rms).",
+      "incorrect_option_explanations": {
+        "A": "Pressure is proportional to v²_rms, not to average speed. The relationship involves the square of speed, not speed itself.",
+        "B": "",
+        "C": "Pressure depends on mean square speed, not most probable speed. These are different statistical measures of molecular speed.",
+        "D": "Pressure is proportional to v²_rms, not √v²_rms = v_rms. The square root relationship is incorrect."
+      },
+      "concept": "Pressure and molecular speed relationship",
+      "difficulty": "Easy",
+      "estimated_time_seconds": 35,
+      "marks": 1,
+      "chapter": "Kinetic Theory of Gases and Radiation",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Conceptual"
+    },
+    {
+      "id": 58,
+      "question": "The ratio of the emissive power of a body to the emissive power of a perfect blackbody at the same temperature is called",
+      "options": {
+        "A": "Absorptive power",
+        "B": "Emissivity",
+        "C": "Reflecting power",
+        "D": "Transmitting power"
+      },
+      "correct_option": "B",
+      "correct_answer": "Emissivity",
+      "explanation": "Emissivity (ε) is defined as the ratio of the emissive power of a body to the emissive power of a perfect blackbody at the same temperature. For a perfect blackbody, ε = 1. For real bodies, 0 < ε < 1.",
+      "incorrect_option_explanations": {
+        "A": "Absorptive power is the ratio of absorbed radiation to incident radiation. It is not the ratio of emissive powers.",
+        "B": "",
+        "C": "Reflecting power is the ratio of reflected radiation to incident radiation. It is unrelated to emissive power ratio.",
+        "D": "Transmitting power is the ratio of transmitted radiation to incident radiation. It is unrelated to emissive power ratio."
+      },
+      "concept": "Emissivity definition",
+      "difficulty": "Easy",
+      "estimated_time_seconds": 30,
+      "marks": 1,
+      "chapter": "Kinetic Theory of Gases and Radiation",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Conceptual"
+    },
+    {
+      "id": 59,
+      "question": "The internal energy of 3 moles of a monoatomic ideal gas at 400 K is (R = 8.31 J mol⁻¹ K⁻¹)",
+      "options": {
+        "A": "4986 J",
+        "B": "7479 J",
+        "C": "9972 J",
+        "D": "14958 J"
+      },
+      "correct_option": "D",
+      "correct_answer": "14958 J",
+      "explanation": "For monoatomic gas, U = (3/2)nRT = (3/2) × 3 × 8.31 × 400 = (3/2) × 3 × 3324 = 1.5 × 9972 = 14958 J.",
+      "incorrect_option_explanations": {
+        "A": "This might result from using U = (1/2)nRT or from using n = 1 instead of n = 3.",
+        "B": "This is the internal energy for 2 moles at 300 K: (3/2) × 2 × 8.31 × 300 = 7479 J. The parameters in the question are different.",
+        "C": "This might result from omitting the factor of 3/2: nRT = 3 × 8.31 × 400 = 9972 J. But internal energy is (3/2)nRT for monoatomic gas.",
+        "D": ""
+      },
+      "concept": "Internal energy calculation - monoatomic gas",
+      "difficulty": "Medium",
+      "estimated_time_seconds": 60,
+      "marks": 1,
+      "chapter": "Kinetic Theory of Gases and Radiation",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Numerical"
+    },
+    {
+      "id": 60,
+      "question": "The kinetic energy of 1 mole of an ideal gas at temperature T is",
+      "options": {
+        "A": "(1/2)RT",
+        "B": "RT",
+        "C": "(3/2)RT",
+        "D": "(5/2)RT"
+      },
+      "correct_option": "C",
+      "correct_answer": "(3/2)RT",
+      "explanation": "The total translational kinetic energy of 1 mole of an ideal gas is U = (3/2)RT. This comes from 3 degrees of freedom × (1/2)RT per degree of freedom = (3/2)RT. This is also the internal energy of a monoatomic gas.",
+      "incorrect_option_explanations": {
+        "A": "This would be the kinetic energy for 1/3 mole or for one degree of freedom per mole. The total translational kinetic energy has 3 degrees of freedom.",
+        "B": "This would be the kinetic energy for 2 degrees of freedom per mole. Translational motion has 3 degrees of freedom.",
+        "C": "",
+        "D": "This includes 2 additional degrees of freedom (rotational), which applies to the total internal energy of a diatomic gas, not just translational kinetic energy."
+      },
+      "concept": "Kinetic energy per mole of ideal gas",
+      "difficulty": "Easy",
+      "estimated_time_seconds": 35,
+      "marks": 1,
+      "chapter": "Kinetic Theory of Gases and Radiation",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Formula Based"
+    },
+    {
+      "id": 61,
+      "question": "The temperature of a blackbody is increased from 200 K to 400 K. The energy radiated per unit area per unit time increases by a factor of",
+      "options": {
+        "A": "2",
+        "B": "4",
+        "C": "8",
+        "D": "16"
+      },
+      "correct_option": "D",
+      "correct_answer": "16",
+      "explanation": "By Stefan-Boltzmann law, E ∝ T⁴. E₂/E₁ = (T₂/T₁)⁴ = (400/200)⁴ = (2)⁴ = 16.",
+      "incorrect_option_explanations": {
+        "A": "This assumes E ∝ T, which is incorrect. Stefan's law involves T⁴.",
+        "B": "This assumes E ∝ T², which is incorrect. The correct exponent is 4, not 2.",
+        "C": "This assumes E ∝ T³, which is incorrect. The correct exponent is 4.",
+        "D": ""
+      },
+      "concept": "Stefan's law - temperature doubling",
+      "difficulty": "Easy",
+      "estimated_time_seconds": 40,
+      "marks": 1,
+      "chapter": "Kinetic Theory of Gases and Radiation",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Numerical"
+    },
+    {
+      "id": 62,
+      "question": "The number of degrees of freedom for a monoatomic gas molecule is",
+      "options": {
+        "A": "1",
+        "B": "2",
+        "C": "3",
+        "D": "5"
+      },
+      "correct_option": "C",
+      "correct_answer": "3",
+      "explanation": "A monoatomic gas molecule (like He, Ne, Ar) has only translational motion. It can move along x, y, and z axes, giving 3 translational degrees of freedom. It has no rotational or vibrational degrees of freedom.",
+      "incorrect_option_explanations": {
+        "A": "This would allow motion only along one direction. A molecule in 3D space can move in three independent directions.",
+        "B": "This would allow motion only in a plane. A gas molecule can move in all three dimensions.",
+        "C": "",
+        "D": "This is the degrees of freedom for a diatomic molecule at moderate temperature. A monoatomic molecule has only 3 degrees of freedom."
+      },
+      "concept": "Degrees of freedom - monoatomic gas",
+      "difficulty": "Easy",
+      "estimated_time_seconds": 25,
+      "marks": 1,
+      "chapter": "Kinetic Theory of Gases and Radiation",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Conceptual"
+    },
+    {
+      "id": 63,
+      "question": "A gas at pressure P and volume V is compressed isothermally to volume V/3. The new pressure is",
+      "options": {
+        "A": "P/3",
+        "B": "P",
+        "C": "3P",
+        "D": "9P"
+      },
+      "correct_option": "C",
+      "correct_answer": "3P",
+      "explanation": "For isothermal process, PV = constant. P₁V₁ = P₂V₂. P × V = P₂ × (V/3). P₂ = 3P.",
+      "incorrect_option_explanations": {
+        "A": "This assumes P ∝ V, which is incorrect. For isothermal process, P and V are inversely related.",
+        "B": "This assumes pressure remains constant, which is incorrect for an isothermal compression.",
+        "C": "",
+        "D": "This might result from using P ∝ 1/V² or from squaring the volume ratio incorrectly."
+      },
+      "concept": "Boyle's law - volume compression",
+      "difficulty": "Easy",
+      "estimated_time_seconds": 40,
+      "marks": 1,
+      "chapter": "Kinetic Theory of Gases and Radiation",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Numerical"
+    },
+    {
+      "id": 64,
+      "question": "The average speed of gas molecules is given by",
+      "options": {
+        "A": "√(3RT/M)",
+        "B": "√(8RT/πM)",
+        "C": "√(2RT/M)",
+        "D": "√(2RT/πM)"
+      },
+      "correct_option": "B",
+      "correct_answer": "√(8RT/πM)",
+      "explanation": "The average speed (mean speed) of gas molecules is given by v_avg = √(8RT/πM), where R is the gas constant, T is absolute temperature, and M is molar mass. This is derived from the Maxwell-Boltzmann distribution.",
+      "incorrect_option_explanations": {
+        "A": "This is the RMS speed, not the average speed. RMS speed is always greater than average speed.",
+        "B": "",
+        "C": "This is the most probable speed, not the average speed. The most probable speed is the speed at which the distribution function is maximum.",
+        "D": "This is an incorrect formula. The correct average speed formula has 8/π inside the square root, not 2/π."
+      },
+      "concept": "Average speed formula",
+      "difficulty": "Medium",
+      "estimated_time_seconds": 45,
+      "marks": 1,
+      "chapter": "Kinetic Theory of Gases and Radiation",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Formula Based"
+    },
+    {
+      "id": 65,
+      "question": "The rate of loss of heat by a body at temperature T surrounded by an enclosure at temperature T₀ is proportional to",
+      "options": {
+        "A": "T - T₀",
+        "B": "T⁴ - T₀⁴",
+        "C": "(T - T₀)⁴",
+        "D": "T⁴ + T₀⁴"
+      },
+      "correct_option": "B",
+      "correct_answer": "T⁴ - T₀⁴",
+      "explanation": "According to Stefan-Boltzmann law, a body at temperature T radiates energy at rate σT⁴ and absorbs from surroundings at rate σT₀⁴ (for a blackbody). The net rate of heat loss is proportional to (T⁴ - T₀⁴).",
+      "incorrect_option_explanations": {
+        "A": "This is Newton's law of cooling, which is an approximation for small temperature differences. The exact Stefan-Boltzmann law involves T⁴ - T₀⁴.",
+        "B": "",
+        "C": "This incorrectly places the temperature difference inside the fourth power. The correct expression is T⁴ - T₀⁴, not (T - T₀)⁴.",
+        "D": "This would mean the body gains heat when surrounded by a hotter enclosure, but the sign is wrong. The correct expression has subtraction, not addition."
+      },
+      "concept": "Net radiation rate - Stefan's law",
+      "difficulty": "Medium",
+      "estimated_time_seconds": 55,
+      "marks": 1,
+      "chapter": "Kinetic Theory of Gases and Radiation",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Conceptual"
+    },
+    {
+      "id": 66,
+      "question": "The kinetic energy of 2 moles of an ideal gas at 300 K is (R = 8.31 J mol⁻¹ K⁻¹)",
+      "options": {
+        "A": "2493 J",
+        "B": "3740 J",
+        "C": "4986 J",
+        "D": "7479 J"
+      },
+      "correct_option": "D",
+      "correct_answer": "7479 J",
+      "explanation": "KE = (3/2)nRT = (3/2) × 2 × 8.31 × 300 = 3 × 8.31 × 300 = 9 × 831 = 7479 J.",
+      "incorrect_option_explanations": {
+        "A": "This might result from using KE = (1/2)nRT = 0.5 × 2 × 8.31 × 300 = 2493 J.",
+        "B": "This might result from using n = 1 instead of n = 2: (3/2) × 1 × 8.31 × 300 = 3740 J.",
+        "C": "This might result from using T = 200 K instead of 300 K: (3/2) × 2 × 8.31 × 200 = 4986 J.",
+        "D": ""
+      },
+      "concept": "Kinetic energy of ideal gas - numerical",
+      "difficulty": "Medium",
+      "estimated_time_seconds": 55,
+      "marks": 1,
+      "chapter": "Kinetic Theory of Gases and Radiation",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Numerical"
+    },
+    {
+      "id": 67,
+      "question": "The most probable speed of gas molecules is given by",
+      "options": {
+        "A": "√(3RT/M)",
+        "B": "√(8RT/πM)",
+        "C": "√(2RT/M)",
+        "D": "√(5RT/2M)"
+      },
+      "correct_option": "C",
+      "correct_answer": "√(2RT/M)",
+      "explanation": "The most probable speed (v_mp) is the speed at which the Maxwell-Boltzmann distribution function is maximum. It is given by v_mp = √(2RT/M). This is the smallest of the three characteristic speeds.",
+      "incorrect_option_explanations": {
+        "A": "This is the RMS speed, which is the largest of the three characteristic speeds.",
+        "B": "This is the average speed, which lies between the most probable and RMS speeds.",
+        "C": "",
+        "D": "This is not a standard formula for any characteristic speed. It might be confused with the root mean square speed of a different distribution."
+      },
+      "concept": "Most probable speed formula",
+      "difficulty": "Medium",
+      "estimated_time_seconds": 45,
+      "marks": 1,
+      "chapter": "Kinetic Theory of Gases and Radiation",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Formula Based"
+    },
+    {
+      "id": 68,
+      "question": "A blackbody at 300 K radiates energy. If the temperature is raised to 600 K, the peak wavelength of radiation will",
+      "options": {
+        "A": "Remain the same",
+        "B": "Become half",
+        "C": "Become double",
+        "D": "Become four times"
+      },
+      "correct_option": "B",
+      "correct_answer": "Become half",
+      "explanation": "By Wien's displacement law, λ_max ∝ 1/T. If T is doubled, λ_max becomes half. λ_max₂/λ_max₁ = T₁/T₂ = 300/600 = 1/2.",
+      "incorrect_option_explanations": {
+        "A": "This contradicts Wien's law. The peak wavelength definitely changes with temperature.",
+        "B": "",
+        "C": "This assumes λ_max ∝ T, which is the opposite of Wien's law. Higher temperature means shorter peak wavelength.",
+        "D": "This assumes λ_max ∝ T² or some incorrect relationship. The correct relationship is inverse proportionality."
+      },
+      "concept": "Wien's law - peak wavelength change",
+      "difficulty": "Easy",
+      "estimated_time_seconds": 40,
+      "marks": 1,
+      "chapter": "Kinetic Theory of Gases and Radiation",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Conceptual"
+    },
+    {
+      "id": 69,
+      "question": "The pressure of an ideal gas is increased by 50% at constant temperature. The percentage increase in volume is",
+      "options": {
+        "A": "20%",
+        "B": "33.33%",
+        "C": "50%",
+        "D": "75%"
+      },
+      "correct_option": "B",
+      "correct_answer": "33.33%",
+      "explanation": "For isothermal process, PV = constant. If P decreases by 25%, new P' = 0.75P. Then V' = PV/P' = PV/(0.75P) = V/0.75 = (4/3)V. Increase = (4/3)V - V = V/3 = 33.33% of V.",
+      "incorrect_option_explanations": {
+        "A": "This might result from using P' = 0.8P or from an incorrect calculation of the percentage increase.",
+        "B": "",
+        "C": "This might result from using P' = 0.5P (50% decrease), giving V' = 2V and 100% increase, but selecting 50% as a distractor.",
+        "D": "This might result from using P' = 0.25P or from a significant calculation error."
+      },
+      "concept": "Boyle's law - percentage volume increase",
+      "difficulty": "Medium",
+      "estimated_time_seconds": 60,
+      "marks": 1,
+      "chapter": "Kinetic Theory of Gases and Radiation",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Numerical"
+    },
+    {
+      "id": 70,
+      "question": "The mean free path of a gas molecule is independent of",
+      "options": {
+        "A": "The square of the number density",
+        "B": "The square of the molecular diameter",
+        "C": "The temperature",
+        "D": "None of the above"
+      },
+      "correct_option": "D",
+      "correct_answer": "None of the above",
+      "explanation": "Mean free path λ = 1/(√2 π n d²) = kT/(√2 π d² P). It depends on number density (n), molecular diameter (d), and temperature (T) when pressure is constant. Therefore, it depends on all the listed factors. The answer is 'None of the above'.",
+      "incorrect_option_explanations": {
+        "A": "Mean free path is inversely proportional to number density. It definitely depends on n.",
+        "B": "Mean free path is inversely proportional to d². It definitely depends on molecular diameter.",
+        "C": "At constant pressure, mean free path is directly proportional to temperature. It depends on T.",
+        "D": ""
+      },
+      "concept": "Mean free path - factors",
+      "difficulty": "Medium",
+      "estimated_time_seconds": 50,
+      "marks": 1,
+      "chapter": "Kinetic Theory of Gases and Radiation",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Conceptual"
+    },
+    {
+      "id": 71,
+      "question": "The specific heat at constant pressure for a monoatomic gas is",
+      "options": {
+        "A": "(3/2)R",
+        "B": "(5/2)R",
+        "C": "3R",
+        "D": "(7/2)R"
+      },
+      "correct_option": "B",
+      "correct_answer": "(5/2)R",
+      "explanation": "For monoatomic gas, Cv = (3/2)R. Using Mayer's relation Cp = Cv + R = (3/2)R + R = (5/2)R.",
+      "incorrect_option_explanations": {
+        "A": "This is Cv for monoatomic gas, not Cp. Cp is always greater than Cv by R.",
+        "B": "",
+        "C": "This would require Cv = 2R, which is not correct for monoatomic gas. Cv = (3/2)R for monoatomic gas.",
+        "D": "This is Cp for diatomic gas. A monoatomic gas has fewer degrees of freedom, giving lower Cp."
+      },
+      "concept": "Specific heat at constant pressure - monoatomic gas",
+      "difficulty": "Easy",
+      "estimated_time_seconds": 35,
+      "marks": 1,
+      "chapter": "Kinetic Theory of Gases and Radiation",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Formula Based"
+    },
+    {
+      "id": 72,
+      "question": "The energy radiated in one minute by a blackbody of surface area 2 cm² at 727°C is (σ = 5.67 × 10⁻⁸ W m⁻² K⁻⁴)",
+      "options": {
+        "A": "170.1 J",
+        "B": "340.2 J",
+        "C": "680.4 J",
+        "D": "1360.8 J"
+      },
+      "correct_option": "C",
+      "correct_answer": "680.4 J",
+      "explanation": "T = 727 + 273 = 1000 K. A = 2 cm² = 2 × 10⁻⁴ m². Energy = σAT⁴t = 5.67 × 10⁻⁸ × 2 × 10⁻⁴ × (1000)⁴ × 60 = 5.67 × 10⁻⁸ × 2 × 10⁻⁴ × 10¹² × 60 = 5.67 × 2 × 60 = 680.4 J.",
+      "incorrect_option_explanations": {
+        "A": "This might result from using A = 0.5 cm² instead of 2 cm², or from a calculation error dividing by 4.",
+        "B": "This might result from using A = 1 cm² instead of 2 cm², or from omitting the factor of 2 in the area.",
+        "C": "",
+        "D": "This might result from using A = 4 cm² instead of 2 cm², or from doubling the correct answer."
+      },
+      "concept": "Stefan-Boltzmann law - energy calculation",
+      "difficulty": "Hard",
+      "estimated_time_seconds": 80,
+      "marks": 1,
+      "chapter": "Kinetic Theory of Gases and Radiation",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Numerical"
+    },
+    {
+      "id": 73,
+      "question": "The ratio of Cp to Cv for a polyatomic gas at moderate temperature is approximately",
+      "options": {
+        "A": "1.67",
+        "B": "1.4",
+        "C": "1.33",
+        "D": "1.0"
+      },
+      "correct_option": "C",
+      "correct_answer": "1.33",
+      "explanation": "For a polyatomic gas at moderate temperature, f = 6 degrees of freedom (3 translational + 3 rotational). Cv = (6/2)R = 3R, Cp = Cv + R = 4R. γ = Cp/Cv = 4R/3R = 4/3 ≈ 1.33.",
+      "incorrect_option_explanations": {
+        "A": "This is γ for monoatomic gas (5/3 ≈ 1.67). A polyatomic gas has more degrees of freedom, giving a lower γ.",
+        "B": "This is γ for diatomic gas (7/5 = 1.4). A polyatomic gas has even more degrees of freedom, giving a lower γ.",
+        "C": "",
+        "D": "This would mean Cp = Cv, which is impossible since Cp = Cv + R. The ratio must be greater than 1."
+      },
+      "concept": "Ratio of specific heats - polyatomic gas",
+      "difficulty": "Medium",
+      "estimated_time_seconds": 50,
+      "marks": 1,
+      "chapter": "Kinetic Theory of Gases and Radiation",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Formula Based"
+    },
+    {
+      "id": 74,
+      "question": "The RMS speed of a gas molecule is 400 m/s at 27°C. At what temperature will the RMS speed be 600 m/s?",
+      "options": {
+        "A": "450 K",
+        "B": "600 K",
+        "C": "675 K",
+        "D": "900 K"
+      },
+      "correct_option": "C",
+      "correct_answer": "675 K",
+      "explanation": "v_rms ∝ √T. v₂/v₁ = √(T₂/T₁). (600/400)² = T₂/T₁. (3/2)² = T₂/300. 9/4 = T₂/300. T₂ = 300 × 9/4 = 675 K.",
+      "incorrect_option_explanations": {
+        "A": "This might result from using T₂ = T₁ × (v₂/v₁) = 300 × 1.5 = 450 K, incorrectly using linear proportionality instead of square.",
+        "B": "This might result from using T₂ = T₁ × (v₂/v₁) = 300 × 2 = 600 K, or from some other incorrect proportionality.",
+        "C": "",
+        "D": "This might result from using T₂ = T₁ × (v₂/v₁)² = 300 × (600/400) but with incorrect calculation, or from T₂ = 300 × 3 = 900 K."
+      },
+      "concept": "RMS speed - temperature from speed ratio",
+      "difficulty": "Medium",
+      "estimated_time_seconds": 65,
+      "marks": 1,
+      "chapter": "Kinetic Theory of Gases and Radiation",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Numerical"
+    },
+    {
+      "id": 75,
+      "question": "The pressure of a gas is P. If the absolute temperature is doubled and the volume is halved, the new pressure will be",
+      "options": {
+        "A": "P",
+        "B": "2P",
+        "C": "4P",
+        "D": "P/2"
+      },
+      "correct_option": "C",
+      "correct_answer": "4P",
+      "explanation": "From ideal gas equation: P ∝ T/V. If T is doubled (2T) and V is halved (V/2), then P' ∝ 2T/(V/2) = 4T/V = 4P.",
+      "incorrect_option_explanations": {
+        "A": "This would be true if the effects of temperature and volume changes canceled out, but they multiply instead.",
+        "B": "This only considers the doubling of temperature but ignores the halving of volume. Both effects increase pressure.",
+        "C": "",
+        "D": "This inverts the relationship. Both changes (doubling T and halving V) increase pressure, not decrease it."
+      },
+      "concept": "Ideal gas equation - combined temperature and volume change",
+      "difficulty": "Medium",
+      "estimated_time_seconds": 55,
+      "marks": 1,
+      "chapter": "Kinetic Theory of Gases and Radiation",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Numerical"
+    },
+    {
+      "id": 76,
+      "question": "The temperature at which the RMS speed of hydrogen molecules equals the escape velocity from Earth's surface (11.2 km/s) is approximately (M_H₂ = 2 × 10⁻³ kg/mol, R = 8.31 J/mol·K)",
+      "options": {
+        "A": "5000 K",
+        "B": "10000 K",
+        "C": "15000 K",
+        "D": "20000 K"
+      },
+      "correct_option": "B",
+      "correct_answer": "10000 K",
+      "explanation": "v_rms = √(3RT/M). Given v_rms = 11.2 × 10³ m/s, M = 2 × 10⁻³ kg/mol. T = v²_rms × M / (3R) = (11.2 × 10³)² × 2 × 10⁻³ / (3 × 8.31) = 125.44 × 10⁶ × 2 × 10⁻³ / 24.93 = 250.88 × 10³ / 24.93 ≈ 10063 K ≈ 10000 K.",
+      "incorrect_option_explanations": {
+        "A": "This might result from using v = 11.2 km/s without converting to m/s, or from a calculation error with the formula.",
+        "B": "",
+        "C": "This might result from using M = 1 × 10⁻³ kg/mol (atomic hydrogen) instead of molecular hydrogen, or from a calculation error.",
+        "D": "This might result from using v = 22.4 km/s or from doubling the correct answer due to a formula error."
+      },
+      "concept": "RMS speed - escape velocity application",
+      "difficulty": "Hard",
+      "estimated_time_seconds": 90,
+      "marks": 1,
+      "chapter": "Kinetic Theory of Gases and Radiation",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Practical Application"
+    },
+    {
+      "id": 77,
+      "question": "The absorptive power of a body is defined as",
+      "options": {
+        "A": "Energy absorbed per unit area",
+        "B": "Energy absorbed per unit time",
+        "C": "Ratio of energy absorbed to energy incident",
+        "D": "Ratio of energy absorbed to energy reflected"
+      },
+      "correct_option": "C",
+      "correct_answer": "Ratio of energy absorbed to energy incident",
+      "explanation": "Absorptive power (a) is defined as the ratio of the energy absorbed by a body to the total energy incident on it, per unit area per unit time. It is a dimensionless quantity with value between 0 and 1.",
+      "incorrect_option_explanations": {
+        "A": "This describes total absorbed energy, not absorptive power. Absorptive power is a ratio, not an absolute quantity.",
+        "B": "This describes rate of absorption, not absorptive power. Absorptive power is a dimensionless ratio.",
+        "C": "",
+        "D": "This incorrectly compares absorbed energy to reflected energy. The correct comparison is with incident energy."
+      },
+      "concept": "Absorptive power definition",
+      "difficulty": "Easy",
+      "estimated_time_seconds": 30,
+      "marks": 1,
+      "chapter": "Kinetic Theory of Gases and Radiation",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Conceptual"
+    },
+    {
+      "id": 78,
+      "question": "The energy radiated per unit area per unit time by a body at 500 K with emissivity 0.1 is (σ = 5.67 × 10⁻⁸ W m⁻² K⁻⁴)",
+      "options": {
+        "A": "177.2 W/m²",
+        "B": "354.4 W/m²",
+        "C": "708.8 W/m²",
+        "D": "1417.5 W/m²"
+      },
+      "correct_option": "B",
+      "correct_answer": "354.4 W/m²",
+      "explanation": "E = εσT⁴ = 0.1 × 5.67 × 10⁻⁸ × (500)⁴ = 0.1 × 5.67 × 10⁻⁸ × 6.25 × 10¹⁰ = 0.1 × 3543.75 = 354.4 W/m².",
+      "incorrect_option_explanations": {
+        "A": "This might result from using ε = 0.05 instead of 0.1, or from a calculation error dividing by 2.",
+        "B": "",
+        "C": "This might result from using ε = 0.2 instead of 0.1, or from doubling the correct answer.",
+        "D": "This might result from using ε = 0.4 instead of 0.1, or from a significant calculation error."
+      },
+      "concept": "Emissivity - energy radiation from real body",
+      "difficulty": "Medium",
+      "estimated_time_seconds": 65,
+      "marks": 1,
+      "chapter": "Kinetic Theory of Gases and Radiation",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Numerical"
+    },
+    {
+      "id": 79,
+      "question": "The temperature of a gas is increased from 300 K to 600 K. The percentage increase in RMS speed is",
+      "options": {
+        "A": "25%",
+        "B": "41.4%",
+        "C": "50%",
+        "D": "100%"
+      },
+      "correct_option": "B",
+      "correct_answer": "41.4%",
+      "explanation": "v_rms ∝ √T. v₂/v₁ = √(T₂/T₁) = √(600/300) = √2 ≈ 1.414. Percentage increase = (1.414 - 1) × 100 = 41.4%.",
+      "incorrect_option_explanations": {
+        "A": "This might result from using v_rms ∝ T^(1/4) or from an incorrect square root calculation.",
+        "B": "",
+        "C": "This might result from using v_rms ∝ T/2 or from incorrectly taking half of the temperature ratio.",
+        "D": "This results from using v_rms ∝ T instead of √T: T₂/T₁ = 2, so 100% increase. The correct relationship involves square root."
+      },
+      "concept": "RMS speed - percentage increase",
+      "difficulty": "Medium",
+      "estimated_time_seconds": 60,
+      "marks": 1,
+      "chapter": "Kinetic Theory of Gases and Radiation",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Numerical"
+    },
+    {
+      "id": 80,
+      "question": "The mean free path of a gas molecule is inversely proportional to",
+      "options": {
+        "A": "The square of the number density",
+        "B": "The square of the molecular diameter",
+        "C": "The number density",
+        "D": "The molecular diameter"
+      },
+      "correct_option": "C",
+      "correct_answer": "The number density",
+      "explanation": "Mean free path λ = 1/(√2 π n d²), where n is number density and d is molecular diameter. Therefore, λ ∝ 1/n (inversely proportional to number density) and λ ∝ 1/d² (inversely proportional to square of molecular diameter).",
+      "incorrect_option_explanations": {
+        "A": "Mean free path is inversely proportional to n, not n². The formula has n in the denominator to the first power.",
+        "B": "Mean free path is inversely proportional to d², not d. The formula has d² in the denominator.",
+        "C": "",
+        "D": "Mean free path is inversely proportional to d², not d. The collision cross-section depends on d²."
+      },
+      "concept": "Mean free path - proportionality",
+      "difficulty": "Easy",
+      "estimated_time_seconds": 40,
+      "marks": 1,
+      "chapter": "Kinetic Theory of Gases and Radiation",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Conceptual"
+    },
+    {
+      "id": 81,
+      "question": "The kinetic energy of 1 kg of oxygen gas at 300 K is (Molecular mass of O₂ = 32, R = 8.31 J/mol·K)",
+      "options": {
+        "A": "1.17 × 10⁵ J",
+        "B": "1.95 × 10⁵ J",
+        "C": "2.34 × 10⁵ J",
+        "D": "3.90 × 10⁵ J"
+      },
+      "correct_option": "B",
+      "correct_answer": "1.95 × 10⁵ J",
+      "explanation": "For diatomic oxygen gas, total kinetic energy = (5/2)nRT (3 translational + 2 rotational degrees of freedom). n = 1000/32 = 31.25 mol. KE = (5/2) × 31.25 × 8.31 × 300 = 2.5 × 31.25 × 2493 = 194765.6 J ≈ 1.95 × 10⁵ J.",
+      "incorrect_option_explanations": {
+        "A": "This is the translational kinetic energy only (3/2)nRT. For a diatomic gas, the total kinetic energy includes rotational energy as well.",
+        "B": "",
+        "C": "This might result from using (6/2)nRT = 3nRT, which would apply to a polyatomic gas, not diatomic oxygen.",
+        "D": "This might result from using (7/2)nRT or from doubling the correct answer due to a calculation error."
+      },
+      "concept": "Kinetic energy of diatomic gas per unit mass",
+      "difficulty": "Hard",
+      "estimated_time_seconds": 85,
+      "marks": 1,
+      "chapter": "Kinetic Theory of Gases and Radiation",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Numerical"
+    },
+    {
+      "id": 82,
+      "question": "The rate of cooling of a body at 80°C in surroundings at 20°C is R. When the body cools to 60°C, the rate of cooling will be",
+      "options": {
+        "A": "R/2",
+        "B": "2R/3",
+        "C": "3R/4",
+        "D": "R"
+      },
+      "correct_option": "B",
+      "correct_answer": "2R/3",
+      "explanation": "By Newton's law of cooling, rate of cooling ∝ (T - T₀). Initially: rate ∝ (80 - 20) = 60. At 60°C: rate ∝ (60 - 20) = 40. New rate / Initial rate = 40/60 = 2/3. So new rate = (2/3)R.",
+      "incorrect_option_explanations": {
+        "A": "This assumes rate is proportional to T_body only, not temperature difference. The correct proportionality is with (T - T₀).",
+        "B": "",
+        "C": "This might result from using incorrect temperature differences or from a calculation error.",
+        "D": "This assumes rate is independent of temperature, which contradicts Newton's law of cooling."
+      },
+      "concept": "Newton's law of cooling - rate change",
+      "difficulty": "Medium",
+      "estimated_time_seconds": 60,
+      "marks": 1,
+      "chapter": "Kinetic Theory of Gases and Radiation",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Numerical"
+    },
+    {
+      "id": 83,
+      "question": "The temperature of a blackbody is such that λ_max = 1.45 μm. The temperature is approximately (b = 2.898 × 10⁻³ m·K)",
+      "options": {
+        "A": "1000 K",
+        "B": "1500 K",
+        "C": "2000 K",
+        "D": "2500 K"
+      },
+      "correct_option": "C",
+      "correct_answer": "2000 K",
+      "explanation": "Using Wien's law: T = b/λ_max = (2.898 × 10⁻³)/(1.45 × 10⁻⁶) = 2.898 × 10³/1.45 = 1998.6 K ≈ 2000 K.",
+      "incorrect_option_explanations": {
+        "A": "This might result from using λ_max = 2.9 μm instead of 1.45 μm, or from a unit conversion error.",
+        "B": "This might result from using λ_max = 1.93 μm or from an incorrect calculation.",
+        "C": "",
+        "D": "This might result from using λ_max = 1.16 μm or from a calculation error."
+      },
+      "concept": "Wien's law - temperature from peak wavelength",
+      "difficulty": "Medium",
+      "estimated_time_seconds": 55,
+      "marks": 1,
+      "chapter": "Kinetic Theory of Gases and Radiation",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Numerical"
+    },
+    {
+      "id": 84,
+      "question": "The internal energy of a gas depends on",
+      "options": {
+        "A": "Pressure and volume",
+        "B": "Volume and temperature",
+        "C": "Pressure and temperature",
+        "D": "Only temperature"
+      },
+      "correct_option": "D",
+      "correct_answer": "Only temperature",
+      "explanation": "For an ideal gas, the internal energy depends only on temperature. This is a fundamental property of ideal gases. From kinetic theory, U = (f/2)nRT, which shows U depends only on T (for fixed n).",
+      "incorrect_option_explanations": {
+        "A": "For an ideal gas, internal energy is independent of pressure and volume. It depends only on temperature.",
+        "B": "For an ideal gas, internal energy is independent of volume. It depends only on temperature.",
+        "C": "For an ideal gas, internal energy is independent of pressure. It depends only on temperature.",
+        "D": ""
+      },
+      "concept": "Internal energy of ideal gas",
+      "difficulty": "Easy",
+      "estimated_time_seconds": 35,
+      "marks": 1,
+      "chapter": "Kinetic Theory of Gases and Radiation",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Conceptual"
+    },
+    {
+      "id": 85,
+      "question": "The ratio of the RMS speed of helium to that of neon at the same temperature is (M_He = 4, M_Ne = 20)",
+      "options": {
+        "A": "1:5",
+        "B": "√5:1",
+        "C": "5:1",
+        "D": "1:√5"
+      },
+      "correct_option": "B",
+      "correct_answer": "√5:1",
+      "explanation": "v_rms ∝ 1/√M. v_He/v_Ne = √(M_Ne/M_He) = √(20/4) = √5. So the ratio is √5:1.",
+      "incorrect_option_explanations": {
+        "A": "This assumes v_rms ∝ 1/M instead of 1/√M. The correct relationship involves square root of molecular mass ratio.",
+        "B": "",
+        "C": "This assumes v_rms ∝ 1/M, giving 20/4 = 5. The correct relationship involves square root.",
+        "D": "This inverts the ratio. Helium is lighter, so it has higher RMS speed, not lower."
+      },
+      "concept": "RMS speed ratio - different gases",
+      "difficulty": "Medium",
+      "estimated_time_seconds": 50,
+      "marks": 1,
+      "chapter": "Kinetic Theory of Gases and Radiation",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Numerical"
+    },
+    {
+      "id": 86,
+      "question": "The pressure of a gas is P. If the RMS speed of molecules is doubled at constant volume and number of molecules, the new pressure will be",
+      "options": {
+        "A": "P",
+        "B": "2P",
+        "C": "4P",
+        "D": "P/4"
+      },
+      "correct_option": "C",
+      "correct_answer": "4P",
+      "explanation": "From kinetic theory, P = (1/3)mnv²_rms. At constant volume and number of molecules, P ∝ v²_rms. If v_rms is doubled, v²_rms becomes 4 times. Therefore, new pressure = 4P.",
+      "incorrect_option_explanations": {
+        "A": "This assumes pressure is independent of molecular speed, which contradicts kinetic theory.",
+        "B": "This assumes P ∝ v_rms instead of P ∝ v²_rms. The correct relationship involves the square of RMS speed.",
+        "C": "",
+        "D": "This inverts the relationship. Higher molecular speed means higher pressure, not lower."
+      },
+      "concept": "Pressure - RMS speed relationship",
+      "difficulty": "Medium",
+      "estimated_time_seconds": 50,
+      "marks": 1,
+      "chapter": "Kinetic Theory of Gases and Radiation",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Numerical"
+    },
+    {
+      "id": 87,
+      "question": "The temperature of a blackbody is increased from T to 3T. The energy radiated per unit area per unit time increases by a factor of",
+      "options": {
+        "A": "3",
+        "B": "9",
+        "C": "27",
+        "D": "81"
+      },
+      "correct_option": "D",
+      "correct_answer": "81",
+      "explanation": "By Stefan-Boltzmann law, E ∝ T⁴. E₂/E₁ = (3T/T)⁴ = 3⁴ = 81.",
+      "incorrect_option_explanations": {
+        "A": "This assumes E ∝ T, which is incorrect. Stefan's law involves T⁴.",
+        "B": "This assumes E ∝ T², which is incorrect. The correct exponent is 4.",
+        "C": "This assumes E ∝ T³, which is incorrect. The correct exponent is 4.",
+        "D": ""
+      },
+      "concept": "Stefan's law - temperature tripling",
+      "difficulty": "Easy",
+      "estimated_time_seconds": 40,
+      "marks": 1,
+      "chapter": "Kinetic Theory of Gases and Radiation",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Numerical"
+    },
+    {
+      "id": 88,
+      "question": "The mean free path of nitrogen molecules at STP is 0.1 μm. The mean free path at 0.5 atm and the same temperature will be",
+      "options": {
+        "A": "0.05 μm",
+        "B": "0.1 μm",
+        "C": "0.2 μm",
+        "D": "0.4 μm"
+      },
+      "correct_option": "C",
+      "correct_answer": "0.2 μm",
+      "explanation": "At constant temperature, λ ∝ 1/P. If P is halved (0.5 atm), λ doubles. New λ = 2 × 0.1 μm = 0.2 μm.",
+      "incorrect_option_explanations": {
+        "A": "This assumes λ ∝ P, which is incorrect. Lower pressure means larger mean free path.",
+        "B": "This assumes λ is independent of pressure, which is incorrect.",
+        "C": "",
+        "D": "This might result from using λ ∝ 1/P² or from quadrupling instead of doubling."
+      },
+      "concept": "Mean free path - pressure halving",
+      "difficulty": "Easy",
+      "estimated_time_seconds": 40,
+      "marks": 1,
+      "chapter": "Kinetic Theory of Gases and Radiation",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Numerical"
+    },
+    {
+      "id": 89,
+      "question": "The specific heat at constant volume for a gas with γ = 1.4 is",
+      "options": {
+        "A": "R/2",
+        "B": "3R/2",
+        "C": "5R/2",
+        "D": "7R/2"
+      },
+      "correct_option": "C",
+      "correct_answer": "5R/2",
+      "explanation": "γ = Cp/Cv = 1.4 = 7/5. Also Cp - Cv = R. Let Cv = x. Then Cp = x + R. (x + R)/x = 7/5. 5x + 5R = 7x. 2x = 5R. x = 5R/2. So Cv = 5R/2.",
+      "incorrect_option_explanations": {
+        "A": "This would give γ = Cp/Cv = (R/2 + R)/(R/2) = 3, which is not 1.4.",
+        "B": "This gives γ = (3R/2 + R)/(3R/2) = (5R/2)/(3R/2) = 5/3 ≈ 1.67, which is for monoatomic gas, not γ = 1.4.",
+        "C": "",
+        "D": "This gives γ = (7R/2 + R)/(7R/2) = (9R/2)/(7R/2) = 9/7 ≈ 1.29, which is not 1.4."
+      },
+      "concept": "Cv from gamma value",
+      "difficulty": "Hard",
+      "estimated_time_seconds": 75,
+      "marks": 1,
+      "chapter": "Kinetic Theory of Gases and Radiation",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Numerical"
+    },
+    {
+      "id": 90,
+      "question": "The kinetic energy of a gas molecule at temperature T is E. At temperature 2T, the kinetic energy will be",
+      "options": {
+        "A": "E",
+        "B": "2E",
+        "C": "4E",
+        "D": "E/2"
+      },
+      "correct_option": "B",
+      "correct_answer": "2E",
+      "explanation": "Kinetic energy per molecule = (3/2)kT. Therefore, KE ∝ T. If temperature is doubled, kinetic energy is also doubled.",
+      "incorrect_option_explanations": {
+        "A": "This assumes kinetic energy is independent of temperature, which contradicts the kinetic theory result KE = (3/2)kT.",
+        "B": "",
+        "C": "This might confuse kinetic energy with energy radiated (Stefan's law: E ∝ T⁴). Kinetic energy is proportional to T, not T⁴.",
+        "D": "This assumes kinetic energy decreases with temperature, which is opposite to the actual behavior."
+      },
+      "concept": "Kinetic energy - temperature proportionality",
+      "difficulty": "Easy",
+      "estimated_time_seconds": 30,
+      "marks": 1,
+      "chapter": "Kinetic Theory of Gases and Radiation",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Conceptual"
+    },
+    {
+      "id": 91,
+      "question": "The energy radiated per second by a spherical blackbody of radius 0.056 m at 1000 K is (σ = 5.67 × 10⁻⁸ W m⁻² K⁻⁴)",
+      "options": {
+        "A": "567 W",
+        "B": "1134 W",
+        "C": "2268 W",
+        "D": "4536 W"
+      },
+      "correct_option": "C",
+      "correct_answer": "2268 W",
+      "explanation": "Surface area A = 4πr² = 4 × 3.14 × (0.056)² ≈ 0.0394 m² ≈ 0.04 m². Power P = σAT⁴ = 5.67 × 10⁻⁸ × 0.04 × (1000)⁴ = 5.67 × 10⁻⁸ × 0.04 × 10¹² = 2268 W.",
+      "incorrect_option_explanations": {
+        "A": "This might result from using A = 0.01 m² or from a calculation error dividing by 4.",
+        "B": "This might result from using A = 0.02 m² or from halving the correct answer.",
+        "C": "",
+        "D": "This might result from using A = 0.08 m² or from doubling the correct answer."
+      },
+      "concept": "Stefan-Boltzmann law - spherical blackbody",
+      "difficulty": "Hard",
+      "estimated_time_seconds": 85,
+      "marks": 1,
+      "chapter": "Kinetic Theory of Gases and Radiation",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Numerical"
+    },
+    {
+      "id": 92,
+      "question": "The ratio of the RMS speed to the most probable speed of gas molecules is",
+      "options": {
+        "A": "√(3/2)",
+        "B": "√(2/3)",
+        "C": "√(3π/8)",
+        "D": "√(8/3π)"
+      },
+      "correct_option": "A",
+      "correct_answer": "√(3/2)",
+      "explanation": "v_rms = √(3RT/M), v_mp = √(2RT/M). v_rms/v_mp = √(3RT/M) / √(2RT/M) = √(3/2).",
+      "incorrect_option_explanations": {
+        "A": "",
+        "B": "This is the inverse ratio v_mp/v_rms. The RMS speed is greater than the most probable speed.",
+        "C": "This is the ratio v_rms/v_avg, not v_rms/v_mp.",
+        "D": "This is the ratio v_avg/v_rms. The question asks for v_rms/v_mp."
+      },
+      "concept": "RMS speed to most probable speed ratio",
+      "difficulty": "Hard",
+      "estimated_time_seconds": 70,
+      "marks": 1,
+      "chapter": "Kinetic Theory of Gases and Radiation",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Formula Based"
+    },
+    {
+      "id": 93,
+      "question": "The temperature of a gas is increased from 27°C to 327°C. The ratio of the average kinetic energy per molecule at the higher temperature to that at the lower temperature is",
+      "options": {
+        "A": "1:1",
+        "B": "1:2",
+        "C": "2:1",
+        "D": "4:1"
+      },
+      "correct_option": "C",
+      "correct_answer": "2:1",
+      "explanation": "Average kinetic energy per molecule = (3/2)kT. KE ∝ T. T₁ = 27 + 273 = 300 K, T₂ = 327 + 273 = 600 K. KE₂/KE₁ = T₂/T₁ = 600/300 = 2. So the ratio is 2:1.",
+      "incorrect_option_explanations": {
+        "A": "This assumes kinetic energy is independent of temperature, which is incorrect.",
+        "B": "This inverts the ratio. Higher temperature means higher kinetic energy.",
+        "C": "",
+        "D": "This might result from using KE ∝ T² or from squaring the temperature ratio incorrectly."
+      },
+      "concept": "Kinetic energy ratio - temperature change",
+      "difficulty": "Easy",
+      "estimated_time_seconds": 45,
+      "marks": 1,
+      "chapter": "Kinetic Theory of Gases and Radiation",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Numerical"
+    },
+    {
+      "id": 94,
+      "question": "The pressure of a gas is P. If the number of molecules is halved and the volume is doubled at constant temperature, the new pressure will be",
+      "options": {
+        "A": "P",
+        "B": "P/2",
+        "C": "P/4",
+        "D": "2P"
+      },
+      "correct_option": "C",
+      "correct_answer": "P/4",
+      "explanation": "From ideal gas equation: P ∝ n/V at constant T. If n is halved (n/2) and V is doubled (2V), then P' ∝ (n/2)/(2V) = n/(4V) = P/4.",
+      "incorrect_option_explanations": {
+        "A": "This would be true if both changes canceled out, but halving n and doubling V both decrease pressure.",
+        "B": "This only considers one of the two changes. Both halving n and doubling V decrease pressure, so they multiply.",
+        "C": "",
+        "D": "This inverts the relationship. Both changes decrease pressure, not increase it."
+      },
+      "concept": "Ideal gas equation - combined molecular and volume change",
+      "difficulty": "Medium",
+      "estimated_time_seconds": 55,
+      "marks": 1,
+      "chapter": "Kinetic Theory of Gases and Radiation",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Numerical"
+    },
+    {
+      "id": 95,
+      "question": "The emissivity of a perfect blackbody is",
+      "options": {
+        "A": "0",
+        "B": "0.5",
+        "C": "1",
+        "D": "Infinity"
+      },
+      "correct_option": "C",
+      "correct_answer": "1",
+      "explanation": "Emissivity is defined as the ratio of emissive power of a body to that of a perfect blackbody at the same temperature. For a perfect blackbody, this ratio is 1. For real bodies, 0 < ε < 1.",
+      "incorrect_option_explanations": {
+        "A": "This would mean the body does not emit any radiation, which is the opposite of a perfect blackbody.",
+        "B": "This would mean the body emits half the radiation of a perfect blackbody. A perfect blackbody emits the maximum possible radiation.",
+        "C": "",
+        "D": "Emissivity is a dimensionless ratio between 0 and 1. It cannot be infinity."
+      },
+      "concept": "Emissivity of perfect blackbody",
+      "difficulty": "Easy",
+      "estimated_time_seconds": 25,
+      "marks": 1,
+      "chapter": "Kinetic Theory of Gases and Radiation",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Conceptual"
+    },
+    {
+      "id": 96,
+      "question": "The RMS speed of oxygen molecules at 0°C is 461 m/s. The RMS speed at 819°C will be",
+      "options": {
+        "A": "922 m/s",
+        "B": "1383 m/s",
+        "C": "1844 m/s",
+        "D": "2305 m/s"
+      },
+      "correct_option": "A",
+      "correct_answer": "922 m/s",
+      "explanation": "T₁ = 0 + 273 = 273 K, T₂ = 819 + 273 = 1092 K. v_rms ∝ √T. v₂/v₁ = √(T₂/T₁) = √(1092/273) = √4 = 2. v₂ = 2 × 461 = 922 m/s.",
+      "incorrect_option_explanations": {
+        "A": "",
+        "B": "This might result from using v_rms ∝ T^(3/2) or from an incorrect calculation.",
+        "C": "This might result from using v_rms ∝ T instead of √T: T₂/T₁ = 4, so v₂ = 4 × 461 = 1844 m/s.",
+        "D": "This might result from using v_rms ∝ T² or from a significant calculation error."
+      },
+      "concept": "RMS speed - large temperature increase",
+      "difficulty": "Medium",
+      "estimated_time_seconds": 60,
+      "marks": 1,
+      "chapter": "Kinetic Theory of Gases and Radiation",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Numerical"
+    },
+    {
+      "id": 97,
+      "question": "The energy radiated per unit area per unit time by a blackbody at 1000 K is E. The energy radiated at 500 K will be",
+      "options": {
+        "A": "E/16",
+        "B": "E/8",
+        "C": "E/4",
+        "D": "E/2"
+      },
+      "correct_option": "A",
+      "correct_answer": "E/16",
+      "explanation": "By Stefan-Boltzmann law, E ∝ T⁴. E₂/E₁ = (T₂/T₁)⁴ = (500/1000)⁴ = (1/2)⁴ = 1/16. So E₂ = E/16.",
+      "incorrect_option_explanations": {
+        "A": "",
+        "B": "This assumes E ∝ T³, giving (1/2)³ = 1/8. The correct exponent is 4, not 3.",
+        "C": "This assumes E ∝ T², giving (1/2)² = 1/4. The correct exponent is 4, not 2.",
+        "D": "This assumes E ∝ T, giving 1/2. The correct exponent is 4, not 1."
+      },
+      "concept": "Stefan's law - temperature halving",
+      "difficulty": "Easy",
+      "estimated_time_seconds": 40,
+      "marks": 1,
+      "chapter": "Kinetic Theory of Gases and Radiation",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Numerical"
+    },
+    {
+      "id": 98,
+      "question": "The number of degrees of freedom for a rigid linear triatomic molecule is",
+      "options": {
+        "A": "3",
+        "B": "5",
+        "C": "6",
+        "D": "7"
+      },
+      "correct_option": "B",
+      "correct_answer": "5",
+      "explanation": "A rigid linear triatomic molecule (like CO₂) has 3 translational degrees of freedom and 2 rotational degrees of freedom (rotation about two axes perpendicular to the molecular axis). Total = 3 + 2 = 5 degrees of freedom. Note: This is the same as a diatomic molecule because the third atom lies on the same line.",
+      "incorrect_option_explanations": {
+        "A": "This is for a monoatomic gas. A linear triatomic molecule has more degrees of freedom.",
+        "B": "",
+        "C": "This is for a non-linear triatomic molecule (like H₂O) which has 3 rotational degrees of freedom. A linear molecule has only 2 rotational degrees of freedom.",
+        "D": "This includes vibrational degrees of freedom, which are not counted at moderate temperatures for a rigid molecule."
+      },
+      "concept": "Degrees of freedom - linear triatomic molecule",
+      "difficulty": "Hard",
+      "estimated_time_seconds": 65,
+      "marks": 1,
+      "chapter": "Kinetic Theory of Gases and Radiation",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Conceptual"
+    }
+  ]
+}

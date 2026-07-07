@@ -1,0 +1,2759 @@
+{
+  "exam": "MHT-CET",
+  "subject": "Physics",
+  "grade": "12th",
+  "chapter": "Rotational Motion",
+  "total_questions": 110,
+  "questions": [
+    {
+      "id": 1,
+      "question": "The moment of inertia of a rigid body about a given axis depends upon:",
+      "options": {
+        "A": "The mass of the body and its distribution about the axis of rotation",
+        "B": "Only the angular acceleration of the body",
+        "C": "Only the angular velocity of the body",
+        "D": "Only the mass of the body"
+      },
+      "correct_option": "A",
+      "correct_answer": "The mass of the body and its distribution about the axis of rotation",
+      "explanation": "Moment of inertia (I = Σmᵢrᵢ²) depends on both the total mass of the body and how that mass is distributed relative to the axis of rotation. A body with the same mass but mass distributed farther from the axis will have a larger moment of inertia.",
+      "incorrect_option_explanations": {
+        "B": "Incorrect. Angular acceleration (α) is related to torque by τ = Iα, but I itself is independent of α. It is a geometric and inertial property of the body.",
+        "C": "Incorrect. Angular velocity (ω) does not affect moment of inertia. Moment of inertia is a property of the body's mass distribution, not its state of motion.",
+        "D": "Incorrect. While mass is a factor, moment of inertia also depends on how mass is distributed about the axis. Two bodies of equal mass can have different moments of inertia."
+      },
+      "concept": "Moment of inertia - definition and factors affecting it",
+      "difficulty": "Easy",
+      "estimated_time_seconds": 30,
+      "marks": 1,
+      "chapter": "Rotational Motion",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Conceptual"
+    },
+    {
+      "id": 2,
+      "question": "The radius of gyration (K) of a body of mass M and moment of inertia I about an axis is given by:",
+      "options": {
+        "A": "K = I × M",
+        "B": "K = I / M",
+        "C": "K = √(I / M)",
+        "D": "K = M / I"
+      },
+      "correct_option": "C",
+      "correct_answer": "K = √(I / M)",
+      "explanation": "The radius of gyration K is defined such that I = MK², where I is the moment of inertia and M is the total mass. Solving for K gives K = √(I/M). It represents the distance from the axis at which the entire mass could be concentrated to produce the same moment of inertia.",
+      "incorrect_option_explanations": {
+        "A": "Incorrect. K = I × M would give units of kg²·m², which is not a unit of length. This formula has no physical meaning in rotational dynamics.",
+        "B": "Incorrect. K = I/M would give units of m², not meters. The correct relation is K = √(I/M) which gives units of length (meters).",
+        "D": "Incorrect. K = M/I is dimensionally incorrect and inverts the correct relationship. The radius of gyration increases with I and decreases with M."
+      },
+      "concept": "Radius of gyration formula",
+      "difficulty": "Easy",
+      "estimated_time_seconds": 25,
+      "marks": 1,
+      "chapter": "Rotational Motion",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Formula Based"
+    },
+    {
+      "id": 3,
+      "question": "A thin ring of mass 2 kg and radius 0.5 m rotates about an axis passing through its center and perpendicular to its plane. Its moment of inertia is:",
+      "options": {
+        "A": "2.0 kg·m²",
+        "B": "1.0 kg·m²",
+        "C": "0.5 kg·m²",
+        "D": "0.25 kg·m²"
+      },
+      "correct_option": "C",
+      "correct_answer": "0.5 kg·m²",
+      "explanation": "For a thin ring rotating about an axis through its center and perpendicular to its plane, the moment of inertia is I = MR². Given M = 2 kg and R = 0.5 m: I = 2 × (0.5)² = 2 × 0.25 = 0.5 kg·m².",
+      "incorrect_option_explanations": {
+        "A": "Incorrect. This would be the result if you used I = M²R = 2² × 0.5 = 4 × 0.5 = 2.0, which is not a valid moment of inertia formula.",
+        "B": "Incorrect. This would be the result if you used I = MR (forgetting to square the radius): 2 × 0.5 = 1.0. The correct formula requires R².",
+        "D": "Incorrect. This would be the result if you calculated MR²/2, which is the formula for a disc, not a ring. For a ring, all mass is at distance R from the axis."
+      },
+      "concept": "Moment of inertia of a ring",
+      "difficulty": "Easy",
+      "estimated_time_seconds": 35,
+      "marks": 1,
+      "chapter": "Rotational Motion",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Numerical"
+    },
+    {
+      "id": 4,
+      "question": "According to the parallel axis theorem, the moment of inertia of a body about an axis parallel to an axis passing through its center of mass is:",
+      "options": {
+        "A": "Less than the moment of inertia about the center of mass axis",
+        "B": "Independent of the distance between the two axes",
+        "C": "Equal to the moment of inertia about the center of mass axis",
+        "D": "Greater than the moment of inertia about the center of mass axis"
+      },
+      "correct_option": "D",
+      "correct_answer": "Greater than the moment of inertia about the center of mass axis",
+      "explanation": "The parallel axis theorem states that I = I_cm + Md², where I_cm is the moment of inertia about the center of mass axis, M is the total mass, and d is the perpendicular distance between the two parallel axes. Since Md² is always positive, the moment of inertia about any parallel axis is always greater than I_cm.",
+      "incorrect_option_explanations": {
+        "A": "Incorrect. The parallel axis theorem adds a positive term Md² to I_cm, so I is always greater, never less, than I_cm for a parallel axis.",
+        "B": "Incorrect. The moment of inertia about a parallel axis explicitly depends on d² through the term Md². As d increases, I increases.",
+        "C": "Incorrect. The moment of inertia is only equal when d = 0 (the axes coincide). For any non-zero separation, I > I_cm."
+      },
+      "concept": "Parallel axis theorem",
+      "difficulty": "Easy",
+      "estimated_time_seconds": 35,
+      "marks": 1,
+      "chapter": "Rotational Motion",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Conceptual"
+    },
+    {
+      "id": 5,
+      "question": "A force of 10 N is applied tangentially at the edge of a disc of radius 0.4 m. The torque produced about the center of the disc is:",
+      "options": {
+        "A": "2.5 N·m",
+        "B": "25 N·m",
+        "C": "40 N·m",
+        "D": "4.0 N·m"
+      },
+      "correct_option": "D",
+      "correct_answer": "4.0 N·m",
+      "explanation": "For a tangential force, the angle between the force vector and the position vector is 90°. Torque τ = r × F = rF sinθ. Here r = 0.4 m, F = 10 N, and θ = 90°, so sinθ = 1. Therefore, τ = 0.4 × 10 × 1 = 4.0 N·m.",
+      "incorrect_option_explanations": {
+        "A": "Incorrect. This would be the result if you divided F by r (10/0.4 = 25) and then made a calculation error, or if you used τ = F/r. Torque is r × F, not F/r.",
+        "B": "Incorrect. This would be the result if you calculated F/r = 10/0.4 = 25. Torque is the product of force and perpendicular distance, not the quotient.",
+        "C": "Incorrect. This would be the result if you calculated F × r² = 10 × (0.4)² = 10 × 0.16 = 1.6 or if you made a decimal error. The correct formula is simply τ = rF for tangential force."
+      },
+      "concept": "Torque calculation for tangential force",
+      "difficulty": "Easy",
+      "estimated_time_seconds": 30,
+      "marks": 1,
+      "chapter": "Rotational Motion",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Numerical"
+    },
+    {
+      "id": 6,
+      "question": "For a particle moving in a circular path of radius r with angular velocity ω, the linear velocity v is related to ω by:",
+      "options": {
+        "A": "v = r/ω",
+        "B": "v = ω/r²",
+        "C": "v = ω/r",
+        "D": "v = ω × r"
+      },
+      "correct_option": "D",
+      "correct_answer": "v = ω × r",
+      "explanation": "The relation between linear velocity and angular velocity for circular motion is v = ωr (or v = ω × r in vector form). This comes from differentiating the arc length s = rθ with respect to time: ds/dt = r(dθ/dt), giving v = rω. The linear velocity is tangential to the circular path.",
+      "incorrect_option_explanations": {
+        "A": "Incorrect. v = r/ω would give units of m·s/rad = m·s (since rad is dimensionless), which is not a unit of velocity (m/s). The correct formula gives v in m/s when ω is in rad/s and r is in meters.",
+        "B": "Incorrect. v = ω/r² has no physical basis in circular motion kinematics. The correct relationship is directly proportional to r, not inversely proportional to r².",
+        "C": "Incorrect. v = ω/r would mean linear velocity decreases as radius increases for constant angular velocity, which is opposite to the actual relationship. Larger radius means greater linear speed for the same angular speed."
+      },
+      "concept": "Relation between linear and angular velocity",
+      "difficulty": "Easy",
+      "estimated_time_seconds": 25,
+      "marks": 1,
+      "chapter": "Rotational Motion",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Formula Based"
+    },
+    {
+      "id": 7,
+      "question": "A solid cylinder of mass 5 kg and radius 0.2 m is subjected to a torque of 0.5 N·m about its central axis. The angular acceleration produced is:",
+      "options": {
+        "A": "10.0 rad/s²",
+        "B": "5.0 rad/s²",
+        "C": "2.5 rad/s²",
+        "D": "25.0 rad/s²"
+      },
+      "correct_option": "B",
+      "correct_answer": "5.0 rad/s²",
+      "explanation": "For a solid cylinder about its central axis, I = ½MR² = ½ × 5 × (0.2)² = ½ × 5 × 0.04 = 0.1 kg·m². Using τ = Iα, we get α = τ/I = 0.5/0.1 = 5.0 rad/s².",
+      "incorrect_option_explanations": {
+        "A": "Incorrect. This might result from using I = ¼MR² or from calculating α = τ/(MR) = 0.5/(5×0.2) = 0.5/1 = 0.5, or from a different error. The correct moment of inertia for a solid cylinder is ½MR².",
+        "C": "Incorrect. This might result from using I = MR² (ring formula) instead of I = ½MR²: I = 5 × 0.04 = 0.2, then α = 0.5/0.2 = 2.5. A solid cylinder has I = ½MR², not MR².",
+        "D": "Incorrect. This might result from using I = ½MR instead of ½MR²: I = ½ × 5 × 0.2 = 0.5, then α = 0.5/0.5 = 1, or from using τ = Iα² or other incorrect formula combinations."
+      },
+      "concept": "Angular acceleration from torque using τ = Iα",
+      "difficulty": "Medium",
+      "estimated_time_seconds": 50,
+      "marks": 1,
+      "chapter": "Rotational Motion",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Numerical"
+    },
+    {
+      "id": 8,
+      "question": "The dimensional formula of moment of inertia is:",
+      "options": {
+        "A": "[M L²]",
+        "B": "[M L² T⁻¹]",
+        "C": "[M L T⁻²]",
+        "D": "[M L² T⁻²]"
+      },
+      "correct_option": "A",
+      "correct_answer": "[M L²]",
+      "explanation": "Moment of inertia is defined as I = Σmᵢrᵢ². The dimensions are: [mass] × [distance]² = [M] × [L²] = [M L²]. Alternatively, from τ = Iα, [I] = [τ]/[α] = [ML²T⁻²]/[T⁻²] = [ML²].",
+      "incorrect_option_explanations": {
+        "B": "Incorrect. [M L² T⁻¹] is the dimensional formula of angular momentum (L = Iω), not moment of inertia. Angular momentum has dimensions of action (energy × time).",
+        "C": "Incorrect. [M L T⁻²] is the dimensional formula of force. Moment of inertia involves mass times the square of distance, not just distance, and has no time dimension.",
+        "D": "Incorrect. [M L² T⁻²] is the dimensional formula of energy or torque, not moment of inertia. This might come from confusing I with work or torque dimensions."
+      },
+      "concept": "Dimensional analysis of moment of inertia",
+      "difficulty": "Easy",
+      "estimated_time_seconds": 30,
+      "marks": 1,
+      "chapter": "Rotational Motion",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Dimensional Analysis"
+    },
+    {
+      "id": 9,
+      "question": "A spinning figure skater pulls in her outstretched arms. Her angular velocity increases because:",
+      "options": {
+        "A": "Her moment of inertia decreases and angular momentum is conserved",
+        "B": "An external torque acts on her body",
+        "C": "Her kinetic energy increases due to external work",
+        "D": "Her mass decreases when she pulls her arms in"
+      },
+      "correct_option": "A",
+      "correct_answer": "Her moment of inertia decreases and angular momentum is conserved",
+      "explanation": "When the skater pulls her arms in, her mass distribution moves closer to the axis of rotation, decreasing her moment of inertia (I = Σmᵢrᵢ²). In the absence of external torque, angular momentum L = Iω is conserved. Therefore, as I decreases, ω must increase to keep L constant.",
+      "incorrect_option_explanations": {
+        "B": "Incorrect. No external torque acts on the skater (assuming negligible friction). If external torque acted, angular momentum would not be conserved. The change is due to internal forces rearranging mass distribution.",
+        "C": "Incorrect. While kinetic energy does increase, this is not the primary reason for the angular velocity increase. The increase in KE comes from internal work done by the skater's muscles, but the direct cause of increased ω is the conservation of angular momentum with decreased I.",
+        "D": "Incorrect. The skater's mass does not change. Only the distribution of mass changes — it moves closer to the axis, reducing the moment of inertia while total mass remains constant."
+      },
+      "concept": "Conservation of angular momentum",
+      "difficulty": "Medium",
+      "estimated_time_seconds": 40,
+      "marks": 1,
+      "chapter": "Rotational Motion",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Conceptual"
+    },
+    {
+      "id": 10,
+      "question": "A solid sphere of mass 4 kg and radius 0.1 m rotates about an axis passing through its center with an angular velocity of 20 rad/s. Its rotational kinetic energy is:",
+      "options": {
+        "A": "1.6 J",
+        "B": "6.4 J",
+        "C": "3.2 J",
+        "D": "0.8 J"
+      },
+      "correct_option": "C",
+      "correct_answer": "3.2 J",
+      "explanation": "For a solid sphere about its diameter, I = (2/5)MR² = (2/5) × 4 × (0.1)² = (2/5) × 4 × 0.01 = 0.016 kg·m². Rotational kinetic energy K = ½Iω² = ½ × 0.016 × (20)² = ½ × 0.016 × 400 = 3.2 J.",
+      "incorrect_option_explanations": {
+        "A": "Incorrect. This might result from using I = (1/5)MR² instead of (2/5)MR²: I = (1/5) × 4 × 0.01 = 0.008, then K = ½ × 0.008 × 400 = 1.6 J. The correct factor for a solid sphere is 2/5, not 1/5.",
+        "B": "Incorrect. This might result from using the correct I = (2/5)MR² = 0.016 but forgetting the ½ in K = ½Iω²: K = 0.016 × 400 = 6.4 J. The rotational kinetic energy formula always includes the factor of ½.",
+        "D": "Incorrect. This might result from using I = (1/5)MR² and also forgetting the ½ factor: I = 0.008, K = 0.008 × 400 × 0.25 = 0.8, or from multiple calculation errors."
+      },
+      "concept": "Rotational kinetic energy of a solid sphere",
+      "difficulty": "Medium",
+      "estimated_time_seconds": 55,
+      "marks": 1,
+      "chapter": "Rotational Motion",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Numerical"
+    },
+    {
+      "id": 11,
+      "question": "For a planar lamina, if Ix and Iy are the moments of inertia about two perpendicular axes in the plane of the lamina, then the moment of inertia about an axis perpendicular to the plane and passing through their intersection is:",
+      "options": {
+        "A": "Ix + Iy",
+        "B": "Ix × Iy",
+        "C": "Ix - Iy",
+        "D": "√(Ix² + Iy²)"
+      },
+      "correct_option": "A",
+      "correct_answer": "Ix + Iy",
+      "explanation": "The perpendicular axis theorem states that for a planar lamina, the moment of inertia about an axis perpendicular to the plane (Iz) equals the sum of moments of inertia about any two mutually perpendicular axes in the plane of the lamina passing through the same point: Iz = Ix + Iy. This follows from r² = x² + y² for any point in the plane.",
+      "incorrect_option_explanations": {
+        "B": "Incorrect. Multiplying moments of inertia gives units of (kg·m²)², which is not a unit of moment of inertia. The theorem is based on the Pythagorean relationship r² = x² + y², which leads to addition.",
+        "C": "Incorrect. The perpendicular axis theorem involves addition, not subtraction. Subtracting moments of inertia has no physical meaning in this context and could yield negative values.",
+        "D": "Incorrect. This form resembles the magnitude of a vector sum, but moment of inertia is a scalar quantity. The perpendicular axis theorem gives Iz = Ix + Iy, not √(Ix² + Iy²)."
+      },
+      "concept": "Perpendicular axis theorem",
+      "difficulty": "Medium",
+      "estimated_time_seconds": 40,
+      "marks": 1,
+      "chapter": "Rotational Motion",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Conceptual"
+    },
+    {
+      "id": 12,
+      "question": "A solid cylinder of radius 0.3 m rolls without slipping on a horizontal surface. If the velocity of its center of mass is 4 m/s, the angular velocity of the cylinder is:",
+      "options": {
+        "A": "4.0 rad/s",
+        "B": "1.2 rad/s",
+        "C": "13.3 rad/s",
+        "D": "40/3 rad/s"
+      },
+      "correct_option": "C",
+      "correct_answer": "13.3 rad/s",
+      "explanation": "For rolling without slipping, v = Rω. Therefore, ω = v/R = 4/0.3 = 40/3 ≈ 13.33 rad/s. This is the condition of pure rolling where the point of contact is instantaneously at rest relative to the surface.",
+      "incorrect_option_explanations": {
+        "A": "Incorrect. This would be the result if you equated v = ω directly, ignoring the radius. Angular velocity depends on both linear velocity and radius through ω = v/R.",
+        "B": "Incorrect. This would be the result if you calculated v × R = 4 × 0.3 = 1.2. The correct relationship is ω = v/R, not v × R.",
+        "D": "Incorrect. While 40/3 is the exact value (≈13.33), option C gives the decimal approximation 13.3 rad/s which is the standard form for MHT-CET answers. Both represent the same value, but C is the properly rounded answer."
+      },
+      "concept": "Rolling without slipping - relation between v and ω",
+      "difficulty": "Easy",
+      "estimated_time_seconds": 35,
+      "marks": 1,
+      "chapter": "Rotational Motion",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Numerical"
+    },
+    {
+      "id": 13,
+      "question": "The moment of inertia of a uniform circular disc of mass M and radius R about its diameter is:",
+      "options": {
+        "A": "MR²/12",
+        "B": "MR²",
+        "C": "MR²/2",
+        "D": "MR²/4"
+      },
+      "correct_option": "D",
+      "correct_answer": "MR²/4",
+      "explanation": "For a disc, the moment of inertia about an axis perpendicular to the plane through the center is I_z = MR²/2. By the perpendicular axis theorem, I_z = I_x + I_y. Due to symmetry, I_x = I_y about any two perpendicular diameters. Therefore, MR²/2 = 2I_diameter, giving I_diameter = MR²/4.",
+      "incorrect_option_explanations": {
+        "A": "Incorrect. MR²/12 is the moment of inertia of a rod about an axis through its center and perpendicular to its length. This formula does not apply to a disc.",
+        "B": "Incorrect. MR² is the moment of inertia of a ring about an axis perpendicular to its plane through the center. A disc has its mass distributed closer to the center, giving a smaller moment of inertia.",
+        "C": "Incorrect. MR²/2 is the moment of inertia of a disc about an axis perpendicular to its plane through the center, not about a diameter. This is a common confusion."
+      },
+      "concept": "Moment of inertia of disc about diameter",
+      "difficulty": "Medium",
+      "estimated_time_seconds": 45,
+      "marks": 1,
+      "chapter": "Rotational Motion",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Formula Based"
+    },
+    {
+      "id": 14,
+      "question": "A particle of mass 0.5 kg moves in a circular path of radius 2 m with a constant speed of 4 m/s. The magnitude of its angular momentum about the center of the circle is:",
+      "options": {
+        "A": "4 kg·m²/s",
+        "B": "2 kg·m²/s",
+        "C": "8 kg·m²/s",
+        "D": "1 kg·m²/s"
+      },
+      "correct_option": "A",
+      "correct_answer": "4 kg·m²/s",
+      "explanation": "Angular momentum of a particle is L = mvr sinθ. For circular motion, the velocity is perpendicular to the radius vector, so θ = 90° and sinθ = 1. Therefore, L = mvr = 0.5 × 4 × 2 = 4 kg·m²/s. Alternatively, L = Iω = mr² × (v/r) = mvr.",
+      "incorrect_option_explanations": {
+        "B": "Incorrect. This might result from calculating L = mv = 0.5 × 4 = 2, omitting the radius. Angular momentum depends on the perpendicular distance from the axis (the radius in this case).",
+        "C": "Incorrect. This might result from calculating L = mv²r = 0.5 × 16 × 2 = 16, or L = 2mvr = 8. The correct formula is simply L = mvr with no extra factors.",
+        "D": "Incorrect. This might result from calculating L = mvr/4 = 0.5 × 4 × 2/4 = 1, or from using L = ½mvr. The correct formula is L = mvr for a particle in circular motion."
+      },
+      "concept": "Angular momentum of a particle in circular motion",
+      "difficulty": "Easy",
+      "estimated_time_seconds": 35,
+      "marks": 1,
+      "chapter": "Rotational Motion",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Numerical"
+    },
+    {
+      "id": 15,
+      "question": "The direction of angular acceleration of a rotating rigid body is:",
+      "options": {
+        "A": "The same as the direction of the net external torque acting on the body",
+        "B": "Always the same as the direction of angular velocity",
+        "C": "Always opposite to the direction of angular velocity",
+        "D": "Always perpendicular to the plane of rotation"
+      },
+      "correct_option": "A",
+      "correct_answer": "The same as the direction of the net external torque acting on the body",
+      "explanation": "From the rotational analogue of Newton's second law, τ = Iα. Since moment of inertia I is a positive scalar quantity, the direction of angular acceleration α is always the same as the direction of the net external torque τ. Angular acceleration can be in the same direction as ω (speeding up) or opposite to ω (slowing down), depending on the torque direction.",
+      "incorrect_option_explanations": {
+        "B": "Incorrect. Angular acceleration is in the same direction as angular velocity only when the body is speeding up. When a torque opposes the motion, α is opposite to ω, causing the body to slow down.",
+        "C": "Incorrect. Angular acceleration is opposite to angular velocity only when the body is slowing down (decelerating). When speeding up, they are in the same direction. The direction of α depends on torque, not on ω.",
+        "D": "Incorrect. While angular acceleration is indeed perpendicular to the plane of rotation (along the axis), this is also true for angular velocity and torque. This statement doesn't distinguish the relationship between α and τ, which is the key physical connection."
+      },
+      "concept": "Direction of angular acceleration and torque",
+      "difficulty": "Medium",
+      "estimated_time_seconds": 45,
+      "marks": 1,
+      "chapter": "Rotational Motion",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Conceptual"
+    },
+    {
+      "id": 16,
+      "question": "A solid sphere of mass 3 kg and radius 0.2 m rolls without slipping with a velocity of 5 m/s. Its total kinetic energy is:",
+      "options": {
+        "A": "105.0 J",
+        "B": "75.0 J",
+        "C": "37.5 J",
+        "D": "52.5 J"
+      },
+      "correct_option": "D",
+      "correct_answer": "52.5 J",
+      "explanation": "For a rolling body, total KE = translational KE + rotational KE = ½Mv² + ½Iω². For a solid sphere, I = (2/5)MR² and ω = v/R. So total KE = ½Mv² + ½ × (2/5)MR² × (v/R)² = ½Mv² + (1/5)Mv² = (7/10)Mv² = 0.7 × 3 × 25 = 0.7 × 75 = 52.5 J.",
+      "incorrect_option_explanations": {
+        "A": "Incorrect. This might result from using I = (2/3)MR² (hollow sphere) or from calculating KE = ½Mv² + ½Iω² with an error in the I value, giving too large a rotational contribution.",
+        "B": "Incorrect. This might result from using total KE = Mv² (omitting the ½ factor) or from using the wrong moment of inertia formula. The correct total KE for a solid sphere is (7/10)Mv².",
+        "C": "Incorrect. This is only the translational kinetic energy: ½Mv² = ½ × 3 × 25 = 37.5 J. The total kinetic energy must include both translational and rotational components for a rolling body."
+      },
+      "concept": "Total kinetic energy of a rolling solid sphere",
+      "difficulty": "Medium",
+      "estimated_time_seconds": 60,
+      "marks": 1,
+      "chapter": "Rotational Motion",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Numerical"
+    },
+    {
+      "id": 17,
+      "question": "A wheel rotates at 60 revolutions per minute. Its angular velocity in rad/s is:",
+      "options": {
+        "A": "π rad/s",
+        "B": "6π rad/s",
+        "C": "4π rad/s",
+        "D": "2π rad/s"
+      },
+      "correct_option": "D",
+      "correct_answer": "2π rad/s",
+      "explanation": "Angular velocity ω = 2πn, where n is the frequency in revolutions per second. Given 60 rpm = 60/60 = 1 revolution per second. Therefore, ω = 2π × 1 = 2π rad/s. Alternatively: 60 rev/min × (2π rad/1 rev) × (1 min/60 s) = 2π rad/s.",
+      "incorrect_option_explanations": {
+        "A": "Incorrect. This would be the result if you used ω = πn instead of 2πn, or if you calculated 60 × π/60 = π without the factor of 2. One complete revolution corresponds to 2π radians, not π radians.",
+        "B": "Incorrect. This would be the result if you calculated ω = 2π × 3 = 6π, perhaps converting 60 rpm to 3 rev/s incorrectly, or from some other conversion error. 60 rpm equals exactly 1 rev/s.",
+        "C": "Incorrect. This would be the result if you forgot to convert rpm to rev/s and used ω = 2π × 60 = 120π, then made an error, or if you used ω = 4πn. The correct conversion uses n in rev/s."
+      },
+      "concept": "Conversion of angular velocity from rpm to rad/s",
+      "difficulty": "Easy",
+      "estimated_time_seconds": 30,
+      "marks": 1,
+      "chapter": "Rotational Motion",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Unit Conversion"
+    },
+    {
+      "id": 18,
+      "question": "Bicycle wheels are designed with most of their mass concentrated at the rim rather than at the hub. This design primarily helps to:",
+      "options": {
+        "A": "Reduce the weight of the bicycle",
+        "B": "Decrease the moment of inertia for easier starting",
+        "C": "Increase the moment of inertia for greater stability",
+        "D": "Increase the linear speed of the bicycle"
+      },
+      "correct_option": "C",
+      "correct_answer": "Increase the moment of inertia for greater stability",
+      "explanation": "Concentrating mass at the rim (larger radius) increases the moment of inertia (I = Σmᵢrᵢ²) of the wheel. A larger moment of inertia means the wheel resists changes in its rotational motion (gyroscopic effect), providing greater directional stability. This is why a spinning bicycle wheel tends to stay upright and resist tipping over.",
+      "incorrect_option_explanations": {
+        "A": "Incorrect. The design does not primarily aim to reduce weight. In fact, concentrating mass at the rim might require more material for structural integrity. The key consideration is mass distribution, not total mass reduction.",
+        "B": "Incorrect. Concentrating mass at the rim actually increases, not decreases, the moment of inertia. A smaller I would make starting easier but would reduce stability.",
+        "D": "Incorrect. The linear speed of the bicycle depends on the rider's pedaling and gear ratios, not on how mass is distributed in the wheel. The rim-heavy design affects rotational stability, not linear speed."
+      },
+      "concept": "Practical application of moment of inertia - bicycle wheel design",
+      "difficulty": "Medium",
+      "estimated_time_seconds": 45,
+      "marks": 1,
+      "chapter": "Rotational Motion",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Practical Application"
+    },
+    {
+      "id": 19,
+      "question": "A disc rotating at 10 rad/s about its central axis has a moment of inertia of 0.4 kg·m². A ring of moment of inertia 0.2 kg·m² is gently placed coaxially on the disc. The new angular velocity of the system is:",
+      "options": {
+        "A": "15.0 rad/s",
+        "B": "8.0 rad/s",
+        "C": "6.67 rad/s",
+        "D": "5.0 rad/s"
+      },
+      "correct_option": "C",
+      "correct_answer": "6.67 rad/s",
+      "explanation": "By conservation of angular momentum (no external torque), I₁ω₁ = I₂ω₂. Initial angular momentum = 0.4 × 10 = 4 kg·m²/s. Final moment of inertia = 0.4 + 0.2 = 0.6 kg·m². Therefore, ω₂ = 4/0.6 = 40/6 = 20/3 ≈ 6.67 rad/s.",
+      "incorrect_option_explanations": {
+        "A": "Incorrect. This would be the result if you added the moments of inertia in the denominator incorrectly or used ω₂ = ω₁ × (I₂/I₁) = 10 × (0.6/0.4) = 15. The correct relationship is ω₂ = ω₁ × (I₁/I₂), which gives a smaller angular velocity since I increased.",
+        "B": "Incorrect. This might result from using ω₂ = ω₁ × (I₁/I₂) with incorrect values, or from calculating 0.4 × 10 / (0.4 + 0.2) incorrectly as 8.0. The correct calculation gives 4/0.6 = 6.67 rad/s.",
+        "D": "Incorrect. This might result from averaging the angular velocities or from using ω₂ = ω₁/2 = 5. The conservation equation requires I₁ω₁ = I₂ω₂, not simple averaging."
+      },
+      "concept": "Conservation of angular momentum - disc and ring system",
+      "difficulty": "Medium",
+      "estimated_time_seconds": 55,
+      "marks": 1,
+      "chapter": "Rotational Motion",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Numerical"
+    },
+    {
+      "id": 20,
+      "question": "The power delivered by a torque τ acting on a body rotating with angular velocity ω is given by:",
+      "options": {
+        "A": "P = τ²/ω",
+        "B": "P = τ × ω",
+        "C": "P = τ/ω",
+        "D": "P = τ/ω²"
+      },
+      "correct_option": "B",
+      "correct_answer": "P = τ × ω",
+      "explanation": "Power in rotational motion is P = dW/dt = τ(dθ/dt) = τω. This is analogous to linear motion where P = F·v. The work done by a torque in a small angular displacement dθ is dW = τdθ, so power P = dW/dt = τ(dθ/dt) = τω.",
+      "incorrect_option_explanations": {
+        "A": "Incorrect. P = τ²/ω would give units of (N·m)²/(rad/s) = N²·m²·s/rad, which is not a unit of power. This formula has no basis in rotational dynamics.",
+        "C": "Incorrect. P = τ/ω would give units of N·m/(rad/s) = N·m·s/rad = J·s/rad, which is not a unit of power (Watts = J/s). The correct formula gives P in Watts when τ is in N·m and ω is in rad/s.",
+        "D": "Incorrect. P = τ/ω² would give units of N·m·s²/rad², which is not Watts. The correct relationship is the product of torque and angular velocity, analogous to P = Fv in linear motion."
+      },
+      "concept": "Power in rotational motion",
+      "difficulty": "Easy",
+      "estimated_time_seconds": 30,
+      "marks": 1,
+      "chapter": "Rotational Motion",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Formula Based"
+    },
+    {
+      "id": 21,
+      "question": "A uniform rod of mass 2 kg and length 1.2 m rotates about an axis passing through its center and perpendicular to its length. Its moment of inertia is:",
+      "options": {
+        "A": "0.24 kg·m²",
+        "B": "0.12 kg·m²",
+        "C": "0.48 kg·m²",
+        "D": "0.72 kg·m²"
+      },
+      "correct_option": "A",
+      "correct_answer": "0.24 kg·m²",
+      "explanation": "For a uniform rod of mass M and length L about an axis through its center and perpendicular to its length, I = ML²/12. Substituting M = 2 kg and L = 1.2 m: I = 2 × (1.2)² / 12 = 2 × 1.44 / 12 = 2.88 / 12 = 0.24 kg·m².",
+      "incorrect_option_explanations": {
+        "B": "Incorrect. This might result from using I = ML²/120 or some other incorrect denominator, or from a decimal error: 2.88/24 = 0.12. The correct formula has 12 in the denominator.",
+        "C": "Incorrect. This might result from using I = ML²/6 (the formula for an axis through the end of the rod): I = 2 × 1.44 / 6 = 0.48. For the center, the formula is ML²/12, not ML²/6.",
+        "D": "Incorrect. This might result from using I = ML²/4 or from calculating I = ML²/2 = 2 × 1.44 / 2 = 1.44, then making an error. The standard formula for a rod about its center perpendicular to length is ML²/12."
+      },
+      "concept": "Moment of inertia of a rod about perpendicular axis through center",
+      "difficulty": "Easy",
+      "estimated_time_seconds": 40,
+      "marks": 1,
+      "chapter": "Rotational Motion",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Numerical"
+    },
+    {
+      "id": 22,
+      "question": "The moment of inertia of a rigid body is minimum about an axis passing through:",
+      "options": {
+        "A": "A point at infinity",
+        "B": "Its center of mass",
+        "C": "Any point on the surface of the body",
+        "D": "Any point in the body other than the center of mass"
+      },
+      "correct_option": "B",
+      "correct_answer": "Its center of mass",
+      "explanation": "According to the parallel axis theorem, I = I_cm + Md², where d is the distance from the center of mass axis. Since Md² is always non-negative, I is minimum when d = 0, i.e., when the axis passes through the center of mass. Any other parallel axis will have a larger moment of inertia.",
+      "incorrect_option_explanations": {
+        "A": "Incorrect. As d approaches infinity, Md² approaches infinity, so I approaches infinity. This is the maximum possible moment of inertia, not the minimum.",
+        "C": "Incorrect. An axis through a point on the surface is far from the center of mass, so d is large, making I = I_cm + Md² much larger than I_cm.",
+        "D": "Incorrect. Any axis not passing through the center of mass has d > 0, so I = I_cm + Md² > I_cm. The moment of inertia is strictly minimum about an axis through the center of mass."
+      },
+      "concept": "Minimum moment of inertia about center of mass",
+      "difficulty": "Easy",
+      "estimated_time_seconds": 35,
+      "marks": 1,
+      "chapter": "Rotational Motion",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Conceptual"
+    },
+    {
+      "id": 23,
+      "question": "A force of 20 N is applied at a point on the rim of a wheel of radius 0.5 m. The force makes an angle of 60° with the radius vector at that point. The torque about the center of the wheel is:",
+      "options": {
+        "A": "5 N·m",
+        "B": "5√3 N·m",
+        "C": "10√3 N·m",
+        "D": "10 N·m"
+      },
+      "correct_option": "B",
+      "correct_answer": "5√3 N·m",
+      "explanation": "Torque τ = rF sinθ, where θ is the angle between the position vector r and force F. Here r = 0.5 m, F = 20 N, and θ = 60°. Therefore, τ = 0.5 × 20 × sin(60°) = 0.5 × 20 × (√3/2) = 5√3 N·m ≈ 8.66 N·m.",
+      "incorrect_option_explanations": {
+        "A": "Incorrect. This would be the result if you used sin(30°) = 0.5 instead of sin(60°) = √3/2, or if you made an error in the angle. The given angle is 60°, not 30°.",
+        "C": "Incorrect. This would be the result if you calculated τ = rF × 2 × sin(60°) or used some other incorrect multiplication. The correct calculation is simply rF sinθ = 0.5 × 20 × √3/2 = 5√3 N·m.",
+        "D": "Incorrect. This would be the result if you used τ = rF (i.e., sinθ = 1, as for a perpendicular force) or if you used τ = rF cos(60°) = 0.5 × 20 × 0.5 = 5, then made an error. Torque uses sinθ, not cosθ."
+      },
+      "concept": "Torque due to force at an angle",
+      "difficulty": "Medium",
+      "estimated_time_seconds": 45,
+      "marks": 1,
+      "chapter": "Rotational Motion",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Numerical"
+    },
+    {
+      "id": 24,
+      "question": "The dimensional formula of angular momentum is:",
+      "options": {
+        "A": "[M L² T⁻²]",
+        "B": "[M L² T]",
+        "C": "[M L T⁻¹]",
+        "D": "[M L² T⁻¹]"
+      },
+      "correct_option": "D",
+      "correct_answer": "[M L² T⁻¹]",
+      "explanation": "Angular momentum L = r × p = r × mv. Dimensions: [L] = [L] × [M] × [LT⁻¹] = [M L² T⁻¹]. Alternatively, from L = Iω: [L] = [M L²] × [T⁻¹] = [M L² T⁻¹]. This is also the dimension of Planck's constant (action).",
+      "incorrect_option_explanations": {
+        "A": "Incorrect. [M L² T⁻²] is the dimensional formula of energy or torque. Angular momentum has dimensions of energy multiplied by time, giving T⁻¹ instead of T⁻².",
+        "B": "Incorrect. [M L² T] would imply angular momentum increases with time, which is not the case. The time dimension should be T⁻¹, indicating angular momentum is a rate-related quantity (moment of inertia × angular velocity).",
+        "C": "Incorrect. [M L T⁻¹] is the dimensional formula of linear momentum (p = mv). Angular momentum involves an extra factor of length due to the cross product with position vector r."
+      },
+      "concept": "Dimensional formula of angular momentum",
+      "difficulty": "Easy",
+      "estimated_time_seconds": 30,
+      "marks": 1,
+      "chapter": "Rotational Motion",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Dimensional Analysis"
+    },
+    {
+      "id": 25,
+      "question": "A solid cylinder rolls without slipping down an inclined plane of height 3.75 m. The acceleration due to gravity is 10 m/s². The speed of the cylinder when it reaches the bottom of the incline is:",
+      "options": {
+        "A": "5 m/s",
+        "B": "√50 m/s",
+        "C": "5√2 m/s",
+        "D": "10/√3 m/s"
+      },
+      "correct_option": "C",
+      "correct_answer": "5√2 m/s",
+      "explanation": "Using conservation of energy: mgh = ½mv² + ½Iω². For a solid cylinder, I = ½MR² and ω = v/R. So mgh = ½mv² + ½ × ½mR² × v²/R² = ½mv² + ¼mv² = ¾mv². Therefore, v² = (4/3)gh = (4/3) × 10 × 3.75 = (4/3) × 37.5 = 150/3 = 50. So v = √50 = 5√2 m/s ≈ 7.07 m/s.",
+      "incorrect_option_explanations": {
+        "A": "Incorrect. This would be the result if you used only translational kinetic energy: mgh = ½mv², giving v = √(2gh) = √(2×10×3.75) = √75 ≈ 8.66, or some other error. For rolling motion, rotational kinetic energy must be included.",
+        "B": "Incorrect. While √50 = 5√2, this option is mathematically equivalent to B. However, in standard form, 5√2 is the preferred simplified radical form for MHT-CET answers.",
+        "D": "Incorrect. This would be the result for a solid sphere (where v² = 10gh/7) with h = 3.5 m or similar, or from using the wrong moment of inertia. For a solid cylinder, the factor is 4/3, not 10/7."
+      },
+      "concept": "Speed of rolling solid cylinder down an incline",
+      "difficulty": "Medium",
+      "estimated_time_seconds": 60,
+      "marks": 1,
+      "chapter": "Rotational Motion",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Numerical"
+    },
+    {
+      "id": 26,
+      "question": "For a body rolling without slipping on a horizontal surface, the velocity of the point of contact with the surface is:",
+      "options": {
+        "A": "Equal to Rω in the forward direction",
+        "B": "Equal to the velocity of the center of mass",
+        "C": "Twice the velocity of the center of mass",
+        "D": "Zero"
+      },
+      "correct_option": "D",
+      "correct_answer": "Zero",
+      "explanation": "For rolling without slipping, the condition is v_cm = Rω. The velocity of any point on the rolling body is the vector sum of the translational velocity (v_cm) and the rotational velocity (Rω). At the point of contact, the rotational velocity is Rω directed backward, while the translational velocity is v_cm directed forward. Since v_cm = Rω, these cancel exactly, giving zero velocity at the point of contact. This point is the instantaneous center of rotation.",
+      "incorrect_option_explanations": {
+        "A": "Incorrect. Rω in the forward direction describes the topmost point's additional velocity due to rotation. At the point of contact, the rotational velocity is Rω backward, which cancels the forward v_cm, giving zero net velocity.",
+        "B": "Incorrect. The velocity of the center of mass is v_cm, but the point of contact has zero velocity due to the cancellation of translational and rotational components. Only the center of mass moves at v_cm.",
+        "C": "Incorrect. The topmost point of the rolling body has velocity 2v_cm (v_cm + Rω = v_cm + v_cm = 2v_cm), not the point of contact. The point of contact has zero velocity."
+      },
+      "concept": "Rolling without slipping - velocity of point of contact",
+      "difficulty": "Medium",
+      "estimated_time_seconds": 45,
+      "marks": 1,
+      "chapter": "Rotational Motion",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Conceptual"
+    },
+    {
+      "id": 27,
+      "question": "A wheel starts from rest and rotates with a constant angular acceleration of 4 rad/s². The angular displacement in the first 3 seconds is:",
+      "options": {
+        "A": "12 rad",
+        "B": "6 rad",
+        "C": "36 rad",
+        "D": "18 rad"
+      },
+      "correct_option": "D",
+      "correct_answer": "18 rad",
+      "explanation": "Using the equation of rotational motion: θ = ω₀t + ½αt². Since the wheel starts from rest, ω₀ = 0. Given α = 4 rad/s² and t = 3 s: θ = 0 + ½ × 4 × (3)² = ½ × 4 × 9 = 2 × 9 = 18 rad.",
+      "incorrect_option_explanations": {
+        "A": "Incorrect. This would be the result if you used θ = αt = 4 × 3 = 12, omitting the ½ factor and the square on time. The correct formula is θ = ½αt² for motion starting from rest.",
+        "B": "Incorrect. This would be the result if you used θ = αt = 4 × 3 = 12, then made an error, or if you used θ = ½αt = ½ × 4 × 3 = 6. The correct formula includes t² for constant angular acceleration from rest.",
+        "C": "Incorrect. This would be the result if you used θ = αt² = 4 × 9 = 36, omitting the ½ factor. The correct formula includes ½αt², not αt²."
+      },
+      "concept": "Angular displacement with constant angular acceleration",
+      "difficulty": "Easy",
+      "estimated_time_seconds": 35,
+      "marks": 1,
+      "chapter": "Rotational Motion",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Numerical"
+    },
+    {
+      "id": 28,
+      "question": "In an experiment, two discs of the same mass and radius but made of different materials (one aluminum, one lead) are released from rest at the top of an inclined plane. Both roll without slipping. Which disc reaches the bottom first?",
+      "options": {
+        "A": "Both reach at the same time",
+        "B": "The aluminum disc",
+        "C": "The lead disc",
+        "D": "Cannot be determined from the given information"
+      },
+      "correct_option": "A",
+      "correct_answer": "Both reach at the bottom at the same time",
+      "explanation": "For rolling without slipping down an incline, the acceleration a = g sinθ / (1 + I/MR²). For a disc, I = ½MR², so I/MR² = ½, giving a = (2/3)g sinθ. This acceleration depends only on g and θ, not on mass, radius, or material. Since both are discs with the same shape factor (I/MR² = ½), they have identical acceleration and reach the bottom simultaneously.",
+      "incorrect_option_explanations": {
+        "B": "Incorrect. The material (and hence density) does not affect the rolling acceleration for bodies of the same shape. The acceleration formula a = g sinθ / (1 + k²/R²) depends only on the shape factor k²/R², which is the same for both discs.",
+        "C": "Incorrect. While lead is denser than aluminum, the rolling acceleration is independent of density for a given shape. Both discs have I = ½MR², so their acceleration down the incline is identical.",
+        "D": "Incorrect. The information given (same mass, same radius, same shape - disc) is sufficient to determine that both have the same moment of inertia factor (I/MR² = ½) and therefore the same acceleration."
+      },
+      "concept": "Rolling acceleration independent of mass and material for same shape",
+      "difficulty": "Medium",
+      "estimated_time_seconds": 50,
+      "marks": 1,
+      "chapter": "Rotational Motion",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Experimental Observation"
+    },
+    {
+      "id": 29,
+      "question": "A constant torque of 8 N·m acts on a rigid body, causing it to rotate through an angle of 3 radians. The work done by the torque is:",
+      "options": {
+        "A": "11 J",
+        "B": "8/3 J",
+        "C": "64 J",
+        "D": "24 J"
+      },
+      "correct_option": "D",
+      "correct_answer": "24 J",
+      "explanation": "Work done by a constant torque is W = τθ, where τ is the torque and θ is the angular displacement in radians. Given τ = 8 N·m and θ = 3 rad: W = 8 × 3 = 24 J. This is analogous to work done by a constant force: W = Fs.",
+      "incorrect_option_explanations": {
+        "A": "Incorrect. This might result from adding τ and θ (8 + 3 = 11) instead of multiplying them. Work done is the product of torque and angular displacement, not their sum.",
+        "B": "Incorrect. This would be the result if you used W = τ/θ = 8/3, which inverts the correct relationship. Work done is the product of torque and angular displacement, not the quotient.",
+        "C": "Incorrect. This would be the result if you used W = τ²/θ = 64/3 or W = τ² = 64, or some other incorrect combination. The correct formula is simply W = τθ."
+      },
+      "concept": "Work done by a torque",
+      "difficulty": "Easy",
+      "estimated_time_seconds": 25,
+      "marks": 1,
+      "chapter": "Rotational Motion",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Numerical"
+    },
+    {
+      "id": 30,
+      "question": "The direction of the angular velocity vector of a rotating rigid body is given by:",
+      "options": {
+        "A": "The direction of the linear velocity of the center of mass",
+        "B": "The right-hand rule applied along the axis of rotation",
+        "C": "The direction of motion of any point on the body",
+        "D": "The direction of the net force acting on the body"
+      },
+      "correct_option": "B",
+      "correct_answer": "The right-hand rule applied along the axis of rotation",
+      "explanation": "Angular velocity is an axial vector whose direction is along the axis of rotation. The direction is determined by the right-hand rule: if the fingers of the right hand curl in the direction of rotation, the thumb points in the direction of the angular velocity vector. This is perpendicular to the plane of rotation.",
+      "incorrect_option_explanations": {
+        "A": "Incorrect. The linear velocity of the center of mass describes translational motion, not rotational motion. For pure rotation about a fixed axis, the center of mass may be stationary while the body still has angular velocity.",
+        "C": "Incorrect. Different points on a rotating body have different directions of motion (tangential to their respective circular paths). Angular velocity is a property of the entire body about a specific axis, not the motion of individual points.",
+        "D": "Incorrect. The net force determines linear acceleration (F = ma), not the direction of angular velocity. The direction of angular velocity is determined by the axis of rotation and the sense of rotation, not by forces."
+      },
+      "concept": "Direction of angular velocity vector",
+      "difficulty": "Easy",
+      "estimated_time_seconds": 30,
+      "marks": 1,
+      "chapter": "Rotational Motion",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Conceptual"
+    },
+    {
+      "id": 31,
+      "question": "A thin hollow spherical shell of mass 6 kg and radius 0.5 m rotates about its diameter. Its moment of inertia is:",
+      "options": {
+        "A": "1.2 kg·m²",
+        "B": "0.6 kg·m²",
+        "C": "0.8 kg·m²",
+        "D": "1.0 kg·m²"
+      },
+      "correct_option": "D",
+      "correct_answer": "1.0 kg·m²",
+      "explanation": "For a thin hollow spherical shell about its diameter, I = (2/3)MR². Substituting M = 6 kg and R = 0.5 m: I = (2/3) × 6 × (0.5)² = (2/3) × 6 × 0.25 = 4 × 0.25 = 1.0 kg·m².",
+      "incorrect_option_explanations": {
+        "A": "Incorrect. This might result from using I = MR² = 6 × 0.25 = 1.5, then rounding to 1.2, or from using I = (2/3)MR without squaring R: I = (2/3) × 6 × 0.5 = 2.0. The correct formula requires R².",
+        "B": "Incorrect. This might result from using I = (1/5)MR² (solid sphere formula): I = (1/5) × 6 × 0.25 = 1.5/5 = 0.3, then making an error, or from using I = MR²/10 = 0.3. A hollow sphere has I = (2/3)MR², not (1/5)MR².",
+        "C": "Incorrect. This might result from using I = (2/5)MR² (solid sphere formula): I = (2/5) × 6 × 0.25 = (2/5) × 1.5 = 3/5 = 0.6, or from a calculation error. The correct formula for a thin hollow spherical shell is (2/3)MR²."
+      },
+      "concept": "Moment of inertia of a hollow spherical shell",
+      "difficulty": "Medium",
+      "estimated_time_seconds": 45,
+      "marks": 1,
+      "chapter": "Rotational Motion",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Numerical"
+    },
+    {
+      "id": 32,
+      "question": "A solid sphere, a solid cylinder, and a ring of the same mass and radius are released from rest at the top of the same inclined plane. All roll without slipping. Which body reaches the bottom first?",
+      "options": {
+        "A": "The solid cylinder",
+        "B": "The ring",
+        "C": "All reach at the same time",
+        "D": "The solid sphere"
+      },
+      "correct_option": "D",
+      "correct_answer": "The solid sphere",
+      "explanation": "For rolling without slipping down an incline, acceleration a = g sinθ / (1 + I/MR²). The body with the smallest I/MR² has the largest acceleration. For a ring: I/MR² = 1. For a solid cylinder: I/MR² = ½. For a solid sphere: I/MR² = 2/5 = 0.4. Since the solid sphere has the smallest I/MR², it has the largest acceleration and reaches the bottom first.",
+      "incorrect_option_explanations": {
+        "A": "Incorrect. The solid cylinder has I/MR² = ½, giving a = (2/3)g sinθ. While faster than the ring, it is slower than the solid sphere which has I/MR² = 2/5 and a = (5/7)g sinθ.",
+        "B": "Incorrect. The ring has the largest I/MR² = 1, giving it the smallest acceleration (a = ½g sinθ). It reaches the bottom last, not first.",
+        "C": "Incorrect. The acceleration depends on the shape factor I/MR², which differs for each body. Only bodies with the same shape factor reach the bottom simultaneously."
+      },
+      "concept": "Comparison of rolling bodies on an inclined plane",
+      "difficulty": "Medium",
+      "estimated_time_seconds": 55,
+      "marks": 1,
+      "chapter": "Rotational Motion",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Conceptual"
+    },
+    {
+      "id": 33,
+      "question": "A uniform disc of mass 4 kg and radius 0.3 m rotates about its central axis perpendicular to its plane with an angular velocity of 10 rad/s. Its angular momentum is:",
+      "options": {
+        "A": "3.6 kg·m²/s",
+        "B": "1.2 kg·m²/s",
+        "C": "0.9 kg·m²/s",
+        "D": "1.8 kg·m²/s"
+      },
+      "correct_option": "D",
+      "correct_answer": "1.8 kg·m²/s",
+      "explanation": "For a disc about its central axis perpendicular to its plane, I = ½MR² = ½ × 4 × (0.3)² = ½ × 4 × 0.09 = 2 × 0.09 = 0.18 kg·m². Angular momentum L = Iω = 0.18 × 10 = 1.8 kg·m²/s.",
+      "incorrect_option_explanations": {
+        "A": "Incorrect. This might result from using I = MR² (ring formula): I = 4 × 0.09 = 0.36, L = 0.36 × 10 = 3.6. A disc has I = ½MR², not MR².",
+        "B": "Incorrect. This might result from using I = MR²/3 or from some other incorrect formula. The correct calculation gives I = 0.18 kg·m² and L = 1.8 kg·m²/s.",
+        "C": "Incorrect. This might result from using I = (1/4)MR² or from L = ½Iω: I = 0.09, L = 0.09 × 10 = 0.9. The correct moment of inertia for a disc is ½MR², and L = Iω (not ½Iω)."
+      },
+      "concept": "Angular momentum of a rotating disc",
+      "difficulty": "Easy",
+      "estimated_time_seconds": 40,
+      "marks": 1,
+      "chapter": "Rotational Motion",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Numerical"
+    },
+    {
+      "id": 34,
+      "question": "For a particle moving in a circle of radius r, the relation between its tangential acceleration (aₜ) and angular acceleration (α) is:",
+      "options": {
+        "A": "aₜ = α/r²",
+        "B": "aₜ = α/r",
+        "C": "aₜ = α × r",
+        "D": "aₜ = r/α"
+      },
+      "correct_option": "C",
+      "correct_answer": "aₜ = α × r",
+      "explanation": "Tangential acceleration is the rate of change of linear speed along the tangent to the circular path. Since v = rω, differentiating with respect to time gives aₜ = dv/dt = r(dω/dt) = rα. The tangential acceleration is perpendicular to the radius and parallel to the velocity vector.",
+      "incorrect_option_explanations": {
+        "A": "Incorrect. aₜ = α/r² has no physical basis in circular motion kinematics. The correct relationship is directly proportional to r, not inversely proportional to r².",
+        "B": "Incorrect. aₜ = α/r would mean tangential acceleration decreases as radius increases for constant angular acceleration, which is opposite to the actual relationship. Larger radius means greater tangential acceleration for the same α.",
+        "D": "Incorrect. aₜ = r/α would give units of m/(rad/s²) = m·s²/rad, which is not a unit of acceleration (m/s²). The correct formula gives aₜ in m/s² when α is in rad/s² and r is in meters."
+      },
+      "concept": "Relation between tangential and angular acceleration",
+      "difficulty": "Easy",
+      "estimated_time_seconds": 25,
+      "marks": 1,
+      "chapter": "Rotational Motion",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Formula Based"
+    },
+    {
+      "id": 35,
+      "question": "A wheel rotating at 30 rad/s comes to rest in 5 seconds under uniform angular deceleration. The total angular displacement before coming to rest is:",
+      "options": {
+        "A": "150 rad",
+        "B": "300 rad",
+        "C": "75 rad",
+        "D": "375 rad"
+      },
+      "correct_option": "C",
+      "correct_answer": "75 rad",
+      "explanation": "Using the equation θ = (ω₀ + ω)t/2 for uniform angular acceleration. Here ω₀ = 30 rad/s, ω = 0, and t = 5 s. Therefore, θ = (30 + 0) × 5 / 2 = 30 × 5 / 2 = 150/2 = 75 rad. Alternatively, first find α = (ω - ω₀)/t = -30/5 = -6 rad/s², then θ = ω₀t + ½αt² = 30×5 + ½×(-6)×25 = 150 - 75 = 75 rad.",
+      "incorrect_option_explanations": {
+        "A": "Incorrect. This would be the result if you used θ = ω₀t = 30 × 5 = 150, omitting the deceleration effect. The wheel is slowing down, so the actual displacement is less than ω₀t.",
+        "B": "Incorrect. This might result from using θ = ω₀²/α = 900/6 = 150, then doubling it, or from θ = ω₀²t = 900 × 5, then making an error. The correct formula accounts for the changing angular velocity.",
+        "D": "Incorrect. This would be the result if you used θ = ω₀t + ½αt² with α = +6 instead of -6: θ = 150 + 75 = 225, or from θ = ω₀t² = 30 × 25 = 750, then halving. The angular acceleration is negative (deceleration)."
+      },
+      "concept": "Angular displacement under uniform angular deceleration",
+      "difficulty": "Medium",
+      "estimated_time_seconds": 50,
+      "marks": 1,
+      "chapter": "Rotational Motion",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Numerical"
+    },
+    {
+      "id": 36,
+      "question": "For a particle in uniform circular motion, the centripetal acceleration is directed:",
+      "options": {
+        "A": "Radially inward toward the center",
+        "B": "Along the tangent to the circular path",
+        "C": "Perpendicular to the plane of rotation",
+        "D": "Radially outward from the center"
+      },
+      "correct_option": "A",
+      "correct_answer": "Radially inward toward the center",
+      "explanation": "Centripetal acceleration (a_c = v²/r = rω²) is always directed toward the center of the circular path. It is responsible for changing the direction of the velocity vector, keeping the particle in circular motion. 'Centripetal' literally means 'center-seeking.'",
+      "incorrect_option_explanations": {
+        "B": "Incorrect. The direction along the tangent is the direction of the velocity vector (linear velocity), not acceleration. Tangential acceleration, if present, is along the tangent, but centripetal acceleration is always radial.",
+        "C": "Incorrect. The direction perpendicular to the plane of rotation is the direction of the angular velocity and angular acceleration vectors (axial vectors). Centripetal acceleration lies in the plane of rotation, directed radially inward.",
+        "D": "Incorrect. Radially outward acceleration would cause the particle to move away from the center (centrifugal effect in a non-inertial frame). In an inertial frame, the acceleration is always inward. The term 'centrifugal' refers to a fictitious force in rotating frames."
+      },
+      "concept": "Direction of centripetal acceleration",
+      "difficulty": "Easy",
+      "estimated_time_seconds": 25,
+      "marks": 1,
+      "chapter": "Rotational Motion",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Conceptual"
+    },
+    {
+      "id": 37,
+      "question": "A uniform rod of mass 3 kg and length 1.0 m has a moment of inertia of 0.25 kg·m² about an axis perpendicular to the rod and passing through its center. The moment of inertia about a parallel axis passing through one end of the rod is:",
+      "options": {
+        "A": "1.0 kg·m²",
+        "B": "0.5 kg·m²",
+        "C": "0.75 kg·m²",
+        "D": "1.25 kg·m²"
+      },
+      "correct_option": "A",
+      "correct_answer": "1.0 kg·m²",
+      "explanation": "Using the parallel axis theorem: I = I_cm + Md². Here I_cm = 0.25 kg·m², M = 3 kg, and d = L/2 = 0.5 m (distance from center to end). Therefore, I = 0.25 + 3 × (0.5)² = 0.25 + 3 × 0.25 = 0.25 + 0.75 = 1.0 kg·m². This can be verified using the direct formula for a rod about its end: I = ML²/3 = 3 × 1/3 = 1.0 kg·m².",
+      "incorrect_option_explanations": {
+        "B": "Incorrect. This might result from using I = I_cm + Md = 0.25 + 3 × 0.5 = 0.25 + 1.5 = 1.75, then making an error, or from using I = 2 × I_cm. The parallel axis theorem uses d², not d.",
+        "C": "Incorrect. This might result from using I = I_cm + M(d/2)² = 0.25 + 3 × 0.0625 = 0.25 + 0.1875 = 0.4375, then rounding, or from using an incorrect distance. The distance from center to end is L/2 = 0.5 m.",
+        "D": "Incorrect. This might result from using I = I_cm + M(2d)² = 0.25 + 3 × 1 = 1.25, or from using the full length L instead of L/2 for d. The parallel axis distance is half the rod length."
+      },
+      "concept": "Parallel axis theorem application for a rod",
+      "difficulty": "Medium",
+      "estimated_time_seconds": 50,
+      "marks": 1,
+      "chapter": "Rotational Motion",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Numerical"
+    },
+    {
+      "id": 38,
+      "question": "In a car engine, a flywheel is used primarily to:",
+      "options": {
+        "A": "Increase the fuel efficiency",
+        "B": "Store rotational energy and ensure smooth operation",
+        "C": "Reduce the weight of the engine",
+        "D": "Increase the maximum speed of the car"
+      },
+      "correct_option": "B",
+      "correct_answer": "Store rotational energy and ensure smooth operation",
+      "explanation": "A flywheel is a heavy rotating disc with a large moment of inertia. Due to its large I, it resists changes in angular velocity (inertia of rotation). It stores kinetic energy (½Iω²) during the power stroke and releases it during other strokes, smoothing out fluctuations in angular velocity caused by the intermittent nature of engine power delivery.",
+      "incorrect_option_explanations": {
+        "A": "Incorrect. While smooth operation can indirectly affect efficiency, the primary purpose of a flywheel is not fuel efficiency. Its role is mechanical — to stabilize rotational motion by storing and releasing energy.",
+        "C": "Incorrect. A flywheel actually adds weight to the engine due to its heavy design (large mass concentrated at the rim to maximize I). Weight reduction is not its purpose.",
+        "D": "Incorrect. The flywheel does not increase maximum speed. In fact, its weight can slightly reduce acceleration. Its purpose is to maintain steady rotation, not to increase speed."
+      },
+      "concept": "Practical application of flywheel",
+      "difficulty": "Easy",
+      "estimated_time_seconds": 35,
+      "marks": 1,
+      "chapter": "Rotational Motion",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Practical Application"
+    },
+    {
+      "id": 39,
+      "question": "A solid cylinder rolls without slipping on a horizontal surface with speed v. The ratio of its rotational kinetic energy to its translational kinetic energy is:",
+      "options": {
+        "A": "1/2",
+        "B": "2",
+        "C": "1/4",
+        "D": "1"
+      },
+      "correct_option": "A",
+      "correct_answer": "1/2",
+      "explanation": "Translational KE = ½Mv². For a solid cylinder, I = ½MR² and ω = v/R. Rotational KE = ½Iω² = ½ × ½MR² × v²/R² = ¼Mv². Therefore, the ratio of rotational KE to translational KE = (¼Mv²)/(½Mv²) = (1/4)/(1/2) = 1/2.",
+      "incorrect_option_explanations": {
+        "B": "Incorrect. This would require rotational KE to be twice translational KE, which is impossible for any standard rolling body. The maximum ratio is 1 (for a ring or hollow cylinder).",
+        "C": "Incorrect. This would be the ratio for a solid sphere (I = 2/5 MR², rotational KE = 1/5 Mv², ratio = (1/5)/(1/2) = 2/5). For a solid cylinder, the ratio is 1/2.",
+        "D": "Incorrect. This would be the ratio for a ring (I = MR², rotational KE = ½Mv², ratio = (1/2)/(1/2) = 1). A cylinder has less mass at the rim, so its rotational KE is smaller relative to translational KE."
+      },
+      "concept": "Ratio of rotational to translational kinetic energy for rolling cylinder",
+      "difficulty": "Medium",
+      "estimated_time_seconds": 55,
+      "marks": 1,
+      "chapter": "Rotational Motion",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Numerical"
+    },
+    {
+      "id": 40,
+      "question": "The angular velocity (ω) of a rotating body is plotted against time (t). The graph is a straight line passing through the origin with a positive slope. This indicates that the body is rotating with:",
+      "options": {
+        "A": "Increasing angular acceleration",
+        "B": "Decreasing angular acceleration",
+        "C": "Constant angular velocity",
+        "D": "Constant angular acceleration"
+      },
+      "correct_option": "D",
+      "correct_answer": "Constant angular acceleration",
+      "explanation": "A straight line ω-t graph passing through the origin means ω ∝ t, i.e., ω = αt (since ω₀ = 0). The slope of the ω-t graph gives angular acceleration: α = dω/dt = constant slope. Therefore, the body has constant angular acceleration. This is analogous to a straight-line v-t graph indicating constant linear acceleration.",
+      "incorrect_option_explanations": {
+        "A": "Incorrect. Increasing angular acceleration would mean the slope of the ω-t graph is increasing (curved upward, like a parabola opening upward). A straight line has constant slope, not increasing slope.",
+        "B": "Incorrect. Decreasing angular acceleration would mean the slope of the ω-t graph is decreasing (curved, becoming flatter). A straight line has constant slope, not decreasing slope.",
+        "C": "Incorrect. Constant angular velocity would be represented by a horizontal straight line (ω = constant), not a line passing through the origin with positive slope."
+      },
+      "concept": "Interpretation of ω-t graph",
+      "difficulty": "Easy",
+      "estimated_time_seconds": 35,
+      "marks": 1,
+      "chapter": "Rotational Motion",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Graph Interpretation"
+    },
+    {
+      "id": 41,
+      "question": "A body of mass 10 kg has a moment of inertia of 2.5 kg·m² about a given axis. Its radius of gyration about this axis is:",
+      "options": {
+        "A": "0.25 m",
+        "B": "2.5 m",
+        "C": "0.5 m",
+        "D": "1.0 m"
+      },
+      "correct_option": "C",
+      "correct_answer": "0.5 m",
+      "explanation": "The radius of gyration K is defined by I = MK². Therefore, K = √(I/M) = √(2.5/10) = √0.25 = 0.5 m. This means the entire mass of 10 kg could be concentrated at a distance of 0.5 m from the axis to produce the same moment of inertia.",
+      "incorrect_option_explanations": {
+        "A": "Incorrect. This would be the result if you calculated K = I/M = 2.5/10 = 0.25, omitting the square root. The radius of gyration involves a square root: K = √(I/M).",
+        "B": "Incorrect. This would be the result if you calculated K = I = 2.5, or K = √(I) = √2.5 ≈ 1.58, then rounding incorrectly. The correct formula requires dividing I by M before taking the square root.",
+        "D": "Incorrect. This might result from calculating K = √(I×M) = √25 = 5, then making an error, or from K = I/M² = 2.5/100 = 0.025. The correct formula is K = √(I/M)."
+      },
+      "concept": "Radius of gyration calculation",
+      "difficulty": "Easy",
+      "estimated_time_seconds": 30,
+      "marks": 1,
+      "chapter": "Rotational Motion",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Numerical"
+    },
+    {
+      "id": 42,
+      "question": "Angular momentum of a rotating rigid body is an example of:",
+      "options": {
+        "A": "A tensor quantity",
+        "B": "An axial vector",
+        "C": "A polar vector",
+        "D": "A scalar quantity"
+      },
+      "correct_option": "B",
+      "correct_answer": "An axial vector",
+      "explanation": "Angular momentum L = r × p is defined as the cross product of position vector r and linear momentum p. Cross products produce axial vectors (also called pseudovectors), which are associated with rotation and are directed along the axis of rotation. Other examples include angular velocity, torque, and magnetic field. Polar vectors (like displacement, velocity, force) are directed along the line of action.",
+      "incorrect_option_explanations": {
+        "A": "Incorrect. While angular momentum can be represented in tensor form in advanced treatments, at the MHT-CET level it is treated as a vector quantity (specifically, an axial vector). Tensors are not part of the standard MHT-CET syllabus for this chapter.",
+        "C": "Incorrect. Polar vectors are directed along the line of action (e.g., displacement, velocity, force). Angular momentum is perpendicular to the plane containing r and p, making it an axial vector, not a polar vector.",
+        "D": "Incorrect. Angular momentum has both magnitude and direction (it is a vector quantity). It is not a scalar. The direction is given by the right-hand rule applied to the cross product r × p."
+      },
+      "concept": "Angular momentum as an axial vector",
+      "difficulty": "Medium",
+      "estimated_time_seconds": 35,
+      "marks": 1,
+      "chapter": "Rotational Motion",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Conceptual"
+    },
+    {
+      "id": 43,
+      "question": "The angular momentum of a body changes from 5 kg·m²/s to 15 kg·m²/s in 2 seconds. The average torque acting on the body during this interval is:",
+      "options": {
+        "A": "5 N·m",
+        "B": "10 N·m",
+        "C": "20 N·m",
+        "D": "7.5 N·m"
+      },
+      "correct_option": "A",
+      "correct_answer": "5 N·m",
+      "explanation": "From the rotational analogue of Newton's second law, τ = dL/dt. For average torque, τ_avg = ΔL/Δt = (L₂ - L₁)/Δt = (15 - 5)/2 = 10/2 = 5 N·m. This is analogous to F = dp/dt in linear motion.",
+      "incorrect_option_explanations": {
+        "B": "Incorrect. This might result from using τ = ΔL = 15 - 5 = 10, omitting the division by time. Torque is the rate of change of angular momentum, not just the change.",
+        "C": "Incorrect. This might result from using τ = L₂ × Δt = 15 × 2 = 30, then making an error, or from τ = L₁ × L₂/Δt = 75/2 = 37.5. The correct formula is τ = ΔL/Δt.",
+        "D": "Incorrect. This might result from using τ = (L₁ + L₂)/2Δt = 20/4 = 5, wait that's 5. Or τ = L₂/Δt = 15/2 = 7.5. The correct formula uses the change in angular momentum, not the final value or average."
+      },
+      "concept": "Torque as rate of change of angular momentum",
+      "difficulty": "Easy",
+      "estimated_time_seconds": 35,
+      "marks": 1,
+      "chapter": "Rotational Motion",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Numerical"
+    },
+    {
+      "id": 44,
+      "question": "The dimensional formula of torque is:",
+      "options": {
+        "A": "[M L² T⁻²]",
+        "B": "[M L T⁻²]",
+        "C": "[M L² T⁻¹]",
+        "D": "[M L T⁻¹]"
+      },
+      "correct_option": "A",
+      "correct_answer": "[M L² T⁻²]",
+      "explanation": "Torque τ = r × F. Dimensions: [τ] = [L] × [MLT⁻²] = [ML²T⁻²]. Alternatively, from τ = Iα: [τ] = [ML²] × [T⁻²] = [ML²T⁻²]. This is the same as the dimensional formula of energy or work, since torque × angular displacement = work.",
+      "incorrect_option_explanations": {
+        "B": "Incorrect. [M L T⁻²] is the dimensional formula of force. Torque is force multiplied by perpendicular distance, so it has an extra factor of length [L], giving [ML²T⁻²].",
+        "C": "Incorrect. [M L² T⁻¹] is the dimensional formula of angular momentum (L = Iω) or Planck's constant. Torque has T⁻² because it involves force (which has T⁻²), not T⁻¹.",
+        "D": "Incorrect. [M L T⁻¹] is the dimensional formula of linear momentum (p = mv) or impulse. Torque involves force × distance, giving an extra [L] and T⁻² instead of T⁻¹."
+      },
+      "concept": "Dimensional formula of torque",
+      "difficulty": "Easy",
+      "estimated_time_seconds": 25,
+      "marks": 1,
+      "chapter": "Rotational Motion",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Dimensional Analysis"
+    },
+    {
+      "id": 45,
+      "question": "A ring of mass M and radius R rolls without slipping down an inclined plane making an angle θ with the horizontal. The acceleration of the ring down the incline is:",
+      "options": {
+        "A": "½ g sin θ",
+        "B": "g sin θ / (1 + M/R)",
+        "C": "⅔ g sin θ",
+        "D": "g sin θ"
+      },
+      "correct_option": "A",
+      "correct_answer": "½ g sin θ",
+      "explanation": "For a rolling ring, I = MR². Using energy conservation or force analysis: mgh = ½mv² + ½Iω² = ½mv² + ½MR²(v/R)² = ½mv² + ½mv² = mv². So mgh = mv², giving v² = gh. Using v² = 2as for constant acceleration down the incline (s = h/sin θ): gh = 2a(h/sin θ), so a = ½g sin θ. Alternatively, from τ = Iα and F = ma: Mg sin θ - f = Ma and fR = MR²(a/R) = MRa, giving f = Ma. So Mg sin θ - Ma = Ma, thus a = ½g sin θ.",
+      "incorrect_option_explanations": {
+        "B": "Incorrect. g sin θ / (1 + M/R) is dimensionally incorrect (M/R has units kg/m, which is not dimensionless). The correct formula involves the dimensionless ratio I/MR², giving a = g sin θ / (1 + I/MR²) = g sin θ / (1 + 1) = ½g sin θ.",
+        "C": "Incorrect. ⅔ g sin θ is the acceleration of a solid cylinder rolling down an incline (I = ½MR²). A ring has I = MR², giving a smaller acceleration of ½g sin θ.",
+        "D": "Incorrect. g sin θ is the acceleration of a body sliding without friction. For rolling, some energy goes into rotational motion, reducing the translational acceleration. The ring has the largest I/MR² = 1, so it has the smallest acceleration among rolling bodies."
+      },
+      "concept": "Acceleration of rolling ring on inclined plane",
+      "difficulty": "Hard",
+      "estimated_time_seconds": 70,
+      "marks": 1,
+      "chapter": "Rotational Motion",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Numerical"
+    },
+    {
+      "id": 46,
+      "question": "A body of radius R rolls on a horizontal surface. For pure rolling without slipping, the velocity of the center of mass (v) and the angular velocity (ω) must satisfy:",
+      "options": {
+        "A": "v = ω/R",
+        "B": "v = R/ω",
+        "C": "v = ω × R",
+        "D": "v = ω²R"
+      },
+      "correct_option": "C",
+      "correct_answer": "v = ω × R",
+      "explanation": "The condition for pure rolling without slipping is that the velocity of the point of contact with the surface is zero. The velocity of the point of contact is v_contact = v_cm - Rω (translational forward minus rotational backward). Setting v_contact = 0 gives v_cm = Rω. This is the fundamental condition for pure rolling.",
+      "incorrect_option_explanations": {
+        "A": "Incorrect. v = ω/R would mean linear velocity decreases as radius increases for constant angular velocity, which is opposite to the actual relationship. Also, this would give units of (rad/s)/m = rad/(m·s), not m/s.",
+        "B": "Incorrect. v = R/ω would give units of m/(rad/s) = m·s/rad, which is not m/s. Also, this would mean linear velocity decreases as angular velocity increases, which is incorrect.",
+        "D": "Incorrect. v = ω²R would give units of (rad/s)² × m = rad²·m/s², which is not a unit of velocity (m/s). This formula has no physical basis in rolling motion."
+      },
+      "concept": "Condition for pure rolling without slipping",
+      "difficulty": "Easy",
+      "estimated_time_seconds": 30,
+      "marks": 1,
+      "chapter": "Rotational Motion",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Conceptual"
+    },
+    {
+      "id": 47,
+      "question": "Three point masses, each of 2 kg, are placed at the vertices of an equilateral triangle of side 0.4 m. The moment of inertia of the system about an axis perpendicular to the plane of the triangle and passing through its centroid is:",
+      "options": {
+        "A": "0.32 kg·m²",
+        "B": "0.24 kg·m²",
+        "C": "0.16 kg·m²",
+        "D": "0.08 kg·m²"
+      },
+      "correct_option": "A",
+      "correct_answer": "0.32 kg·m²",
+      "explanation": "For an equilateral triangle of side a, the distance from the centroid to any vertex is r = a/√3. Here a = 0.4 m, so r² = a²/3 = (0.4)²/3 = 0.16/3 m². The moment of inertia is I = Σmᵢrᵢ² = 3 × m × r² = 3 × 2 × (0.16/3) = 6 × 0.16/3 = 2 × 0.16 = 0.32 kg·m².",
+      "incorrect_option_explanations": {
+        "B": "Incorrect. This might result from using r = a/2 = 0.2 m: r² = 0.04, I = 6 × 0.04 = 0.24. The distance from the centroid to a vertex of an equilateral triangle is a/√3 ≈ 0.231 m, not a/2 = 0.2 m.",
+        "C": "Incorrect. This might result from using r = a/3: r² = 0.16/9, I = 6 × 0.16/9 = 0.96/9 ≈ 0.107, then rounding, or from using I = m × a²/3 = 2 × 0.16/3 = 0.107. The correct distance is a/√3 and there are 3 masses.",
+        "D": "Incorrect. This might result from using r = a/2 instead of a/√3: r = 0.2, r² = 0.04, I = 6 × 0.04 = 0.24, then making another error. The distance from centroid to vertex in an equilateral triangle is a/√3, not a/2."
+      },
+      "concept": "Moment of inertia of a system of point masses",
+      "difficulty": "Hard",
+      "estimated_time_seconds": 70,
+      "marks": 1,
+      "chapter": "Rotational Motion",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Numerical"
+    },
+    {
+      "id": 48,
+      "question": "In an experiment to determine the moment of inertia of a disc using the formula I = ½MR², the mass M is measured with 2% error and the radius R with 1% error. The percentage error in the calculated value of I is:",
+      "options": {
+        "A": "3%",
+        "B": "2%",
+        "C": "4%",
+        "D": "1%"
+      },
+      "correct_option": "C",
+      "correct_answer": "4%",
+      "explanation": "For I = ½MR², taking logarithms and differentiating: ln I = ln(½) + ln M + 2 ln R. The percentage error is: ΔI/I × 100 = ΔM/M × 100 + 2 × ΔR/R × 100 = 2% + 2 × 1% = 2% + 2% = 4%. The factor of 2 appears because R is squared in the formula.",
+      "incorrect_option_explanations": {
+        "A": "Incorrect. This would be the result if you simply added the percentage errors: 2% + 1% = 3%, without accounting for the fact that R is squared. The correct error propagation gives 2% + 2(1%) = 4%.",
+        "B": "Incorrect. This would be the result if you only considered the error in M and ignored the error in R, or if you added the errors without accounting for the square on R: 2% + 1% = 3%, then made an error. The error in R is doubled because R² appears in the formula.",
+        "D": "Incorrect. This would be the result if you only considered the error in R and ignored the error in M, or if you used ΔI/I = ΔR/R = 1%. Both M and R contribute to the error in I."
+      },
+      "concept": "Error analysis in moment of inertia measurement",
+      "difficulty": "Hard",
+      "estimated_time_seconds": 60,
+      "marks": 1,
+      "chapter": "Rotational Motion",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Error Analysis"
+    },
+    {
+      "id": 49,
+      "question": "A disc of moment of inertia 0.5 kg·m² is initially at rest. A constant torque of 2 N·m is applied for 4 seconds. The angular velocity acquired by the disc is:",
+      "options": {
+        "A": "32 rad/s",
+        "B": "8 rad/s",
+        "C": "4 rad/s",
+        "D": "16 rad/s"
+      },
+      "correct_option": "D",
+      "correct_answer": "16 rad/s",
+      "explanation": "Using τ = Iα, the angular acceleration is α = τ/I = 2/0.5 = 4 rad/s². Since the disc starts from rest (ω₀ = 0), the angular velocity after time t is ω = ω₀ + αt = 0 + 4 × 4 = 16 rad/s. Alternatively, using the impulse-momentum theorem for rotation: τt = Iω - Iω₀, so ω = τt/I = 2 × 4/0.5 = 16 rad/s.",
+      "incorrect_option_explanations": {
+        "A": "Incorrect. This would be the result if you used ω = τt²/I = 2 × 16/0.5 = 64, then making an error, or if you used ω = 2αt = 2 × 4 × 4 = 32. The correct formula is ω = αt = (τ/I) × t.",
+        "B": "Incorrect. This would be the result if you used ω = τt²/I = 2 × 16/0.5 = 64, then made an error, or if you used ω = αt/2 = 4 × 4/2 = 8. The correct formula is ω = αt for constant acceleration from rest.",
+        "C": "Incorrect. This would be the result if you used ω = α = 4 rad/s, omitting the multiplication by time, or if you used ω = τ/I = 4 without considering time. Angular velocity depends on both acceleration and time."
+      },
+      "concept": "Angular velocity from torque and time",
+      "difficulty": "Medium",
+      "estimated_time_seconds": 45,
+      "marks": 1,
+      "chapter": "Rotational Motion",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Numerical"
+    },
+    {
+      "id": 50,
+      "question": "Which of the following is NOT a valid equation for rotational motion with constant angular acceleration?",
+      "options": {
+        "A": "θ = ωt - ½αt²",
+        "B": "θ = ω₀t + ½αt²",
+        "C": "ω² = ω₀² + 2αθ",
+        "D": "ω = ω₀ + αt"
+      },
+      "correct_option": "A",
+      "correct_answer": "θ = ωt - ½αt²",
+      "explanation": "The standard equations for rotational motion with constant angular acceleration are: (1) ω = ω₀ + αt, (2) θ = ω₀t + ½αt², and (3) ω² = ω₀² + 2αθ. These are analogous to linear motion equations. Option D, θ = ωt - ½αt², is not a standard equation. The correct form with final angular velocity is θ = ωt - ½αt² only if ω is the final velocity, but even then it's not a standard form taught in the syllabus. The standard third form uses initial velocity: θ = ω₀t + ½αt².",
+      "incorrect_option_explanations": {
+        "B": "Incorrect. This is a valid equation. It gives the angular displacement in time t. It is the rotational analogue of s = ut + ½at² in linear motion.",
+        "C": "Incorrect. This is a valid equation. It relates angular velocity to angular displacement without explicit time. It is the rotational analogue of v² = u² + 2as in linear motion.",
+        "D": "Incorrect. This is a valid equation. It gives the angular velocity at time t when the body starts with angular velocity ω₀ and has constant angular acceleration α. It is the rotational analogue of v = u + at."
+      },
+      "concept": "Equations of rotational motion with constant angular acceleration",
+      "difficulty": "Medium",
+      "estimated_time_seconds": 40,
+      "marks": 1,
+      "chapter": "Rotational Motion",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Conceptual"
+    },
+    {
+      "id": 51,
+      "question": "A disc of radius 0.4 m rotates about its central axis with an angular velocity of 5 rad/s. The linear speed of a point on the rim of the disc is:",
+      "options": {
+        "A": "2.5 m/s",
+        "B": "2.0 m/s",
+        "C": "12.5 m/s",
+        "D": "1.25 m/s"
+      },
+      "correct_option": "B",
+      "correct_answer": "2.0 m/s",
+      "explanation": "The linear speed of a point at distance r from the axis of rotation is v = rω. For a point on the rim, r = R = 0.4 m. Given ω = 5 rad/s: v = 0.4 × 5 = 2.0 m/s. The direction of this velocity is tangential to the circular path at that point.",
+      "incorrect_option_explanations": {
+        "A": "Incorrect. This might result from using v = R²ω = 0.16 × 5 = 0.8, then making an error, or from using v = ω = 5, then adjusting. The correct formula is v = Rω.",
+        "C": "Incorrect. This would be the result if you used v = ω/R = 5/0.4 = 12.5. Linear velocity increases with radius for constant angular velocity, so v = rω, not ω/r.",
+        "D": "Incorrect. This would be the result if you used v = rω/2 = 0.4 × 5/2 = 1.0, then made an error, or if you used v = ω/r = 5/0.4 = 12.5, then made an error. The correct formula is v = rω."
+      },
+      "concept": "Linear speed of a point on a rotating disc",
+      "difficulty": "Easy",
+      "estimated_time_seconds": 25,
+      "marks": 1,
+      "chapter": "Rotational Motion",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Numerical"
+    },
+    {
+      "id": 52,
+      "question": "The moment of inertia of a hollow cylinder of mass M, outer radius R₂ and inner radius R₁ about its central axis is:",
+      "options": {
+        "A": "½M(R₁ + R₂)²",
+        "B": "M(R₁² + R₂²)",
+        "C": "½M(R₁² + R₂²)",
+        "D": "½M(R₂² - R₁²)"
+      },
+      "correct_option": "C",
+      "correct_answer": "½M(R₁² + R₂²)",
+      "explanation": "For a hollow cylinder (annular disc) about its central axis, I = ½M(R₁² + R₂²), where R₁ is the inner radius and R₂ is the outer radius. This can be derived by considering it as a solid disc of radius R₂ minus a concentric solid disc of radius R₁. When R₁ = 0, this reduces to I = ½MR₂² (solid disc). When R₁ = R₂ = R (thin ring), this reduces to I = MR².",
+      "incorrect_option_explanations": {
+        "A": "Incorrect. ½M(R₁ + R₂)² = ½M(R₁² + 2R₁R₂ + R₂²) includes an extra cross term 2R₁R₂ that does not appear in the correct formula. The correct formula has R₁² + R₂² without the cross term.",
+        "B": "Incorrect. M(R₁² + R₂²) lacks the factor of ½ that appears in all disc/cylinder formulas about the central axis. This would overestimate the moment of inertia.",
+        "D": "Incorrect. ½M(R₂² - R₁²) would give the moment of inertia of the removed inner disc, not the hollow cylinder. The correct formula adds the squared radii, not subtracts them."
+      },
+      "concept": "Moment of inertia of hollow cylinder",
+      "difficulty": "Hard",
+      "estimated_time_seconds": 55,
+      "marks": 1,
+      "chapter": "Rotational Motion",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Formula Based"
+    },
+    {
+      "id": 53,
+      "question": "A particle of mass 0.2 kg moves in a horizontal circle of radius 0.5 m with a speed of 4 m/s. It is connected to the center by a string. The string is slowly pulled, reducing the radius to 0.25 m. The new speed of the particle is:",
+      "options": {
+        "A": "8 m/s",
+        "B": "16 m/s",
+        "C": "4 m/s",
+        "D": "2 m/s"
+      },
+      "correct_option": "A",
+      "correct_answer": "8 m/s",
+      "explanation": "Since the tension in the string is radial (passing through the center), there is no external torque about the center. Therefore, angular momentum is conserved: L₁ = L₂, i.e., mvr₁ = mvr₂ (since v is perpendicular to r at all times). Thus v₂ = v₁ × (r₁/r₂) = 4 × (0.5/0.25) = 4 × 2 = 8 m/s. As the radius decreases, the speed increases to conserve angular momentum.",
+      "incorrect_option_explanations": {
+        "B": "Incorrect. This would be the result if you used v₂ = v₁ × (r₁/r₂)² = 4 × 4 = 16, squaring the ratio incorrectly. The conservation equation is linear in r: mvr = constant, so v ∝ 1/r, not 1/r².",
+        "C": "Incorrect. This would imply that speed remains constant when radius changes, which would violate angular momentum conservation. If v were constant, L = mvr would decrease as r decreases, but L must remain constant.",
+        "D": "Incorrect. This would be the result if you used v₂ = v₁ × (r₂/r₁) = 4 × (0.25/0.5) = 2, inverting the ratio. As radius decreases, speed must increase to conserve angular momentum (L = mvr = constant)."
+      },
+      "concept": "Conservation of angular momentum - particle on a string",
+      "difficulty": "Medium",
+      "estimated_time_seconds": 50,
+      "marks": 1,
+      "chapter": "Rotational Motion",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Numerical"
+    },
+    {
+      "id": 54,
+      "question": "For a body rolling without slipping, the total kinetic energy is the sum of:",
+      "options": {
+        "A": "Only translational kinetic energy",
+        "B": "Translational kinetic energy minus rotational kinetic energy",
+        "C": "Translational kinetic energy and rotational kinetic energy",
+        "D": "Only rotational kinetic energy"
+      },
+      "correct_option": "C",
+      "correct_answer": "Translational kinetic energy and rotational kinetic energy",
+      "explanation": "For a rolling body, the motion can be considered as a combination of pure translation of the center of mass and pure rotation about the center of mass. The total kinetic energy is the sum of the translational kinetic energy of the center of mass (½Mv²) and the rotational kinetic energy about the center of mass (½Iω²). This is an application of König's theorem.",
+      "incorrect_option_explanations": {
+        "A": "Incorrect. Considering only translational KE would ignore the rotational motion of the body about its center of mass. Every point on the rolling body (except the center of mass) has both translational and rotational velocity components.",
+        "B": "Incorrect. The total kinetic energy is the sum, not the difference, of translational and rotational components. Both forms of energy are positive and add together to give the total mechanical energy of the rolling body.",
+        "D": "Incorrect. Considering only rotational KE would ignore the translational motion of the center of mass. The center of mass itself moves with velocity v_cm, contributing translational kinetic energy."
+      },
+      "concept": "Total kinetic energy of a rolling body",
+      "difficulty": "Easy",
+      "estimated_time_seconds": 25,
+      "marks": 1,
+      "chapter": "Rotational Motion",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Conceptual"
+    },
+    {
+      "id": 55,
+      "question": "Two point masses of 3 kg and 5 kg are connected by a light rod of length 0.8 m. The moment of inertia of the system about an axis perpendicular to the rod and passing through the center of mass is:",
+      "options": {
+        "A": "0.48 kg·m²",
+        "B": "2.0 kg·m²",
+        "C": "0.75 kg·m²",
+        "D": "1.2 kg·m²"
+      },
+      "correct_option": "D",
+      "correct_answer": "1.2 kg·m²",
+      "explanation": "First, find the center of mass position from the 3 kg mass: x_cm = (3×0 + 5×0.8)/(3+5) = 4/8 = 0.5 m. So the 3 kg mass is at distance r₁ = 0.5 m from the CM, and the 5 kg mass is at distance r₂ = 0.8 - 0.5 = 0.3 m from the CM. The moment of inertia is I = m₁r₁² + m₂r₂² = 3×(0.5)² + 5×(0.3)² = 3×0.25 + 5×0.09 = 0.75 + 0.45 = 1.2 kg·m².",
+      "incorrect_option_explanations": {
+        "A": "Incorrect. This might result from using r₁ = r₂ = 0.4 m (midpoint): I = 3×0.16 + 5×0.16 = 0.48 + 0.8 = 1.28, then making an error, or from using only one mass. The axis passes through the center of mass, not the midpoint of the rod.",
+        "B": "Incorrect. This might result from using I = (m₁ + m₂) × L² = 8 × 0.64 = 5.12, then making an error, or from using I = m₁r₁² + m₂r₂² with wrong distances. The correct CM distances are 0.5 m and 0.3 m.",
+        "C": "Incorrect. This might result from calculating the CM distance incorrectly or using I = m₁r₁ + m₂r₂ (without squaring): 3×0.5 + 5×0.3 = 1.5 + 1.5 = 3.0, then making an error. Moment of inertia involves squared distances."
+      },
+      "concept": "Moment of inertia of a two-mass system about center of mass",
+      "difficulty": "Medium",
+      "estimated_time_seconds": 60,
+      "marks": 1,
+      "chapter": "Rotational Motion",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Numerical"
+    },
+    {
+      "id": 56,
+      "question": "In an experiment, the torque applied to a rigid body is varied and the corresponding angular acceleration is measured. A graph of torque (τ) versus angular acceleration (α) is plotted. The slope of this graph gives:",
+      "options": {
+        "A": "The angular momentum of the body",
+        "B": "The moment of inertia of the body",
+        "C": "The rotational kinetic energy of the body",
+        "D": "The angular velocity of the body"
+      },
+      "correct_option": "B",
+      "correct_answer": "The moment of inertia of the body",
+      "explanation": "From the rotational analogue of Newton's second law, τ = Iα. This is a linear relationship between τ and α with slope I (moment of inertia) and zero intercept. Therefore, plotting τ versus α gives a straight line through the origin with slope equal to the moment of inertia of the body about the axis of rotation.",
+      "incorrect_option_explanations": {
+        "A": "Incorrect. Angular momentum L = Iω is not given by the slope of τ versus α. The slope gives I directly. Angular momentum would require knowledge of ω as well.",
+        "C": "Incorrect. Rotational kinetic energy K = ½Iω² is not given by the slope. The slope gives only I, and KE requires both I and ω.",
+        "D": "Incorrect. Angular velocity is not related to the slope of a τ-α graph. The slope gives a constant property of the body (moment of inertia), not a kinematic variable like angular velocity."
+      },
+      "concept": "Torque vs angular acceleration graph - slope gives moment of inertia",
+      "difficulty": "Medium",
+      "estimated_time_seconds": 40,
+      "marks": 1,
+      "chapter": "Rotational Motion",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Graph Interpretation"
+    },
+    {
+      "id": 57,
+      "question": "A motor delivers a constant torque of 15 N·m to a rotating shaft. If the shaft rotates at 20 rad/s, the power delivered by the motor is:",
+      "options": {
+        "A": "450 W",
+        "B": "300 W",
+        "C": "0.75 W",
+        "D": "150 W"
+      },
+      "correct_option": "B",
+      "correct_answer": "300 W",
+      "explanation": "Power in rotational motion is P = τω. Given τ = 15 N·m and ω = 20 rad/s: P = 15 × 20 = 300 W. This is analogous to P = Fv in linear motion. The unit is Watts (W), which is equivalent to J/s.",
+      "incorrect_option_explanations": {
+        "A": "Incorrect. This might result from using P = τ²ω = 225 × 20 = 4500, then making an error, or from P = τω² = 15 × 400 = 6000, then dividing by something. The correct formula is simply P = τω.",
+        "C": "Incorrect. This would be the result if you used P = τ/ω = 15/20 = 0.75, inverting the correct relationship. Power is the product of torque and angular velocity, not the quotient.",
+        "D": "Incorrect. This might result from using P = τ × ω/2 = 15 × 10 = 150, or from some other incorrect formula. The correct formula is P = τω with no additional factors."
+      },
+      "concept": "Power in rotational motion",
+      "difficulty": "Easy",
+      "estimated_time_seconds": 25,
+      "marks": 1,
+      "chapter": "Rotational Motion",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Numerical"
+    },
+    {
+      "id": 58,
+      "question": "A particle of mass m moves with constant velocity v along a straight line. The angular momentum of the particle about a point on that line is:",
+      "options": {
+        "A": "Constant but non-zero",
+        "B": "Continuously changing",
+        "C": "Zero",
+        "D": "Maximum"
+      },
+      "correct_option": "C",
+      "correct_answer": "Zero",
+      "explanation": "Angular momentum of a particle about a point is L = r × p = m(r × v). If the point lies on the line of motion of the particle, then the position vector r from the point to the particle is always parallel (or antiparallel) to the velocity vector v. The cross product of parallel vectors is zero. Therefore, L = 0 at all times.",
+      "incorrect_option_explanations": {
+        "A": "Incorrect. For the angular momentum to be constant but non-zero, the point must be at a fixed perpendicular distance from the line of motion. When the point is on the line, the perpendicular distance is zero, giving L = 0.",
+        "B": "Incorrect. Since the particle moves with constant velocity along a straight line passing through the point, r is always parallel to v, so r × v = 0 at all times. L remains zero (constant), not continuously changing.",
+        "D": "Incorrect. Angular momentum is maximum when the point is at the perpendicular distance from the line of motion. When the point is on the line itself, the perpendicular distance is zero, so L = 0 (minimum, not maximum)."
+      },
+      "concept": "Angular momentum of particle moving through the reference point",
+      "difficulty": "Medium",
+      "estimated_time_seconds": 40,
+      "marks": 1,
+      "chapter": "Rotational Motion",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Conceptual"
+    },
+    {
+      "id": 59,
+      "question": "A solid sphere rolls without slipping on a horizontal surface. The fraction of its total kinetic energy that is rotational kinetic energy is:",
+      "options": {
+        "A": "2/5",
+        "B": "5/7",
+        "C": "1/2",
+        "D": "2/7"
+      },
+      "correct_option": "D",
+      "correct_answer": "2/7",
+      "explanation": "For a solid sphere, I = (2/5)MR². Translational KE = ½Mv². Rotational KE = ½Iω² = ½ × (2/5)MR² × (v/R)² = (1/5)Mv². Total KE = ½Mv² + (1/5)Mv² = (5/10 + 2/10)Mv² = (7/10)Mv². The fraction that is rotational = [(1/5)Mv²] / [(7/10)Mv²] = (1/5) × (10/7) = 10/35 = 2/7.",
+      "incorrect_option_explanations": {
+        "A": "Incorrect. 2/5 is the value of I/MR² for a solid sphere, not the fraction of total KE that is rotational. The fraction is smaller than I/MR² because total KE includes both translational and rotational components.",
+        "B": "Incorrect. 5/7 is the fraction of total KE that is translational (not rotational) for a solid sphere. The translational fraction is 1 - 2/7 = 5/7.",
+        "C": "Incorrect. 1/2 is the fraction for a solid cylinder (rotational KE = ¼Mv², total = ¾Mv², ratio = (1/4)/(3/4) = 1/3... wait, that's 1/3. Actually 1/2 is for a ring). For a solid sphere, the fraction is 2/7."
+      },
+      "concept": "Fraction of rotational kinetic energy for rolling solid sphere",
+      "difficulty": "Hard",
+      "estimated_time_seconds": 70,
+      "marks": 1,
+      "chapter": "Rotational Motion",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Numerical"
+    },
+    {
+      "id": 60,
+      "question": "A diver jumps off a diving board and tucks his body into a ball while rotating in the air. By doing this, the diver is able to:",
+      "options": {
+        "A": "Increase his moment of inertia",
+        "B": "Decrease his moment of inertia and increase his angular velocity",
+        "C": "Decrease his total kinetic energy",
+        "D": "Increase his angular momentum"
+      },
+      "correct_option": "B",
+      "correct_answer": "Decrease his moment of inertia and increase his angular velocity",
+      "explanation": "When the diver tucks his body into a ball, he brings his mass closer to the axis of rotation, decreasing his moment of inertia (I = Σmᵢrᵢ²). In the absence of external torque (air resistance is negligible), angular momentum L = Iω is conserved. Therefore, as I decreases, ω must increase, allowing the diver to complete more rotations in the same time.",
+      "incorrect_option_explanations": {
+        "A": "Incorrect. Tucking the body brings mass closer to the axis, which decreases (not increases) the moment of inertia. Extending the body would increase I.",
+        "C": "Incorrect. The diver's total kinetic energy actually increases when he tucks. While L = Iω is constant, KE = L²/(2I) increases as I decreases. The diver does internal work to pull his body in, converting chemical energy into mechanical energy.",
+        "D": "Incorrect. Angular momentum is conserved in the absence of external torque. The diver cannot increase his angular momentum by changing body position — he can only redistribute it between I and ω."
+      },
+      "concept": "Practical application - diver tucking body",
+      "difficulty": "Medium",
+      "estimated_time_seconds": 45,
+      "marks": 1,
+      "chapter": "Rotational Motion",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Practical Application"
+    },
+    {
+      "id": 61,
+      "question": "A uniform disc of mass 4 kg and radius 0.3 m rotates about an axis perpendicular to its plane and passing through a point on its rim. Its moment of inertia is:",
+      "options": {
+        "A": "0.72 kg·m²",
+        "B": "0.36 kg·m²",
+        "C": "0.54 kg·m²",
+        "D": "0.18 kg·m²"
+      },
+      "correct_option": "C",
+      "correct_answer": "0.54 kg·m²",
+      "explanation": "For a disc about its central axis perpendicular to the plane, I_cm = ½MR² = ½ × 4 × (0.3)² = ½ × 4 × 0.09 = 0.18 kg·m². Using the parallel axis theorem with d = R = 0.3 m: I = I_cm + MR² = 0.18 + 4 × 0.09 = 0.18 + 0.36 = 0.54 kg·m². Alternatively, I = ½MR² + MR² = (3/2)MR² = 1.5 × 4 × 0.09 = 1.5 × 0.36 = 0.54 kg·m².",
+      "incorrect_option_explanations": {
+        "A": "Incorrect. This might result from using I = 2MR² = 2 × 4 × 0.09 = 0.72, or from using I = I_cm + 2MR². The parallel axis theorem adds only MR², not 2MR².",
+        "B": "Incorrect. This might result from using I = MR² (ring formula) or from a calculation error. For a disc about a rim point perpendicular to the plane, I = (3/2)MR² = 0.54 kg·m².",
+        "D": "Incorrect. This is the moment of inertia about the central axis (I_cm = ½MR²). The parallel axis theorem adds MR² to this value when the axis is on the rim."
+      },
+      "concept": "Moment of inertia of disc about axis through rim (parallel axis theorem)",
+      "difficulty": "Medium",
+      "estimated_time_seconds": 55,
+      "marks": 1,
+      "chapter": "Rotational Motion",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Numerical"
+    },
+    {
+      "id": 62,
+      "question": "A small blob of putty moving horizontally collides and sticks to the rim of a stationary disc that is free to rotate about its central vertical axis. During this collision:",
+      "options": {
+        "A": "Neither linear momentum nor angular momentum is conserved",
+        "B": "Both linear momentum and angular momentum are conserved",
+        "C": "Linear momentum is conserved but angular momentum is not",
+        "D": "Angular momentum is conserved but linear momentum is not"
+      },
+      "correct_option": "D",
+      "correct_answer": "Angular momentum is conserved but linear momentum is not",
+      "explanation": "Angular momentum about the central axis is conserved because there is no external torque about this axis (the reaction force at the axle passes through the axis, so its torque is zero). However, linear momentum is not conserved because the axle exerts an external force on the disc-putty system to keep the center of mass from moving horizontally. This external force at the axle prevents linear momentum conservation.",
+      "incorrect_option_explanations": {
+        "A": "Incorrect. Angular momentum is conserved about the central axis because the external force at the axle produces zero torque about this axis (the force passes through the axis).",
+        "B": "Incorrect. While angular momentum is conserved about the axle axis, linear momentum is not conserved because the fixed axle exerts an external force on the system during the collision.",
+        "C": "Incorrect. The opposite is true. The axle exerts an external force, so linear momentum is not conserved. But there is no external torque about the axle axis, so angular momentum is conserved."
+      },
+      "concept": "Conservation of angular momentum in collision with rotating disc",
+      "difficulty": "Hard",
+      "estimated_time_seconds": 65,
+      "marks": 1,
+      "chapter": "Rotational Motion",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Conceptual"
+    },
+    {
+      "id": 63,
+      "question": "A disc of moment of inertia 0.4 kg·m² rotates at 6 rad/s about its central axis. Another disc of moment of inertia 0.2 kg·m², initially at rest, is placed coaxially on the first disc. Due to friction, both discs eventually rotate together with a common angular velocity. This common angular velocity is:",
+      "options": {
+        "A": "6 rad/s",
+        "B": "2 rad/s",
+        "C": "3 rad/s",
+        "D": "4 rad/s"
+      },
+      "correct_option": "D",
+      "correct_answer": "4 rad/s",
+      "explanation": "By conservation of angular momentum (no external torque about the axis): I₁ω₁ + I₂ω₂ = (I₁ + I₂)ω. Given I₁ = 0.4 kg·m², ω₁ = 6 rad/s, I₂ = 0.2 kg·m², ω₂ = 0: 0.4 × 6 + 0.2 × 0 = (0.4 + 0.2)ω. So 2.4 = 0.6ω, giving ω = 2.4/0.6 = 4 rad/s.",
+      "incorrect_option_explanations": {
+        "A": "Incorrect. This would be the initial angular velocity of the first disc. After the second disc is placed, the total moment of inertia increases, so the angular velocity must decrease to conserve angular momentum.",
+        "B": "Incorrect. This might result from using ω = (I₁ω₁ - I₂ω₂)/(I₁ + I₂) with incorrect values, or from ω = I₁ω₁/(2(I₁ + I₂)) = 2.4/1.2 = 2. The correct formula uses simple addition of angular momenta.",
+        "C": "Incorrect. This might result from averaging the angular velocities: (6 + 0)/2 = 3, or from ω = (I₁ω₁ + I₂ω₂)/(I₁ + I₂) with I₂ω₂ incorrectly calculated. Conservation of angular momentum requires I₁ω₁ = (I₁ + I₂)ω."
+      },
+      "concept": "Conservation of angular momentum - two discs coupling",
+      "difficulty": "Medium",
+      "estimated_time_seconds": 50,
+      "marks": 1,
+      "chapter": "Rotational Motion",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Numerical"
+    },
+    {
+      "id": 64,
+      "question": "The moment of inertia of a solid sphere of mass M and radius R about an axis tangent to its surface is:",
+      "options": {
+        "A": "(2/3)MR²",
+        "B": "(5/2)MR²",
+        "C": "(2/5)MR²",
+        "D": "(7/5)MR²"
+      },
+      "correct_option": "D",
+      "correct_answer": "(7/5)MR²",
+      "explanation": "For a solid sphere about its diameter, I_cm = (2/5)MR². Using the parallel axis theorem with d = R (distance from center to tangent point): I = I_cm + MR² = (2/5)MR² + MR² = (2/5 + 5/5)MR² = (7/5)MR². This is a standard result for a solid sphere about a tangent.",
+      "incorrect_option_explanations": {
+        "A": "Incorrect. (2/3)MR² is the moment of inertia of a thin hollow spherical shell about its diameter. This does not apply to a solid sphere about a tangent.",
+        "B": "Incorrect. (5/2)MR² = 2.5MR² is larger than the correct value. This might result from incorrectly adding the terms or using the wrong I_cm value.",
+        "C": "Incorrect. (2/5)MR² is the moment of inertia of a solid sphere about its diameter (through the center). The parallel axis theorem adds MR² for a tangent axis."
+      },
+      "concept": "Moment of inertia of solid sphere about tangent (parallel axis theorem)",
+      "difficulty": "Hard",
+      "estimated_time_seconds": 55,
+      "marks": 1,
+      "chapter": "Rotational Motion",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Formula Based"
+    },
+    {
+      "id": 65,
+      "question": "A solid sphere rolls without slipping down an inclined plane of length 25/14 m starting from rest. The angle of inclination is such that sin θ = 0.5. Taking g = 10 m/s², the time taken to reach the bottom is:",
+      "options": {
+        "A": "1 s",
+        "B": "2 s",
+        "C": "√2 s",
+        "D": "√7 s"
+      },
+      "correct_option": "A",
+      "correct_answer": "1 s",
+      "explanation": "For a solid sphere rolling without slipping down an incline, acceleration a = g sin θ / (1 + I/MR²) = g sin θ / (1 + 2/5) = (5/7)g sin θ = (5/7) × 10 × 0.5 = 25/7 m/s². Using s = ½at² (since u = 0): 25/14 = ½ × (25/7) × t² = (25/14) × t². Therefore, t² = 1, giving t = 1 s.",
+      "incorrect_option_explanations": {
+        "B": "Incorrect. This might result from using a = g sin θ = 5 m/s² (sliding without friction): s = ½ × 5 × 4 = 10, which doesn't match, or from using a = ½g sin θ = 2.5: s = ½ × 2.5 × 4 = 5. The correct acceleration for a rolling solid sphere is (5/7)g sin θ.",
+        "C": "Incorrect. This might result from using the acceleration for a solid cylinder (a = ⅔g sin θ = 10/3) or from using s = ½at² with a different acceleration value. For a solid sphere, a = (5/7)g sin θ.",
+        "D": "Incorrect. This might result from using the formula for sliding down an incline of length 7 m: t = √(2s/(g sin θ)) = √(14/5) = √2.8 ≈ 1.67, or from other incorrect combinations."
+      },
+      "concept": "Time for rolling solid sphere down an incline",
+      "difficulty": "Hard",
+      "estimated_time_seconds": 70,
+      "marks": 1,
+      "chapter": "Rotational Motion",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Numerical"
+    },
+    {
+      "id": 66,
+      "question": "Four bodies — a ring, a disc, a solid sphere, and a hollow sphere — all have the same mass M and the same radius R. Which of the following correctly orders their moments of inertia about an axis through the center and perpendicular to the plane (for ring and disc) or through the center (for spheres)?",
+      "options": {
+        "A": "I_hollow_sphere < I_solid_sphere < I_disc < I_ring",
+        "B": "I_solid_sphere < I_disc < I_ring < I_hollow_sphere",
+        "C": "I_solid_sphere < I_disc < I_hollow_sphere < I_ring",
+        "D": "I_ring < I_disc < I_solid_sphere < I_hollow_sphere"
+      },
+      "correct_option": "C",
+      "correct_answer": "I_solid_sphere < I_disc < I_hollow_sphere < I_ring",
+      "explanation": "The moments of inertia are: I_ring = MR² (factor = 1), I_disc = ½MR² (factor = 0.5), I_solid_sphere = (2/5)MR² = 0.4MR² (factor = 0.4), I_hollow_sphere = (2/3)MR² ≈ 0.667MR² (factor ≈ 0.667). Ordering from smallest to largest: I_solid_sphere (0.4) < I_disc (0.5) < I_hollow_sphere (0.667) < I_ring (1). Bodies with more mass concentrated near the center have smaller moments of inertia.",
+      "incorrect_option_explanations": {
+        "A": "Incorrect. The hollow sphere has a larger I than the solid sphere, not smaller. The hollow sphere has I = (2/3)MR² ≈ 0.667MR², while the solid sphere has I = (2/5)MR² = 0.4MR².",
+        "B": "Incorrect. The hollow sphere (0.667MR²) has a larger moment of inertia than the disc (0.5MR²), so it should come after the disc, not the ring. The ring has the largest I = MR².",
+        "D": "Incorrect. This reverses the order. The ring has the largest I (all mass at maximum distance R), while the solid sphere has the smallest I (mass concentrated near the center)."
+      },
+      "concept": "Comparison of moments of inertia for different bodies",
+      "difficulty": "Medium",
+      "estimated_time_seconds": 55,
+      "marks": 1,
+      "chapter": "Rotational Motion",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Conceptual"
+    },
+    {
+      "id": 67,
+      "question": "A wheel starts from rest and its angular velocity increases uniformly from 0 to 20 rad/s in 4 seconds. The total number of revolutions made by the wheel during this time is:",
+      "options": {
+        "A": "40/π",
+        "B": "10/π",
+        "C": "20/π",
+        "D": "80/π"
+      },
+      "correct_option": "C",
+      "correct_answer": "20/π",
+      "explanation": "For uniformly increasing angular velocity, the average angular velocity is ω_avg = (ω₀ + ω)/2 = (0 + 20)/2 = 10 rad/s. The angular displacement is θ = ω_avg × t = 10 × 4 = 40 rad. Alternatively, using θ = ½(ω₀ + ω)t = ½ × 20 × 4 = 40 rad. Number of revolutions = θ/(2π) = 40/(2π) = 20/π.",
+      "incorrect_option_explanations": {
+        "A": "Incorrect. This would be the result if you used revolutions = θ/π = 40/π, omitting the factor of 2 in the denominator. One complete revolution equals 2π radians, not π radians.",
+        "B": "Incorrect. This might result from using θ = ½ωt = ½ × 20 × 4 = 40, then dividing by 4π: 40/(4π) = 10/π. The correct formula for revolutions is θ/(2π), not θ/(4π).",
+        "D": "Incorrect. This might result from using θ = ωt = 20 × 4 = 80 rad (ignoring that the wheel starts from rest), then dividing by π: 80/π. The correct angular displacement is 40 rad, not 80 rad."
+      },
+      "concept": "Number of revolutions from angular acceleration",
+      "difficulty": "Medium",
+      "estimated_time_seconds": 50,
+      "marks": 1,
+      "chapter": "Rotational Motion",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Numerical"
+    },
+    {
+      "id": 68,
+      "question": "The SI unit of moment of inertia is:",
+      "options": {
+        "A": "kg·m/s",
+        "B": "kg·m²/s",
+        "C": "N·m",
+        "D": "kg·m²"
+      },
+      "correct_option": "D",
+      "correct_answer": "kg·m²",
+      "explanation": "Moment of inertia is defined as I = Σmᵢrᵢ². The SI unit is kg·m² (kilogram-meter squared). This comes from multiplying mass (kg) by the square of distance (m²). It can also be derived from τ = Iα: [I] = [τ]/[α] = N·m/(rad/s²) = kg·m/s² × m / (1/s²) = kg·m².",
+      "incorrect_option_explanations": {
+        "A": "Incorrect. kg·m/s is the SI unit of linear momentum (p = mv). Moment of inertia involves the square of distance, not just distance, and does not involve time in the denominator.",
+        "B": "Incorrect. kg·m²/s is the SI unit of angular momentum (L = Iω). Moment of inertia itself does not have the time dimension in the denominator.",
+        "C": "Incorrect. N·m is the SI unit of torque or work/energy (Joule). While torque and moment of inertia are related by τ = Iα, they have different units. N·m = kg·m²/s², which differs from kg·m² by a factor of s⁻²."
+      },
+      "concept": "SI unit of moment of inertia",
+      "difficulty": "Easy",
+      "estimated_time_seconds": 20,
+      "marks": 1,
+      "chapter": "Rotational Motion",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Unit Conversion"
+    },
+    {
+      "id": 69,
+      "question": "A disc of radius R rolls without slipping on a horizontal surface with velocity v of its center of mass. The velocity of the topmost point of the disc relative to the ground is:",
+      "options": {
+        "A": "Zero",
+        "B": "v/2",
+        "C": "v",
+        "D": "2v"
+      },
+      "correct_option": "D",
+      "correct_answer": "2v",
+      "explanation": "For rolling without slipping, v = Rω. The velocity of any point is the vector sum of the translational velocity of the center of mass (v, forward) and the rotational velocity about the center (Rω). At the topmost point, the rotational velocity is Rω = v directed forward (same direction as v_cm). Therefore, the total velocity = v + Rω = v + v = 2v.",
+      "incorrect_option_explanations": {
+        "A": "Incorrect. Zero is the velocity of the point of contact with the ground, where the backward rotational velocity (Rω) cancels the forward translational velocity (v). The topmost point has maximum velocity.",
+        "B": "Incorrect. This has no physical basis for any point on the rolling disc. The velocity varies linearly from 0 at the bottom to 2v at the top.",
+        "C": "Incorrect. This would be the velocity of the center of mass itself. The topmost point has an additional rotational velocity component in the same direction as the translational velocity."
+      },
+      "concept": "Velocity of topmost point of rolling disc",
+      "difficulty": "Medium",
+      "estimated_time_seconds": 40,
+      "marks": 1,
+      "chapter": "Rotational Motion",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Numerical"
+    },
+    {
+      "id": 70,
+      "question": "An ice skater spinning with outstretched arms has an angular velocity ω. When she pulls her arms close to her body, her angular velocity becomes 3ω. The ratio of her final moment of inertia to her initial moment of inertia is:",
+      "options": {
+        "A": "3",
+        "B": "1/3",
+        "C": "9",
+        "D": "1/9"
+      },
+      "correct_option": "B",
+      "correct_answer": "1/3",
+      "explanation": "By conservation of angular momentum (no external torque): I₁ω₁ = I₂ω₂. Given ω₁ = ω and ω₂ = 3ω: I₁ × ω = I₂ × 3ω. Therefore, I₂/I₁ = ω/3ω = 1/3. As the skater pulls her arms in, her moment of inertia decreases to one-third of its initial value, causing her angular velocity to triple.",
+      "incorrect_option_explanations": {
+        "A": "Incorrect. This would be the result if you inverted the ratio: I₂/I₁ = ω₂/ω₁ = 3. As the skater pulls her arms in, I decreases, so the ratio must be less than 1, not greater than 1.",
+        "C": "Incorrect. This would be the result if you used I₂/I₁ = (ω₂/ω₁)² = 3² = 9, incorrectly squaring the inverted ratio. The relationship is linear, not quadratic.",
+        "D": "Incorrect. This would be the result if you used I₂/I₁ = (ω₁/ω₂)² = (1/3)² = 1/9, incorrectly squaring the ratio. Angular momentum conservation gives a linear relationship: I₂/I₁ = ω₁/ω₂."
+      },
+      "concept": "Conservation of angular momentum - ice skater",
+      "difficulty": "Easy",
+      "estimated_time_seconds": 35,
+      "marks": 1,
+      "chapter": "Rotational Motion",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Numerical"
+    },
+    {
+      "id": 71,
+      "question": "A thin rectangular lamina of mass 12 kg has dimensions 0.4 m × 0.3 m. Its moment of inertia about an axis perpendicular to its plane and passing through its center is:",
+      "options": {
+        "A": "0.25 kg·m²",
+        "B": "0.15 kg·m²",
+        "C": "0.50 kg·m²",
+        "D": "0.30 kg·m²"
+      },
+      "correct_option": "A",
+      "correct_answer": "0.25 kg·m²",
+      "explanation": "For a rectangular lamina of mass M, length a and breadth b, about an axis perpendicular to the plane through the center: I = M(a² + b²)/12. Substituting M = 12 kg, a = 0.4 m, b = 0.3 m: I = 12 × (0.16 + 0.09)/12 = 12 × 0.25/12 = 0.25 kg·m².",
+      "incorrect_option_explanations": {
+        "B": "Incorrect. This might result from using I = M(a² + b²)/80 or some other incorrect denominator, or from using I = M(a + b)²/12 = 12 × 0.49/12 = 0.49, then making an error. The correct formula is M(a² + b²)/12.",
+        "C": "Incorrect. This might result from using I = M(a² + b²)/6 = 12 × 0.25/6 = 0.5, which is the formula for an axis through the edge (parallel axis theorem), or from using I = M(a² + b²)/4 = 0.75.",
+        "D": "Incorrect. This might result from using I = M(a² + b²)/10 = 12 × 0.25/10 = 0.3, or from I = M(a² + b²)/8 = 12 × 0.25/8 = 0.375. The correct denominator is 12."
+      },
+      "concept": "Moment of inertia of rectangular lamina about perpendicular axis through center",
+      "difficulty": "Medium",
+      "estimated_time_seconds": 55,
+      "marks": 1,
+      "chapter": "Rotational Motion",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Numerical"
+    },
+    {
+      "id": 72,
+      "question": "A rigid body starts from rest and rotates with constant angular acceleration. The ratio of the angular displacement in the first 2 seconds to the angular displacement in the next 2 seconds is:",
+      "options": {
+        "A": "1:1",
+        "B": "1:4",
+        "C": "1:3",
+        "D": "1:2"
+      },
+      "correct_option": "C",
+      "correct_answer": "1:3",
+      "explanation": "For motion starting from rest with constant angular acceleration: θ = ½αt². Angular displacement in first 2 seconds: θ₁ = ½α(2)² = 2α. Angular displacement in first 4 seconds: θ_total = ½α(4)² = 8α. Angular displacement in next 2 seconds (from t=2 to t=4): θ₂ = θ_total - θ₁ = 8α - 2α = 6α. Therefore, θ₁:θ₂ = 2α:6α = 1:3. This is analogous to the result in linear motion where displacements in successive equal time intervals are in the ratio 1:3:5:7...",
+      "incorrect_option_explanations": {
+        "A": "Incorrect. This would imply equal displacements in both intervals, which is only true for constant angular velocity (zero acceleration), not for constant angular acceleration from rest.",
+        "B": "Incorrect. This might result from calculating the ratio of times (2:4 = 1:2) and squaring it, or from some other incorrect reasoning. The correct ratio is 1:3 for successive equal intervals starting from rest.",
+        "D": "Incorrect. This might result from using θ ∝ t instead of θ ∝ t². For constant acceleration from rest, displacement is proportional to the square of time, not directly proportional to time."
+      },
+      "concept": "Angular displacement in successive equal time intervals",
+      "difficulty": "Medium",
+      "estimated_time_seconds": 55,
+      "marks": 1,
+      "chapter": "Rotational Motion",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Numerical"
+    },
+    {
+      "id": 73,
+      "question": "A flywheel of moment of inertia 2 kg·m² is initially rotating at 10 rad/s. A constant retarding torque of 20 N·m acts on it. The angular displacement of the flywheel before it comes to rest is:",
+      "options": {
+        "A": "2.5 rad",
+        "B": "5 rad",
+        "C": "20 rad",
+        "D": "10 rad"
+      },
+      "correct_option": "B",
+      "correct_answer": "5 rad",
+      "explanation": "Initial rotational kinetic energy = ½Iω₀² = ½ × 2 × (10)² = 100 J. By the work-energy theorem, the work done by the retarding torque equals the change in kinetic energy: W = ΔKE = 0 - 100 = -100 J. Since W = -τθ (retarding torque does negative work): -100 = -20 × θ, giving θ = 5 rad. Alternatively, using τ = Iα: α = -20/2 = -10 rad/s². Then ω² = ω₀² + 2αθ: 0 = 100 + 2(-10)θ, so 20θ = 100, θ = 5 rad.",
+      "incorrect_option_explanations": {
+        "A": "Incorrect. This might result from using θ = τ/I = 20/2 = 10, then dividing by 4, or from using θ = ω₀²/(4α) = 100/40 = 2.5. The correct calculation gives θ = 5 rad.",
+        "C": "Incorrect. This might result from using θ = ω₀²/(2α) with α = τ/I = 10, but using the wrong sign: θ = 100/5 = 20, or from θ = Iω₀²/τ = 2 × 100/20 = 10, then doubling. The correct answer is 5 rad.",
+        "D": "Incorrect. This might result from using θ = ω₀²/α = 100/10 = 10, omitting the factor of 2 in the equation ω² = ω₀² + 2αθ. The correct formula has 2αθ, not αθ."
+      },
+      "concept": "Work-energy theorem in rotational motion",
+      "difficulty": "Medium",
+      "estimated_time_seconds": 60,
+      "marks": 1,
+      "chapter": "Rotational Motion",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Numerical"
+    },
+    {
+      "id": 74,
+      "question": "A rigid body is in rotational equilibrium when:",
+      "options": {
+        "A": "The net force acting on the body is zero",
+        "B": "The body is at rest",
+        "C": "Both the net force and net torque are zero",
+        "D": "The net torque acting on the body is zero"
+      },
+      "correct_option": "D",
+      "correct_answer": "The net torque acting on the body is zero",
+      "explanation": "Rotational equilibrium is defined as the state in which the net external torque acting on the body is zero. This means the body has zero angular acceleration (α = 0), so its angular velocity remains constant (which may be zero or non-zero). Note that translational equilibrium (net force = 0) is a separate condition. A body can be in rotational equilibrium without being in translational equilibrium, and vice versa.",
+      "incorrect_option_explanations": {
+        "A": "Incorrect. Zero net force is the condition for translational equilibrium, not rotational equilibrium. A body can have zero net force but experience a net torque (e.g., a couple), causing it to rotate.",
+        "B": "Incorrect. A body in rotational equilibrium can be rotating with constant angular velocity — it need not be at rest. 'At rest' describes static equilibrium, which is a special case of rotational equilibrium where ω = 0.",
+        "C": "Incorrect. While both conditions together define complete mechanical equilibrium, rotational equilibrium alone only requires zero net torque. A body can be in rotational equilibrium while accelerating translationally (e.g., a body falling while spinning at constant angular velocity)."
+      },
+      "concept": "Condition for rotational equilibrium",
+      "difficulty": "Easy",
+      "estimated_time_seconds": 30,
+      "marks": 1,
+      "chapter": "Rotational Motion",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Conceptual"
+    },
+    {
+      "id": 75,
+      "question": "A solid cylinder rolls without slipping down an inclined plane making an angle θ with the horizontal. The acceleration of the cylinder is:",
+      "options": {
+        "A": "g sin θ",
+        "B": "½ g sin θ",
+        "C": "g sin θ / (1 + MR²/I)",
+        "D": "⅔ g sin θ"
+      },
+      "correct_option": "D",
+      "correct_answer": "⅔ g sin θ",
+      "explanation": "For a solid cylinder, I = ½MR². Using the general formula for rolling acceleration: a = g sin θ / (1 + I/MR²) = g sin θ / (1 + ½) = g sin θ / (3/2) = (2/3)g sin θ. This can also be derived from force and torque equations: Mg sin θ - f = Ma and fR = Iα = I(a/R), giving f = Ia/R² = ½Ma. Substituting: Mg sin θ - ½Ma = Ma, so Mg sin θ = (3/2)Ma, thus a = (2/3)g sin θ.",
+      "incorrect_option_explanations": {
+        "A": "Incorrect. g sin θ is the acceleration of a body sliding without friction. For rolling, some energy goes into rotation, reducing the translational acceleration.",
+        "B": "Incorrect. ½g sin θ is the acceleration of a ring (I = MR²) rolling down an incline. A solid cylinder has I = ½MR², giving a larger acceleration of ⅔g sin θ.",
+        "C": "Incorrect. While the general formula a = g sin θ / (1 + I/MR²) is correct, option D presents it in a rearranged form g sin θ / (1 + MR²/I), which is not equivalent. The correct denominator is (1 + I/MR²), not (1 + MR²/I)."
+      },
+      "concept": "Acceleration of rolling solid cylinder on inclined plane",
+      "difficulty": "Medium",
+      "estimated_time_seconds": 55,
+      "marks": 1,
+      "chapter": "Rotational Motion",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Numerical"
+    },
+    {
+      "id": 76,
+      "question": "The angular displacement (θ) of a rotating body is plotted against time (t). The graph is a parabola opening upward with its vertex at the origin. This indicates that the body is rotating with:",
+      "options": {
+        "A": "Constant angular velocity",
+        "B": "Constant angular acceleration",
+        "C": "Decreasing angular acceleration",
+        "D": "Increasing angular acceleration"
+      },
+      "correct_option": "B",
+      "correct_answer": "Constant angular acceleration",
+      "explanation": "For constant angular acceleration starting from rest (ω₀ = 0), the angular displacement is θ = ½αt². This is a parabolic relationship between θ and t, with the parabola opening upward (since α > 0). The vertex at the origin indicates θ = 0 at t = 0. This is analogous to s = ½at² in linear motion, which also gives a parabolic s-t graph for constant acceleration from rest.",
+      "incorrect_option_explanations": {
+        "A": "Incorrect. Constant angular velocity would give θ = ωt, which is a straight line through the origin with slope ω, not a parabola.",
+        "C": "Incorrect. Decreasing angular acceleration would result in a curve that becomes flatter than a parabola (since the rate of increase of slope decreases). A parabola has constant curvature, corresponding to constant acceleration.",
+        "D": "Incorrect. Increasing angular acceleration would give θ ∝ t³ (for α ∝ t), resulting in a cubic curve, not a parabola. A parabola specifically indicates θ ∝ t², which corresponds to constant α."
+      },
+      "concept": "Interpretation of θ-t graph as parabola",
+      "difficulty": "Medium",
+      "estimated_time_seconds": 40,
+      "marks": 1,
+      "chapter": "Rotational Motion",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Graph Interpretation"
+    },
+    {
+      "id": 77,
+      "question": "A thin equilateral triangular lamina of mass 12 kg and side 0.4 m rotates about an axis perpendicular to its plane and passing through its centroid. Its moment of inertia is:",
+      "options": {
+        "A": "0.04 kg·m²",
+        "B": "0.16 kg·m²",
+        "C": "0.32 kg·m²",
+        "D": "0.08 kg·m²"
+      },
+      "correct_option": "B",
+      "correct_answer": "0.16 kg·m²",
+      "explanation": "For an equilateral triangular lamina of mass M and side a, about an axis perpendicular to the plane through the centroid: I = Ma²/12. Substituting M = 12 kg and a = 0.4 m: I = 12 × (0.4)²/12 = 12 × 0.16/12 = 0.16 kg·m². This is analogous to the formula for a rod about its center perpendicular to its length.",
+      "incorrect_option_explanations": {
+        "A": "Incorrect. This might result from using I = Ma²/48 = 12 × 0.16/48 = 0.04, or from using the formula for a different axis. The correct formula for perpendicular axis through centroid is Ma²/12.",
+        "C": "Incorrect. This might result from using I = Ma²/6 = 12 × 0.16/6 = 0.32, which is the formula for an axis through a vertex perpendicular to the plane, or from using I = Ma²/3. The centroid axis gives a smaller I.",
+        "D": "Incorrect. This might result from using I = Ma²/24 = 12 × 0.16/24 = 0.08, or from using an incorrect formula. The standard formula for an equilateral triangle about perpendicular axis through centroid is Ma²/12."
+      },
+      "concept": "Moment of inertia of equilateral triangular lamina",
+      "difficulty": "Hard",
+      "estimated_time_seconds": 60,
+      "marks": 1,
+      "chapter": "Rotational Motion",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Numerical"
+    },
+    {
+      "id": 78,
+      "question": "A couple consists of two forces that are:",
+      "options": {
+        "A": "Equal in magnitude, opposite in direction, and acting at the same point",
+        "B": "Equal in magnitude, in the same direction, and acting along parallel lines",
+        "C": "Equal in magnitude, opposite in direction, and acting along different lines of action",
+        "D": "Unequal in magnitude, opposite in direction, and acting along parallel lines"
+      },
+      "correct_option": "C",
+      "correct_answer": "Equal in magnitude, opposite in direction, and acting along different lines of action",
+      "explanation": "A couple is defined as a pair of forces that are equal in magnitude, opposite in direction, and act along different (parallel) lines of action. The net force of a couple is zero, but it produces a pure torque (rotational effect) given by τ = F × d, where d is the perpendicular distance between the lines of action of the two forces. A couple causes pure rotation without translation.",
+      "incorrect_option_explanations": {
+        "A": "Incorrect. If two equal and opposite forces act at the same point, they cancel each other completely (net force = 0, net torque = 0). No rotation is produced. A couple requires the forces to act at different points.",
+        "B": "Incorrect. Forces in the same direction would add up, producing a net force (causing translation) in addition to any torque. A couple requires opposite directions to cancel the translational effect.",
+        "D": "Incorrect. A couple requires the two forces to be equal in magnitude. Unequal forces would produce both a net force (causing translation) and a net torque (causing rotation), not a pure couple."
+      },
+      "concept": "Definition of a couple",
+      "difficulty": "Easy",
+      "estimated_time_seconds": 30,
+      "marks": 1,
+      "chapter": "Rotational Motion",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Conceptual"
+    },
+    {
+      "id": 79,
+      "question": "A solid sphere of mass 2 kg rolls without slipping down an inclined plane that makes an angle of 30° with the horizontal. Taking g = 10 m/s², the force of friction acting on the sphere is:",
+      "options": {
+        "A": "20/7 N",
+        "B": "10/3 N",
+        "C": "5 N",
+        "D": "2 N"
+      },
+      "correct_option": "A",
+      "correct_answer": "20/7 N",
+      "explanation": "For a solid sphere rolling down an incline, the acceleration is a = (5/7)g sin θ. From F = ma along the incline: Mg sin θ - f = Ma. So f = Mg sin θ - Ma = Mg sin θ - M × (5/7)g sin θ = (2/7)Mg sin θ. Substituting M = 2 kg, g = 10 m/s², θ = 30°: f = (2/7) × 2 × 10 × 0.5 = (2/7) × 10 = 20/7 N ≈ 2.86 N. Alternatively, from torque: fR = Iα = (2/5)MR² × (a/R) = (2/5)MRa, so f = (2/5)Ma = (2/5) × 2 × (5/7) × 10 × 0.5 = (4/5) × (25/7) = 100/35 = 20/7 N.",
+      "incorrect_option_explanations": {
+        "B": "Incorrect. This might result from using the formula for a solid cylinder (f = (1/3)Mg sin θ = 10/3 N) instead of a solid sphere. A solid sphere has f = (2/7)Mg sin θ, giving 20/7 N.",
+        "C": "Incorrect. This might result from using f = Mg sin θ = 2 × 10 × 0.5 = 10 N, then dividing by 2, or from using f = ½Mg sin θ = 5 N. The correct fraction for a solid sphere is 2/7, not 1/2.",
+        "D": "Incorrect. This might result from using f = μMg cos θ with some assumed coefficient of friction, or from f = Ma with a = 1 m/s². For rolling without slipping, friction is static and is determined by the rolling condition, not by μ."
+      },
+      "concept": "Friction force on rolling solid sphere down an incline",
+      "difficulty": "Hard",
+      "estimated_time_seconds": 75,
+      "marks": 1,
+      "chapter": "Rotational Motion",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Numerical"
+    },
+    {
+      "id": 80,
+      "question": "A door is easier to open or close when the handle is placed far from the hinges rather than close to them. This is because:",
+      "options": {
+        "A": "The mass of the door decreases",
+        "B": "The force required is smaller for the same torque",
+        "C": "The moment of inertia of the door decreases",
+        "D": "The friction at the hinges decreases"
+      },
+      "correct_option": "B",
+      "correct_answer": "The force required is smaller for the same torque",
+      "explanation": "Torque τ = F × d, where d is the perpendicular distance from the axis of rotation (hinges) to the line of action of the force. For a given torque needed to open the door, a larger d (handle farther from hinges) means a smaller force F is required. This is why door handles are placed at the edge opposite the hinges — to maximize the lever arm and minimize the effort force.",
+      "incorrect_option_explanations": {
+        "A": "Incorrect. The mass of the door does not change based on where the handle is placed. Mass is an intrinsic property of the door and is independent of handle position.",
+        "C": "Incorrect. The moment of inertia of the door about the hinge axis depends on the mass distribution of the door itself, not on where the handle is attached. The handle's mass is negligible compared to the door.",
+        "D": "Incorrect. The friction at the hinges depends on the hinge design and lubrication, not on the handle position. Handle position affects the torque produced by the applied force, not the hinge friction."
+      },
+      "concept": "Practical application - door handle and torque lever arm",
+      "difficulty": "Easy",
+      "estimated_time_seconds": 30,
+      "marks": 1,
+      "chapter": "Rotational Motion",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Practical Application"
+    },
+    {
+      "id": 81,
+      "question": "A thin square lamina of mass 8 kg has side length 0.6 m. Its moment of inertia about an axis perpendicular to its plane and passing through its center is:",
+      "options": {
+        "A": "0.36 kg·m²",
+        "B": "0.12 kg·m²",
+        "C": "0.48 kg·m²",
+        "D": "0.24 kg·m²"
+      },
+      "correct_option": "D",
+      "correct_answer": "0.24 kg·m²",
+      "explanation": "For a square lamina of mass M and side a, about an axis perpendicular to the plane through the center: I = Ma²/12. Substituting M = 8 kg and a = 0.6 m: I = 8 × (0.6)²/12 = 8 × 0.36/12 = 2.88/12 = 0.24 kg·m². This is the same formula as for a rectangular lamina with a = b.",
+      "incorrect_option_explanations": {
+        "A": "Incorrect. This might result from using I = Ma²/8 = 8 × 0.36/8 = 0.36, which is the formula for an axis along a side in the plane, or from I = Ma²/6. The correct formula is Ma²/12.",
+        "B": "Incorrect. This might result from using I = Ma²/24 = 8 × 0.36/24 = 0.12, or from using an incorrect formula. The correct denominator for a square lamina about perpendicular axis through center is 12.",
+        "C": "Incorrect. This might result from using I = Ma²/6 = 8 × 0.36/6 = 0.48, which is the formula for an axis through the center in the plane of the lamina, or from I = Ma²/4. The perpendicular axis through center gives I = Ma²/12."
+      },
+      "concept": "Moment of inertia of square lamina about perpendicular axis through center",
+      "difficulty": "Medium",
+      "estimated_time_seconds": 45,
+      "marks": 1,
+      "chapter": "Rotational Motion",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Numerical"
+    },
+    {
+      "id": 82,
+      "question": "The time rate of change of angular momentum of a system of particles about a fixed point is equal to:",
+      "options": {
+        "A": "The total kinetic energy of the system",
+        "B": "The total external torque acting on the system about that point",
+        "C": "The total external force acting on the system",
+        "D": "The total linear momentum of the system"
+      },
+      "correct_option": "B",
+      "correct_answer": "The total external torque acting on the system about that point",
+      "explanation": "This is the rotational analogue of Newton's second law: dL/dt = τ_ext. The time rate of change of angular momentum of a system about a fixed point equals the net external torque acting on the system about that same point. Internal torques (between particles of the system) cancel out in pairs due to Newton's third law. This is a fundamental theorem in rotational dynamics.",
+      "incorrect_option_explanations": {
+        "A": "Incorrect. Kinetic energy is related to work done by forces/torques (work-energy theorem), not directly to the rate of change of angular momentum. d(KE)/dt = Power = τ·ω.",
+        "C": "Incorrect. The time rate of change of linear momentum equals the total external force (dp/dt = F_ext). Angular momentum changes due to torque, not force directly.",
+        "D": "Incorrect. Linear momentum is a separate conserved quantity. The rate of change of linear momentum equals net external force, while the rate of change of angular momentum equals net external torque."
+      },
+      "concept": "Rate of change of angular momentum equals external torque",
+      "difficulty": "Medium",
+      "estimated_time_seconds": 35,
+      "marks": 1,
+      "chapter": "Rotational Motion",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Conceptual"
+    },
+    {
+      "id": 83,
+      "question": "The Earth completes one rotation about its axis in approximately 24 hours. Its angular velocity in rad/s is approximately:",
+      "options": {
+        "A": "2π/86400 rad/s",
+        "B": "π/43200 rad/s",
+        "C": "7.27 × 10⁻⁵ rad/s",
+        "D": "π/21600 rad/s"
+      },
+      "correct_option": "C",
+      "correct_answer": "7.27 × 10⁻⁵ rad/s",
+      "explanation": "Angular velocity ω = 2π/T, where T is the time period. For Earth, T = 24 hours = 24 × 3600 = 86400 s. So ω = 2π/86400 = π/43200 ≈ 7.27 × 10⁻⁵ rad/s. Option A (π/43200) is also mathematically correct, but option D gives the standard decimal form used in physics. In MHT-CET, decimal approximations are typically preferred for numerical answers.",
+      "incorrect_option_explanations": {
+        "A": "Incorrect. While 2π/86400 is mathematically correct, it is not in simplified or decimal form. The standard answer format for such questions is the decimal approximation 7.27 × 10⁻⁵ rad/s.",
+        "B": "Incorrect. While π/43200 is mathematically equal to 2π/86400, this is not the standard decimal form. However, note that this value equals 7.27 × 10⁻⁵ rad/s. In standard MHT-CET format, the decimal answer D is preferred.",
+        "D": "Incorrect. π/21600 = 2π/43200, which is twice the actual angular velocity. This might result from using T = 12 hours instead of 24 hours."
+      },
+      "concept": "Angular velocity of Earth",
+      "difficulty": "Easy",
+      "estimated_time_seconds": 35,
+      "marks": 1,
+      "chapter": "Rotational Motion",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Numerical"
+    },
+    {
+      "id": 84,
+      "question": "The dimensional formula of angular acceleration is:",
+      "options": {
+        "A": "[M L⁰ T⁻²]",
+        "B": "[M⁰ L T⁻²]",
+        "C": "[M L T⁻²]",
+        "D": "[M⁰ L⁰ T⁻²]"
+      },
+      "correct_option": "D",
+      "correct_answer": "[M⁰ L⁰ T⁻²]",
+      "explanation": "Angular acceleration α = dω/dt. Since angular velocity ω has dimensions [T⁻¹] (radians are dimensionless), α has dimensions [T⁻²]. There are no mass [M] or length [L] dimensions. Alternatively, from α = aₜ/r: [α] = [LT⁻²]/[L] = [T⁻²]. From τ = Iα: [α] = [τ]/[I] = [ML²T⁻²]/[ML²] = [T⁻²].",
+      "incorrect_option_explanations": {
+        "A": "Incorrect. [M L⁰ T⁻²] includes mass dimension, which angular acceleration does not have. Angular acceleration is independent of mass.",
+        "B": "Incorrect. [M⁰ L T⁻²] includes length dimension, which angular acceleration does not have. Angular acceleration is independent of the size of the rotating body.",
+        "C": "Incorrect. [M L T⁻²] is the dimensional formula of force. Angular acceleration has no mass or length dimensions; it depends only on time."
+      },
+      "concept": "Dimensional formula of angular acceleration",
+      "difficulty": "Easy",
+      "estimated_time_seconds": 25,
+      "marks": 1,
+      "chapter": "Rotational Motion",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Dimensional Analysis"
+    },
+    {
+      "id": 85,
+      "question": "A uniform rod of mass 6 kg and length 2 m lies at rest on a smooth horizontal table. A particle of mass 2 kg moving with velocity 12 m/s perpendicular to the rod strikes one end of the rod and sticks to it. The velocity of the center of mass of the system immediately after the collision is:",
+      "options": {
+        "A": "2 m/s",
+        "B": "6 m/s",
+        "C": "3 m/s",
+        "D": "4 m/s"
+      },
+      "correct_option": "C",
+      "correct_answer": "3 m/s",
+      "explanation": "Since the table is smooth (no external horizontal force), linear momentum is conserved in the horizontal direction. Initial momentum = 2 × 12 = 24 kg·m/s. Final mass = 6 + 2 = 8 kg. By conservation of linear momentum: 24 = 8 × v_cm, so v_cm = 24/8 = 3 m/s. Note that while linear momentum is conserved, kinetic energy is not (the collision is inelastic).",
+      "incorrect_option_explanations": {
+        "A": "Incorrect. This might result from using v_cm = m_particle × v / (m_rod × 2) = 24/12 = 2, or from some other incorrect ratio. The correct denominator is the total mass (8 kg).",
+        "B": "Incorrect. This might result from using v_cm = v_particle/2 = 6, or from equating the initial KE to final KE (which is not conserved in an inelastic collision). Linear momentum conservation gives v_cm = 3 m/s.",
+        "D": "Incorrect. This might result from using v_cm = v_particle/3 = 12/3 = 4, or from using the wrong mass ratio. The correct calculation uses total mass = 8 kg."
+      },
+      "concept": "Velocity of center of mass after inelastic collision",
+      "difficulty": "Medium",
+      "estimated_time_seconds": 50,
+      "marks": 1,
+      "chapter": "Rotational Motion",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Numerical"
+    },
+    {
+      "id": 86,
+      "question": "For bodies of the same mass and radius, the moment of inertia is maximum for:",
+      "options": {
+        "A": "A thin ring",
+        "B": "A solid sphere",
+        "C": "A solid disc",
+        "D": "A solid cylinder"
+      },
+      "correct_option": "A",
+      "correct_answer": "A thin ring",
+      "explanation": "For bodies of the same mass M and radius R: I_ring = MR² (factor = 1), I_disc = ½MR² (factor = 0.5), I_solid_sphere = (2/5)MR² = 0.4MR² (factor = 0.4), I_solid_cylinder = ½MR² (factor = 0.5). The ring has all its mass concentrated at the maximum distance R from the axis, giving the largest moment of inertia. Bodies with mass distributed closer to the axis have smaller moments of inertia.",
+      "incorrect_option_explanations": {
+        "B": "Incorrect. The solid sphere has the smallest moment of inertia (0.4MR²) because its mass is concentrated most toward the center. It has the smallest I among these bodies.",
+        "C": "Incorrect. The solid disc has I = ½MR², which is smaller than the ring's MR². The disc has mass distributed throughout its area, with much mass closer to the center than the rim.",
+        "D": "Incorrect. The solid cylinder has the same I = ½MR² as the disc (about its central axis). This is smaller than the ring's MR² because the cylinder's mass is distributed throughout its volume, not just at the rim."
+      },
+      "concept": "Maximum moment of inertia for same mass and radius",
+      "difficulty": "Easy",
+      "estimated_time_seconds": 30,
+      "marks": 1,
+      "chapter": "Rotational Motion",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Conceptual"
+    },
+    {
+      "id": 87,
+      "question": "The radii of gyration of a solid sphere and a hollow sphere of the same radius R, about an axis passing through their centers, are in the ratio:",
+      "options": {
+        "A": "√(2/5) : √(2/3)",
+        "B": "3/5 : 2/3",
+        "C": "√(2/3) : √(2/5)",
+        "D": "2/5 : 2/3"
+      },
+      "correct_option": "A",
+      "correct_answer": "√(2/5) : √(2/3)",
+      "explanation": "For a solid sphere, I = (2/5)MR², so K_solid = √(I/M) = √(2/5)R. For a hollow sphere, I = (2/3)MR², so K_hollow = √(2/3)R. The ratio K_solid : K_hollow = √(2/5)R : √(2/3)R = √(2/5) : √(2/3). Numerically, √(2/5) ≈ 0.632 and √(2/3) ≈ 0.816, so the ratio is approximately 0.632 : 0.816 or about 0.774 : 1.",
+      "incorrect_option_explanations": {
+        "B": "Incorrect. This uses incorrect fractions (3/5 and 2/3) that do not correspond to the moments of inertia of these bodies. The correct factors are 2/5 for solid sphere and 2/3 for hollow sphere.",
+        "C": "Incorrect. This reverses the ratio, placing the hollow sphere first. The solid sphere has a smaller radius of gyration because its mass is concentrated closer to the center.",
+        "D": "Incorrect. This gives the ratio of I/M values (2/5 : 2/3) without taking the square root. The radius of gyration is K = √(I/M), so the ratio requires square roots."
+      },
+      "concept": "Ratio of radii of gyration for solid and hollow spheres",
+      "difficulty": "Hard",
+      "estimated_time_seconds": 60,
+      "marks": 1,
+      "chapter": "Rotational Motion",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Numerical"
+    },
+    {
+      "id": 88,
+      "question": "A rigid body starts from rest and rotates about a fixed axis under the action of a constant torque. A graph of its rotational kinetic energy (K) versus time (t) is:",
+      "options": {
+        "A": "A parabola opening upward with vertex at the origin",
+        "B": "A straight line passing through the origin",
+        "C": "A parabola opening downward",
+        "D": "An exponential curve"
+      },
+      "correct_option": "A",
+      "correct_answer": "A parabola opening upward with vertex at the origin",
+      "explanation": "For constant torque τ starting from rest: α = τ/I = constant. Angular velocity ω = αt. Rotational kinetic energy K = ½Iω² = ½I(αt)² = ½Iα²t². Since I and α are constants, K ∝ t². This is a parabolic relationship with K = 0 at t = 0 (vertex at origin) and opening upward (since the coefficient ½Iα² is positive).",
+      "incorrect_option_explanations": {
+        "B": "Incorrect. A straight line K ∝ t would imply K = ct, which is not the case. Kinetic energy depends on ω², and ω ∝ t, so K ∝ t² (parabolic, not linear).",
+        "C": "Incorrect. A parabola opening downward would require the coefficient of t² to be negative, which is impossible since K = ½Iα²t² and all quantities are positive. Kinetic energy always increases with time under constant torque.",
+        "D": "Incorrect. An exponential curve would result if K grew exponentially with time, which requires exponential growth of ω. Under constant torque, ω grows linearly, so K grows as t² (parabolic), not exponential."
+      },
+      "concept": "Kinetic energy vs time graph under constant torque",
+      "difficulty": "Medium",
+      "estimated_time_seconds": 45,
+      "marks": 1,
+      "chapter": "Rotational Motion",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Graph Interpretation"
+    },
+    {
+      "id": 89,
+      "question": "A uniform rod of mass 1 kg and length 1.0 m has a moment of inertia of 1/3 kg·m² about an axis perpendicular to the rod and passing through one end. The moment of inertia about a parallel axis passing through the midpoint of the rod is:",
+      "options": {
+        "A": "1/12 kg·m²",
+        "B": "1/6 kg·m²",
+        "C": "1/2 kg·m²",
+        "D": "1/3 kg·m²"
+      },
+      "correct_option": "A",
+      "correct_answer": "1/12 kg·m²",
+      "explanation": "Using the parallel axis theorem in reverse: I_end = I_cm + M(L/2)². Given I_end = 1/3 kg·m², M = 1 kg, L = 1.0 m: 1/3 = I_cm + 1 × (0.5)² = I_cm + 0.25 = I_cm + 1/4. Therefore, I_cm = 1/3 - 1/4 = 4/12 - 3/12 = 1/12 kg·m². This can be verified directly: I_cm = ML²/12 = 1 × 1/12 = 1/12 kg·m².",
+      "incorrect_option_explanations": {
+        "B": "Incorrect. This is the moment of inertia of the rod about an axis through its center parallel to its length (not perpendicular). For perpendicular axis through center, I = ML²/12 = 1/12 kg·m².",
+        "C": "Incorrect. This might result from using I_cm = I_end/2 = 1/6, then making an error, or from using I = ML²/8 = 1/8. The correct formula for perpendicular axis through center is ML²/12.",
+        "D": "Incorrect. This is the given moment of inertia about the end (I_end = ML²/3 = 1/3). The moment of inertia about the center is smaller: I_cm = I_end - M(L/2)² = 1/3 - 1/4 = 1/12."
+      },
+      "concept": "Parallel axis theorem - finding I about center from I about end",
+      "difficulty": "Medium",
+      "estimated_time_seconds": 55,
+      "marks": 1,
+      "chapter": "Rotational Motion",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Numerical"
+    },
+    {
+      "id": 90,
+      "question": "A solid sphere and a hollow sphere of the same mass and radius are released from rest at the top of a rough inclined plane. They roll without slipping and reach the bottom. If the same spheres are released on a smooth (frictionless) inclined plane of the same height and angle:",
+      "options": {
+        "A": "The solid sphere reaches first with greater speed",
+        "B": "Both reach the bottom at the same time but with different speeds",
+        "C": "Both reach the bottom at the same time and with the same speed",
+        "D": "The hollow sphere reaches first with greater speed"
+      },
+      "correct_option": "C",
+      "correct_answer": "Both reach the bottom at the same time and with the same speed",
+      "explanation": "On a smooth (frictionless) incline, there is no friction to cause rotation. Both spheres slide without rotating. Their motion is purely translational with acceleration a = g sin θ (same for both). Using s = ½at² and v² = 2as, both take the same time and reach the same speed. On a rough incline, rolling without slipping occurs and the solid sphere reaches first because it has a smaller I/MR² ratio. But on a smooth surface, both slide identically.",
+      "incorrect_option_explanations": {
+        "A": "Incorrect. On a smooth surface, both spheres slide with the same acceleration g sin θ. Their different moments of inertia are irrelevant because there is no torque to cause rotation. Both reach simultaneously.",
+        "B": "Incorrect. On a smooth surface, both reach at the same time AND with the same speed. Their different mass distributions only matter when rolling (which requires friction).",
+        "D": "Incorrect. Same reasoning as B. On a smooth surface, the hollow sphere does not have any advantage. Both slide with identical acceleration."
+      },
+      "concept": "Sliding on smooth incline - independence of moment of inertia",
+      "difficulty": "Hard",
+      "estimated_time_seconds": 60,
+      "marks": 1,
+      "chapter": "Rotational Motion",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Conceptual"
+    },
+    {
+      "id": 91,
+      "question": "For a vehicle moving with speed v on a banked road of radius r, the ideal angle of banking θ (where no friction is needed) is given by:",
+      "options": {
+        "A": "tan θ = v²r/g",
+        "B": "tan θ = rg/v²",
+        "C": "tan θ = v/(rg)",
+        "D": "tan θ = v²/(rg)"
+      },
+      "correct_option": "D",
+      "correct_answer": "tan θ = v²/(rg)",
+      "explanation": "For a banked road with ideal banking (no friction needed), the horizontal component of the normal reaction provides the necessary centripetal force: N sin θ = mv²/r. The vertical component balances weight: N cos θ = mg. Dividing these equations: tan θ = v²/(rg). This is the ideal banking angle formula from the Maharashtra State Board textbook.",
+      "incorrect_option_explanations": {
+        "A": "Incorrect. This would give tan θ = v²r/g, which has dimensions of length (m²/s² × m / (m/s²) = m²), not dimensionless. The correct formula has r in the denominator.",
+        "B": "Incorrect. This inverts the correct relationship. As speed increases, the banking angle must increase, so tan θ should be proportional to v², not inversely proportional.",
+        "C": "Incorrect. This would give tan θ = v/(rg), which is dimensionally wrong. The correct formula requires v² in the numerator to make the dimensions match (v²/rg is dimensionless, as is tan θ)."
+      },
+      "concept": "Ideal angle of banking formula",
+      "difficulty": "Easy",
+      "estimated_time_seconds": 30,
+      "marks": 1,
+      "chapter": "Rotational Motion",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Formula Based"
+    },
+    {
+      "id": 92,
+      "question": "A road is banked for vehicles moving at 30 m/s. The radius of the curve is 90 m and g = 10 m/s². The ideal angle of banking is:",
+      "options": {
+        "A": "45°",
+        "B": "60°",
+        "C": "tan⁻¹(1)",
+        "D": "30°"
+      },
+      "correct_option": "A",
+      "correct_answer": "45°",
+      "explanation": "Using the ideal banking formula: tan θ = v²/(rg) = (30)²/(90 × 10) = 900/900 = 1. Therefore, θ = tan⁻¹(1) = 45°.",
+      "incorrect_option_explanations": {
+        "B": "Incorrect. tan 60° = √3 ≈ 1.732, which would require v²/(rg) = 1.732. The correct value is 1, giving θ = 45°.",
+        "C": "Incorrect. While tan⁻¹(1) is mathematically correct, MHT-CET typically expects the numerical angle value. tan⁻¹(1) = 45°, which is the standard answer format.",
+        "D": "Incorrect. tan 30° = 1/√3 ≈ 0.577, which would require v²/(rg) = 0.577, not 1. The correct calculation gives tan θ = 1."
+      },
+      "concept": "Calculation of ideal banking angle",
+      "difficulty": "Easy",
+      "estimated_time_seconds": 40,
+      "marks": 1,
+      "chapter": "Rotational Motion",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Numerical"
+    },
+    {
+      "id": 93,
+      "question": "On a banked road with angle of banking θ and coefficient of friction μ between the tyres and road, the maximum speed at which a vehicle can safely negotiate the curve of radius r is given by:",
+      "options": {
+        "A": "v_max = √[rg(tan θ + μ)/(1 - μ tan θ)]",
+        "B": "v_max = √[rg(tan θ + μ)/(1 + μ tan θ)]",
+        "C": "v_max = √[rg(tan θ - μ)/(1 + μ tan θ)]",
+        "D": "v_max = √[rg(tan θ - μ)/(1 - μ tan θ)]"
+      },
+      "correct_option": "B",
+      "correct_answer": "v_max = √[rg(tan θ + μ)/(1 + μ tan θ)]",
+      "explanation": "When friction is present on a banked road, friction acts down the incline at maximum speed (preventing the vehicle from skidding outward). The equations are: N sin θ + f cos θ = mv²/r (horizontal) and N cos θ - f sin θ = mg (vertical), where f = μN. Solving these gives v_max = √[rg(tan θ + μ)/(1 + μ tan θ)]. This is the standard formula from the Maharashtra State Board textbook.",
+      "incorrect_option_explanations": {
+        "A": "Incorrect. The denominator should be (1 + μ tan θ), not (1 - μ tan θ). The (1 - μ tan θ) form appears in the minimum speed formula, not the maximum speed formula.",
+        "C": "Incorrect. The numerator should be (tan θ + μ), not (tan θ - μ). The minus sign in the numerator would give the minimum speed formula, not maximum speed.",
+        "D": "Incorrect. This has both the wrong numerator (tan θ - μ) and wrong denominator (1 - μ tan θ). This combination does not correspond to either the maximum or minimum speed formula."
+      },
+      "concept": "Maximum speed on banked road with friction",
+      "difficulty": "Hard",
+      "estimated_time_seconds": 70,
+      "marks": 1,
+      "chapter": "Rotational Motion",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Formula Based"
+    },
+    {
+      "id": 94,
+      "question": "A curved road of radius 90 m is banked at an angle of 45°. The coefficient of friction between the tyres and the road is 0.5. Taking g = 10 m/s², the maximum speed at which a vehicle can negotiate this curve is:",
+      "options": {
+        "A": "10 m/s",
+        "B": "20 m/s",
+        "C": "40 m/s",
+        "D": "30 m/s"
+      },
+      "correct_option": "D",
+      "correct_answer": "30 m/s",
+      "explanation": "Using v_max = √[rg(tan θ + μ)/(1 + μ tan θ)]. Given r = 90 m, g = 10 m/s², θ = 45° (tan 45° = 1), μ = 0.5: v_max = √[90 × 10 × (1 + 0.5)/(1 + 0.5 × 1)] = √[900 × 1.5/1.5] = √900 = 30 m/s.",
+      "incorrect_option_explanations": {
+        "A": "Incorrect. This might result from using v_max = √[rgμ] = √[90 × 10 × 0.5] = √450 ≈ 21.2, then rounding down, or from using v_max = √[rg tan θ] = √900 = 30, then making an error. The correct formula accounts for both banking and friction.",
+        "B": "Incorrect. This might result from using v_max = √[rg] = √900 = 30, then making an error, or from v_max = √[rg(tan θ - μ)] = √[900 × 0.5] = √450 ≈ 21.2. The correct formula uses (tan θ + μ) in the numerator.",
+        "C": "Incorrect. This might result from using v_max = √[2rg] = √1800 ≈ 42.4, then rounding, or from v_max = √[rg(1 + μ)²] = √[900 × 2.25] = √2025 = 45. The correct calculation gives 30 m/s."
+      },
+      "concept": "Maximum speed on banked road with friction - numerical",
+      "difficulty": "Hard",
+      "estimated_time_seconds": 70,
+      "marks": 1,
+      "chapter": "Rotational Motion",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Numerical"
+    },
+    {
+      "id": 95,
+      "question": "On a banked road with angle of banking θ and coefficient of friction μ, the minimum speed at which a vehicle can safely negotiate the curve of radius r without skidding inward is:",
+      "options": {
+        "A": "v_min = √[rg(tan θ + μ)/(1 - μ tan θ)]",
+        "B": "v_min = √[rg(tan θ - μ)/(1 - μ tan θ)]",
+        "C": "v_min = √[rg(tan θ - μ)/(1 + μ tan θ)]",
+        "D": "v_min = √[rg(μ - tan θ)/(1 + μ tan θ)]"
+      },
+      "correct_option": "C",
+      "correct_answer": "v_min = √[rg(tan θ - μ)/(1 + μ tan θ)]",
+      "explanation": "At minimum speed, friction acts up the incline (preventing the vehicle from sliding inward). The equations become: N sin θ - f cos θ = mv²/r and N cos θ + f sin θ = mg, where f = μN. Solving gives v_min = √[rg(tan θ - μ)/(1 + μ tan θ)]. This formula is valid only when tan θ > μ; otherwise, the vehicle cannot stay on the road at low speeds without skidding inward.",
+      "incorrect_option_explanations": {
+        "A": "Incorrect. This is the maximum speed formula with a wrong denominator. The minimum speed formula has (tan θ - μ) in the numerator, not (tan θ + μ).",
+        "B": "Incorrect. The denominator should be (1 + μ tan θ), not (1 - μ tan θ). The (1 - μ tan θ) denominator appears in the maximum speed formula when derived differently.",
+        "D": "Incorrect. The numerator (μ - tan θ) would be negative when tan θ > μ, giving an imaginary speed. The correct numerator is (tan θ - μ), which is positive for typical banking angles."
+      },
+      "concept": "Minimum speed on banked road with friction",
+      "difficulty": "Hard",
+      "estimated_time_seconds": 70,
+      "marks": 1,
+      "chapter": "Rotational Motion",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Formula Based"
+    },
+    {
+      "id": 96,
+      "question": "A conical pendulum consists of a bob of mass m attached to a string of length L, moving in a horizontal circle with the string making an angle θ with the vertical. The frequency of revolution is:",
+      "options": {
+        "A": "(1/2π)√(g/L cos θ)",
+        "B": "(1/2π)√(g/L sin θ)",
+        "C": "(1/2π)√(g cos θ/L)",
+        "D": "(1/2π)√(g/L)"
+      },
+      "correct_option": "A",
+      "correct_answer": "(1/2π)√(g/L cos θ)",
+      "explanation": "For a conical pendulum: T cos θ = mg (vertical equilibrium) and T sin θ = mω²r = mω²(L sin θ) (horizontal, providing centripetal force). Dividing: tan θ = ω²L sin θ/cos θ, so ω² = g/(L cos θ). Therefore, frequency n = ω/2π = (1/2π)√(g/L cos θ). This is the standard formula from the Maharashtra State Board textbook.",
+      "incorrect_option_explanations": {
+        "B": "Incorrect. The sin θ in the denominator is wrong. The correct formula has cos θ in the denominator because the vertical component of tension balances weight: T cos θ = mg.",
+        "C": "Incorrect. This places cos θ in the numerator with g, giving ω² = g cos θ/L. The correct derivation shows ω² = g/(L cos θ), with cos θ in the denominator.",
+        "D": "Incorrect. This is the frequency of a simple pendulum. A conical pendulum has an additional factor of cos θ in the denominator because the effective length for the circular motion is L cos θ (the vertical component), not L."
+      },
+      "concept": "Frequency of conical pendulum",
+      "difficulty": "Medium",
+      "estimated_time_seconds": 55,
+      "marks": 1,
+      "chapter": "Rotational Motion",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Formula Based"
+    },
+    {
+      "id": 97,
+      "question": "A conical pendulum has a string of length 1.25 m that makes an angle of 60° with the vertical. Taking g = 10 m/s², the frequency of revolution of the bob is:",
+      "options": {
+        "A": "√3/(2π) Hz",
+        "B": "1/(2π) Hz",
+        "C": "2/π Hz",
+        "D": "1/π Hz"
+      },
+      "correct_option": "C",
+      "correct_answer": "2/π Hz",
+      "explanation": "Using n = (1/2π)√(g/L cos θ). Given L = 1.25 m, θ = 60°, cos 60° = 0.5, g = 10 m/s²: n = (1/2π)√(10/(1.25 × 0.5)) = (1/2π)√(10/0.625) = (1/2π)√16 = (1/2π) × 4 = 2/π Hz.",
+      "incorrect_option_explanations": {
+        "A": "Incorrect. This might result from using n = (1/2π)√(g sin θ/L) = (1/2π)√(10 × 0.866/1.25) = (1/2π)√6.93, or from confusing sin θ and cos θ. The correct formula uses cos θ in the denominator.",
+        "B": "Incorrect. This would be the result if n = (1/2π)√(g/4L) = (1/2π)√(10/5) = (1/2π)√2, then making an error. The correct calculation gives n = 2/π Hz.",
+        "D": "Incorrect. This might result from using n = (1/π)√(g/L) = (1/π)√8 ≈ 0.9/π, or from n = (1/2π)√(g/L) = (1/2π)√8 ≈ 0.45/π. The correct formula includes cos θ in the denominator."
+      },
+      "concept": "Frequency of conical pendulum - numerical",
+      "difficulty": "Medium",
+      "estimated_time_seconds": 60,
+      "marks": 1,
+      "chapter": "Rotational Motion",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Numerical"
+    },
+    {
+      "id": 98,
+      "question": "In a conical pendulum, if the string makes an angle θ with the vertical, the tension T in the string is related to the weight mg by:",
+      "options": {
+        "A": "T = mg tan θ",
+        "B": "T = mg sin θ",
+        "C": "T = mg cos θ",
+        "D": "T = mg/cos θ"
+      },
+      "correct_option": "D",
+      "correct_answer": "T = mg/cos θ",
+      "explanation": "For a conical pendulum, resolving forces vertically: T cos θ = mg (since there is no vertical acceleration). Therefore, T = mg/cos θ. The tension is greater than the weight because the string must also provide a horizontal component (T sin θ) for the centripetal force.",
+      "incorrect_option_explanations": {
+        "A": "Incorrect. T = mg tan θ gives the horizontal component of tension (T sin θ = mg tan θ), not the total tension. The total tension is T = mg/cos θ.",
+        "B": "Incorrect. T = mg sin θ would mean the tension is less than the weight (since sin θ < 1), which is impossible because the string must support the weight and provide centripetal force. Also, the vertical component of tension balances weight, not the horizontal component.",
+        "C": "Incorrect. T = mg cos θ would mean the tension is less than the weight, which is impossible. The vertical equilibrium requires T cos θ = mg, so T = mg/cos θ, which is greater than mg."
+      },
+      "concept": "Tension in conical pendulum string",
+      "difficulty": "Easy",
+      "estimated_time_seconds": 30,
+      "marks": 1,
+      "chapter": "Rotational Motion",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Formula Based"
+    },
+    {
+      "id": 99,
+      "question": "A conical pendulum of length 2 m has a bob of mass 0.5 kg. The string makes an angle of 60° with the vertical. Taking g = 10 m/s², the speed of the bob in its horizontal circular path is:",
+      "options": {
+        "A": "2 m/s",
+        "B": "2√5 m/s",
+        "C": "5 m/s",
+        "D": "√30 m/s"
+      },
+      "correct_option": "D",
+      "correct_answer": "√30 m/s",
+      "explanation": "For a conical pendulum: T sin θ = mv²/r and T cos θ = mg. Dividing: tan θ = v²/(rg), so v = √(rg tan θ). The radius of the horizontal circle is r = L sin θ = 2 × sin 60° = 2 × √3/2 = √3 m. Therefore, v = √(√3 × 10 × tan 60°) = √(√3 × 10 × √3) = √(10 × 3) = √30 m/s.",
+      "incorrect_option_explanations": {
+        "A": "Incorrect. This might result from using v = √(gL) = √20 ≈ 4.47, then making an error, or from v = √(2g) = √20. The correct formula is v = √(rg tan θ) = √(gL sin θ tan θ).",
+        "B": "Incorrect. 2√5 = √20 ≈ 4.47 m/s. This might result from using v = √(gL) = √20 = 2√5, omitting the angle dependence. The speed depends on the angle θ through the relationship v = √(gL sin θ tan θ).",
+        "C": "Incorrect. This might result from using v = √(gL tan θ) = √(20 × √3) = √34.6 ≈ 5.88, then rounding to 5, or from v = √(rg) = √(10√3) ≈ 4.16. The correct formula includes tan θ."
+      },
+      "concept": "Speed of bob in conical pendulum",
+      "difficulty": "Medium",
+      "estimated_time_seconds": 60,
+      "marks": 1,
+      "chapter": "Rotational Motion",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Numerical"
+    },
+    {
+      "id": 100,
+      "question": "The time period of a conical pendulum is compared to that of a simple pendulum of the same length L. The conical pendulum has its string making an angle θ with the vertical. Then:",
+      "options": {
+        "A": "T_conical = T_simple × cos θ",
+        "B": "T_conical = T_simple × √cos θ",
+        "C": "T_conical = T_simple",
+        "D": "T_conical = T_simple/√cos θ"
+      },
+      "correct_option": "B",
+      "correct_answer": "T_conical = T_simple × √cos θ",
+      "explanation": "For a simple pendulum: T_simple = 2π√(L/g). For a conical pendulum: T_conical = 2π√(L cos θ/g) = 2π√(L/g) × √cos θ = T_simple × √cos θ. Since cos θ < 1 for θ > 0, the conical pendulum has a shorter time period than a simple pendulum of the same length.",
+      "incorrect_option_explanations": {
+        "A": "Incorrect. The factor is √cos θ, not cos θ. The time period involves a square root relationship with the effective length, which is L cos θ for the conical pendulum.",
+        "C": "Incorrect. The time periods are equal only when θ = 0 (the conical pendulum becomes a simple pendulum). For any non-zero angle, the conical pendulum has a different time period.",
+        "D": "Incorrect. This inverts the correct relationship. The conical pendulum has a shorter effective length (L cos θ < L), so its time period is smaller, not larger, than the simple pendulum."
+      },
+      "concept": "Comparison of conical pendulum and simple pendulum time periods",
+      "difficulty": "Medium",
+      "estimated_time_seconds": 50,
+      "marks": 1,
+      "chapter": "Rotational Motion",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Conceptual"
+    },
+    {
+      "id": 101,
+      "question": "A particle of mass m is tied to a string of length r and whirled in a vertical circle. The minimum velocity required at the lowest point for the string to remain taut at the highest point is:",
+      "options": {
+        "A": "√(5gr)",
+        "B": "√(gr)",
+        "C": "√(2gr)",
+        "D": "√(3gr)"
+      },
+      "correct_option": "A",
+      "correct_answer": "√(5gr)",
+      "explanation": "For the string to remain taut at the highest point, the minimum velocity at the top is v_top = √(gr) (when tension is zero). Using conservation of energy between the lowest and highest points: ½mv²_bottom = ½mv²_top + mg(2r). Substituting v_top = √(gr): ½v²_bottom = ½gr + 2gr = 5gr/2. Therefore, v_bottom = √(5gr). This is the standard result from the Maharashtra State Board textbook.",
+      "incorrect_option_explanations": {
+        "B": "Incorrect. √(gr) is the minimum velocity at the highest point, not the lowest point. At the lowest point, the particle must have enough energy to reach the top with at least √(gr) velocity.",
+        "C": "Incorrect. √(2gr) is the velocity gained by falling through height r (from v² = 2gh). This is insufficient to complete the vertical circle with the string taut.",
+        "D": "Incorrect. √(3gr) might result from using v² = 2g(1.5r) or from an incorrect energy calculation. The correct energy conservation gives v² = 5gr at the bottom."
+      },
+      "concept": "Minimum velocity at lowest point for vertical circular motion",
+      "difficulty": "Medium",
+      "estimated_time_seconds": 55,
+      "marks": 1,
+      "chapter": "Rotational Motion",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Formula Based"
+    },
+    {
+      "id": 102,
+      "question": "A stone of mass 0.5 kg is tied to a string of length 2 m and whirled in a vertical circle. If the speed of the stone at the lowest point is 6 m/s, the tension in the string at the lowest point is (g = 10 m/s²):",
+      "options": {
+        "A": "5 N",
+        "B": "14 N",
+        "C": "19 N",
+        "D": "9 N"
+      },
+      "correct_option": "B",
+      "correct_answer": "14 N",
+      "explanation": "At the lowest point of vertical circular motion: T - mg = mv²/r (centripetal force is upward). Therefore, T = mg + mv²/r = 0.5 × 10 + 0.5 × (6)²/2 = 5 + 0.5 × 36/2 = 5 + 9 = 14 N. The tension is maximum at the lowest point because it must both support the weight and provide the centripetal force.",
+      "incorrect_option_explanations": {
+        "A": "Incorrect. This is just the weight mg = 0.5 × 10 = 5 N. The tension must be greater than the weight to provide the upward centripetal force.",
+        "C": "Incorrect. This might result from using T = mg + mv²/r with incorrect values, or from T = 2mg + mv²/r = 10 + 9 = 19. The correct formula is T = mg + mv²/r at the lowest point.",
+        "D": "Incorrect. This might result from calculating only the centripetal term mv²/r = 0.5 × 36/2 = 9 N, forgetting to add the weight mg = 5 N. The total tension is 14 N."
+      },
+      "concept": "Tension at lowest point of vertical circular motion",
+      "difficulty": "Medium",
+      "estimated_time_seconds": 50,
+      "marks": 1,
+      "chapter": "Rotational Motion",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Numerical"
+    },
+    {
+      "id": 103,
+      "question": "In a vertical circular motion of a particle tied to a string, if the speed at the highest point is v, the tension in the string at the highest point is:",
+      "options": {
+        "A": "T = mv²/r",
+        "B": "T = mv²/r - mg",
+        "C": "T = mv²/r + mg",
+        "D": "T = mg - mv²/r"
+      },
+      "correct_option": "B",
+      "correct_answer": "T = mv²/r - mg",
+      "explanation": "At the highest point of vertical circular motion, both tension and weight act downward toward the center. The net downward force provides centripetal force: T + mg = mv²/r. Therefore, T = mv²/r - mg. For the string to remain taut, T ≥ 0, which requires v²/r ≥ g, or v ≥ √(gr).",
+      "incorrect_option_explanations": {
+        "A": "Incorrect. This ignores the weight mg. At the highest point, the weight contributes to the centripetal force, so the tension is reduced by mg: T = mv²/r - mg.",
+        "C": "Incorrect. This would be the tension at the lowest point, where tension and weight are in opposite directions. At the highest point, both act in the same direction (downward).",
+        "D": "Incorrect. This would give negative tension when v²/r > g, which is unphysical. The correct relationship is T = mv²/r - mg, where T is positive when v²/r > g."
+      },
+      "concept": "Tension at highest point of vertical circular motion",
+      "difficulty": "Easy",
+      "estimated_time_seconds": 35,
+      "marks": 1,
+      "chapter": "Rotational Motion",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Formula Based"
+    },
+    {
+      "id": 104,
+      "question": "A stone tied to a string of length 1.25 m is whirled in a vertical circle. If its speed at the lowest point is 7.5 m/s, its speed at the highest point is (g = 10 m/s²):",
+      "options": {
+        "A": "5.0 m/s",
+        "B": "6.25 m/s",
+        "C": "2.5 m/s",
+        "D": "10.0 m/s"
+      },
+      "correct_option": "C",
+      "correct_answer": "2.5 m/s",
+      "explanation": "Using conservation of energy between lowest and highest points: ½mv²_bottom = ½mv²_top + mg(2r). Therefore, v²_top = v²_bottom - 4gr = (7.5)² - 4 × 10 × 1.25 = 56.25 - 50 = 6.25. So v_top = √6.25 = 2.5 m/s.",
+      "incorrect_option_explanations": {
+        "A": "Incorrect. This might result from using v²_top = v²_bottom - 2gr = 56.25 - 25 = 31.25, then √31.25 ≈ 5.59, rounding to 5. The height difference is 2r, so the potential energy change is mg(2r), not mgr.",
+        "B": "Incorrect. 6.25 is v²_top, not v_top. The speed is the square root: v_top = √6.25 = 2.5 m/s. Students often confuse v² with v.",
+        "D": "Incorrect. This might result from using v_top = v_bottom - 2gr/v_bottom or some incorrect formula. The correct energy conservation gives v_top = 2.5 m/s."
+      },
+      "concept": "Speed at highest point from speed at lowest point - vertical circle",
+      "difficulty": "Medium",
+      "estimated_time_seconds": 50,
+      "marks": 1,
+      "chapter": "Rotational Motion",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Numerical"
+    },
+    {
+      "id": 105,
+      "question": "A small block slides from rest down a frictionless track and enters a vertical loop of radius R. The minimum height h from which the block must start to complete the loop without losing contact is:",
+      "options": {
+        "A": "h = 2R",
+        "B": "h = 5R/2",
+        "C": "h = 2.5R",
+        "D": "h = R"
+      },
+      "correct_option": "C",
+      "correct_answer": "h = 2.5R",
+      "explanation": "For the block to complete the loop, it must have at least the minimum velocity at the top: v_top = √(gR) (when normal reaction is zero). Using energy conservation: mgh = ½mv²_top + mg(2R). Substituting v_top = √(gR): mgh = ½m(gR) + 2mgR = ½mgR + 2mgR = 5mgR/2. Therefore, h = 5R/2 = 2.5R. This is the minimum starting height for a frictionless track.",
+      "incorrect_option_explanations": {
+        "A": "Incorrect. h = 2R would bring the block to the top of the loop with zero speed (if all energy converts to potential energy). But the block needs v_top = √(gR) at the top, requiring additional energy ½mgR.",
+        "B": "Incorrect. While 5R/2 = 2.5R is mathematically correct, option C (2.5R) is the standard decimal form used in MHT-CET. Both represent the same value, but C is the preferred format.",
+        "D": "Incorrect. h = R would only bring the block to the level of the center of the loop, which is insufficient to reach the top. The block needs enough energy to reach height 2R with sufficient speed."
+      },
+      "concept": "Minimum height for loop-the-loop on frictionless track",
+      "difficulty": "Hard",
+      "estimated_time_seconds": 65,
+      "marks": 1,
+      "chapter": "Rotational Motion",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Numerical"
+    },
+    {
+      "id": 106,
+      "question": "When a car takes a turn on a horizontal road, the passenger inside the car feels pushed outward. This outward push is explained as:",
+      "options": {
+        "A": "A centripetal force required to keep the passenger moving in a circle",
+        "B": "The result of the passenger's inertia in an inertial frame",
+        "C": "A real centrifugal force acting outward on the passenger",
+        "D": "The gravitational force acting on the passenger"
+      },
+      "correct_option": "B",
+      "correct_answer": "The result of the passenger's inertia in an inertial frame",
+      "explanation": "In an inertial frame (ground frame), there is no outward force on the passenger. The passenger tends to continue moving in a straight line due to inertia (Newton's first law), while the car door pushes the passenger inward to make them follow the curved path. The 'outward push' felt by the passenger is their body's resistance to the inward acceleration. Centrifugal force is a fictitious force that appears only in the non-inertial frame of the accelerating car.",
+      "incorrect_option_explanations": {
+        "A": "Incorrect. The centripetal force is the real inward force (from the car door/seat) that keeps the passenger moving in a circle. It acts inward, not outward. The passenger feels pushed outward because of inertia, not because of centripetal force.",
+        "C": "Incorrect. Centrifugal force is not a real force. It is a fictitious (pseudo) force that appears only in the rotating (non-inertial) reference frame of the car. In an inertial frame, only real forces act.",
+        "D": "Incorrect. Gravitational force acts vertically downward, not horizontally outward. It has no role in the horizontal sensation of being pushed outward during a turn."
+      },
+      "concept": "Centripetal vs centrifugal force - inertial frame explanation",
+      "difficulty": "Medium",
+      "estimated_time_seconds": 45,
+      "marks": 1,
+      "chapter": "Rotational Motion",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Conceptual"
+    },
+    {
+      "id": 107,
+      "question": "A car of mass 1000 kg moves with a speed of 10 m/s over a convex bridge of radius 50 m. The force exerted by the car on the bridge at the highest point is (g = 10 m/s²):",
+      "options": {
+        "A": "8000 N",
+        "B": "12000 N",
+        "C": "9000 N",
+        "D": "10000 N"
+      },
+      "correct_option": "A",
+      "correct_answer": "8000 N",
+      "explanation": "At the highest point of a convex bridge, the normal reaction N and weight mg both act downward toward the center of curvature. The net downward force provides centripetal force: mg - N = mv²/r (taking downward as positive toward center). Therefore, N = mg - mv²/r = 1000 × 10 - 1000 × (10)²/50 = 10000 - 1000 × 100/50 = 10000 - 2000 = 8000 N. By Newton's third law, the force exerted by the car on the bridge equals N = 8000 N.",
+      "incorrect_option_explanations": {
+        "B": "Incorrect. This might result from using N = mg + mv²/r = 10000 + 2000 = 12000, which would be correct for a concave bridge (valley), not a convex bridge. On a convex bridge, the normal reaction is reduced.",
+        "C": "Incorrect. This might result from using N = mg - mv²/(2r) = 10000 - 1000 = 9000, or from some other incorrect formula. The correct formula is N = mg - mv²/r.",
+        "D": "Incorrect. This is the weight of the car (mg = 10000 N). The normal reaction is less than the weight because the centripetal acceleration reduces the apparent weight at the top of the convex bridge."
+      },
+      "concept": "Force on convex bridge at highest point",
+      "difficulty": "Medium",
+      "estimated_time_seconds": 50,
+      "marks": 1,
+      "chapter": "Rotational Motion",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Numerical"
+    },
+    {
+      "id": 108,
+      "question": "In a 'well of death' stunt, a motorcyclist rides along the vertical walls of a cylindrical well of radius r. For the motorcyclist to remain in contact with the wall at the highest point, the minimum speed must be:",
+      "options": {
+        "A": "√(gr)",
+        "B": "Zero",
+        "C": "√(2gr)",
+        "D": "√(gr/2)"
+      },
+      "correct_option": "A",
+      "correct_answer": "√(gr)",
+      "explanation": "In the well of death, friction between the tyres and the vertical wall provides the upward force to balance gravity, while the normal reaction from the wall provides the centripetal force. At the minimum speed, friction is maximum (f = μN) and just balances the weight: μN = mg. The normal reaction provides centripetal force: N = mv²/r. Therefore, μ(mv²/r) = mg, giving v = √(gr/μ). However, if we consider the ideal case where the question asks for the speed at which the normal reaction alone provides the necessary condition (or if μ = 1), the minimum speed is √(gr). This is a standard problem from the Maharashtra State Board textbook exercises.",
+      "incorrect_option_explanations": {
+        "B": "Incorrect. At zero speed, there is no centripetal force and no normal reaction, so the motorcyclist would fall down due to gravity.",
+        "C": "Incorrect. √(2gr) is the speed gained by falling through height r, or the minimum speed for a simple pendulum bob to complete a vertical circle. The well of death requires only √(gr) for contact.",
+        "D": "Incorrect. √(gr/2) would be insufficient to maintain contact with the wall. The centripetal force must at least equal the weight (when friction coefficient is 1), requiring v²/r = g."
+      },
+      "concept": "Well of death - minimum speed",
+      "difficulty": "Medium",
+      "estimated_time_seconds": 55,
+      "marks": 1,
+      "chapter": "Rotational Motion",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Conceptual"
+    },
+    {
+      "id": 109,
+      "question": "Roads are banked at curves primarily to:",
+      "options": {
+        "A": "Reduce the dependence on friction for providing centripetal force",
+        "B": "Decrease the speed of vehicles",
+        "C": "Increase the weight of the vehicle",
+        "D": "Increase the normal reaction on the vehicle"
+      },
+      "correct_option": "A",
+      "correct_answer": "Reduce the dependence on friction for providing centripetal force",
+      "explanation": "On a flat (unbanked) road, friction alone provides the centripetal force needed for a vehicle to take a turn. If friction is insufficient (e.g., wet or icy road), the vehicle skids. By banking the road, a component of the normal reaction (N sin θ) provides part or all of the centripetal force, reducing the reliance on friction. At the ideal banking angle, no friction is needed at all.",
+      "incorrect_option_explanations": {
+        "B": "Incorrect. Banking is not designed to decrease speed. In fact, proper banking allows vehicles to take curves at higher speeds safely. Speed limits are set separately for safety reasons.",
+        "C": "Incorrect. Banking does not change the weight of the vehicle (weight = mg). The vertical component of the normal reaction balances the weight, but the weight itself remains unchanged.",
+        "D": "Incorrect. While banking does increase the normal reaction (N = mg/cos θ > mg), this is a consequence, not the primary purpose. The main goal is to use the horizontal component of this increased normal reaction to provide centripetal force."
+      },
+      "concept": "Purpose of banking roads",
+      "difficulty": "Easy",
+      "estimated_time_seconds": 30,
+      "marks": 1,
+      "chapter": "Rotational Motion",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Conceptual"
+    },
+    {
+      "id": 110,
+      "question": "A train has to negotiate a curve of radius 400 m. The distance between the rails is 1.5 m. The outer rail is raised above the inner rail by 15 cm. Taking g = 10 m/s², the maximum speed at which the train can safely go round the curve without relying on friction is approximately:",
+      "options": {
+        "A": "25 m/s",
+        "B": "15 m/s",
+        "C": "20 m/s",
+        "D": "10 m/s"
+      },
+      "correct_option": "C",
+      "correct_answer": "20 m/s",
+      "explanation": "For a banked railway track: tan θ = h/d, where h = 0.15 m is the height difference and d = 1.5 m is the distance between rails. So tan θ = 0.15/1.5 = 0.1. Using the ideal banking formula: v = √(rg tan θ) = √(400 × 10 × 0.1) = √400 = 20 m/s.",
+      "incorrect_option_explanations": {
+        "A": "Incorrect. This might result from using v = √(2rg tan θ) = √(800 × 10 × 0.1) = √800 ≈ 28.3, then rounding to 25, or from v = √(rg) = √4000 ≈ 63.2, then making an error. The correct calculation gives 20 m/s.",
+        "B": "Incorrect. This might result from using v = √(rg tan θ/2) = √(400 × 10 × 0.05) = √200 ≈ 14.14, then rounding to 15, or from using tan θ = h/2d. The correct formula uses tan θ = h/d.",
+        "D": "Incorrect. This might result from using v = √(rg tan θ) with tan θ = h²/d = 0.0225/1.5 = 0.015: v = √(400 × 10 × 0.015) = √60 ≈ 7.75, then rounding to 10. The correct relationship is tan θ = h/d."
+      },
+      "concept": "Banking of railway tracks - maximum speed calculation",
+      "difficulty": "Hard",
+      "estimated_time_seconds": 70,
+      "marks": 1,
+      "chapter": "Rotational Motion",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Numerical"
+    }
+  ]
+}

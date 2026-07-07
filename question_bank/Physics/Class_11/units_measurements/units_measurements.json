@@ -1,0 +1,2089 @@
+{
+  "exam": "MHT-CET",
+  "subject": "Physics",
+  "standard": "11th",
+  "chapter": "Units and Measurements",
+  "total_questions": 80,
+  "questions": [
+    {
+      "id": 1,
+      "question": "Which of the following is a derived unit in the SI system?",
+      "options": {
+        "A": "Metre",
+        "B": "Kilogram",
+        "C": "Candela",
+        "D": "Newton"
+      },
+      "correct_option": "D",
+      "correct_answer": "Newton",
+      "explanation": "Newton is the SI unit of force, which is a derived unit expressed as kg·m·s⁻². Metre, kilogram, and candela are base units.",
+      "incorrect_option_explanations": {
+        "A": "Metre is a base unit of length.",
+        "B": "Kilogram is a base unit of mass.",
+        "C": "Candela is a base unit of luminous intensity.",
+        "D": ""
+      },
+      "concept": "SI Base and Derived Units",
+      "difficulty": "Easy",
+      "estimated_time_seconds": 30,
+      "marks": 1,
+      "chapter": "Units and Measurements",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Conceptual"
+    },
+    {
+      "id": 2,
+      "question": "The dimensional formula of work is",
+      "options": {
+        "A": "[M L² T⁻²]",
+        "B": "[M L T⁻²]",
+        "C": "[M L² T⁻¹]",
+        "D": "[M L T⁻¹]"
+      },
+      "correct_option": "A",
+      "correct_answer": "[M L² T⁻²]",
+      "explanation": "Work = Force × Displacement = [M L T⁻²] × [L] = [M L² T⁻²].",
+      "incorrect_option_explanations": {
+        "A": "",
+        "B": "This is the dimensional formula for force.",
+        "C": "This is the dimensional formula for angular momentum.",
+        "D": "This is the dimensional formula for linear momentum."
+      },
+      "concept": "Dimensional Analysis",
+      "difficulty": "Easy",
+      "estimated_time_seconds": 30,
+      "marks": 1,
+      "chapter": "Units and Measurements",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Formula Based"
+    },
+    {
+      "id": 3,
+      "question": "How many significant figures are in the measurement 0.00450 m?",
+      "options": {
+        "A": "2",
+        "B": "3",
+        "C": "4",
+        "D": "5"
+      },
+      "correct_option": "B",
+      "correct_answer": "3",
+      "explanation": "Leading zeros are not significant. The digits 4, 5, and the trailing zero after the decimal are significant. Hence, 3 significant figures.",
+      "incorrect_option_explanations": {
+        "A": "This ignores the trailing zero which is significant.",
+        "B": "",
+        "C": "This incorrectly counts leading zeros.",
+        "D": "This counts all digits including leading zeros."
+      },
+      "concept": "Significant Figures",
+      "difficulty": "Easy",
+      "estimated_time_seconds": 25,
+      "marks": 1,
+      "chapter": "Units and Measurements",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Conceptual"
+    },
+    {
+      "id": 4,
+      "question": "The prefix 'nano' corresponds to which power of 10?",
+      "options": {
+        "A": "10⁻⁶",
+        "B": "10⁻⁹",
+        "C": "10⁻¹²",
+        "D": "10⁻³"
+      },
+      "correct_option": "B",
+      "correct_answer": "10⁻⁹",
+      "explanation": "The SI prefix 'nano' (n) represents 10⁻⁹.",
+      "incorrect_option_explanations": {
+        "A": "This is the prefix 'micro'.",
+        "B": "",
+        "C": "This is the prefix 'pico'.",
+        "D": "This is the prefix 'milli'."
+      },
+      "concept": "SI Prefixes",
+      "difficulty": "Easy",
+      "estimated_time_seconds": 20,
+      "marks": 1,
+      "chapter": "Units and Measurements",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Conceptual"
+    },
+    {
+      "id": 5,
+      "question": "Which physical quantity has the dimensional formula [M L⁻¹ T⁻²]?",
+      "options": {
+        "A": "Pressure",
+        "B": "Energy",
+        "C": "Force",
+        "D": "Power"
+      },
+      "correct_option": "A",
+      "correct_answer": "Pressure",
+      "explanation": "Pressure = Force/Area = [M L T⁻²]/[L²] = [M L⁻¹ T⁻²].",
+      "incorrect_option_explanations": {
+        "A": "",
+        "B": "Energy has dimensions [M L² T⁻²].",
+        "C": "Force has dimensions [M L T⁻²].",
+        "D": "Power has dimensions [M L² T⁻³]."
+      },
+      "concept": "Dimensional Analysis",
+      "difficulty": "Easy",
+      "estimated_time_seconds": 35,
+      "marks": 1,
+      "chapter": "Units and Measurements",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Conceptual"
+    },
+    {
+      "id": 6,
+      "question": "1 astronomical unit (AU) is approximately equal to",
+      "options": {
+        "A": "1.5 × 10⁸ m",
+        "B": "1.5 × 10¹¹ m",
+        "C": "9.46 × 10¹⁵ m",
+        "D": "3 × 10⁸ m"
+      },
+      "correct_option": "B",
+      "correct_answer": "1.5 × 10¹¹ m",
+      "explanation": "1 AU is the mean Earth-Sun distance, approximately 1.496 × 10¹¹ m, commonly rounded to 1.5 × 10¹¹ m.",
+      "incorrect_option_explanations": {
+        "A": "This is approximately 1.5 × 10⁸ km, not metres.",
+        "B": "",
+        "C": "This is approximately 1 light year.",
+        "D": "This is the speed of light in vacuum."
+      },
+      "concept": "Units of Measurement",
+      "difficulty": "Easy",
+      "estimated_time_seconds": 30,
+      "marks": 1,
+      "chapter": "Units and Measurements",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Conceptual"
+    },
+    {
+      "id": 7,
+      "question": "The least count of a vernier caliper having 20 divisions on the vernier scale matching 19 main scale divisions (1 MSD = 1 mm) is",
+      "options": {
+        "A": "0.1 mm",
+        "B": "0.05 mm",
+        "C": "0.01 mm",
+        "D": "0.5 mm"
+      },
+      "correct_option": "B",
+      "correct_answer": "0.05 mm",
+      "explanation": "Least count = 1 MSD - 1 VSD = 1 mm - (19/20) mm = 1/20 mm = 0.05 mm.",
+      "incorrect_option_explanations": {
+        "A": "This would require 10 VSD = 9 MSD.",
+        "B": "",
+        "C": "This would require 100 VSD = 99 MSD.",
+        "D": "This would require 2 VSD = 1 MSD."
+      },
+      "concept": "Vernier Caliper",
+      "difficulty": "Easy",
+      "estimated_time_seconds": 40,
+      "marks": 1,
+      "chapter": "Units and Measurements",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Numerical"
+    },
+    {
+      "id": 8,
+      "question": "The number of base units in the SI system is",
+      "options": {
+        "A": "5",
+        "B": "6",
+        "C": "7",
+        "D": "8"
+      },
+      "correct_option": "C",
+      "correct_answer": "7",
+      "explanation": "The SI system has 7 base units: metre (m), kilogram (kg), second (s), ampere (A), kelvin (K), mole (mol), and candela (cd).",
+      "incorrect_option_explanations": {
+        "A": "This is fewer than the actual number.",
+        "B": "This is also fewer than the actual number.",
+        "C": "",
+        "D": "This is more than the actual number."
+      },
+      "concept": "SI Base Units",
+      "difficulty": "Easy",
+      "estimated_time_seconds": 25,
+      "marks": 1,
+      "chapter": "Units and Measurements",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Conceptual"
+    },
+    {
+      "id": 9,
+      "question": "Which of the following is NOT a fundamental quantity?",
+      "options": {
+        "A": "Length",
+        "B": "Mass",
+        "C": "Velocity",
+        "D": "Time"
+      },
+      "correct_option": "C",
+      "correct_answer": "Velocity",
+      "explanation": "Velocity is a derived quantity (displacement/time), while length, mass, and time are fundamental quantities.",
+      "incorrect_option_explanations": {
+        "A": "Length is a fundamental quantity.",
+        "B": "Mass is a fundamental quantity.",
+        "C": "",
+        "D": "Time is a fundamental quantity."
+      },
+      "concept": "Fundamental vs Derived Quantities",
+      "difficulty": "Easy",
+      "estimated_time_seconds": 25,
+      "marks": 1,
+      "chapter": "Units and Measurements",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Conceptual"
+    },
+    {
+      "id": 10,
+      "question": "The dimensional formula of gravitational constant G is",
+      "options": {
+        "A": "[M⁻¹ L³ T⁻²]",
+        "B": "[M L³ T⁻²]",
+        "C": "[M⁻¹ L² T⁻²]",
+        "D": "[M L² T⁻²]"
+      },
+      "correct_option": "A",
+      "correct_answer": "[M⁻¹ L³ T⁻²]",
+      "explanation": "From F = Gm₁m₂/r², G = Fr²/(m₁m₂) = [M L T⁻²][L²]/[M²] = [M⁻¹ L³ T⁻²].",
+      "incorrect_option_explanations": {
+        "A": "",
+        "B": "The mass dimension should be negative, not positive.",
+        "C": "The length dimension should be 3, not 2.",
+        "D": "The mass and length dimensions are both incorrect."
+      },
+      "concept": "Dimensional Analysis",
+      "difficulty": "Easy",
+      "estimated_time_seconds": 45,
+      "marks": 1,
+      "chapter": "Units and Measurements",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Formula Based"
+    },
+    {
+      "id": 11,
+      "question": "Express 5.6 × 10⁻⁹ m in nanometres.",
+      "options": {
+        "A": "0.56 nm",
+        "B": "5.6 nm",
+        "C": "56 nm",
+        "D": "560 nm"
+      },
+      "correct_option": "B",
+      "correct_answer": "5.6 nm",
+      "explanation": "Since 1 nm = 10⁻⁹ m, 5.6 × 10⁻⁹ m = 5.6 nm.",
+      "incorrect_option_explanations": {
+        "A": "This would be 5.6 × 10⁻¹⁰ m.",
+        "B": "",
+        "C": "This would be 5.6 × 10⁻⁸ m.",
+        "D": "This would be 5.6 × 10⁻⁷ m."
+      },
+      "concept": "Unit Conversion",
+      "difficulty": "Easy",
+      "estimated_time_seconds": 25,
+      "marks": 1,
+      "chapter": "Units and Measurements",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Numerical"
+    },
+    {
+      "id": 12,
+      "question": "The pitch of a screw gauge is 1 mm and it has 100 divisions on its circular scale. Its least count is",
+      "options": {
+        "A": "0.1 mm",
+        "B": "0.01 mm",
+        "C": "0.001 mm",
+        "D": "0.5 mm"
+      },
+      "correct_option": "B",
+      "correct_answer": "0.01 mm",
+      "explanation": "Least count = Pitch / Number of circular scale divisions = 1 mm / 100 = 0.01 mm.",
+      "incorrect_option_explanations": {
+        "A": "This would be for 10 divisions.",
+        "B": "",
+        "C": "This would be for 1000 divisions.",
+        "D": "This is not a valid least count for these parameters."
+      },
+      "concept": "Screw Gauge",
+      "difficulty": "Easy",
+      "estimated_time_seconds": 35,
+      "marks": 1,
+      "chapter": "Units and Measurements",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Numerical"
+    },
+    {
+      "id": 13,
+      "question": "Which quantity has the same dimensions as Planck's constant?",
+      "options": {
+        "A": "Angular momentum",
+        "B": "Linear momentum",
+        "C": "Torque",
+        "D": "Power"
+      },
+      "correct_option": "A",
+      "correct_answer": "Angular momentum",
+      "explanation": "Planck's constant h has dimensions [M L² T⁻¹], same as angular momentum L = mvr.",
+      "incorrect_option_explanations": {
+        "A": "",
+        "B": "Linear momentum has dimensions [M L T⁻¹].",
+        "C": "Torque has dimensions [M L² T⁻²].",
+        "D": "Power has dimensions [M L² T⁻³]."
+      },
+      "concept": "Dimensional Analysis",
+      "difficulty": "Easy",
+      "estimated_time_seconds": 40,
+      "marks": 1,
+      "chapter": "Units and Measurements",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Conceptual"
+    },
+    {
+      "id": 14,
+      "question": "The result of adding 2.3 cm and 4.56 cm, reported to correct significant figures, is",
+      "options": {
+        "A": "6.86 cm",
+        "B": "6.9 cm",
+        "C": "6.8 cm",
+        "D": "7.0 cm"
+      },
+      "correct_option": "C",
+      "correct_answer": "6.8 cm",
+      "explanation": "In addition, the result should have the same number of decimal places as the measurement with the fewest decimal places. 2.3 has 1 decimal place, so the answer is 6.8 cm.",
+      "incorrect_option_explanations": {
+        "A": "This has 2 decimal places, which is incorrect.",
+        "B": "This rounds incorrectly; 2.3 + 4.56 = 6.86, which rounds to 6.9 only if following different rules.",
+        "C": "",
+        "D": "This is an over-rounding."
+      },
+      "concept": "Significant Figures in Calculations",
+      "difficulty": "Easy",
+      "estimated_time_seconds": 35,
+      "marks": 1,
+      "chapter": "Units and Measurements",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Numerical"
+    },
+    {
+      "id": 15,
+      "question": "The SI unit of electric current is",
+      "options": {
+        "A": "Volt",
+        "B": "Ampere",
+        "C": "Ohm",
+        "D": "Coulomb"
+      },
+      "correct_option": "B",
+      "correct_answer": "Ampere",
+      "explanation": "The SI base unit of electric current is the ampere (A).",
+      "incorrect_option_explanations": {
+        "A": "Volt is the unit of potential difference.",
+        "B": "",
+        "C": "Ohm is the unit of resistance.",
+        "D": "Coulomb is the unit of electric charge."
+      },
+      "concept": "SI Base Units",
+      "difficulty": "Easy",
+      "estimated_time_seconds": 20,
+      "marks": 1,
+      "chapter": "Units and Measurements",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Conceptual"
+    },
+    {
+      "id": 16,
+      "question": "The dimensional formula of surface tension is",
+      "options": {
+        "A": "[M L T⁻²]",
+        "B": "[M L⁰ T⁻²]",
+        "C": "[M L⁻¹ T⁻²]",
+        "D": "[M L² T⁻²]"
+      },
+      "correct_option": "B",
+      "correct_answer": "[M L⁰ T⁻²]",
+      "explanation": "Surface tension = Force/Length = [M L T⁻²]/[L] = [M L⁰ T⁻²] or [M T⁻²].",
+      "incorrect_option_explanations": {
+        "A": "This is the dimensional formula for force.",
+        "B": "",
+        "C": "This is the dimensional formula for pressure.",
+        "D": "This is the dimensional formula for energy."
+      },
+      "concept": "Dimensional Analysis",
+      "difficulty": "Easy",
+      "estimated_time_seconds": 40,
+      "marks": 1,
+      "chapter": "Units and Measurements",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Formula Based"
+    },
+    {
+      "id": 17,
+      "question": "1 parsec is approximately equal to",
+      "options": {
+        "A": "3.26 light years",
+        "B": "1.5 × 10¹¹ m",
+        "C": "9.46 × 10¹⁵ m",
+        "D": "1.496 × 10⁸ km"
+      },
+      "correct_option": "A",
+      "correct_answer": "3.26 light years",
+      "explanation": "1 parsec ≈ 3.086 × 10¹⁶ m ≈ 3.26 light years.",
+      "incorrect_option_explanations": {
+        "A": "",
+        "B": "This is 1 astronomical unit.",
+        "C": "This is 1 light year.",
+        "D": "This is also approximately 1 AU."
+      },
+      "concept": "Astronomical Units",
+      "difficulty": "Easy",
+      "estimated_time_seconds": 30,
+      "marks": 1,
+      "chapter": "Units and Measurements",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Conceptual"
+    },
+    {
+      "id": 18,
+      "question": "The number of significant figures in 5000 m is",
+      "options": {
+        "A": "1",
+        "B": "2",
+        "C": "3",
+        "D": "Ambiguous without a decimal point"
+      },
+      "correct_option": "D",
+      "correct_answer": "Ambiguous without a decimal point",
+      "explanation": "Without a decimal point, trailing zeros in 5000 may or may not be significant. It is ambiguous and should be written in scientific notation for clarity.",
+      "incorrect_option_explanations": {
+        "A": "This assumes only the 5 is significant.",
+        "B": "This assumes only two significant figures.",
+        "C": "This assumes three significant figures.",
+        "D": ""
+      },
+      "concept": "Significant Figures",
+      "difficulty": "Easy",
+      "estimated_time_seconds": 30,
+      "marks": 1,
+      "chapter": "Units and Measurements",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Conceptual"
+    },
+    {
+      "id": 19,
+      "question": "Which of the following pairs has the same dimensions?",
+      "options": {
+        "A": "Work and Torque",
+        "B": "Work and Power",
+        "C": "Force and Torque",
+        "D": "Pressure and Energy"
+      },
+      "correct_option": "A",
+      "correct_answer": "Work and Torque",
+      "explanation": "Both work and torque have dimensions [M L² T⁻²]. Work = Force × distance; Torque = Force × perpendicular distance.",
+      "incorrect_option_explanations": {
+        "A": "",
+        "B": "Power has dimensions [M L² T⁻³].",
+        "C": "Torque has dimensions [M L² T⁻²] while force has [M L T⁻²].",
+        "D": "Pressure has dimensions [M L⁻¹ T⁻²] while energy has [M L² T⁻²]."
+      },
+      "concept": "Dimensional Analysis",
+      "difficulty": "Easy",
+      "estimated_time_seconds": 40,
+      "marks": 1,
+      "chapter": "Units and Measurements",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Conceptual"
+    },
+    {
+      "id": 20,
+      "question": "The least count of a screw gauge with pitch 0.5 mm and 50 circular scale divisions is",
+      "options": {
+        "A": "0.001 mm",
+        "B": "0.01 mm",
+        "C": "0.1 mm",
+        "D": "0.05 mm"
+      },
+      "correct_option": "B",
+      "correct_answer": "0.01 mm",
+      "explanation": "Least count = Pitch / Number of divisions = 0.5 mm / 50 = 0.01 mm.",
+      "incorrect_option_explanations": {
+        "A": "This would require 500 divisions.",
+        "B": "",
+        "C": "This would require 5 divisions.",
+        "D": "This would require 10 divisions."
+      },
+      "concept": "Screw Gauge",
+      "difficulty": "Easy",
+      "estimated_time_seconds": 35,
+      "marks": 1,
+      "chapter": "Units and Measurements",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Numerical"
+    },
+    {
+      "id": 21,
+      "question": "The SI unit of amount of substance is",
+      "options": {
+        "A": "Kilogram",
+        "B": "Mole",
+        "C": "Candela",
+        "D": "Ampere"
+      },
+      "correct_option": "B",
+      "correct_answer": "Mole",
+      "explanation": "The mole (mol) is the SI base unit for amount of substance.",
+      "incorrect_option_explanations": {
+        "A": "Kilogram is the unit of mass.",
+        "B": "",
+        "C": "Candela is the unit of luminous intensity.",
+        "D": "Ampere is the unit of electric current."
+      },
+      "concept": "SI Base Units",
+      "difficulty": "Easy",
+      "estimated_time_seconds": 20,
+      "marks": 1,
+      "chapter": "Units and Measurements",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Conceptual"
+    },
+    {
+      "id": 22,
+      "question": "The dimensional formula of coefficient of viscosity is",
+      "options": {
+        "A": "[M L⁻¹ T⁻¹]",
+        "B": "[M L T⁻¹]",
+        "C": "[M L⁻¹ T⁻²]",
+        "D": "[M L² T⁻¹]"
+      },
+      "correct_option": "A",
+      "correct_answer": "[M L⁻¹ T⁻¹]",
+      "explanation": "From F = ηA(dv/dx), η = F/(A·dv/dx) = [M L T⁻²]/([L²][T⁻¹]) = [M L⁻¹ T⁻¹].",
+      "incorrect_option_explanations": {
+        "A": "",
+        "B": "This is the dimensional formula for linear momentum.",
+        "C": "This is the dimensional formula for pressure.",
+        "D": "This is the dimensional formula for angular momentum."
+      },
+      "concept": "Dimensional Analysis",
+      "difficulty": "Easy",
+      "estimated_time_seconds": 45,
+      "marks": 1,
+      "chapter": "Units and Measurements",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Formula Based"
+    },
+    {
+      "id": 23,
+      "question": "Express 2.5 × 10⁻⁶ m in micrometres.",
+      "options": {
+        "A": "0.25 μm",
+        "B": "2.5 μm",
+        "C": "25 μm",
+        "D": "250 μm"
+      },
+      "correct_option": "B",
+      "correct_answer": "2.5 μm",
+      "explanation": "Since 1 μm = 10⁻⁶ m, 2.5 × 10⁻⁶ m = 2.5 μm.",
+      "incorrect_option_explanations": {
+        "A": "This would be 2.5 × 10⁻⁷ m.",
+        "B": "",
+        "C": "This would be 2.5 × 10⁻⁵ m.",
+        "D": "This would be 2.5 × 10⁻⁴ m."
+      },
+      "concept": "Unit Conversion",
+      "difficulty": "Easy",
+      "estimated_time_seconds": 25,
+      "marks": 1,
+      "chapter": "Units and Measurements",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Numerical"
+    },
+    {
+      "id": 24,
+      "question": "In a vernier caliper, 10 vernier scale divisions coincide with 9 main scale divisions. If 1 MSD = 1 mm, the least count is",
+      "options": {
+        "A": "0.1 mm",
+        "B": "0.01 mm",
+        "C": "0.5 mm",
+        "D": "1 mm"
+      },
+      "correct_option": "A",
+      "correct_answer": "0.1 mm",
+      "explanation": "Least count = 1 MSD - 1 VSD = 1 mm - 0.9 mm = 0.1 mm.",
+      "incorrect_option_explanations": {
+        "A": "",
+        "B": "This would require 100 VSD = 99 MSD.",
+        "C": "This would require 2 VSD = 1 MSD.",
+        "D": "This would mean no vernier scale is present."
+      },
+      "concept": "Vernier Caliper",
+      "difficulty": "Easy",
+      "estimated_time_seconds": 35,
+      "marks": 1,
+      "chapter": "Units and Measurements",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Numerical"
+    },
+    {
+      "id": 25,
+      "question": "The dimensional formula of frequency is",
+      "options": {
+        "A": "[M⁰ L⁰ T⁻¹]",
+        "B": "[M⁰ L⁰ T¹]",
+        "C": "[M L⁰ T⁻²]",
+        "D": "[M⁰ L T⁻¹]"
+      },
+      "correct_option": "A",
+      "correct_answer": "[M⁰ L⁰ T⁻¹]",
+      "explanation": "Frequency = 1/Time period, so its dimensional formula is [T⁻¹] = [M⁰ L⁰ T⁻¹].",
+      "incorrect_option_explanations": {
+        "A": "",
+        "B": "This would be the dimensional formula for time period.",
+        "C": "This is the dimensional formula for acceleration.",
+        "D": "This is the dimensional formula for speed."
+      },
+      "concept": "Dimensional Analysis",
+      "difficulty": "Easy",
+      "estimated_time_seconds": 25,
+      "marks": 1,
+      "chapter": "Units and Measurements",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Conceptual"
+    },
+    {
+      "id": 26,
+      "question": "The prefix 'giga' corresponds to",
+      "options": {
+        "A": "10⁶",
+        "B": "10⁹",
+        "C": "10¹²",
+        "D": "10³"
+      },
+      "correct_option": "B",
+      "correct_answer": "10⁹",
+      "explanation": "The SI prefix 'giga' (G) represents 10⁹.",
+      "incorrect_option_explanations": {
+        "A": "This is the prefix 'mega'.",
+        "B": "",
+        "C": "This is the prefix 'tera'.",
+        "D": "This is the prefix 'kilo'."
+      },
+      "concept": "SI Prefixes",
+      "difficulty": "Easy",
+      "estimated_time_seconds": 20,
+      "marks": 1,
+      "chapter": "Units and Measurements",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Conceptual"
+    },
+    {
+      "id": 27,
+      "question": "Which of the following is a scalar quantity?",
+      "options": {
+        "A": "Velocity",
+        "B": "Acceleration",
+        "C": "Force",
+        "D": "Mass"
+      },
+      "correct_option": "D",
+      "correct_answer": "Mass",
+      "explanation": "Mass is a scalar quantity as it has only magnitude and no direction. Velocity, acceleration, and force are vector quantities.",
+      "incorrect_option_explanations": {
+        "A": "Velocity has both magnitude and direction.",
+        "B": "Acceleration has both magnitude and direction.",
+        "C": "Force has both magnitude and direction.",
+        "D": ""
+      },
+      "concept": "Scalar and Vector Quantities",
+      "difficulty": "Easy",
+      "estimated_time_seconds": 25,
+      "marks": 1,
+      "chapter": "Units and Measurements",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Conceptual"
+    },
+    {
+      "id": 28,
+      "question": "The result of multiplying 2.5 cm × 3.2 cm, reported to correct significant figures, is",
+      "options": {
+        "A": "8.00 cm²",
+        "B": "8.0 cm²",
+        "C": "8 cm²",
+        "D": "8.000 cm²"
+      },
+      "correct_option": "B",
+      "correct_answer": "8.0 cm²",
+      "explanation": "In multiplication, the result should have the same number of significant figures as the factor with the fewest significant figures. Both 2.5 and 3.2 have 2 significant figures, so the answer is 8.0 cm².",
+      "incorrect_option_explanations": {
+        "A": "This has 3 significant figures.",
+        "B": "",
+        "C": "This has only 1 significant figure.",
+        "D": "This has 4 significant figures."
+      },
+      "concept": "Significant Figures in Calculations",
+      "difficulty": "Easy",
+      "estimated_time_seconds": 35,
+      "marks": 1,
+      "chapter": "Units and Measurements",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Numerical"
+    },
+    {
+      "id": 29,
+      "question": "The dimensional formula of impulse is",
+      "options": {
+        "A": "[M L T⁻¹]",
+        "B": "[M L T⁻²]",
+        "C": "[M L² T⁻¹]",
+        "D": "[M L² T⁻²]"
+      },
+      "correct_option": "A",
+      "correct_answer": "[M L T⁻¹]",
+      "explanation": "Impulse = Force × Time = [M L T⁻²] × [T] = [M L T⁻¹]. This is also the dimensional formula for linear momentum.",
+      "incorrect_option_explanations": {
+        "A": "",
+        "B": "This is the dimensional formula for force.",
+        "C": "This is the dimensional formula for angular momentum.",
+        "D": "This is the dimensional formula for energy or work."
+      },
+      "concept": "Dimensional Analysis",
+      "difficulty": "Easy",
+      "estimated_time_seconds": 35,
+      "marks": 1,
+      "chapter": "Units and Measurements",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Formula Based"
+    },
+    {
+      "id": 30,
+      "question": "1 light year is approximately equal to",
+      "options": {
+        "A": "9.46 × 10¹² m",
+        "B": "9.46 × 10¹⁵ m",
+        "C": "1.5 × 10¹¹ m",
+        "D": "3.086 × 10¹⁶ m"
+      },
+      "correct_option": "B",
+      "correct_answer": "9.46 × 10¹⁵ m",
+      "explanation": "1 light year = speed of light × 1 year = (3 × 10⁸ m/s) × (365.25 × 24 × 3600 s) ≈ 9.46 × 10¹⁵ m.",
+      "incorrect_option_explanations": {
+        "A": "This is too small by a factor of 1000.",
+        "B": "",
+        "C": "This is approximately 1 AU.",
+        "D": "This is approximately 1 parsec."
+      },
+      "concept": "Astronomical Units",
+      "difficulty": "Easy",
+      "estimated_time_seconds": 30,
+      "marks": 1,
+      "chapter": "Units and Measurements",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Conceptual"
+    },
+    {
+      "id": 31,
+      "question": "The zero of a vernier caliper is found to be at the 5th division of the vernier scale when the jaws are closed. If the main scale reading is 2.3 cm and the 8th vernier division coincides, the corrected reading is",
+      "options": {
+        "A": "2.38 cm",
+        "B": "2.33 cm",
+        "C": "2.28 cm",
+        "D": "2.35 cm"
+      },
+      "correct_option": "B",
+      "correct_answer": "2.33 cm",
+      "explanation": "Zero error = 5 × LC = 5 × 0.01 cm = 0.05 cm (positive). Observed reading = 2.3 cm + 8 × 0.01 cm = 2.38 cm. Corrected reading = 2.38 - 0.05 = 2.33 cm.",
+      "incorrect_option_explanations": {
+        "A": "This is the observed reading without zero error correction.",
+        "B": "",
+        "C": "This would be if zero error was subtracted incorrectly.",
+        "D": "This would be if zero error was added instead of subtracted."
+      },
+      "concept": "Vernier Caliper Zero Error",
+      "difficulty": "Easy",
+      "estimated_time_seconds": 50,
+      "marks": 1,
+      "chapter": "Units and Measurements",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Numerical"
+    },
+    {
+      "id": 32,
+      "question": "Which of the following has dimensions [M L² T⁻²]?",
+      "options": {
+        "A": "Force",
+        "B": "Power",
+        "C": "Energy",
+        "D": "Pressure"
+      },
+      "correct_option": "C",
+      "correct_answer": "Energy",
+      "explanation": "Energy (or work) has dimensions [M L² T⁻²].",
+      "incorrect_option_explanations": {
+        "A": "Force has dimensions [M L T⁻²].",
+        "B": "Power has dimensions [M L² T⁻³].",
+        "C": "",
+        "D": "Pressure has dimensions [M L⁻¹ T⁻²]."
+      },
+      "concept": "Dimensional Analysis",
+      "difficulty": "Easy",
+      "estimated_time_seconds": 30,
+      "marks": 1,
+      "chapter": "Units and Measurements",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Conceptual"
+    },
+    {
+      "id": 33,
+      "question": "The dimensions of the quantity √(l/g) where l is length and g is acceleration due to gravity are",
+      "options": {
+        "A": "[L⁰ M⁰ T¹]",
+        "B": "[L¹ M⁰ T⁰]",
+        "C": "[L⁰ M⁰ T⁻¹]",
+        "D": "[L¹ M⁰ T⁻¹]"
+      },
+      "correct_option": "A",
+      "correct_answer": "[L⁰ M⁰ T¹]",
+      "explanation": "√(l/g) = √([L]/[L T⁻²]) = √([T²]) = [T] = [L⁰ M⁰ T¹]. This represents the time period of a simple pendulum.",
+      "incorrect_option_explanations": {
+        "A": "",
+        "B": "This would be the dimension of length only.",
+        "C": "This would be the dimension of frequency.",
+        "D": "This would be the dimension of velocity."
+      },
+      "concept": "Dimensional Analysis",
+      "difficulty": "Medium",
+      "estimated_time_seconds": 50,
+      "marks": 1,
+      "chapter": "Units and Measurements",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Formula Based"
+    },
+    {
+      "id": 34,
+      "question": "In an experiment, the measured values of resistance are 4.2 Ω, 4.4 Ω, 4.1 Ω, and 4.3 Ω. The mean absolute error is",
+      "options": {
+        "A": "0.05 Ω",
+        "B": "0.1 Ω",
+        "C": "0.15 Ω",
+        "D": "0.2 Ω"
+      },
+      "correct_option": "B",
+      "correct_answer": "0.1 Ω",
+      "explanation": "Mean = (4.2+4.4+4.1+4.3)/4 = 4.25 Ω. Absolute errors: |4.25-4.2|=0.05, |4.25-4.4|=0.15, |4.25-4.1|=0.15, |4.25-4.3|=0.05. Mean absolute error = (0.05+0.15+0.15+0.05)/4 = 0.1 Ω.",
+      "incorrect_option_explanations": {
+        "A": "This is the minimum absolute error, not the mean.",
+        "B": "",
+        "C": "This is the maximum absolute error, not the mean.",
+        "D": "This is the sum of absolute errors divided by 2."
+      },
+      "concept": "Error Analysis",
+      "difficulty": "Medium",
+      "estimated_time_seconds": 60,
+      "marks": 1,
+      "chapter": "Units and Measurements",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Numerical"
+    },
+    {
+      "id": 35,
+      "question": "Assertion (A): The dimensional formula of latent heat is [M⁰ L² T⁻²]. Reason (R): Latent heat is defined as the heat energy required per unit mass to change the state of a substance without change in temperature.",
+      "options": {
+        "A": "Both A and R are true and R is the correct explanation of A",
+        "B": "Both A and R are true but R is not the correct explanation of A",
+        "C": "A is true but R is false",
+        "D": "A is false but R is true"
+      },
+      "correct_option": "A",
+      "correct_answer": "Both A and R are true and R is the correct explanation of A",
+      "explanation": "Latent heat L = Q/m = [M L² T⁻²]/[M] = [M⁰ L² T⁻²]. The reason correctly defines latent heat, and this definition leads to the dimensional formula in the assertion.",
+      "incorrect_option_explanations": {
+        "A": "",
+        "B": "R does correctly explain A since the definition leads to the dimensional formula.",
+        "C": "R is true as it correctly defines latent heat.",
+        "D": "A is true as the dimensional formula is correct."
+      },
+      "concept": "Assertion-Reason",
+      "difficulty": "Medium",
+      "estimated_time_seconds": 55,
+      "marks": 1,
+      "chapter": "Units and Measurements",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Assertion-Reason"
+    },
+    {
+      "id": 36,
+      "question": "A screw gauge has a pitch of 0.5 mm and 50 divisions on its circular scale. While measuring the diameter of a wire, the main scale reads 2 mm and the 35th division coincides with the reference line. The diameter of the wire is",
+      "options": {
+        "A": "2.35 mm",
+        "B": "2.175 mm",
+        "C": "2.70 mm",
+        "D": "2.035 mm"
+      },
+      "correct_option": "A",
+      "correct_answer": "2.35 mm",
+      "explanation": "Least count = 0.5/50 = 0.01 mm. Diameter = Main scale reading + (Circular scale reading × LC) = 2 mm + (35 × 0.01 mm) = 2 + 0.35 = 2.35 mm.",
+      "incorrect_option_explanations": {
+        "A": "",
+        "B": "This would be if pitch was 0.5 mm and 100 divisions.",
+        "C": "This would be if main scale reading was 2.5 mm.",
+        "D": "This would be if LC was 0.001 mm."
+      },
+      "concept": "Screw Gauge",
+      "difficulty": "Medium",
+      "estimated_time_seconds": 50,
+      "marks": 1,
+      "chapter": "Units and Measurements",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Numerical"
+    },
+    {
+      "id": 37,
+      "question": "The percentage error in the measurement of density of a sphere is minimum when the errors in measurement of mass and radius are respectively",
+      "options": {
+        "A": "1% and 1%",
+        "B": "2% and 1%",
+        "C": "1% and 2%",
+        "D": "2% and 2%"
+      },
+      "correct_option": "A",
+      "correct_answer": "1% and 1%",
+      "explanation": "Density ρ = m/(4/3 πr³). Percentage error in ρ = (Δm/m)×100 + 3×(Δr/r)×100. For option A: 1% + 3×1% = 4%. For B: 2% + 3×1% = 5%. For C: 1% + 3×2% = 7%. For D: 2% + 3×2% = 8%. Minimum is 4% for option A.",
+      "incorrect_option_explanations": {
+        "A": "",
+        "B": "This gives 5% error.",
+        "C": "This gives 7% error.",
+        "D": "This gives 8% error."
+      },
+      "concept": "Error Propagation",
+      "difficulty": "Medium",
+      "estimated_time_seconds": 70,
+      "marks": 1,
+      "chapter": "Units and Measurements",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Numerical"
+    },
+    {
+      "id": 38,
+      "question": "Which of the following is dimensionally correct?",
+      "options": {
+        "A": "v = at + b/(t+c) where v is velocity, t is time",
+        "B": "F = mv²/r where F is force, m is mass, v is velocity, r is radius",
+        "C": "E = mc² where E is energy, m is mass, c is speed of light",
+        "D": "All of the above"
+      },
+      "correct_option": "D",
+      "correct_answer": "All of the above",
+      "explanation": "All three equations are dimensionally correct. For (a): [at] = [L T⁻²][T] = [L T⁻¹] = [v], [b/(t+c)] = [L]/[T] = [L T⁻¹] = [v]. For (b): [mv²/r] = [M][L² T⁻²]/[L] = [M L T⁻²] = [F]. For (c): [mc²] = [M][L² T⁻²] = [M L² T⁻²] = [E].",
+      "incorrect_option_explanations": {
+        "A": "This is correct but not the only correct option.",
+        "B": "This is correct but not the only correct option.",
+        "C": "This is correct but not the only correct option.",
+        "D": ""
+      },
+      "concept": "Dimensional Consistency",
+      "difficulty": "Medium",
+      "estimated_time_seconds": 65,
+      "marks": 1,
+      "chapter": "Units and Measurements",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Conceptual"
+    },
+    {
+      "id": 39,
+      "question": "The relative error in the measurement of density of a sphere is 2%. The relative error in the measurement of its radius is",
+      "options": {
+        "A": "0.67%",
+        "B": "1%",
+        "C": "2%",
+        "D": "6%"
+      },
+      "correct_option": "A",
+      "correct_answer": "0.67%",
+      "explanation": "Density ρ = m/(4/3 πr³). Relative error in ρ = Δm/m + 3Δr/r. Assuming negligible error in mass, 2% = 3 × (Δr/r), so Δr/r = 2/3 % ≈ 0.67%.",
+      "incorrect_option_explanations": {
+        "A": "",
+        "B": "This would be if relative error in density was 3%.",
+        "C": "This would be if relative error in density was 6%.",
+        "D": "This would be if relative error in density was 18%."
+      },
+      "concept": "Error Propagation",
+      "difficulty": "Medium",
+      "estimated_time_seconds": 55,
+      "marks": 1,
+      "chapter": "Units and Measurements",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Numerical"
+    },
+    {
+      "id": 40,
+      "question": "The order of magnitude of 0.00045 m is",
+      "options": {
+        "A": "10⁻³",
+        "B": "10⁻⁴",
+        "C": "10⁻⁵",
+        "D": "10⁻²"
+      },
+      "correct_option": "B",
+      "correct_answer": "10⁻⁴",
+      "explanation": "0.00045 m = 4.5 × 10⁻⁴ m. Since 0.5 ≤ 4.5 < 5, the order of magnitude is 10⁻⁴.",
+      "incorrect_option_explanations": {
+        "A": "This would be for 4.5 × 10⁻³ m.",
+        "B": "",
+        "C": "This would be for 4.5 × 10⁻⁵ m.",
+        "D": "This would be for 4.5 × 10⁻² m."
+      },
+      "concept": "Order of Magnitude",
+      "difficulty": "Medium",
+      "estimated_time_seconds": 35,
+      "marks": 1,
+      "chapter": "Units and Measurements",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Numerical"
+    },
+    {
+      "id": 41,
+      "question": "Assertion (A): Light year and parsec are units of distance. Reason (R): Both are defined using astronomical observations and the speed of light.",
+      "options": {
+        "A": "Both A and R are true and R is the correct explanation of A",
+        "B": "Both A and R are true but R is not the correct explanation of A",
+        "C": "A is true but R is false",
+        "D": "A is false but R is true"
+      },
+      "correct_option": "A",
+      "correct_answer": "Both A and R are true and R is the correct explanation of A",
+      "explanation": "Both light year (distance light travels in one year) and parsec (distance at which 1 AU subtends 1 arcsecond) are units of distance. The reason correctly explains how both are defined.",
+      "incorrect_option_explanations": {
+        "A": "",
+        "B": "R does explain A as both definitions involve distance measurement.",
+        "C": "R is true; both are indeed defined using astronomical observations.",
+        "D": "A is true; both are units of distance."
+      },
+      "concept": "Assertion-Reason",
+      "difficulty": "Medium",
+      "estimated_time_seconds": 45,
+      "marks": 1,
+      "chapter": "Units and Measurements",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Assertion-Reason"
+    },
+    {
+      "id": 42,
+      "question": "A student measures the diameter of a wire using a screw gauge and obtains the readings: 2.34 mm, 2.36 mm, 2.35 mm, 2.33 mm. The percentage error in the measurement is approximately",
+      "options": {
+        "A": "0.43%",
+        "B": "0.85%",
+        "C": "1.28%",
+        "D": "1.71%"
+      },
+      "correct_option": "A",
+      "correct_answer": "0.43%",
+      "explanation": "Mean = (2.34+2.36+2.35+2.33)/4 = 2.345 mm. Absolute errors: 0.005, 0.015, 0.005, 0.015. Mean absolute error = 0.01 mm. Percentage error = (0.01/2.345) × 100 ≈ 0.43%.",
+      "incorrect_option_explanations": {
+        "A": "",
+        "B": "This would be if mean absolute error was 0.02 mm.",
+        "C": "This would be if mean absolute error was 0.03 mm.",
+        "D": "This would be if mean absolute error was 0.04 mm."
+      },
+      "concept": "Error Analysis",
+      "difficulty": "Medium",
+      "estimated_time_seconds": 70,
+      "marks": 1,
+      "chapter": "Units and Measurements",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Numerical"
+    },
+    {
+      "id": 43,
+      "question": "The dimensional formula of magnetic field B can be obtained from F = Bev. It is",
+      "options": {
+        "A": "[M T⁻² I⁻¹]",
+        "B": "[M L T⁻² I⁻¹]",
+        "C": "[M L⁰ T⁻² I⁻¹]",
+        "D": "[M L⁻¹ T⁻² I⁻¹]"
+      },
+      "correct_option": "C",
+      "correct_answer": "[M L⁰ T⁻² I⁻¹]",
+      "explanation": "From F = Bev, B = F/(ev) = [M L T⁻²]/([I T][L T⁻¹]) = [M L T⁻²]/[I L] = [M L⁰ T⁻² I⁻¹].",
+      "incorrect_option_explanations": {
+        "A": "This misses the length dimension in the denominator.",
+        "B": "This incorrectly retains the length dimension.",
+        "C": "",
+        "D": "This incorrectly adds an inverse length dimension."
+      },
+      "concept": "Dimensional Analysis",
+      "difficulty": "Medium",
+      "estimated_time_seconds": 60,
+      "marks": 1,
+      "chapter": "Units and Measurements",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Formula Based"
+    },
+    {
+      "id": 44,
+      "question": "If Z = A³B²/√C and the percentage errors in A, B, C are 2%, 3%, and 4% respectively, the percentage error in Z is",
+      "options": {
+        "A": "10%",
+        "B": "14%",
+        "C": "16%",
+        "D": "18%"
+      },
+      "correct_option": "B",
+      "correct_answer": "14%",
+      "explanation": "Percentage error in Z = 3×(ΔA/A)×100 + 2×(ΔB/B)×100 + (1/2)×(ΔC/C)×100 = 3×2% + 2×3% + 0.5×4% = 6% + 6% + 2% = 14%.",
+      "incorrect_option_explanations": {
+        "A": "This misses the contribution from C.",
+        "B": "",
+        "C": "This would be if errors were 3%, 4%, 5%.",
+        "D": "This overcounts the error contributions."
+      },
+      "concept": "Error Propagation",
+      "difficulty": "Medium",
+      "estimated_time_seconds": 65,
+      "marks": 1,
+      "chapter": "Units and Measurements",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Numerical"
+    },
+    {
+      "id": 45,
+      "question": "The distance of a star is 4.2 light years. Express this distance in parsecs.",
+      "options": {
+        "A": "1.29 pc",
+        "B": "2.58 pc",
+        "C": "3.87 pc",
+        "D": "5.16 pc"
+      },
+      "correct_option": "A",
+      "correct_answer": "1.29 pc",
+      "explanation": "1 parsec ≈ 3.26 light years. Therefore, 4.2 light years = 4.2/3.26 ≈ 1.29 pc.",
+      "incorrect_option_explanations": {
+        "A": "",
+        "B": "This would be for 8.4 light years.",
+        "C": "This would be for 12.6 light years.",
+        "D": "This would be for 16.8 light years."
+      },
+      "concept": "Astronomical Unit Conversion",
+      "difficulty": "Medium",
+      "estimated_time_seconds": 50,
+      "marks": 1,
+      "chapter": "Units and Measurements",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Numerical"
+    },
+    {
+      "id": 46,
+      "question": "Assertion (A): The method of dimensions cannot be used to derive relations containing trigonometric functions. Reason (R): Trigonometric functions are dimensionless and their arguments must also be dimensionless.",
+      "options": {
+        "A": "Both A and R are true and R is the correct explanation of A",
+        "B": "Both A and R are true but R is not the correct explanation of A",
+        "C": "A is true but R is false",
+        "D": "A is false but R is true"
+      },
+      "correct_option": "A",
+      "correct_answer": "Both A and R are true and R is the correct explanation of A",
+      "explanation": "The method of dimensions cannot derive relations with trigonometric functions because these functions are dimensionless and their arguments must be dimensionless (angles). The reason correctly explains the assertion.",
+      "incorrect_option_explanations": {
+        "A": "",
+        "B": "R does explain A because dimensionless quantities cannot be analyzed by dimensional methods.",
+        "C": "R is true; trigonometric functions and their arguments are dimensionless.",
+        "D": "A is true; dimensional analysis cannot handle trigonometric functions."
+      },
+      "concept": "Assertion-Reason",
+      "difficulty": "Medium",
+      "estimated_time_seconds": 55,
+      "marks": 1,
+      "chapter": "Units and Measurements",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Assertion-Reason"
+    },
+    {
+      "id": 47,
+      "question": "A vernier caliper has 10 divisions on the vernier scale matching with 9 main scale divisions. The diameter of a sphere measured with this caliper is found to be 2.34 cm. The least count of the caliper and the radius of the sphere are respectively",
+      "options": {
+        "A": "0.01 cm and 1.17 cm",
+        "B": "0.1 cm and 1.17 cm",
+        "C": "0.01 cm and 2.34 cm",
+        "D": "0.1 cm and 2.34 cm"
+      },
+      "correct_option": "A",
+      "correct_answer": "0.01 cm and 1.17 cm",
+      "explanation": "LC = 1 MSD - 1 VSD = 1 mm - 0.9 mm = 0.1 mm = 0.01 cm. Diameter = 2.34 cm, so radius = 2.34/2 = 1.17 cm.",
+      "incorrect_option_explanations": {
+        "A": "",
+        "B": "This has correct LC but wrong radius.",
+        "C": "This has wrong LC but correct diameter instead of radius.",
+        "D": "This has wrong LC and wrong radius."
+      },
+      "concept": "Vernier Caliper",
+      "difficulty": "Medium",
+      "estimated_time_seconds": 50,
+      "marks": 1,
+      "chapter": "Units and Measurements",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Numerical"
+    },
+    {
+      "id": 48,
+      "question": "The dimensional formula of the quantity X in the equation X = 3π²ab² where a is acceleration and b is time is",
+      "options": {
+        "A": "[M⁰ L¹ T⁰]",
+        "B": "[M⁰ L¹ T¹]",
+        "C": "[M⁰ L¹ T⁻¹]",
+        "D": "[M⁰ L² T⁰]"
+      },
+      "correct_option": "A",
+      "correct_answer": "[M⁰ L¹ T⁰]",
+      "explanation": "X = 3π²ab² = [L T⁻²][T²] = [L] = [M⁰ L¹ T⁰].",
+      "incorrect_option_explanations": {
+        "A": "",
+        "B": "This would be if b had dimension [T⁰].",
+        "C": "This would be if a had dimension [L T⁻¹].",
+        "D": "This would be if b had dimension [T³]."
+      },
+      "concept": "Dimensional Analysis",
+      "difficulty": "Medium",
+      "estimated_time_seconds": 50,
+      "marks": 1,
+      "chapter": "Units and Measurements",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Formula Based"
+    },
+    {
+      "id": 49,
+      "question": "In an experiment to measure the acceleration due to gravity using a simple pendulum, the length is measured as (100 ± 0.2) cm and the time period as (2.0 ± 0.02) s. The percentage error in g is approximately",
+      "options": {
+        "A": "1%",
+        "B": "1.5%",
+        "C": "2%",
+        "D": "2.5%"
+      },
+      "correct_option": "C",
+      "correct_answer": "2%",
+      "explanation": "From T = 2π√(l/g), g = 4π²l/T². Percentage error in g = (Δl/l)×100 + 2×(ΔT/T)×100 = (0.2/100)×100 + 2×(0.02/2.0)×100 = 0.2% + 2% = 2.2% ≈ 2%.",
+      "incorrect_option_explanations": {
+        "A": "This would be if only the length error was considered.",
+        "B": "This would be if the time period error was 0.01 s instead of 0.02 s.",
+        "C": "",
+        "D": "This would be if both errors were significantly larger."
+      },
+      "concept": "Error Propagation",
+      "difficulty": "Medium",
+      "estimated_time_seconds": 65,
+      "marks": 1,
+      "chapter": "Units and Measurements",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Numerical"
+    },
+    {
+      "id": 50,
+      "question": "The mass of an object is measured as (5.00 ± 0.05) kg and its volume as (2.00 ± 0.02) m³. The density with proper significant figures and error is",
+      "options": {
+        "A": "(2.50 ± 0.05) kg/m³",
+        "B": "(2.5 ± 0.1) kg/m³",
+        "C": "(2.50 ± 0.10) kg/m³",
+        "D": "(2.500 ± 0.050) kg/m³"
+      },
+      "correct_option": "A",
+      "correct_answer": "(2.50 ± 0.05) kg/m³",
+      "explanation": "Density = m/V = 5.00/2.00 = 2.50 kg/m³. Relative error in density = Δm/m + ΔV/V = 0.05/5.00 + 0.02/2.00 = 0.01 + 0.01 = 0.02. Absolute error = 2.50 × 0.02 = 0.05 kg/m³. So density = (2.50 ± 0.05) kg/m³.",
+      "incorrect_option_explanations": {
+        "A": "",
+        "B": "This has incorrect significant figures for the central value.",
+        "C": "This has incorrect error value.",
+        "D": "This has too many significant figures."
+      },
+      "concept": "Error Analysis",
+      "difficulty": "Medium",
+      "estimated_time_seconds": 75,
+      "marks": 1,
+      "chapter": "Units and Measurements",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Numerical"
+    },
+    {
+      "id": 51,
+      "question": "Which of the following physical quantities does NOT have the dimensions [M L² T⁻²]?",
+      "options": {
+        "A": "Work done by a force",
+        "B": "Kinetic energy of a body",
+        "C": "Torque acting on a body",
+        "D": "Power delivered by a machine"
+      },
+      "correct_option": "D",
+      "correct_answer": "Power delivered by a machine",
+      "explanation": "Power = Work/Time, so its dimensions are [M L² T⁻²]/[T] = [M L² T⁻³]. Work, kinetic energy, and torque all have dimensions [M L² T⁻²].",
+      "incorrect_option_explanations": {
+        "A": "Work done has dimensions [M L² T⁻²].",
+        "B": "Kinetic energy has dimensions [M L² T⁻²].",
+        "C": "Torque has dimensions [M L² T⁻²].",
+        "D": ""
+      },
+      "concept": "Dimensional Analysis",
+      "difficulty": "Medium",
+      "estimated_time_seconds": 40,
+      "marks": 1,
+      "chapter": "Units and Measurements",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Conceptual"
+    },
+    {
+      "id": 52,
+      "question": "A screw gauge with pitch 1 mm and 100 circular scale divisions is used to measure the thickness of a metal sheet. The main scale reads 5 mm and the circular scale reads 47 divisions. If the screw gauge has a zero error of -0.03 mm, the correct thickness is",
+      "options": {
+        "A": "5.50 mm",
+        "B": "5.47 mm",
+        "C": "5.44 mm",
+        "D": "5.53 mm"
+      },
+      "correct_option": "A",
+      "correct_answer": "5.50 mm",
+      "explanation": "Observed reading = 5 mm + (47 × 0.01 mm) = 5.47 mm. Zero error = -0.03 mm (negative). Corrected reading = Observed reading - Zero error = 5.47 - (-0.03) = 5.50 mm.",
+      "incorrect_option_explanations": {
+        "A": "",
+        "B": "This is the observed reading without zero error correction.",
+        "C": "This would be if zero error was +0.03 mm.",
+        "D": "This would be if zero error was subtracted instead of added."
+      },
+      "concept": "Screw Gauge Zero Error",
+      "difficulty": "Medium",
+      "estimated_time_seconds": 60,
+      "marks": 1,
+      "chapter": "Units and Measurements",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Numerical"
+    },
+    {
+      "id": 53,
+      "question": "The time period of oscillation of a simple pendulum depends on its length l and acceleration due to gravity g. Using dimensional analysis, the correct relation is",
+      "options": {
+        "A": "T = k√(l/g)",
+        "B": "T = k√(g/l)",
+        "C": "T = k(l/g)",
+        "D": "T = k(lg)"
+      },
+      "correct_option": "A",
+      "correct_answer": "T = k√(l/g)",
+      "explanation": "Let T ∝ lˣ gʸ. Dimensions: [T] = [L]ˣ [L T⁻²]ʸ = [Lˣ⁺ʸ T⁻²ʸ]. Equating: x + y = 0 and -2y = 1, so y = -1/2 and x = 1/2. Thus T = k√(l/g).",
+      "incorrect_option_explanations": {
+        "A": "",
+        "B": "This would give dimensions [T⁻¹], which is incorrect.",
+        "C": "This would give dimensions [L⁰], which is incorrect.",
+        "D": "This would give dimensions [L² T⁻²], which is incorrect."
+      },
+      "concept": "Dimensional Analysis",
+      "difficulty": "Medium",
+      "estimated_time_seconds": 70,
+      "marks": 1,
+      "chapter": "Units and Measurements",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Formula Based"
+    },
+    {
+      "id": 54,
+      "question": "The radius of a nucleus is given by R = R₀A^(1/3) where R₀ = 1.3 × 10⁻¹⁵ m and A is the mass number. For a nucleus with A = 64, the order of magnitude of R is",
+      "options": {
+        "A": "10⁻¹⁵ m",
+        "B": "10⁻¹⁴ m",
+        "C": "10⁻¹³ m",
+        "D": "10⁻¹⁶ m"
+      },
+      "correct_option": "B",
+      "correct_answer": "10⁻¹⁴ m",
+      "explanation": "R = 1.3 × 10⁻¹⁵ × (64)^(1/3) = 1.3 × 10⁻¹⁵ × 4 = 5.2 × 10⁻¹⁵ m = 0.52 × 10⁻¹⁴ m. Order of magnitude is 10⁻¹⁴ m.",
+      "incorrect_option_explanations": {
+        "A": "This would be for A = 1.",
+        "B": "",
+        "C": "This would be for A = 1000.",
+        "D": "This is too small."
+      },
+      "concept": "Order of Magnitude",
+      "difficulty": "Medium",
+      "estimated_time_seconds": 55,
+      "marks": 1,
+      "chapter": "Units and Measurements",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Numerical"
+    },
+    {
+      "id": 55,
+      "question": "Assertion (A): The number of significant figures in the result of multiplication or division is equal to the number of significant figures in the factor having the minimum number of significant figures. Reason (R): In multiplication and division, the precision of the result is limited by the least precise measurement.",
+      "options": {
+        "A": "Both A and R are true and R is the correct explanation of A",
+        "B": "Both A and R are true but R is not the correct explanation of A",
+        "C": "A is true but R is false",
+        "D": "A is false but R is true"
+      },
+      "correct_option": "A",
+      "correct_answer": "Both A and R are true and R is the correct explanation of A",
+      "explanation": "The assertion states the rule for significant figures in multiplication/division. The reason explains why this rule exists - the least precise measurement limits the overall precision. Both are true and R correctly explains A.",
+      "incorrect_option_explanations": {
+        "A": "",
+        "B": "R does explain A as the least precision determines the result's precision.",
+        "C": "R is true; precision is indeed limited by the least precise measurement.",
+        "D": "A is true; this is the standard rule for significant figures."
+      },
+      "concept": "Assertion-Reason",
+      "difficulty": "Medium",
+      "estimated_time_seconds": 50,
+      "marks": 1,
+      "chapter": "Units and Measurements",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Assertion-Reason"
+    },
+    {
+      "id": 56,
+      "question": "A wire of length l = (50.0 ± 0.1) cm and radius r = (0.50 ± 0.01) mm is stretched. The percentage error in the measurement of the volume of the wire is",
+      "options": {
+        "A": "2%",
+        "B": "3%",
+        "C": "4%",
+        "D": "5%"
+      },
+      "correct_option": "C",
+      "correct_answer": "4%",
+      "explanation": "Volume V = πr²l. Percentage error = 2×(Δr/r)×100 + (Δl/l)×100 = 2×(0.01/0.50)×100 + (0.1/50.0)×100 = 2×2% + 0.2% = 4% + 0.2% = 4.2% ≈ 4%.",
+      "incorrect_option_explanations": {
+        "A": "This misses the contribution from length error.",
+        "B": "This would be if radius error was 1.5%.",
+        "C": "",
+        "D": "This would be if both errors were doubled."
+      },
+      "concept": "Error Propagation",
+      "difficulty": "Medium",
+      "estimated_time_seconds": 70,
+      "marks": 1,
+      "chapter": "Units and Measurements",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Numerical"
+    },
+    {
+      "id": 57,
+      "question": "The dimensional formula of electric potential (voltage) is",
+      "options": {
+        "A": "[M L² T⁻³ I⁻¹]",
+        "B": "[M L² T⁻³ I]",
+        "C": "[M L T⁻³ I⁻¹]",
+        "D": "[M L² T⁻² I⁻¹]"
+      },
+      "correct_option": "A",
+      "correct_answer": "[M L² T⁻³ I⁻¹]",
+      "explanation": "Electric potential V = W/q = [M L² T⁻²]/[I T] = [M L² T⁻³ I⁻¹].",
+      "incorrect_option_explanations": {
+        "A": "",
+        "B": "This has incorrect current dimension.",
+        "C": "This has incorrect length dimension.",
+        "D": "This has incorrect time dimension."
+      },
+      "concept": "Dimensional Analysis",
+      "difficulty": "Medium",
+      "estimated_time_seconds": 55,
+      "marks": 1,
+      "chapter": "Units and Measurements",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Formula Based"
+    },
+    {
+      "id": 58,
+      "question": "In a vernier caliper, N divisions of the vernier scale coincide with (N-1) divisions of the main scale. If 1 MSD = a units, the least count is",
+      "options": {
+        "A": "a/N",
+        "B": "a/(N-1)",
+        "C": "a/N²",
+        "D": "a/(N+1)"
+      },
+      "correct_option": "A",
+      "correct_answer": "a/N",
+      "explanation": "1 VSD = (N-1)/N × MSD = (N-1)a/N. LC = 1 MSD - 1 VSD = a - (N-1)a/N = a/N.",
+      "incorrect_option_explanations": {
+        "A": "",
+        "B": "This is the value of 1 VSD, not the least count.",
+        "C": "This has incorrect mathematical relation.",
+        "D": "This has incorrect mathematical relation."
+      },
+      "concept": "Vernier Caliper Theory",
+      "difficulty": "Medium",
+      "estimated_time_seconds": 60,
+      "marks": 1,
+      "chapter": "Units and Measurements",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Formula Based"
+    },
+    {
+      "id": 59,
+      "question": "The percentage error in the measurement of the area of a circle is 4%. The percentage error in the measurement of its radius is",
+      "options": {
+        "A": "1%",
+        "B": "2%",
+        "C": "4%",
+        "D": "8%"
+      },
+      "correct_option": "B",
+      "correct_answer": "2%",
+      "explanation": "Area A = πr². Percentage error in A = 2 × percentage error in r. So 4% = 2 × percentage error in r, giving percentage error in r = 2%.",
+      "incorrect_option_explanations": {
+        "A": "This would give 2% error in area, not 4%.",
+        "B": "",
+        "C": "This would give 8% error in area.",
+        "D": "This would give 16% error in area."
+      },
+      "concept": "Error Propagation",
+      "difficulty": "Medium",
+      "estimated_time_seconds": 45,
+      "marks": 1,
+      "chapter": "Units and Measurements",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Numerical"
+    },
+    {
+      "id": 60,
+      "question": "The dimensional formula of the quantity Y in the equation Y = Fv where F is force and v is velocity is",
+      "options": {
+        "A": "[M L² T⁻³]",
+        "B": "[M L² T⁻²]",
+        "C": "[M L T⁻²]",
+        "D": "[M L² T⁻¹]"
+      },
+      "correct_option": "A",
+      "correct_answer": "[M L² T⁻³]",
+      "explanation": "Y = Fv = [M L T⁻²][L T⁻¹] = [M L² T⁻³]. This represents power.",
+      "incorrect_option_explanations": {
+        "A": "",
+        "B": "This would be if Y = F×d (work).",
+        "C": "This would be if Y = F (force).",
+        "D": "This would be if Y = F×t (impulse)."
+      },
+      "concept": "Dimensional Analysis",
+      "difficulty": "Medium",
+      "estimated_time_seconds": 55,
+      "marks": 1,
+      "chapter": "Units and Measurements",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Formula Based"
+    },
+    {
+      "id": 61,
+      "question": "A student measures the length of a rod using a metre scale with least count 1 mm and obtains 50.0 cm. Another student measures the same rod using a vernier caliper with least count 0.1 mm and obtains 50.00 cm. The more precise measurement is",
+      "options": {
+        "A": "50.0 cm",
+        "B": "50.00 cm",
+        "C": "Both are equally precise",
+        "D": "Cannot be determined"
+      },
+      "correct_option": "B",
+      "correct_answer": "50.00 cm",
+      "explanation": "Precision refers to the smallest measurable quantity (least count). The vernier caliper has a smaller least count (0.1 mm = 0.01 cm) compared to the metre scale (1 mm = 0.1 cm). Therefore, 50.00 cm is more precise as it has more decimal places reflecting finer measurement capability.",
+      "incorrect_option_explanations": {
+        "A": "This has fewer decimal places and larger least count.",
+        "B": "",
+        "C": "The vernier caliper has better precision due to smaller least count.",
+        "D": "The precision can be determined by comparing least counts."
+      },
+      "concept": "Precision and Accuracy",
+      "difficulty": "Medium",
+      "estimated_time_seconds": 45,
+      "marks": 1,
+      "chapter": "Units and Measurements",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Conceptual"
+    },
+    {
+      "id": 62,
+      "question": "The angular diameter of the Moon as measured from Earth is approximately 0.5°. If the distance to the Moon is 3.84 × 10⁸ m, the diameter of the Moon is approximately",
+      "options": {
+        "A": "1.68 × 10⁶ m",
+        "B": "3.36 × 10⁶ m",
+        "C": "6.72 × 10⁶ m",
+        "D": "1.34 × 10⁷ m"
+      },
+      "correct_option": "B",
+      "correct_answer": "3.36 × 10⁶ m",
+      "explanation": "Diameter d = D × θ (in radians). θ = 0.5° = 0.5 × π/180 rad ≈ 8.73 × 10⁻³ rad. d = 3.84 × 10⁸ × 8.73 × 10⁻³ ≈ 3.35 × 10⁶ m ≈ 3.36 × 10⁶ m.",
+      "incorrect_option_explanations": {
+        "A": "This would be for θ = 0.25°.",
+        "B": "",
+        "C": "This would be for θ = 1.0°.",
+        "D": "This would be for θ = 2.0°."
+      },
+      "concept": "Angular Measurement",
+      "difficulty": "Medium",
+      "estimated_time_seconds": 75,
+      "marks": 1,
+      "chapter": "Units and Measurements",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Numerical"
+    },
+    {
+      "id": 63,
+      "question": "Assertion (A): Random errors can be minimized by taking a large number of observations and finding their mean. Reason (R): Random errors are due to unknown causes and follow the law of probability.",
+      "options": {
+        "A": "Both A and R are true and R is the correct explanation of A",
+        "B": "Both A and R are true but R is not the correct explanation of A",
+        "C": "A is true but R is false",
+        "D": "A is false but R is true"
+      },
+      "correct_option": "A",
+      "correct_answer": "Both A and R are true and R is the correct explanation of A",
+      "explanation": "Random errors can indeed be reduced by taking multiple observations and averaging because they follow statistical probability distributions, with positive and negative errors tending to cancel out. The reason correctly explains the assertion.",
+      "incorrect_option_explanations": {
+        "A": "",
+        "B": "R does explain A because the probabilistic nature allows averaging to reduce random errors.",
+        "C": "R is true; random errors do follow probability distributions.",
+        "D": "A is true; taking multiple readings and averaging reduces random errors."
+      },
+      "concept": "Assertion-Reason",
+      "difficulty": "Medium",
+      "estimated_time_seconds": 50,
+      "marks": 1,
+      "chapter": "Units and Measurements",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Assertion-Reason"
+    },
+    {
+      "id": 64,
+      "question": "If the percentage error in measuring the side of a cube is 3%, the percentage error in measuring its surface area is",
+      "options": {
+        "A": "3%",
+        "B": "6%",
+        "C": "9%",
+        "D": "27%"
+      },
+      "correct_option": "B",
+      "correct_answer": "6%",
+      "explanation": "Surface area A = 6a². Percentage error in A = 2 × percentage error in a = 2 × 3% = 6%.",
+      "incorrect_option_explanations": {
+        "A": "This would be the error in side length, not surface area.",
+        "B": "",
+        "C": "This would be the error in volume, not surface area.",
+        "D": "This would require the error in side to be 9%."
+      },
+      "concept": "Error Propagation",
+      "difficulty": "Medium",
+      "estimated_time_seconds": 45,
+      "marks": 1,
+      "chapter": "Units and Measurements",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Numerical"
+    },
+    {
+      "id": 65,
+      "question": "The dimensional formula of capacitance is",
+      "options": {
+        "A": "[M⁻¹ L⁻² T⁴ I²]",
+        "B": "[M⁻¹ L⁻² T² I²]",
+        "C": "[M L² T⁻² I⁻²]",
+        "D": "[M L⁻² T⁴ I²]"
+      },
+      "correct_option": "A",
+      "correct_answer": "[M⁻¹ L⁻² T⁴ I²]",
+      "explanation": "Capacitance C = Q/V = [I T]/[M L² T⁻³ I⁻¹] = [I T][M⁻¹ L⁻² T³ I] = [M⁻¹ L⁻² T⁴ I²].",
+      "incorrect_option_explanations": {
+        "A": "",
+        "B": "This has incorrect time dimension.",
+        "C": "This has incorrect mass and time dimensions.",
+        "D": "This has incorrect length dimension."
+      },
+      "concept": "Dimensional Analysis",
+      "difficulty": "Medium",
+      "estimated_time_seconds": 65,
+      "marks": 1,
+      "chapter": "Units and Measurements",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Formula Based"
+    },
+    {
+      "id": 66,
+      "question": "A vernier caliper has 10 divisions on the vernier scale coinciding with 9 main scale divisions (1 MSD = 1 mm). When the jaws are closed, the zero of the vernier scale lies between 0.4 cm and 0.5 cm of the main scale, and the 12th vernier division coincides with a main scale division. The zero error is",
+      "options": {
+        "A": "+0.012 cm",
+        "B": "+0.12 cm",
+        "C": "-0.12 cm",
+        "D": "+0.24 cm"
+      },
+      "correct_option": "B",
+      "correct_answer": "+0.12 cm",
+      "explanation": "LC = 1 MSD - 1 VSD = 1 mm - 0.9 mm = 0.1 mm = 0.01 cm. Zero error = 12 × 0.01 cm = 0.12 cm (positive, since vernier zero is to the right of main scale zero).",
+      "incorrect_option_explanations": {
+        "A": "This would be for the 12th division with LC = 0.001 cm.",
+        "B": "",
+        "C": "This would be for negative zero error (vernier zero to the left).",
+        "D": "This would be for the 24th division coincidence."
+      },
+      "concept": "Vernier Caliper Zero Error",
+      "difficulty": "Medium",
+      "estimated_time_seconds": 60,
+      "marks": 1,
+      "chapter": "Units and Measurements",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Numerical"
+    },
+    {
+      "id": 67,
+      "question": "The time period of a simple pendulum is measured as 2.0 s, 2.1 s, 1.9 s, and 2.2 s in four trials. The mean absolute error in the time period is",
+      "options": {
+        "A": "0.05 s",
+        "B": "0.1 s",
+        "C": "0.15 s",
+        "D": "0.2 s"
+      },
+      "correct_option": "B",
+      "correct_answer": "0.1 s",
+      "explanation": "Mean = (2.0+2.1+1.9+2.2)/4 = 2.05 s. Absolute errors: |2.05-2.0|=0.05, |2.05-2.1|=0.05, |2.05-1.9|=0.15, |2.05-2.2|=0.15. Mean absolute error = (0.05+0.05+0.15+0.15)/4 = 0.4/4 = 0.1 s.",
+      "incorrect_option_explanations": {
+        "A": "This is the minimum absolute error, not the mean.",
+        "B": "",
+        "C": "This is the maximum absolute error, not the mean.",
+        "D": "This is the sum of absolute errors, not the mean."
+      },
+      "concept": "Error Analysis",
+      "difficulty": "Medium",
+      "estimated_time_seconds": 65,
+      "marks": 1,
+      "chapter": "Units and Measurements",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Numerical"
+    },
+    {
+      "id": 68,
+      "question": "The dimensional formula of thermal conductivity k can be obtained from Q = kA(ΔT/Δx)t. It is",
+      "options": {
+        "A": "[M L T⁻³ K⁻¹]",
+        "B": "[M L² T⁻³ K⁻¹]",
+        "C": "[M L⁻¹ T⁻³ K⁻¹]",
+        "D": "[M L T⁻² K⁻¹]"
+      },
+      "correct_option": "A",
+      "correct_answer": "[M L T⁻³ K⁻¹]",
+      "explanation": "From Q = kA(ΔT/Δx)t, k = QΔx/(AΔTt) = [M L² T⁻²][L]/([L²][K][T]) = [M L³ T⁻²]/[L² K T] = [M L T⁻³ K⁻¹].",
+      "incorrect_option_explanations": {
+        "A": "",
+        "B": "This has incorrect length dimension.",
+        "C": "This has incorrect length dimension (inverse).",
+        "D": "This has incorrect time dimension."
+      },
+      "concept": "Dimensional Analysis",
+      "difficulty": "Medium",
+      "estimated_time_seconds": 70,
+      "marks": 1,
+      "chapter": "Units and Measurements",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Formula Based"
+    },
+    {
+      "id": 69,
+      "question": "In a screw gauge, the pitch is 1 mm and there are 100 divisions on the circular scale. The zero of the circular scale is below the reference line when the jaws are in contact, and the 45th division coincides with the reference line. When a wire is placed, the main scale reads 3 mm and the 72nd division coincides. The correct diameter of the wire is",
+      "options": {
+        "A": "3.72 mm",
+        "B": "3.27 mm",
+        "C": "3.77 mm",
+        "D": "3.22 mm"
+      },
+      "correct_option": "B",
+      "correct_answer": "3.27 mm",
+      "explanation": "Zero error = +0.45 mm (positive, as zero is below reference line). Observed reading = 3 mm + (72 × 0.01 mm) = 3.72 mm. Corrected reading = 3.72 - 0.45 = 3.27 mm.",
+      "incorrect_option_explanations": {
+        "A": "This is the observed reading without zero error correction.",
+        "B": "",
+        "C": "This would be if zero error was subtracted instead of added.",
+        "D": "This would be if zero error was negative."
+      },
+      "concept": "Screw Gauge Zero Error",
+      "difficulty": "Challenging",
+      "estimated_time_seconds": 80,
+      "marks": 1,
+      "chapter": "Units and Measurements",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Numerical"
+    },
+    {
+      "id": 70,
+      "question": "The velocity v of a particle depends on time t as v = at + b/(t+c), where v is in m/s and t is in s. The dimensions of a, b, and c are respectively",
+      "options": {
+        "A": "[M⁰ L T⁻²], [M⁰ L], [T]",
+        "B": "[M⁰ L T⁻²], [M⁰ L T⁻¹], [T]",
+        "C": "[M⁰ L T⁻³], [M⁰ L T⁻¹], [T]",
+        "D": "[M⁰ L T⁻²], [M⁰ L T⁻²], [T]"
+      },
+      "correct_option": "A",
+      "correct_answer": "[M⁰ L T⁻²], [M⁰ L], [T]",
+      "explanation": "For dimensional consistency: [at] = [v] = [L T⁻¹], so [a] = [L T⁻²]. [b/(t+c)] = [v] = [L T⁻¹], so [b] = [L T⁻¹] × [T] = [L]. [c] = [t] = [T].",
+      "incorrect_option_explanations": {
+        "A": "",
+        "B": "This incorrectly gives [L T⁻¹] for b instead of [L].",
+        "C": "This has incorrect dimension for a ([L T⁻³] instead of [L T⁻²]).",
+        "D": "This has incorrect dimension for b ([L T⁻²] instead of [L])."
+      },
+      "concept": "Dimensional Consistency",
+      "difficulty": "Challenging",
+      "estimated_time_seconds": 85,
+      "marks": 1,
+      "chapter": "Units and Measurements",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Formula Based"
+    },
+    {
+      "id": 71,
+      "question": "The period of revolution T of a planet around the Sun depends on the radius r of its orbit, the mass M of the Sun, and the gravitational constant G. Using dimensional analysis, T is proportional to",
+      "options": {
+        "A": "r^(3/2) M^(-1/2) G^(-1/2)",
+        "B": "r^(3/2) M^(1/2) G^(-1/2)",
+        "C": "r^(1/2) M^(-1/2) G^(1/2)",
+        "D": "r^(3/2) M^(-1/2) G^(1/2)"
+      },
+      "correct_option": "A",
+      "correct_answer": "r^(3/2) M^(-1/2) G^(-1/2)",
+      "explanation": "Let T = k rˣ Mʸ Gᶻ. Dimensions: [T] = [L]ˣ [M]ʸ [M⁻¹ L³ T⁻²]ᶻ = [Mʸ⁻ᶻ Lˣ⁺³ᶻ T⁻²ᶻ]. Equating: y - z = 0, x + 3z = 0, -2z = 1. So z = -1/2, y = -1/2, x = 3/2. Thus T ∝ r^(3/2) M^(-1/2) G^(-1/2).",
+      "incorrect_option_explanations": {
+        "A": "",
+        "B": "This has incorrect sign for M exponent.",
+        "C": "This has incorrect sign for G exponent and r exponent.",
+        "D": "This has incorrect sign for G exponent."
+      },
+      "concept": "Dimensional Analysis",
+      "difficulty": "Challenging",
+      "estimated_time_seconds": 90,
+      "marks": 1,
+      "chapter": "Units and Measurements",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Formula Based"
+    },
+    {
+      "id": 72,
+      "question": "In an experiment, the resistance R of a wire is found using the formula R = V/I. The voltmeter reads (10.0 ± 0.2) V and the ammeter reads (2.0 ± 0.1) A. The resistance with proper error limits is",
+      "options": {
+        "A": "(5.0 ± 0.15) Ω",
+        "B": "(5.0 ± 0.25) Ω",
+        "C": "(5.0 ± 0.35) Ω",
+        "D": "(5.0 ± 0.45) Ω"
+      },
+      "correct_option": "C",
+      "correct_answer": "(5.0 ± 0.35) Ω",
+      "explanation": "R = V/I = 10.0/2.0 = 5.0 Ω. Relative error in R = ΔV/V + ΔI/I = 0.2/10.0 + 0.1/2.0 = 0.02 + 0.05 = 0.07. Absolute error = 5.0 × 0.07 = 0.35 Ω. So R = (5.0 ± 0.35) Ω.",
+      "incorrect_option_explanations": {
+        "A": "This would be for smaller errors in measurements.",
+        "B": "This would be for ΔV = 0.1 V and ΔI = 0.05 A.",
+        "C": "",
+        "D": "This would be for larger errors in measurements."
+      },
+      "concept": "Error Propagation",
+      "difficulty": "Challenging",
+      "estimated_time_seconds": 80,
+      "marks": 1,
+      "chapter": "Units and Measurements",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Numerical"
+    },
+    {
+      "id": 73,
+      "question": "Assertion (A): Dimensional analysis can be used to check the correctness of a physical relation but cannot be used to derive the exact value of dimensionless constants. Reason (R): Dimensionless constants have no dimensions and therefore cannot be determined by dimensional analysis.",
+      "options": {
+        "A": "Both A and R are true and R is the correct explanation of A",
+        "B": "Both A and R are true but R is not the correct explanation of A",
+        "C": "A is true but R is false",
+        "D": "A is false but R is true"
+      },
+      "correct_option": "A",
+      "correct_answer": "Both A and R are true and R is the correct explanation of A",
+      "explanation": "Dimensional analysis can verify dimensional consistency of equations but cannot determine dimensionless constants (like 2π, 1/2, etc.) because these constants have no dimensions. The reason correctly explains the limitation stated in the assertion.",
+      "incorrect_option_explanations": {
+        "A": "",
+        "B": "R does explain A because dimensionless constants by definition have no dimensions and thus escape dimensional analysis.",
+        "C": "R is true; dimensionless constants indeed have no dimensions.",
+        "D": "A is true; dimensional analysis cannot find dimensionless constants."
+      },
+      "concept": "Assertion-Reason",
+      "difficulty": "Challenging",
+      "estimated_time_seconds": 60,
+      "marks": 1,
+      "chapter": "Units and Measurements",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Assertion-Reason"
+    },
+    {
+      "id": 74,
+      "question": "A physical quantity P is related to four observables a, b, c, and d as P = a³b²/(√c d). The percentage errors in the measurement of a, b, c, and d are 1%, 3%, 2%, and 4% respectively. The percentage error in P is",
+      "options": {
+        "A": "10%",
+        "B": "12%",
+        "C": "14%",
+        "D": "16%"
+      },
+      "correct_option": "C",
+      "correct_answer": "14%",
+      "explanation": "Percentage error in P = 3×(Δa/a)×100 + 2×(Δb/b)×100 + (1/2)×(Δc/c)×100 + (Δd/d)×100 = 3×1% + 2×3% + 0.5×2% + 4% = 3% + 6% + 1% + 4% = 14%.",
+      "incorrect_option_explanations": {
+        "A": "This misses some contributions from the error terms.",
+        "B": "This would be for different error values in the measurements.",
+        "C": "",
+        "D": "This overcounts the contributions from the error terms."
+      },
+      "concept": "Error Propagation",
+      "difficulty": "Challenging",
+      "estimated_time_seconds": 85,
+      "marks": 1,
+      "chapter": "Units and Measurements",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Numerical"
+    },
+    {
+      "id": 75,
+      "question": "The frequency n of a vibrating string depends on its length l, tension T, and mass per unit length m. Using dimensional analysis, the correct relation is",
+      "options": {
+        "A": "n = (k/l)√(T/m)",
+        "B": "n = kl√(T/m)",
+        "C": "n = (k/l²)√(T/m)",
+        "D": "n = k√(T/ml)"
+      },
+      "correct_option": "A",
+      "correct_answer": "n = (k/l)√(T/m)",
+      "explanation": "Let n ∝ lˣ Tʸ mᶻ. Dimensions: [T⁻¹] = [L]ˣ [M L T⁻²]ʸ [M L⁻¹]ᶻ = [Mʸ⁺ᶻ Lˣ⁺ʸ⁻ᶻ T⁻²ʸ]. Equating: y + z = 0, x + y - z = 0, -2y = -1. So y = 1/2, z = -1/2, x = -1. Thus n = (k/l)√(T/m).",
+      "incorrect_option_explanations": {
+        "A": "",
+        "B": "This would give dimensions [T], which is incorrect.",
+        "C": "This would give dimensions [L⁻² T⁻¹], which is incorrect.",
+        "D": "This would give dimensions [L⁻¹/² T⁻¹], which is incorrect."
+      },
+      "concept": "Dimensional Analysis",
+      "difficulty": "Challenging",
+      "estimated_time_seconds": 90,
+      "marks": 1,
+      "chapter": "Units and Measurements",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Formula Based"
+    },
+    {
+      "id": 76,
+      "question": "A student uses a vernier caliper with 10 divisions on the vernier scale to measure the internal diameter of a hollow cylinder. The main scale reading is 2.3 cm and the 7th vernier division coincides. If the zero error is +0.04 cm, the corrected internal diameter is",
+      "options": {
+        "A": "2.37 cm",
+        "B": "2.33 cm",
+        "C": "2.41 cm",
+        "D": "2.29 cm"
+      },
+      "correct_option": "B",
+      "correct_answer": "2.33 cm",
+      "explanation": "LC = 0.01 cm (10 VSD = 9 MSD). Observed reading = 2.3 cm + (7 × 0.01 cm) = 2.37 cm. Zero error = +0.04 cm. Corrected reading = 2.37 - 0.04 = 2.33 cm.",
+      "incorrect_option_explanations": {
+        "A": "This is the observed reading without zero error correction.",
+        "B": "",
+        "C": "This would be if zero error was negative.",
+        "D": "This would be if zero error was added instead of subtracted."
+      },
+      "concept": "Vernier Caliper Zero Error",
+      "difficulty": "Challenging",
+      "estimated_time_seconds": 70,
+      "marks": 1,
+      "chapter": "Units and Measurements",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Numerical"
+    },
+    {
+      "id": 77,
+      "question": "The critical velocity v_c of a liquid flowing through a tube depends on the coefficient of viscosity η, density ρ, and radius r of the tube. Using dimensional analysis, v_c is proportional to",
+      "options": {
+        "A": "η/(ρr)",
+        "B": "ρr/η",
+        "C": "ηρ/r",
+        "D": "r/(ηρ)"
+      },
+      "correct_option": "A",
+      "correct_answer": "η/(ρr)",
+      "explanation": "Let v_c ∝ ηˣ ρʸ rᶻ. Dimensions: [L T⁻¹] = [M L⁻¹ T⁻¹]ˣ [M L⁻³]ʸ [L]ᶻ = [Mˣ⁺ʸ L⁻ˣ⁻³ʸ⁺ᶻ T⁻ˣ]. Equating: x + y = 0, -x - 3y + z = 1, -x = -1. So x = 1, y = -1, z = -1. Thus v_c ∝ η/(ρr).",
+      "incorrect_option_explanations": {
+        "A": "",
+        "B": "This would give dimensions [L² T⁻¹], which is incorrect.",
+        "C": "This would give dimensions [M² L⁻³ T⁻¹], which is incorrect.",
+        "D": "This would give dimensions [L³ T⁻¹], which is incorrect."
+      },
+      "concept": "Dimensional Analysis",
+      "difficulty": "Challenging",
+      "estimated_time_seconds": 95,
+      "marks": 1,
+      "chapter": "Units and Measurements",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Formula Based"
+    },
+    {
+      "id": 78,
+      "question": "In an experiment to determine the Young's modulus of a wire, the following data are obtained: length l = (2.00 ± 0.02) m, diameter d = (0.50 ± 0.01) mm, extension x = (0.20 ± 0.005) cm, and load F = (5.0 ± 0.1) N. The percentage error in Young's modulus Y = (4Fl)/(πd²x) is approximately",
+      "options": {
+        "A": "4%",
+        "B": "6%",
+        "C": "8%",
+        "D": "10%"
+      },
+      "correct_option": "D",
+      "correct_answer": "10%",
+      "explanation": "Percentage error in Y = (ΔF/F)×100 + (Δl/l)×100 + 2×(Δd/d)×100 + (Δx/x)×100 = (0.1/5.0)×100 + (0.02/2.00)×100 + 2×(0.01/0.50)×100 + (0.005/0.20)×100 = 2% + 1% + 4% + 2.5% = 9.5% ≈ 10%.",
+      "incorrect_option_explanations": {
+        "A": "This would be for significantly smaller errors in all measurements.",
+        "B": "This would be for smaller diameter and extension errors.",
+        "C": "This would be for slightly smaller errors in measurements.",
+        "D": ""
+      },
+      "concept": "Error Propagation",
+      "difficulty": "Challenging",
+      "estimated_time_seconds": 90,
+      "marks": 1,
+      "chapter": "Units and Measurements",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Numerical"
+    },
+    {
+      "id": 79,
+      "question": "Assertion (A): The method of dimensions cannot distinguish between physical quantities having the same dimensions. Reason (R): Physical quantities with the same dimensions may have different physical meanings and nature.",
+      "options": {
+        "A": "Both A and R are true and R is the correct explanation of A",
+        "B": "Both A and R are true but R is not the correct explanation of A",
+        "C": "A is true but R is false",
+        "D": "A is false but R is true"
+      },
+      "correct_option": "A",
+      "correct_answer": "Both A and R are true and R is the correct explanation of A",
+      "explanation": "Dimensional analysis cannot distinguish between quantities like work and torque (both [M L² T⁻²]) or between frequency and angular velocity (both [T⁻¹]) because they have identical dimensions. The reason correctly explains this limitation - same dimensions do not imply same physical nature.",
+      "incorrect_option_explanations": {
+        "A": "",
+        "B": "R does explain A because different physical meanings with same dimensions is exactly why dimensional analysis cannot distinguish them.",
+        "C": "R is true; work and torque, for example, have same dimensions but different meanings.",
+        "D": "A is true; dimensional analysis is limited in this way."
+      },
+      "concept": "Assertion-Reason",
+      "difficulty": "Challenging",
+      "estimated_time_seconds": 65,
+      "marks": 1,
+      "chapter": "Units and Measurements",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Assertion-Reason"
+    },
+    {
+      "id": 80,
+      "question": "The escape velocity v from the surface of a planet depends on the gravitational constant G, the mass M of the planet, and its radius R. Using dimensional analysis, the correct expression for escape velocity is",
+      "options": {
+        "A": "v = k√(GM/R)",
+        "B": "v = k√(GR/M)",
+        "C": "v = k√(MR/G)",
+        "D": "v = kGM/R"
+      },
+      "correct_option": "A",
+      "correct_answer": "v = k√(GM/R)",
+      "explanation": "Let v ∝ Gˣ Mʸ Rᶻ. Dimensions: [L T⁻¹] = [M⁻¹ L³ T⁻²]ˣ [M]ʸ [L]ᶻ = [M⁻ˣ⁺ʸ L³ˣ⁺ᶻ T⁻²ˣ]. Equating: -x + y = 0, 3x + z = 1, -2x = -1. So x = 1/2, y = 1/2, z = -1/2. Thus v = k√(GM/R).",
+      "incorrect_option_explanations": {
+        "A": "",
+        "B": "This would give dimensions [L³ T⁻² M⁻¹], which is incorrect.",
+        "C": "This would give dimensions [L⁻¹ T² M²], which is incorrect.",
+        "D": "This would give dimensions [L² T⁻²], which is incorrect (missing square root)."
+      },
+      "concept": "Dimensional Analysis",
+      "difficulty": "Challenging",
+      "estimated_time_seconds": 95,
+      "marks": 1,
+      "chapter": "Units and Measurements",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Formula Based"
+    }
+  ]
+}

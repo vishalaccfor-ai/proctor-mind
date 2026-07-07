@@ -33,22 +33,7 @@ interface AuthContextType {
   updateProfile: (updates: Partial<AppUser>) => Promise<void>;
 }
 
-const createDemoUser = (email: string, name: string, role: AppRole = "student"): AppUser => ({
-  id: "demo-user",
-  name,
-  email,
-  role,
-  subscription: "free",
-  onboarding_complete: role === "student" ? true : false,
-  streak_count: 0,
-  city: "Pune",
-  target_college: "COEP Pune",
-  weak_subjects: ["Physics"],
-  study_hours_per_day: 3,
-  parent_linked: false,
-  parent_invite_token: null,
-});
-
+ 
 // ── Context ──────────────────────────────────────────────────
 const AuthContext = createContext<AuthContextType | undefined>(undefined);
 
@@ -60,61 +45,116 @@ export function AuthProvider({ children }: { children: ReactNode }) {
   const location = useLocation();
 
   // ── Load full user profile ──────────────────────────────────
-  const loadUser = useCallback(async (authUserId: string, authEmail: string) => {
+// ── Load full user profile ──────────────────────────────────
+const loadUser = useCallback(
+  async (authUserId: string, authEmail: string) => {
+    console.log("========== LOAD USER START ==========");
+    console.log("User ID:", authUserId);
+    console.log("Email:", authEmail);
+
     try {
-      // 1. Fetch profile
-      let { data: profile, error: profileError } = await supabase
+      console.log("Reading profile...");
+
+      const profilePromise = supabase
         .from("profiles")
         .select("*")
         .eq("user_id", authUserId)
         .maybeSingle();
 
-      if (profileError) throw profileError;
+      const profileResult: any = await Promise.race([
+        profilePromise,
+        new Promise((_, reject) =>
+          setTimeout(
+            () => reject(new Error("PROFILE QUERY TIMEOUT (5 sec)")),
+            5000
+          )
+        ),
+      ]);
 
-      if (!profile) {
-        const defaultName = authEmail.split("@")[0] || "Student";
-        const { data: createdProfile, error: createError } = await supabase
-          .from("profiles")
-          .insert({ user_id: authUserId, email: authEmail, name: defaultName })
-          .select()
-          .maybeSingle();
+      console.log("Profile query completed");
+      console.log(profileResult);
 
-        if (createError) throw createError;
-        profile = createdProfile ?? null;
+      const profile = profileResult.data;
+      const profileError = profileResult.error;
+
+      if (profileError) {
+        console.error("Profile Error:", profileError);
+        throw profileError;
       }
 
-      // 2. Fetch role
-      const { data: roleData } = await supabase
+      let finalProfile = profile;
+
+      if (!finalProfile) {
+        console.log("Profile not found. Creating profile...");
+
+        const defaultName = authEmail.split("@")[0] || "Student";
+
+        const createResult = await supabase
+          .from("profiles")
+          .insert({
+            user_id: authUserId,
+            email: authEmail,
+            name: defaultName,
+          })
+          .select()
+          .single();
+
+        console.log("Create Profile Result:", createResult);
+
+        if (createResult.error) {
+          throw createResult.error;
+        }
+
+        finalProfile = createResult.data;
+      }
+
+      console.log("Reading user role...");
+
+      const roleResult = await supabase
         .from("user_roles")
         .select("role")
         .eq("user_id", authUserId)
         .maybeSingle();
 
+      console.log("Role Result:", roleResult);
+
       const appUser: AppUser = {
         id: authUserId,
-        name: profile?.name ?? "Student",
+        name: finalProfile?.name ?? "Student",
         email: authEmail,
-        role: (roleData?.role as AppRole) ?? "student",
+        role: (roleResult.data?.role as AppRole) ?? "student",
         subscription: "free",
-        onboarding_complete: profile?.onboarding_complete ?? false,
-        streak_count: profile?.streak_count ?? 0,
-        city: (profile as any)?.city,
-        target_college: (profile as any)?.target_college,
-        weak_subjects: (profile as any)?.weak_subjects ?? [],
-        study_hours_per_day: (profile as any)?.study_hours_per_day ?? 2,
-        parent_linked: false,
-        parent_invite_token: (profile as any)?.parent_invite_token,
+        onboarding_complete:
+          finalProfile?.onboarding_complete ?? false,
+        streak_count: finalProfile?.streak_count ?? 0,
+        city: finalProfile?.city,
+        target_college: finalProfile?.target_college,
+        weak_subjects: finalProfile?.weak_subjects ?? [],
+        study_hours_per_day:
+          finalProfile?.study_hours_per_day ?? 2,
+        parent_linked: finalProfile?.parent_linked ?? false,
+        parent_invite_token:
+          finalProfile?.parent_invite_token,
       };
 
+      console.log("App User Created:", appUser);
+
       setUser(appUser);
+
+      console.log("========== LOAD USER END ==========");
+
       return appUser;
     } catch (err) {
-      console.error("loadUser error:", err);
+      console.error("LOAD USER FAILED");
+      console.error(err);
+
       setUser(null);
+
       return null;
     }
-  }, []);
-
+  },
+  []
+);
   // ── Onboarding redirect logic ───────────────────────────────
   const handleOnboardingRedirect = useCallback((appUser: AppUser) => {
     const publicPaths = ["/login", "/pricing", "/parent/register"];
@@ -129,39 +169,85 @@ export function AuthProvider({ children }: { children: ReactNode }) {
   }, [navigate, location.pathname]);
 
   // ── Session listener ────────────────────────────────────────
-  useEffect(() => {
-    const { data: listener } = supabase.auth.onAuthStateChange(async (_event, session) => {
+ useEffect(() => {
+  let mounted = true;
+
+  const initialize = async () => {
+    try {
+      console.log("========== INIT AUTH ==========");
+
+      const {
+        data: { session },
+        error,
+      } = await supabase.auth.getSession();
+
+      console.log("Session:", session);
+      console.log("Session Error:", error);
+
+      if (!mounted) return;
+
       if (session?.user) {
-        const appUser = await loadUser(session.user.id, session.user.email ?? "");
-        if (appUser) handleOnboardingRedirect(appUser);
+        console.log("Loading existing user...");
+
+        const appUser = await loadUser(
+          session.user.id,
+          session.user.email ?? ""
+        );
+
+        if (appUser && mounted) {
+          handleOnboardingRedirect(appUser);
+        }
       } else {
         setUser(null);
       }
-      setIsLoading(false);
-    });
-
-    const initAuth = async () => {
-      try {
-        const sessionPromise = supabase.auth.getSession();
-        const timeout = new Promise<{ data: { session: null } }>((resolve) =>
-          setTimeout(() => resolve({ data: { session: null } }), 3000)
-        );
-
-        const { data: { session } } = await Promise.race([sessionPromise, timeout] as const);
-        if (session?.user) {
-          const appUser = await loadUser(session.user.id, session.user.email ?? "");
-          if (appUser) handleOnboardingRedirect(appUser);
-        }
-      } catch (err) {
-        console.warn("Failed to initialize auth session; falling back to login screen.", err);
-      } finally {
+    } catch (err) {
+      console.error("Init Auth Failed:", err);
+      setUser(null);
+    } finally {
+      if (mounted) {
         setIsLoading(false);
       }
-    };
+    }
+  };
 
-    initAuth();
-    return () => listener.subscription.unsubscribe();
-  }, [loadUser, handleOnboardingRedirect]);
+  initialize();
+
+  const {
+    data: { subscription },
+  } = supabase.auth.onAuthStateChange(async (event, session) => {
+    console.log("========== AUTH EVENT ==========");
+    console.log("Event:", event);
+    console.log("Session:", session);
+
+    if (!mounted) return;
+
+    try {
+      if (session?.user) {
+        const appUser = await loadUser(
+          session.user.id,
+          session.user.email ?? ""
+        );
+
+        if (appUser && mounted) {
+          handleOnboardingRedirect(appUser);
+        }
+      } else {
+        setUser(null);
+      }
+    } catch (err) {
+      console.error("Auth Event Error:", err);
+    } finally {
+      if (mounted) {
+        setIsLoading(false);
+      }
+    }
+  });
+
+  return () => {
+    mounted = false;
+    subscription.unsubscribe();
+  };
+}, [loadUser, handleOnboardingRedirect]);
 
   const withTimeout = async <T>(promise: Promise<T>, timeoutMs: number, fallback: T): Promise<T> => {
     const timeout = new Promise<T>((resolve) => setTimeout(() => resolve(fallback), timeoutMs));
@@ -170,45 +256,53 @@ export function AuthProvider({ children }: { children: ReactNode }) {
 
   // ── Login ───────────────────────────────────────────────────
   const login = async (email: string, password: string) => {
-    try {
-      const result = await withTimeout(
-        supabase.auth.signInWithPassword({ email, password }),
-        3000,
-        { data: null, error: new Error("Auth timeout") }
-      );
-      if (result && "error" in result && result.error) throw result.error;
-    } catch (err) {
-      // Fallback to demo user when backend is unavailable
-      setUser(createDemoUser(email, email.split("@")[0] || "Student", "student"));
-      console.warn("Supabase login failed or timed out; using demo user fallback.", err);
+  console.log("========== LOGIN START ==========");
+  console.log("Email:", email);
+
+  try {
+    console.log("Calling signInWithPassword...");
+
+    const { data, error } = await supabase.auth.signInWithPassword({
+      email,
+      password,
+    });
+
+    console.log("signInWithPassword completed");
+    console.log("Data:", data);
+    console.log("Error:", error);
+
+    if (error) {
+      console.error("Login error:", error);
+      throw error;
     }
-  };
+
+    console.log("Login finished successfully");
+    console.log("========== LOGIN END ==========");
+  } catch (err) {
+    console.error("Login exception:", err);
+    throw err;
+  }
+};
 
   // ── Signup ──────────────────────────────────────────────────
-  const signup = async (email: string, password: string, name: string, role: AppRole = "student") => {
-    try {
-      const result = await withTimeout(
-        supabase.auth.signUp({
-          email,
-          password,
-          options: { data: { name, role } },
-        }),
-        3000,
-        { data: null, error: new Error("Auth timeout") }
-      );
-      if (result && "error" in result && result.error) throw result.error;
-      if (result && result.data?.user) {
-        // Profile + role created by DB trigger (handle_new_user)
-        // For parent role, update the role manually
-        if (role === "parent") {
-          await supabase.from("user_roles").upsert({ user_id: result.data.user.id, role: "parent" });
-        }
-      }
-    } catch (err) {
-      setUser(createDemoUser(email, name || email.split("@")[0] || "Student", role));
-      console.warn("Supabase signup failed or timed out; using demo user fallback.", err);
-    }
-  };
+  const signup = async (
+  email: string, 
+  password: string, 
+  name: string, 
+  role: AppRole = "student"
+) => {
+  const { data, error } = await supabase.auth.signUp({
+    email,
+    password,
+    options: { data: { name, role } },
+  });
+  if (error) throw error;
+  if (data?.user && role === "parent") {
+    await supabase
+      .from("user_roles")
+      .upsert({ user_id: data.user.id, role: "parent" });
+  }
+};
 
   // ── Logout ──────────────────────────────────────────────────
   const logout = async () => {

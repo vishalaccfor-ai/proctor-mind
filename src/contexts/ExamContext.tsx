@@ -130,10 +130,22 @@ export function ExamProvider({ children }: { children: React.ReactNode }) {
   const [results, setResults] = useState<ExamResult[]>([]);
   const [loading, setLoading] = useState(false);
 
+  // Helper to timeout a promise and return a fallback value
+  const withTimeout = async <T,>(promise: Promise<T>, ms: number, fallback: T): Promise<T> => {
+    const timeout = new Promise<T>((resolve) => setTimeout(() => resolve(fallback), ms));
+    return Promise.race([promise, timeout] as const) as Promise<T>;
+  };
+
   const fetchExams = useCallback(async () => {
     setLoading(true);
     try {
-      const { data: examRows, error } = await supabase.from("exams").select("*");
+      const res: any = await withTimeout(
+        supabase.from("exams").select("*"),
+        3000,
+        { data: null, error: new Error("timeout") }
+      );
+      const examRows = res?.data;
+      const error = res?.error;
       if (error || !examRows || examRows.length === 0) {
         setExams(sampleExams);
         return;
@@ -251,7 +263,11 @@ export function ExamProvider({ children }: { children: React.ReactNode }) {
   }, [user, fetchExams]);
 
   const startAttempt = useCallback(async (examId: string): Promise<string> => {
-    if (!user) throw new Error("Not authenticated");
+    if (!user) {
+      // Allow local attempt for demo/guest users
+      console.warn("Starting local attempt for unauthenticated user");
+      return `local-attempt-${examId}-${Date.now()}`;
+    }
     try {
       const { data, error } = await supabase.from("exam_attempts").insert({
         exam_id: examId, user_id: user.id, status: "in-progress",
@@ -278,7 +294,7 @@ export function ExamProvider({ children }: { children: React.ReactNode }) {
   const submitAttempt = useCallback(async (
     attemptId: string, exam: Exam, answers: Record<string, Answer>, startedAt: string
   ): Promise<ExamResult> => {
-    if (!user) throw new Error("Not authenticated");
+    // Allow submission even when user is not authenticated (local/demo mode)
     const now = new Date().toISOString();
 
     // Update attempt
@@ -294,18 +310,20 @@ export function ExamProvider({ children }: { children: React.ReactNode }) {
     // Calculate result
     const result = calculateResult(exam, answers, attemptId, startedAt);
 
-    // Save result
+    // Save result (to backend when available, otherwise keep local)
     try {
-      await supabase.from("exam_results").insert({
-        attempt_id: attemptId, exam_id: exam.id, user_id: user.id,
-        exam_title: exam.title, total_score: result.totalScore, max_score: result.maxScore,
-        percentage: result.percentage, total_questions: result.totalQuestions,
-        attempted: result.attempted, correct: result.correct, incorrect: result.incorrect,
-        unattempted: result.unattempted,
-        subject_results: result.subjectResults as unknown as Json,
-        question_results: result.questionResults as unknown as Json,
-        time_taken: result.timeTaken, submitted_at: now,
-      });
+      if (user) {
+        await supabase.from("exam_results").insert({
+          attempt_id: attemptId, exam_id: exam.id, user_id: user.id,
+          exam_title: exam.title, total_score: result.totalScore, max_score: result.maxScore,
+          percentage: result.percentage, total_questions: result.totalQuestions,
+          attempted: result.attempted, correct: result.correct, incorrect: result.incorrect,
+          unattempted: result.unattempted,
+          subject_results: result.subjectResults as unknown as Json,
+          question_results: result.questionResults as unknown as Json,
+          time_taken: result.timeTaken, submitted_at: now,
+        });
+      }
     } catch (err) {
       console.warn("Could not save exam result to backend. Result will remain local.", err);
     }
@@ -317,6 +335,11 @@ export function ExamProvider({ children }: { children: React.ReactNode }) {
   const getExam = useCallback((id: string) => exams.find((e) => e.id === id), [exams]);
   const getResultsForUser = useCallback(() => results, [results]);
 
+  // Fetch exams once when provider mounts so UI has data immediately
+  React.useEffect(() => {
+    fetchExams();
+  }, [fetchExams]);
+
   return (
     <ExamContext.Provider value={{
       exams, results, loading, fetchExams, fetchResults, createExam,
@@ -325,6 +348,17 @@ export function ExamProvider({ children }: { children: React.ReactNode }) {
       {children}
     </ExamContext.Provider>
   );
+}
+
+// Automatically fetch exams on provider mount so pages have data immediately
+// This keeps the app usable even when navigating directly to exam pages.
+export function ExamProviderAutoFetchWrapper({ children }: { children: React.ReactNode }) {
+  const ctx = React.useContext(ExamContext);
+  React.useEffect(() => {
+    // If provider exists and has fetchExams, trigger it.
+    if (ctx && ctx.fetchExams) ctx.fetchExams();
+  }, [ctx]);
+  return <>{children}</>;
 }
 
 export function useExams() {

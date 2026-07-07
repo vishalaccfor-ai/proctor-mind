@@ -46,11 +46,9 @@ export default function ExamList() {
               <div className="text-xs text-muted-foreground">
                 Marking: +{exam.markingScheme.correct} / {exam.markingScheme.incorrect} per question
               </div>
-              {user?.role === "student" && (
-                <Button className="w-full" onClick={() => navigate(`/exam/${exam.id}`)}>
-                  <BookOpen className="h-4 w-4 mr-2" /> Start Exam
-                </Button>
-              )}
+              <Button className="w-full" onClick={() => navigate(`/exam/${exam.id}`)}>
+                <BookOpen className="h-4 w-4 mr-2" /> Start Exam
+              </Button>
             </CardContent>
           </Card>
         ))}

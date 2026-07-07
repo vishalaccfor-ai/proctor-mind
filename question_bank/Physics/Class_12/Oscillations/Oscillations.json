@@ -1,0 +1,862 @@
+{
+  "exam": "MHT-CET",
+  "subject": "Physics",
+  "grade": "12",
+  "chapter": "Oscillations",
+  "part_number": 1,
+  "total_parts": 4,
+  "questions_in_file": 34,
+  "question_range": "1-34",
+  "questions": [
+    {
+      "id": 1,
+      "question": "A particle executes simple harmonic motion along a straight line. At the extreme position, which of the following quantities is zero?",
+      "options": {
+        "A": "Acceleration",
+        "B": "Displacement",
+        "C": "Velocity",
+        "D": "Restoring force"
+      },
+      "correct_option": "C",
+      "correct_answer": "Velocity",
+      "explanation": "In simple harmonic motion, at the extreme positions (maximum displacement), the particle momentarily comes to rest before reversing its direction. Therefore, the velocity is zero at the extreme positions. The displacement is maximum, the restoring force is maximum (F = -kx), and the acceleration is also maximum (a = -omega^2 x) at the extreme positions.",
+      "incorrect_option_explanations": {
+        "A": "Acceleration is maximum (not zero) at the extreme position because a = -omega^2 x, and x is maximum at the extremes.",
+        "B": "Displacement is maximum (not zero) at the extreme position; it is zero at the mean position.",
+        "D": "Restoring force is maximum (not zero) at the extreme position because F = -kx, and x is maximum at the extremes."
+      },
+      "concept": "Velocity in SHM at extreme position",
+      "difficulty": "Easy",
+      "estimated_time_seconds": 30,
+      "marks": 1,
+      "chapter": "Oscillations",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Conceptual"
+    },
+    {
+      "id": 2,
+      "question": "A body executes SHM with amplitude 0.12 m and time period 2.0 s. The maximum acceleration of the body is approximately (Take pi^2 ~ 10)",
+      "options": {
+        "A": "0.12 m/s^2",
+        "B": "0.24 m/s^2",
+        "C": "1.2 m/s^2",
+        "D": "2.4 m/s^2"
+      },
+      "correct_option": "C",
+      "correct_answer": "1.2 m/s^2",
+      "explanation": "Maximum acceleration in SHM is given by a_max = omega^2 A, where omega = 2pi/T. Given T = 2.0 s, omega = 2pi/2 = pi rad/s. So a_max = pi^2 * 0.12 = 10 * 0.12 = 1.2 m/s^2 (using pi^2 ~ 10).",
+      "incorrect_option_explanations": {
+        "A": "This is the amplitude value, not the maximum acceleration. The student might have confused amplitude with acceleration.",
+        "B": "This would be obtained if one mistakenly used a_max = omega A instead of omega^2 A, or if pi ~ 2 was used incorrectly.",
+        "D": "This would be obtained if one used a_max = (2pi/T)^2 * A with T = 1 s instead of T = 2 s, or if pi^2 = 20 was used."
+      },
+      "concept": "Maximum acceleration in SHM",
+      "difficulty": "Easy",
+      "estimated_time_seconds": 45,
+      "marks": 1,
+      "chapter": "Oscillations",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Numerical"
+    },
+    {
+      "id": 3,
+      "question": "The displacement of a particle in SHM is given by x = 5 cos(4pi t + pi/3) cm. The time period of oscillation is",
+      "options": {
+        "A": "0.25 s",
+        "B": "0.50 s",
+        "C": "2.0 s",
+        "D": "4.0 s"
+      },
+      "correct_option": "B",
+      "correct_answer": "0.50 s",
+      "explanation": "From the equation x = A cos(omega t + phi), we compare with x = 5 cos(4pi t + pi/3) to get omega = 4pi rad/s. The time period T = 2pi/omega = 2pi/(4pi) = 0.50 s.",
+      "incorrect_option_explanations": {
+        "A": "This would be obtained if one mistakenly used T = 1/omega = 1/(4pi) ~ 0.08 s, or confused frequency with time period.",
+        "C": "This would be obtained if one used omega = 2pi instead of 4pi, or if T = 2pi/2 was calculated incorrectly.",
+        "D": "This would be obtained if one used T = 2/omega or confused the coefficient 4 with omega directly."
+      },
+      "concept": "Time period from SHM equation",
+      "difficulty": "Easy",
+      "estimated_time_seconds": 35,
+      "marks": 1,
+      "chapter": "Oscillations",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Formula Based"
+    },
+    {
+      "id": 4,
+      "question": "Which of the following is NOT a characteristic of simple harmonic motion?",
+      "options": {
+        "A": "The acceleration is directly proportional to the displacement.",
+        "B": "The acceleration is always directed towards the mean position.",
+        "C": "The total mechanical energy varies with time.",
+        "D": "The motion is periodic and oscillatory."
+      },
+      "correct_option": "C",
+      "correct_answer": "The total mechanical energy varies with time.",
+      "explanation": "In simple harmonic motion, the total mechanical energy (sum of kinetic and potential energy) remains constant throughout the motion. It does not vary with time. The kinetic energy and potential energy individually vary with time, but their sum is always constant. Options A, B, and D are all true characteristics of SHM.",
+      "incorrect_option_explanations": {
+        "A": "This is a true characteristic of SHM. The defining equation is a = -omega^2 x, showing acceleration is directly proportional to displacement.",
+        "B": "This is a true characteristic of SHM. The negative sign in a = -omega^2 x indicates acceleration is always directed towards the mean position.",
+        "D": "This is a true characteristic of SHM. SHM is a special case of periodic oscillatory motion."
+      },
+      "concept": "Characteristics of SHM - energy conservation",
+      "difficulty": "Easy",
+      "estimated_time_seconds": 35,
+      "marks": 1,
+      "chapter": "Oscillations",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Conceptual"
+    },
+    {
+      "id": 5,
+      "question": "A simple pendulum of length 1.0 m oscillates at a place where g = 9.8 m/s^2. Its time period is approximately (Take pi^2 ~ 9.8)",
+      "options": {
+        "A": "1.0 s",
+        "B": "2.0 s",
+        "C": "3.14 s",
+        "D": "4.0 s"
+      },
+      "correct_option": "B",
+      "correct_answer": "2.0 s",
+      "explanation": "The time period of a simple pendulum is T = 2pi sqrt(L/g). Given L = 1.0 m and g = 9.8 m/s^2, T = 2pi sqrt(1.0/9.8) = 2pi sqrt(1/9.8) = 2pi/sqrt(9.8) = 2pi/pi = 2.0 s (since pi^2 ~ 9.8, so sqrt(9.8) ~ pi).",
+      "incorrect_option_explanations": {
+        "A": "This would be obtained if one used T = pi sqrt(L/g) instead of 2pi sqrt(L/g), forgetting the factor of 2.",
+        "C": "This would be obtained if one mistakenly calculated T = pi sqrt(g/L) or confused the formula with angular frequency.",
+        "D": "This would be obtained if one used T = 4pi sqrt(L/g) or made an arithmetic error in the square root calculation."
+      },
+      "concept": "Time period of simple pendulum",
+      "difficulty": "Easy",
+      "estimated_time_seconds": 40,
+      "marks": 1,
+      "chapter": "Oscillations",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Numerical"
+    },
+    {
+      "id": 6,
+      "question": "For a particle in SHM, if the maximum velocity is 4 m/s and the maximum acceleration is 8 m/s^2, the angular frequency is",
+      "options": {
+        "A": "0.5 rad/s",
+        "B": "1.0 rad/s",
+        "C": "2.0 rad/s",
+        "D": "4.0 rad/s"
+      },
+      "correct_option": "C",
+      "correct_answer": "2.0 rad/s",
+      "explanation": "In SHM, v_max = omega A and a_max = omega^2 A. Dividing a_max by v_max: a_max/v_max = omega^2 A/(omega A) = omega. Therefore, omega = a_max/v_max = 8/4 = 2.0 rad/s.",
+      "incorrect_option_explanations": {
+        "A": "This would be obtained if one mistakenly calculated omega = v_max/a_max = 4/8 = 0.5, reversing the ratio.",
+        "B": "This would be obtained if one calculated omega = sqrt(v_max/a_max) = sqrt(4/8) = sqrt(0.5) ~ 0.71, or made a different arithmetic error.",
+        "D": "This would be obtained if one calculated omega = a_max/v_max but made an error, or if one used omega = a_max * v_max / 8 = 4."
+      },
+      "concept": "Relation between v_max, a_max and omega in SHM",
+      "difficulty": "Easy",
+      "estimated_time_seconds": 45,
+      "marks": 1,
+      "chapter": "Oscillations",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Formula Based"
+    },
+    {
+      "id": 7,
+      "question": "A particle moves in a circle of radius R with uniform angular speed omega. The projection of this motion on any diameter executes",
+      "options": {
+        "A": "Uniform circular motion",
+        "B": "Simple harmonic motion",
+        "C": "Uniform linear motion",
+        "D": "Projectile motion"
+      },
+      "correct_option": "B",
+      "correct_answer": "Simple harmonic motion",
+      "explanation": "The projection of uniform circular motion on any diameter executes simple harmonic motion. This is a fundamental result: if a particle moves in a circle of radius A with angular speed omega, then its x-projection is x = A cos(omega t) and its y-projection is y = A sin(omega t), both of which represent SHM.",
+      "incorrect_option_explanations": {
+        "A": "The particle in the circle executes uniform circular motion, but its projection on a diameter does not; the projection moves back and forth along a line.",
+        "C": "Uniform linear motion implies constant velocity in a straight line, which is not what the projection does; the projection accelerates and decelerates.",
+        "D": "Projectile motion involves motion under gravity with a parabolic trajectory, which is completely different from the linear oscillatory motion of the projection."
+      },
+      "concept": "SHM as projection of uniform circular motion",
+      "difficulty": "Easy",
+      "estimated_time_seconds": 30,
+      "marks": 1,
+      "chapter": "Oscillations",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Conceptual"
+    },
+    {
+      "id": 8,
+      "question": "A body of mass 0.5 kg is attached to a spring of force constant 200 N/m. The angular frequency of oscillation is",
+      "options": {
+        "A": "10 rad/s",
+        "B": "20 rad/s",
+        "C": "25 rad/s",
+        "D": "40 rad/s"
+      },
+      "correct_option": "B",
+      "correct_answer": "20 rad/s",
+      "explanation": "For a spring-mass system, the angular frequency is omega = sqrt(k/m). Given k = 200 N/m and m = 0.5 kg, omega = sqrt(200/0.5) = sqrt(400) = 20 rad/s.",
+      "incorrect_option_explanations": {
+        "A": "This would be obtained if one used omega = sqrt(m/k) = sqrt(0.5/200) = sqrt(0.0025) = 0.05, or made a different error. Alternatively, if k = 50 N/m was used.",
+        "C": "This would be obtained if one used omega = k/m = 200/0.5 = 400, then took sqrt(400) incorrectly as 25, or if k = 312.5 N/m was used.",
+        "D": "This would be obtained if one calculated omega = k/m = 200/0.5 = 400 and forgot to take the square root, or if k = 800 N/m was used."
+      },
+      "concept": "Angular frequency of spring-mass system",
+      "difficulty": "Easy",
+      "estimated_time_seconds": 40,
+      "marks": 1,
+      "chapter": "Oscillations",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Numerical"
+    },
+    {
+      "id": 9,
+      "question": "The dimensional formula for the time period of a simple pendulum [T = 2pi sqrt(L/g)] is",
+      "options": {
+        "A": "[M^0 L^0 T^1]",
+        "B": "[M^0 L^(1/2) T^-1]",
+        "C": "[M^0 L^(1/2) T^1]",
+        "D": "[M^1 L^0 T^0]"
+      },
+      "correct_option": "A",
+      "correct_answer": "[M^0 L^0 T^1]",
+      "explanation": "The time period T has dimensions of time, which is [M^0 L^0 T^1]. We can verify from T = 2pi sqrt(L/g): L has dimensions [L^1], g has dimensions [L^1 T^-2], so L/g has dimensions [L^0 T^2] = [T^2], and sqrt(L/g) has dimensions [T^1]. The constant 2pi is dimensionless. So the overall dimension is [M^0 L^0 T^1].",
+      "incorrect_option_explanations": {
+        "B": "This represents dimensions of sqrt(g/L) which is angular frequency [T^-1] multiplied by [L^(1/2)], not time period.",
+        "C": "This incorrectly combines length and time dimensions; the length dimension cancels out in sqrt(L/g) since both L and g have length in their dimensions.",
+        "D": "This represents mass dimension only, which is incorrect as time period has no dependence on mass for a simple pendulum."
+      },
+      "concept": "Dimensional analysis of time period",
+      "difficulty": "Easy",
+      "estimated_time_seconds": 40,
+      "marks": 1,
+      "chapter": "Oscillations",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Dimensional Analysis"
+    },
+    {
+      "id": 10,
+      "question": "In SHM, the kinetic energy of the particle is maximum when the particle is at",
+      "options": {
+        "A": "The extreme position",
+        "B": "The mean position",
+        "C": "Halfway between mean and extreme position",
+        "D": "One-fourth of the amplitude from the mean position"
+      },
+      "correct_option": "B",
+      "correct_answer": "The mean position",
+      "explanation": "In SHM, the kinetic energy is given by KE = (1/2) m omega^2 (A^2 - x^2). At the mean position, x = 0, so KE = (1/2) m omega^2 A^2, which is the maximum possible value. At the extreme positions, x = +/- A, so KE = 0. The kinetic energy decreases as the particle moves away from the mean position.",
+      "incorrect_option_explanations": {
+        "A": "At the extreme position, the velocity is zero, so kinetic energy is zero (minimum), not maximum.",
+        "C": "At halfway (x = A/2), the kinetic energy is KE = (1/2) m omega^2 (A^2 - A^2/4) = (1/2) m omega^2 (3A^2/4), which is 75% of maximum, not maximum.",
+        "D": "At x = A/4, the kinetic energy is KE = (1/2) m omega^2 (A^2 - A^2/16) = (1/2) m omega^2 (15A^2/16), which is about 94% of maximum, not maximum."
+      },
+      "concept": "Kinetic energy in SHM",
+      "difficulty": "Easy",
+      "estimated_time_seconds": 30,
+      "marks": 1,
+      "chapter": "Oscillations",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Conceptual"
+    },
+    {
+      "id": 11,
+      "question": "A particle executes SHM with amplitude 0.10 m and frequency 5 Hz. The velocity of the particle when its displacement is 0.06 m is approximately",
+      "options": {
+        "A": "1.6 m/s",
+        "B": "2.0 m/s",
+        "C": "2.5 m/s",
+        "D": "3.1 m/s"
+      },
+      "correct_option": "C",
+      "correct_answer": "2.5 m/s",
+      "explanation": "The velocity in SHM is v = omega sqrt(A^2 - x^2), where omega = 2pi f = 2pi * 5 = 10pi rad/s. Given A = 0.10 m and x = 0.06 m: v = 10pi * sqrt(0.10^2 - 0.06^2) = 10pi * sqrt(0.01 - 0.0036) = 10pi * sqrt(0.0064) = 10pi * 0.08 = 0.8pi ~ 2.51 m/s ~ 2.5 m/s.",
+      "incorrect_option_explanations": {
+        "A": "This would be obtained if one used v = omega x = 10pi * 0.06 ~ 1.88 m/s, or if one used v = omega sqrt(A - x) instead of sqrt(A^2 - x^2).",
+        "B": "This would be obtained if one used v = omega A = 10pi * 0.10 = pi ~ 3.14 m/s but made a calculation error, or if omega = 2pi was used instead of 10pi.",
+        "D": "This would be obtained if one calculated the maximum velocity v_max = omega A = 10pi * 0.10 = pi ~ 3.14 m/s, forgetting to subtract the displacement term."
+      },
+      "concept": "Velocity at given displacement in SHM",
+      "difficulty": "Medium",
+      "estimated_time_seconds": 60,
+      "marks": 1,
+      "chapter": "Oscillations",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Numerical"
+    },
+    {
+      "id": 12,
+      "question": "Two simple pendulums of lengths L1 and L2 have time periods T1 and T2 respectively at the same place. If T1 = 2 T2, then the ratio L1/L2 is",
+      "options": {
+        "A": "1/2",
+        "B": "1/4",
+        "C": "2",
+        "D": "4"
+      },
+      "correct_option": "D",
+      "correct_answer": "4",
+      "explanation": "For a simple pendulum, T = 2pi sqrt(L/g), so T^2 is proportional to L. Therefore, (T1/T2)^2 = L1/L2. Given T1 = 2 T2, we have (T1/T2)^2 = (2)^2 = 4. Thus, L1/L2 = 4.",
+      "incorrect_option_explanations": {
+        "A": "This would be obtained if one mistakenly assumed T proportional to L instead of T proportional to sqrt(L), giving L1/L2 = T1/T2 = 2, then took reciprocal.",
+        "B": "This would be obtained if one assumed T proportional to L and calculated L1/L2 = T1/T2 = 2, then made an error, or if one used T1/T2 = 1/2.",
+        "C": "This would be obtained if one assumed T proportional to L (linear proportionality) instead of T proportional to sqrt(L), giving L1/L2 = T1/T2 = 2."
+      },
+      "concept": "Relation between time period and length of pendulum",
+      "difficulty": "Medium",
+      "estimated_time_seconds": 45,
+      "marks": 1,
+      "chapter": "Oscillations",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Conceptual"
+    },
+    {
+      "id": 13,
+      "question": "A spring of force constant k is cut into two equal halves. The force constant of each half is",
+      "options": {
+        "A": "k/2",
+        "B": "k",
+        "C": "2k",
+        "D": "4k"
+      },
+      "correct_option": "C",
+      "correct_answer": "2k",
+      "explanation": "For a spring, the force constant is inversely proportional to its length (k proportional to 1/L). When a spring is cut into two equal halves, each half has length L/2. Since k proportional to 1/L, the new force constant k' = k * (L/(L/2)) = 2k. Each half becomes stiffer because it requires twice the force to produce the same extension.",
+      "incorrect_option_explanations": {
+        "A": "This would be obtained if one assumed k is directly proportional to length, which is incorrect. A shorter spring is stiffer, not softer.",
+        "B": "This would be obtained if one incorrectly assumed cutting the spring does not change its stiffness, ignoring the inverse relationship between k and length.",
+        "D": "This would be obtained if one used k proportional to 1/L^2 or made an arithmetic error, confusing the relationship with that of combining springs in series."
+      },
+      "concept": "Force constant of cut spring",
+      "difficulty": "Medium",
+      "estimated_time_seconds": 50,
+      "marks": 1,
+      "chapter": "Oscillations",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Numerical"
+    },
+    {
+      "id": 14,
+      "question": "The total energy of a particle executing SHM is E. When the displacement is half the amplitude, the kinetic energy is",
+      "options": {
+        "A": "E/4",
+        "B": "E/2",
+        "C": "3E/4",
+        "D": "E"
+      },
+      "correct_option": "C",
+      "correct_answer": "3E/4",
+      "explanation": "Total energy E = (1/2) k A^2. Potential energy at displacement x is PE = (1/2) k x^2. At x = A/2, PE = (1/2) k (A/2)^2 = (1/2) k (A^2/4) = (1/4)(1/2 k A^2) = E/4. Kinetic energy KE = E - PE = E - E/4 = 3E/4.",
+      "incorrect_option_explanations": {
+        "A": "This is the potential energy at x = A/2, not the kinetic energy. Students often confuse PE and KE at a given displacement.",
+        "B": "This would be obtained if one assumed KE is proportional to x, or if one calculated KE at x = A/sqrt(2) instead of A/2.",
+        "D": "This would be obtained if one assumed kinetic energy is always equal to total energy, ignoring the fact that some energy is stored as potential energy at any non-zero displacement."
+      },
+      "concept": "Energy distribution in SHM at half amplitude",
+      "difficulty": "Medium",
+      "estimated_time_seconds": 50,
+      "marks": 1,
+      "chapter": "Oscillations",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Formula Based"
+    },
+    {
+      "id": 15,
+      "question": "A particle in SHM has velocities 3 m/s and 4 m/s at displacements 4 cm and 3 cm respectively from the mean position. The amplitude of oscillation is",
+      "options": {
+        "A": "3 cm",
+        "B": "4 cm",
+        "C": "5 cm",
+        "D": "7 cm"
+      },
+      "correct_option": "C",
+      "correct_answer": "5 cm",
+      "explanation": "Using the relation v^2 = omega^2 (A^2 - x^2), we have: (3)^2 = omega^2 (A^2 - 4^2) and (4)^2 = omega^2 (A^2 - 3^2). So 9 = omega^2 (A^2 - 16) and 16 = omega^2 (A^2 - 9). Dividing: 16/9 = (A^2 - 9)/(A^2 - 16). Cross-multiplying: 16(A^2 - 16) = 9(A^2 - 9), so 16A^2 - 256 = 9A^2 - 81, giving 7A^2 = 175, so A^2 = 25, and A = 5 cm.",
+      "incorrect_option_explanations": {
+        "A": "This is one of the given displacements, not the amplitude. Students might confuse a given displacement with the amplitude.",
+        "B": "This is the other given displacement, not the amplitude. Similar to option A, this is a distractor for students who don't apply the formula correctly.",
+        "D": "This would be obtained if one simply added the two displacements (4 + 3 = 7), which has no physical basis in SHM."
+      },
+      "concept": "Amplitude from velocities at two displacements",
+      "difficulty": "Medium",
+      "estimated_time_seconds": 70,
+      "marks": 1,
+      "chapter": "Oscillations",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Numerical"
+    },
+    {
+      "id": 16,
+      "question": "The phase difference between the displacement and acceleration of a particle in SHM is",
+      "options": {
+        "A": "0",
+        "B": "pi/4",
+        "C": "pi/2",
+        "D": "pi"
+      },
+      "correct_option": "D",
+      "correct_answer": "pi",
+      "explanation": "In SHM, displacement is x = A cos(omega t) and acceleration is a = -omega^2 A cos(omega t) = omega^2 A cos(omega t + pi). The acceleration can be written as a = omega^2 A cos(omega t + pi), showing that acceleration leads displacement by a phase of pi (or is pi out of phase with displacement). This means when displacement is positive maximum, acceleration is negative maximum.",
+      "incorrect_option_explanations": {
+        "A": "This would imply acceleration and displacement are in phase, but in SHM they are in opposite directions (a = -omega^2 x), so they are not in phase.",
+        "B": "This has no physical significance for the displacement-acceleration phase relationship in SHM. It might be confused with other phase relationships.",
+        "C": "This is the phase difference between displacement and velocity in SHM (velocity leads displacement by pi/2), not between displacement and acceleration."
+      },
+      "concept": "Phase difference between displacement and acceleration in SHM",
+      "difficulty": "Medium",
+      "estimated_time_seconds": 45,
+      "marks": 1,
+      "chapter": "Oscillations",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Conceptual"
+    },
+    {
+      "id": 17,
+      "question": "A simple pendulum has a time period of 2.0 s on Earth where g = 9.8 m/s^2. If it is taken to a planet where the acceleration due to gravity is 4.9 m/s^2, its new time period will be",
+      "options": {
+        "A": "1.0 s",
+        "B": "sqrt(2) s",
+        "C": "2 sqrt(2) s",
+        "D": "4.0 s"
+      },
+      "correct_option": "C",
+      "correct_answer": "2 sqrt(2) s",
+      "explanation": "For a simple pendulum, T = 2pi sqrt(L/g), so T is proportional to 1/sqrt(g). Therefore, T2/T1 = sqrt(g1/g2) = sqrt(9.8/4.9) = sqrt(2). Thus, T2 = T1 * sqrt(2) = 2.0 * sqrt(2) = 2 sqrt(2) s.",
+      "incorrect_option_explanations": {
+        "A": "This would be obtained if one assumed T proportional to g, giving T2 = T1 * (g2/g1) = 2 * (4.9/9.8) = 1.0 s, which is incorrect.",
+        "B": "This would be obtained if one calculated the ratio T2/T1 = sqrt(2) but forgot to multiply by the original time period T1 = 2.0 s.",
+        "D": "This would be obtained if one assumed T proportional to 1/g, giving T2 = T1 * (g1/g2) = 2 * (9.8/4.9) = 4.0 s, which is incorrect."
+      },
+      "concept": "Time period of pendulum on different planets",
+      "difficulty": "Medium",
+      "estimated_time_seconds": 50,
+      "marks": 1,
+      "chapter": "Oscillations",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Numerical"
+    },
+    {
+      "id": 18,
+      "question": "In a displacement-time graph for SHM, the slope of the graph at the mean position is",
+      "options": {
+        "A": "Zero",
+        "B": "Maximum positive",
+        "C": "Maximum negative",
+        "D": "Maximum in magnitude"
+      },
+      "correct_option": "D",
+      "correct_answer": "Maximum in magnitude",
+      "explanation": "In a displacement-time graph for SHM (x vs t), the slope represents velocity. At the mean position (x = 0), the velocity is maximum in magnitude (v = +/- omega A). The slope can be either maximum positive or maximum negative depending on the direction of motion, but its magnitude is maximum at the mean position. At the extreme positions, the slope is zero.",
+      "incorrect_option_explanations": {
+        "A": "The slope is zero at the extreme positions, not at the mean position. This is a common confusion between the two positions.",
+        "B": "While the slope can be maximum positive when the particle is moving through the mean position in the positive direction, it can also be maximum negative when moving in the opposite direction. The question asks about the general case.",
+        "C": "Similar to B, this is only true for one direction of motion. The magnitude of the slope is what is always maximum at the mean position, regardless of direction."
+      },
+      "concept": "Slope of displacement-time graph in SHM",
+      "difficulty": "Medium",
+      "estimated_time_seconds": 50,
+      "marks": 1,
+      "chapter": "Oscillations",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Graph Interpretation"
+    },
+    {
+      "id": 19,
+      "question": "The ratio of kinetic energy to potential energy of a particle in SHM when the displacement is one-third of the amplitude is",
+      "options": {
+        "A": "1/8",
+        "B": "1/3",
+        "C": "8",
+        "D": "9"
+      },
+      "correct_option": "C",
+      "correct_answer": "8",
+      "explanation": "KE = (1/2) k (A^2 - x^2) and PE = (1/2) k x^2. At x = A/3: KE = (1/2) k (A^2 - A^2/9) = (1/2) k (8A^2/9) and PE = (1/2) k (A^2/9). Therefore, KE/PE = (8A^2/9)/(A^2/9) = 8.",
+      "incorrect_option_explanations": {
+        "A": "This would be obtained if one calculated PE/KE instead of KE/PE, or if one used x = 2A/3 and made an error.",
+        "B": "This would be obtained if one assumed KE/PE = x/A or made an incorrect ratio calculation.",
+        "D": "This would be obtained if one used x = A/sqrt(10) or made a calculation error in the fraction, or confused the ratio with (A/x)^2."
+      },
+      "concept": "Ratio of KE to PE in SHM",
+      "difficulty": "Medium",
+      "estimated_time_seconds": 55,
+      "marks": 1,
+      "chapter": "Oscillations",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Formula Based"
+    },
+    {
+      "id": 20,
+      "question": "A particle executes SHM with a time period of 0.5 s. Its frequency in Hz is",
+      "options": {
+        "A": "0.5 Hz",
+        "B": "1.0 Hz",
+        "C": "2.0 Hz",
+        "D": "4.0 Hz"
+      },
+      "correct_option": "C",
+      "correct_answer": "2.0 Hz",
+      "explanation": "Frequency is the reciprocal of time period: f = 1/T. Given T = 0.5 s, f = 1/0.5 = 2.0 Hz.",
+      "incorrect_option_explanations": {
+        "A": "This would be obtained if one confused frequency with time period, or if one calculated f = T instead of 1/T.",
+        "B": "This would be obtained if one used f = T/2 or made an arithmetic error in division.",
+        "D": "This would be obtained if one calculated f = 2/T = 2/0.5 = 4, or if one confused the formula with angular frequency omega = 2pi/T."
+      },
+      "concept": "Frequency from time period",
+      "difficulty": "Medium",
+      "estimated_time_seconds": 25,
+      "marks": 1,
+      "chapter": "Oscillations",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Unit Conversion"
+    },
+    {
+      "id": 21,
+      "question": "A watch uses a simple pendulum to keep time. If the watch loses time in summer due to thermal expansion of the pendulum rod, this happens because",
+      "options": {
+        "A": "The value of g decreases in summer",
+        "B": "The length of the pendulum increases, increasing the time period",
+        "C": "The amplitude of oscillation increases",
+        "D": "The mass of the bob decreases"
+      },
+      "correct_option": "B",
+      "correct_answer": "The length of the pendulum increases, increasing the time period",
+      "explanation": "In summer, thermal expansion causes the length L of the pendulum rod to increase. Since T = 2pi sqrt(L/g), the time period T increases with increasing L. A longer time period means the pendulum takes more time for each oscillation, so the watch runs slow (loses time). The value of g does not change significantly with temperature, and the time period of a simple pendulum is independent of amplitude (for small oscillations) and mass of the bob.",
+      "incorrect_option_explanations": {
+        "A": "The value of g does not change significantly with temperature or season at a given location. This is not the reason for the watch losing time.",
+        "C": "For small oscillations, the time period of a simple pendulum is independent of amplitude. Even if amplitude changes, it does not affect the time period significantly.",
+        "D": "The time period of a simple pendulum is independent of the mass of the bob. A change in mass does not affect the time period."
+      },
+      "concept": "Thermal expansion effect on pendulum clock",
+      "difficulty": "Medium",
+      "estimated_time_seconds": 45,
+      "marks": 1,
+      "chapter": "Oscillations",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Practical Application"
+    },
+    {
+      "id": 22,
+      "question": "Two springs of force constants k1 = 100 N/m and k2 = 200 N/m are connected in series. A mass of 0.5 kg is attached to the combination. The time period of oscillation is approximately",
+      "options": {
+        "A": "0.28 s",
+        "B": "0.39 s",
+        "C": "0.55 s",
+        "D": "0.78 s"
+      },
+      "correct_option": "C",
+      "correct_answer": "0.55 s",
+      "explanation": "For springs in series, the equivalent force constant is given by 1/k_eq = 1/k1 + 1/k2 = 1/100 + 1/200 = 3/200, so k_eq = 200/3 ~ 66.67 N/m. The time period T = 2pi sqrt(m/k_eq) = 2pi sqrt(0.5/(200/3)) = 2pi sqrt(1.5/200) = 2pi sqrt(0.0075) = 2pi * 0.0866 ~ 0.544 s ~ 0.55 s.",
+      "incorrect_option_explanations": {
+        "A": "This would be obtained if one used k_eq = k1 + k2 = 300 N/m (parallel combination) and calculated T = 2pi sqrt(0.5/300) ~ 0.26 s, or made an error.",
+        "B": "This would be obtained if one used k_eq = (k1 + k2)/2 = 150 N/m and calculated T = 2pi sqrt(0.5/150) ~ 0.36 s, which is incorrect for series springs.",
+        "D": "This would be obtained if one used k_eq = k1*k2/(k1+k2) correctly but made an arithmetic error, or if one used m = 1.0 kg."
+      },
+      "concept": "Time period of spring-mass system with springs in series",
+      "difficulty": "Medium",
+      "estimated_time_seconds": 65,
+      "marks": 1,
+      "chapter": "Oscillations",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Numerical"
+    },
+    {
+      "id": 23,
+      "question": "Assertion (A): The time period of a simple pendulum depends on the amplitude of oscillation.\nReason (R): For large amplitudes, the restoring force is not proportional to the displacement.",
+      "options": {
+        "A": "Both A and R are true and R is the correct explanation of A",
+        "B": "Both A and R are true but R is not the correct explanation of A",
+        "C": "A is true but R is false",
+        "D": "A is false but R is true"
+      },
+      "correct_option": "D",
+      "correct_answer": "A is false but R is true",
+      "explanation": "Assertion (A) is false because for small amplitudes (simple harmonic motion), the time period of a simple pendulum is independent of amplitude. However, Reason (R) is true because for large amplitudes, sin theta ~ theta is no longer valid, so the restoring force is not strictly proportional to displacement, and the motion is not simple harmonic. But since the assertion is false, the correct answer is D.",
+      "incorrect_option_explanations": {
+        "A": "This would be chosen if one believed both statements are true and related. However, A is false for small amplitude SHM, which is the standard case.",
+        "B": "This would be chosen if one believed A is true for large amplitudes but didn't think R explains it. However, A is stated generally and is false for SHM.",
+        "C": "This would be chosen if one believed the time period depends on amplitude but thought the reason given was wrong. However, A is actually false for the standard simple pendulum in SHM."
+      },
+      "concept": "Amplitude independence of simple pendulum time period",
+      "difficulty": "Medium",
+      "estimated_time_seconds": 55,
+      "marks": 1,
+      "chapter": "Oscillations",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Assertion-Reason"
+    },
+    {
+      "id": 24,
+      "question": "A particle executes SHM along the x-axis with amplitude 0.20 m. At a certain instant, its kinetic energy is three times its potential energy. The displacement of the particle at that instant is",
+      "options": {
+        "A": "0.05 m",
+        "B": "0.10 m",
+        "C": "0.15 m",
+        "D": "0.18 m"
+      },
+      "correct_option": "B",
+      "correct_answer": "0.10 m",
+      "explanation": "Given KE = 3 PE. Since total energy E = KE + PE = 3PE + PE = 4PE. Also, PE = (1/2) k x^2 and E = (1/2) k A^2. So (1/2) k A^2 = 4 * (1/2) k x^2, giving A^2 = 4x^2, so x = A/2 = 0.20/2 = 0.10 m.",
+      "incorrect_option_explanations": {
+        "A": "This would be obtained if one used KE = 3PE to get E = 3PE (instead of 4PE), giving A^2 = 3x^2, so x = A/sqrt(3) ~ 0.115 m, then made an approximation error.",
+        "C": "This would be obtained if one used x = 3A/4 = 0.15 m, confusing the ratio or using an incorrect algebraic manipulation.",
+        "D": "This would be obtained if one calculated x = A sqrt(3/4) ~ 0.173 m, or if one used an incorrect ratio between KE and PE."
+      },
+      "concept": "Displacement when KE is three times PE",
+      "difficulty": "Hard",
+      "estimated_time_seconds": 70,
+      "marks": 1,
+      "chapter": "Oscillations",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Numerical"
+    },
+    {
+      "id": 25,
+      "question": "A body of mass 0.5 kg executes SHM with amplitude 0.20 m and total energy 4.0 J. The maximum force acting on the body during the motion is",
+      "options": {
+        "A": "10 N",
+        "B": "20 N",
+        "C": "40 N",
+        "D": "80 N"
+      },
+      "correct_option": "C",
+      "correct_answer": "40 N",
+      "explanation": "Total energy E = (1/2) k A^2, so k = 2E/A^2 = 2 * 4.0/(0.20)^2 = 8.0/0.04 = 200 N/m. The maximum force occurs at maximum displacement: F_max = kA = 200 * 0.20 = 40 N. Alternatively, F_max = m omega^2 A = m * (k/m) * A = kA = 40 N.",
+      "incorrect_option_explanations": {
+        "A": "This would be obtained if one calculated F = kA/2 = 20 N or made an error in finding k from energy, or if one used F = E/A = 4/0.2 = 20 N then divided by 2.",
+        "B": "This would be obtained if one calculated F = E/A = 4.0/0.20 = 20 N, confusing energy with force, or if one made an error in calculating k.",
+        "D": "This would be obtained if one calculated F = 2kA or made an arithmetic error, or if one used F = 2E/A = 8/0.2 = 40 N but then doubled it."
+      },
+      "concept": "Maximum force in SHM from energy and amplitude",
+      "difficulty": "Hard",
+      "estimated_time_seconds": 75,
+      "marks": 1,
+      "chapter": "Oscillations",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Numerical"
+    },
+    {
+      "id": 26,
+      "question": "In SHM, the graph of acceleration versus displacement is",
+      "options": {
+        "A": "A parabola passing through the origin",
+        "B": "A straight line passing through the origin with positive slope",
+        "C": "A straight line passing through the origin with negative slope",
+        "D": "A circle centered at the origin"
+      },
+      "correct_option": "C",
+      "correct_answer": "A straight line passing through the origin with negative slope",
+      "explanation": "In SHM, the acceleration is given by a = -omega^2 x. This is a linear equation of the form y = mx with m = -omega^2 (negative slope). The graph of a versus x is a straight line passing through the origin with a negative slope. The negative sign indicates that acceleration is always directed opposite to displacement (towards the mean position).",
+      "incorrect_option_explanations": {
+        "A": "A parabola would result from a quadratic relationship like a proportional to x^2, but in SHM the relationship is linear: a = -omega^2 x.",
+        "B": "A positive slope would mean acceleration and displacement are in the same direction, which would cause the particle to move away from equilibrium, not oscillate.",
+        "D": "A circle would result from a relationship like a^2 + omega^4 x^2 = constant, which is not the case in SHM."
+      },
+      "concept": "Acceleration-displacement graph in SHM",
+      "difficulty": "Medium",
+      "estimated_time_seconds": 40,
+      "marks": 1,
+      "chapter": "Oscillations",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Graph Interpretation"
+    },
+    {
+      "id": 27,
+      "question": "In an experiment to determine the acceleration due to gravity using a simple pendulum, a student measures the length as 99.0 cm and the time for 50 oscillations as 100.0 s. The value of g obtained is approximately",
+      "options": {
+        "A": "9.60 m/s^2",
+        "B": "9.70 m/s^2",
+        "C": "9.80 m/s^2",
+        "D": "9.90 m/s^2"
+      },
+      "correct_option": "C",
+      "correct_answer": "9.80 m/s^2",
+      "explanation": "Time for 50 oscillations = 100.0 s, so time period T = 100.0/50 = 2.0 s. Using T = 2pi sqrt(L/g), we get g = 4 pi^2 L / T^2 = 4 * 9.87 * 0.99 / (2.0)^2 = 39.48 * 0.99 / 4 = 39.0852/4 = 9.77 m/s^2 ~ 9.80 m/s^2 (using pi^2 ~ 9.87). With pi^2 ~ 9.8 exactly, g = 4 * 9.8 * 0.99 / 4 = 9.8 * 0.99 = 9.702 ~ 9.70 m/s^2. Using standard pi^2 = 9.87 gives approximately 9.77 m/s^2, which rounds to 9.80 m/s^2.",
+      "incorrect_option_explanations": {
+        "A": "This would be obtained if one used L = 0.99 m but T = 2.02 s (measurement error), or if pi^2 = 9.6 was used.",
+        "B": "This would be obtained if one used pi^2 = 9.8 exactly without considering the slight reduction due to L = 0.99 m instead of 1.0 m, or if one made a small rounding error.",
+        "D": "This would be obtained if one used L = 1.0 m instead of 0.99 m, or if one calculated g = 4 pi^2 / T^2 without including L."
+      },
+      "concept": "Experimental determination of g using simple pendulum",
+      "difficulty": "Medium",
+      "estimated_time_seconds": 60,
+      "marks": 1,
+      "chapter": "Oscillations",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Experimental Observation"
+    },
+    {
+      "id": 28,
+      "question": "A particle in SHM has a maximum speed of 6 m/s and maximum acceleration of 18 m/s^2. The amplitude of oscillation is",
+      "options": {
+        "A": "1.0 m",
+        "B": "1.5 m",
+        "C": "2.0 m",
+        "D": "3.0 m"
+      },
+      "correct_option": "C",
+      "correct_answer": "2.0 m",
+      "explanation": "We know v_max = omega A and a_max = omega^2 A. Dividing: a_max/v_max = omega^2 A/(omega A) = omega. So omega = 18/6 = 3 rad/s. Then A = v_max/omega = 6/3 = 2.0 m. Alternatively, A = v_max^2/a_max = 36/18 = 2.0 m.",
+      "incorrect_option_explanations": {
+        "A": "This would be obtained if one calculated A = v_max/a_max = 6/18 = 1/3 m, or if one used A = a_max/v_max^2 = 18/36 = 0.5 m with an error.",
+        "B": "This would be obtained if one calculated omega = v_max/a_max = 6/18 = 1/3, then A = v_max/omega = 6/(1/3) = 18, then made an error, or if one used a different incorrect formula.",
+        "D": "This would be obtained if one calculated A = a_max/v_max = 18/6 = 3 m, confusing the ratio, or if one made an arithmetic error in the division."
+      },
+      "concept": "Amplitude from maximum velocity and acceleration",
+      "difficulty": "Medium",
+      "estimated_time_seconds": 55,
+      "marks": 1,
+      "chapter": "Oscillations",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Numerical"
+    },
+    {
+      "id": 29,
+      "question": "In determining the time period of a simple pendulum, a student measures the length with an error of 2% and the time period with an error of 1%. The percentage error in the calculated value of g is",
+      "options": {
+        "A": "1%",
+        "B": "2%",
+        "C": "3%",
+        "D": "4%"
+      },
+      "correct_option": "D",
+      "correct_answer": "4%",
+      "explanation": "From T = 2pi sqrt(L/g), we get g = 4 pi^2 L / T^2. Taking logarithm: ln g = ln(4 pi^2) + ln L - 2 ln T. Differentiating: delta g/g = delta L/L + 2(delta T/T). The percentage error in g is (delta g/g) * 100 = (delta L/L) * 100 + 2 * (delta T/T) * 100 = 2% + 2 * 1% = 4%.",
+      "incorrect_option_explanations": {
+        "A": "This would be obtained if one considered only the error in time period and ignored the error in length, or if one calculated delta g/g = delta T/T.",
+        "B": "This would be obtained if one considered only the error in length and ignored the error in time period, or if one calculated delta g/g = delta L/L.",
+        "C": "This would be obtained if one calculated delta g/g = delta L/L + delta T/T = 2% + 1% = 3%, forgetting to multiply the time period error by 2."
+      },
+      "concept": "Error analysis in simple pendulum experiment",
+      "difficulty": "Medium",
+      "estimated_time_seconds": 60,
+      "marks": 1,
+      "chapter": "Oscillations",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Error Analysis"
+    },
+    {
+      "id": 30,
+      "question": "A block of mass 4.0 kg attached to a spring (k = 100 N/m) oscillates on a frictionless horizontal surface with amplitude 0.30 m. When the block is at x = 0.18 m moving towards the positive extreme, a lump of putty of mass 1.0 kg is dropped vertically onto it and sticks to it. The new amplitude of oscillation is",
+      "options": {
+        "A": "0.20 m",
+        "B": "0.24 m",
+        "C": "0.28 m",
+        "D": "0.32 m"
+      },
+      "correct_option": "C",
+      "correct_answer": "0.28 m",
+      "explanation": "First, omega = sqrt(k/m) = sqrt(100/4) = 5 rad/s. At x = 0.18 m, velocity v = omega sqrt(A^2 - x^2) = 5 * sqrt(0.30^2 - 0.18^2) = 5 * sqrt(0.09 - 0.0324) = 5 * sqrt(0.0576) = 5 * 0.24 = 1.2 m/s. When putty drops vertically, horizontal momentum is conserved: m1 v = (m1+m2) v', so 4.0 * 1.2 = 5.0 * v', giving v' = 0.96 m/s. Total mechanical energy after collision = (1/2) k x^2 + (1/2)(m1+m2) v'^2 = (1/2) * 100 * (0.18)^2 + (1/2) * 5.0 * (0.96)^2 = 1.62 + 2.304 = 3.924 J. This equals (1/2) k A'^2, so A' = sqrt(2 * 3.924/100) = sqrt(0.07848) ~ 0.28 m.",
+      "incorrect_option_explanations": {
+        "A": "This would be obtained if one used energy conservation without momentum conservation, or if one made a significant arithmetic error in the calculation.",
+        "B": "This would be obtained if one calculated the velocity correctly but made an error in the energy calculation, or if one used an incorrect mass in the energy term.",
+        "D": "This would be obtained if one assumed amplitude remains unchanged (ignoring the mass addition), or if one made a calculation error treating the system as if no energy was lost."
+      },
+      "concept": "Amplitude change after inelastic collision in SHM",
+      "difficulty": "Hard",
+      "estimated_time_seconds": 90,
+      "marks": 1,
+      "chapter": "Oscillations",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Numerical"
+    },
+    {
+      "id": 31,
+      "question": "A simple pendulum has a bob of mass 0.2 kg and length 1.0 m. It is displaced through 60 degrees from the vertical and released. The speed of the bob when it passes through the lowest point is approximately (Take g = 10 m/s^2)",
+      "options": {
+        "A": "2.0 m/s",
+        "B": "2.5 m/s",
+        "C": "3.0 m/s",
+        "D": "3.5 m/s"
+      },
+      "correct_option": "C",
+      "correct_answer": "3.0 m/s",
+      "explanation": "Using conservation of mechanical energy: Loss in potential energy = Gain in kinetic energy. The vertical height descended h = L(1 - cos theta) = 1.0 * (1 - cos 60 degrees) = 1.0 * (1 - 0.5) = 0.5 m. So mgh = (1/2) m v^2, giving v = sqrt(2gh) = sqrt(2 * 10 * 0.5) = sqrt(10) ~ 3.16 m/s ~ 3.0 m/s.",
+      "incorrect_option_explanations": {
+        "A": "This would be obtained if one used h = L sin theta = 1.0 * sin 60 degrees ~ 0.866 m incorrectly, or if one used v = sqrt(gh) instead of sqrt(2gh).",
+        "B": "This would be obtained if one used h = L(1 - cos theta) = 0.5 m but calculated v = sqrt(gh) = sqrt(5) ~ 2.24 m/s, forgetting the factor of 2.",
+        "D": "This would be obtained if one used h = L = 1.0 m (full length), giving v = sqrt(2 * 10 * 1) = sqrt(20) ~ 4.47 m/s, then made an approximation error."
+      },
+      "concept": "Speed of pendulum bob using energy conservation",
+      "difficulty": "Hard",
+      "estimated_time_seconds": 75,
+      "marks": 1,
+      "chapter": "Oscillations",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Numerical"
+    },
+    {
+      "id": 32,
+      "question": "Two identical springs each of force constant k are connected in parallel to a mass m. The time period of oscillation is T1. When the same springs are connected in series with the same mass, the time period is T2. The ratio T1/T2 is",
+      "options": {
+        "A": "1/2",
+        "B": "1/sqrt(2)",
+        "C": "1/(2 sqrt(2))",
+        "D": "2"
+      },
+      "correct_option": "A",
+      "correct_answer": "1/2",
+      "explanation": "For parallel combination: k_p = k + k = 2k, so T1 = 2pi sqrt(m/(2k)). For series combination: 1/k_s = 1/k + 1/k = 2/k, so k_s = k/2, and T2 = 2pi sqrt(m/(k/2)) = 2pi sqrt(2m/k). Therefore, T1/T2 = sqrt(m/(2k)) / sqrt(2m/k) = sqrt(m/(2k) * k/(2m)) = sqrt(1/4) = 1/2.",
+      "incorrect_option_explanations": {
+        "B": "This would be obtained if one calculated T1/T2 = sqrt(k_s/k_p) = sqrt((k/2)/(2k)) = sqrt(1/4) = 1/2... actually this also gives 1/2. This distractor might confuse students who incorrectly set up the ratio.",
+        "C": "This would be obtained if one made an arithmetic error in combining the square roots, or if one confused the series and parallel equivalent spring constants.",
+        "D": "This would be obtained if one calculated T2/T1 instead of T1/T2, reversing the ratio."
+      },
+      "concept": "Time period comparison for springs in parallel vs series",
+      "difficulty": "Hard",
+      "estimated_time_seconds": 70,
+      "marks": 1,
+      "chapter": "Oscillations",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Numerical"
+    },
+    {
+      "id": 33,
+      "question": "A particle executes SHM with amplitude A and time period T. The time taken by the particle to travel from the mean position to a position where its displacement is A/2 is",
+      "options": {
+        "A": "T/12",
+        "B": "T/8",
+        "C": "T/6",
+        "D": "T/4"
+      },
+      "correct_option": "A",
+      "correct_answer": "T/12",
+      "explanation": "Using x = A sin(omega t) for motion starting from mean position. When x = A/2: A/2 = A sin(omega t), so sin(omega t) = 1/2, giving omega t = pi/6. Since omega = 2pi/T, we have (2pi/T) * t = pi/6, so t = T/12.",
+      "incorrect_option_explanations": {
+        "B": "This would be obtained if one used sin(omega t) = 1/sqrt(2) (giving omega t = pi/4) instead of sin(omega t) = 1/2, or confused the displacement with another fraction of amplitude.",
+        "C": "This would be obtained if one used omega t = pi/3 (sin(pi/3) = sqrt(3)/2 ~ 0.866) instead of pi/6, confusing the sine values.",
+        "D": "This would be obtained if one calculated the time to reach the extreme position from the mean position, which is T/4, not T/12."
+      },
+      "concept": "Time to reach a given displacement from mean position in SHM",
+      "difficulty": "Hard",
+      "estimated_time_seconds": 70,
+      "marks": 1,
+      "chapter": "Oscillations",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Numerical"
+    },
+    {
+      "id": 34,
+      "question": "A uniform rod of length 1.0 m is suspended from one end and oscillates as a physical pendulum. The time period of small oscillations is approximately (Take g = 10 m/s^2)",
+      "options": {
+        "A": "1.2 s",
+        "B": "1.6 s",
+        "C": "2.0 s",
+        "D": "2.4 s"
+      },
+      "correct_option": "B",
+      "correct_answer": "1.6 s",
+      "explanation": "For a physical pendulum, T = 2pi sqrt(I/mgd), where I is the moment of inertia about the pivot, and d is the distance from pivot to center of mass. For a uniform rod of length L suspended from one end: I = mL^2/3 and d = L/2. So T = 2pi sqrt((mL^2/3)/(mgL/2)) = 2pi sqrt(2L/(3g)) = 2pi sqrt(2*1.0/(3*10)) = 2pi sqrt(2/30) = 2pi sqrt(1/15) = 2pi/sqrt(15) ~ 6.28/3.87 ~ 1.62 s ~ 1.6 s.",
+      "incorrect_option_explanations": {
+        "A": "This would be obtained if one used the formula for a simple pendulum T = 2pi sqrt(L/g) = 2pi sqrt(1/10) ~ 1.99 s, then made an error, or if one used an incorrect moment of inertia.",
+        "C": "This would be obtained if one mistakenly used the simple pendulum formula T = 2pi sqrt(L/g) = 2pi sqrt(0.1) ~ 1.99 s ~ 2.0 s, forgetting that the rod is a physical pendulum with different moment of inertia.",
+        "D": "This would be obtained if one used I = mL^2 (incorrect moment of inertia) or made another significant error in the formula."
+      },
+      "concept": "Physical pendulum time period",
+      "difficulty": "Hard",
+      "estimated_time_seconds": 80,
+      "marks": 1,
+      "chapter": "Oscillations",
+      "syllabus_alignment": "MHT-CET",
+      "question_type": "Numerical"
+    }
+  ]
+}
